@@ -69,14 +69,19 @@ playwright install chromium
 
 #### Step 1: Discover Documentation
 
-Crawls Apple's API to discover all available documentation pages:
+Crawls Apple's API to discover all available documentation pages.
+
+**Important:** The discovery process is **recursive**.
+- If you run it without arguments, it starts with a default set of frameworks.
+- If you specify frameworks (e.g., `--frameworks swift`), it starts there but **will follow all links** to related frameworks (like Foundation, UIKit, etc.).
+- **Result:** In almost all cases, this will discover the vast majority of Apple's documentation (200,000+ pages), regardless of the starting point.
 
 ```bash
-# All frameworks (~50,000+ pages)
+# Discover documentation (starts with default set, crawls recursively)
 python scripts/01_discover_docs.py
 
-# Specific frameworks only
-python scripts/01_discover_docs.py --frameworks swift swiftui uikit
+# Start discovery from specific frameworks (will still crawl recursively!)
+python scripts/01_discover_docs.py --frameworks swift swiftui
 
 # Resume interrupted discovery
 python scripts/01_discover_docs.py --resume
