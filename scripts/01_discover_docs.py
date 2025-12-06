@@ -314,12 +314,12 @@ class DocumentationCrawler:
 async def main():
     parser = argparse.ArgumentParser(description='Discover Apple documentation pages')
     parser.add_argument('--frameworks', nargs='+', help='Frameworks to crawl (default: all)')
-    parser.add_argument('--output', default='..', help='Output directory (default: parent directory)')
+    parser.add_argument('--output', default='.', help='Output directory (default: project directory)')
     parser.add_argument('--resume', action='store_true', help='Resume from previous state')
 
     args = parser.parse_args()
 
-    output_dir = Path(__file__).parent.parent / args.output if args.output == '..' else Path(args.output)
+    output_dir = Path(__file__).parent.parent / args.output if args.output == '.' else Path(args.output)
     output_dir.mkdir(parents=True, exist_ok=True)
 
     crawler = DocumentationCrawler(

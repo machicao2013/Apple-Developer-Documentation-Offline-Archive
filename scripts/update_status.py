@@ -179,11 +179,11 @@ class UpdateStatus:
 
 def main():
     parser = argparse.ArgumentParser(description='Show Apple documentation status')
-    parser.add_argument('--base-dir', default='..', help='Base directory (default: parent directory)')
+    parser.add_argument('--base-dir', default='.', help='Base directory (default: project directory)')
 
     args = parser.parse_args()
 
-    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '..' else Path(args.base_dir)
+    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '.' else Path(args.base_dir)
 
     status = UpdateStatus(base_dir=base_dir)
     status.print_status()

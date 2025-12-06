@@ -180,11 +180,11 @@ class UpdateChecker:
 async def main():
     parser = argparse.ArgumentParser(description='Check for Apple documentation updates')
     parser.add_argument('--frameworks', nargs='+', help='Frameworks to check (default: all)')
-    parser.add_argument('--base-dir', default='..', help='Base directory (default: parent directory)')
+    parser.add_argument('--base-dir', default='.', help='Base directory (default: project directory)')
 
     args = parser.parse_args()
 
-    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '..' else Path(args.base_dir)
+    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '.' else Path(args.base_dir)
 
     checker = UpdateChecker(base_dir=base_dir)
     await checker.check_all_pages(frameworks=args.frameworks)

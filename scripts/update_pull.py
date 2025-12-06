@@ -282,12 +282,12 @@ class UpdatePuller:
 async def main():
     parser = argparse.ArgumentParser(description='Pull Apple documentation updates')
     parser.add_argument('--frameworks', nargs='+', help='Frameworks to update (default: all)')
-    parser.add_argument('--base-dir', default='..', help='Base directory (default: parent directory)')
+    parser.add_argument('--base-dir', default='.', help='Base directory (default: project directory)')
     parser.add_argument('--no-convert', action='store_true', help='Skip Markdown conversion')
 
     args = parser.parse_args()
 
-    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '..' else Path(args.base_dir)
+    base_dir = Path(__file__).parent.parent / args.base_dir if args.base_dir == '.' else Path(args.base_dir)
 
     puller = UpdatePuller(base_dir=base_dir)
 
