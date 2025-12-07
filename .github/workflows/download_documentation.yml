@@ -134,9 +134,10 @@
 
             if [ -f "index.json" ]; then
               echo "## Discovery Stats" >> stats.md
-              python -c "import json; data=json.load(open('index.json')); print(f\"Total pages: {data.get('total_pages', 0)}\"); [print(f\"- {k}: 
-  {len(v)} pages\") for k,v in data.get('frameworks', {}).items()]" >> stats.md
+              python -c 'import json; data=json.load(open("index.json")); print("Total pages:", data.get("total_pages", 0)); [print("- " + k + ":", 
+              len(v), "pages") for k,v in data.get("frameworks", {}).items()]' >> stats.md
             fi
+
 
             if [ -d "markdown" ]; then
               echo "" >> stats.md
