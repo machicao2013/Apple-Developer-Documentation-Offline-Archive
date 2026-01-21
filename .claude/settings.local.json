@@ -8,7 +8,10 @@
       "Bash(source:*)",
       "Bash(pip install:*)",
       "Bash(python scripts/01_discover_docs.py:*)",
-      "Bash(pandoc:*)"
+      "Bash(pandoc:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(chmod:*)"
     ],
     "deny": [],
     "ask": []

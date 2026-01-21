@@ -133,18 +133,42 @@ class AppleDocConverter:
 
         result = []
 
-        # Header
-        if header:
+        # Handle different table formats
+        # Format 1: header is dict with cells
+        if isinstance(header, dict) and 'cells' in header:
             cells = header.get('cells', [])
             header_row = ' | '.join([self.convert_inline_content(cell.get('content', [])) for cell in cells])
             result.append(f"| {header_row} |\n")
             result.append(f"| {' | '.join(['---'] * len(cells))} |\n")
+        # Format 2: header is string (like "row"), first row is the header
+        elif isinstance(header, str) and header == "row" and rows:
+            # First row is header
+            if rows and isinstance(rows[0], list):
+                header_cells = []
+                for cell in rows[0]:
+                    if isinstance(cell, list):
+                        cell_text = self.convert_content_sections(cell, inline=True)
+                        header_cells.append(cell_text)
+                result.append(f"| {' | '.join(header_cells)} |\n")
+                result.append(f"| {' | '.join(['---'] * len(header_cells))} |\n")
+                # Remove header row from rows
+                rows = rows[1:]
 
         # Rows
         for row in rows:
-            cells = row.get('cells', [])
-            row_text = ' | '.join([self.convert_inline_content(cell.get('content', [])) for cell in cells])
-            result.append(f"| {row_text} |\n")
+            # Format 1: row is dict with cells
+            if isinstance(row, dict):
+                cells = row.get('cells', [])
+                row_text = ' | '.join([self.convert_inline_content(cell.get('content', [])) for cell in cells])
+                result.append(f"| {row_text} |\n")
+            # Format 2: row is list of cells
+            elif isinstance(row, list):
+                row_cells = []
+                for cell in row:
+                    if isinstance(cell, list):
+                        cell_text = self.convert_content_sections(cell, inline=True)
+                        row_cells.append(cell_text)
+                result.append(f"| {' | '.join(row_cells)} |\n")
 
         return ''.join(result) + '\n'
 

@@ -13,19 +13,29 @@ from typing import Set, Dict, List
 from tqdm import tqdm
 import argparse
 
+    
+
+#'swift': 'https://developer.apple.com/tutorials/data/documentation/swift.json',
+#'swiftui': 'https://developer.apple.com/tutorials/data/documentation/swiftui.json',
+#'uikit': 'https://developer.apple.com/tutorials/data/documentation/uikit.json',
+#'foundation': 'https://developer.apple.com/tutorials/data/documentation/foundation.json',
+#'coredata': 'https://developer.apple.com/tutorials/data/documentation/coredata.json',
+#'combine': 'https://developer.apple.com/tutorials/data/documentation/combine.json',
+#'swiftdata': 'https://developer.apple.com/tutorials/data/documentation/swiftdata.json',
+#'coreml': 'https://developer.apple.com/tutorials/data/documentation/coreml.json',
+#'mapkit': 'https://developer.apple.com/tutorials/data/documentation/mapkit.json',
+#'avfoundation': 'https://developer.apple.com/tutorials/data/documentation/avfoundation.json',
+#'storekit':'https://developer.apple.com/tutorials/data/documentation/StoreKit.json',
 
 # Framework root URLs
 FRAMEWORK_ROOTS = {
-    'swift': 'https://developer.apple.com/tutorials/data/documentation/swift.json',
-    'swiftui': 'https://developer.apple.com/tutorials/data/documentation/swiftui.json',
-    'uikit': 'https://developer.apple.com/tutorials/data/documentation/uikit.json',
-    'foundation': 'https://developer.apple.com/tutorials/data/documentation/foundation.json',
-    'coredata': 'https://developer.apple.com/tutorials/data/documentation/coredata.json',
-    'combine': 'https://developer.apple.com/tutorials/data/documentation/combine.json',
-    'swiftdata': 'https://developer.apple.com/tutorials/data/documentation/swiftdata.json',
-    'coreml': 'https://developer.apple.com/tutorials/data/documentation/coreml.json',
-    'mapkit': 'https://developer.apple.com/tutorials/data/documentation/mapkit.json',
-    'avfoundation': 'https://developer.apple.com/tutorials/data/documentation/avfoundation.json',
+    'advancedcommerceapi':'https://developer.apple.com/documentation/AdvancedCommerceAPI.json',
+    'appstoreconnectapi':'https://developer.apple.com/tutorials/data/documentation/AppStoreConnectAPI.json',
+    'appstorereceipts':'https://developer.apple.com/tutorials/data/documentation/AppStoreReceipts.json',
+    'appstoreserverapi':'https://developer.apple.com/tutorials/data/documentation/AppStoreServerAPI.json',
+    'appstoreservernotifications':'https://developer.apple.com/tutorials/data/documentation/AppStoreServerNotifications.json',
+    'storekit':'https://developer.apple.com/tutorials/data/documentation/StoreKit.json',
+    'storekittest':'https://developer.apple.com/tutorials/data/documentation/StoreKitTest.json',
 }
 
 

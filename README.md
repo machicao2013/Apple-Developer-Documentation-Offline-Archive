@@ -179,6 +179,7 @@ apple-docs-offline/
 │   ├── 03_json_to_markdown.py # JSON → Markdown converter
 │   ├── 04_markdown_to_pdf.py  # Generate PDFs from Markdown
 │   ├── 05_markdown_to_html.py # Generate browsable HTML site
+│   ├── 06_markdown_merge.py   # Merge markdown files to reduce file count
 │   ├── update_check.py        # Check for updates (git fetch)
 │   ├── update_pull.py         # Download updates (git pull)
 │   ├── update_status.py       # Show status (git status)
@@ -361,6 +362,7 @@ python scripts/02_download_json.py --help
 python scripts/03_json_to_markdown.py --help
 python scripts/04_markdown_to_pdf.py --help
 python scripts/05_markdown_to_html.py --help
+python scripts/06_markdown_merge.py --help
 python scripts/update_check.py --help
 python scripts/update_pull.py --help
 python scripts/update_status.py --help
@@ -479,6 +481,47 @@ open html/index.html
 
 **Output:** `html/` directory with complete static website
 
+### Merge Markdown Files (Reduce File Count)
+
+If your storage system has file count limitations, merge each framework's documentation into a single file:
+
+```bash
+# Merge all frameworks
+python scripts/06_markdown_merge.py
+
+# Merge specific frameworks only
+python scripts/06_markdown_merge.py --frameworks storekit appstorereceipts
+
+# Custom output directory
+python scripts/06_markdown_merge.py --output-dir markdown-merged
+
+# Custom input directory
+python scripts/06_markdown_merge.py --markdown-dir my-markdown-folder
+```
+
+**Merge Features:**
+- ✅ MD5-based deduplication (removes exact duplicates)
+- ✅ Case-insensitive filename conflict resolution (prefers files with uppercase)
+- ✅ Preserves hierarchical structure with proper heading levels
+- ✅ Each framework merged into one large markdown file
+- ✅ Statistics on duplicates removed and files merged
+
+**Example Output:**
+```
+Processing: storekit
+  Created: markdown-merged/storekit_merged.md
+  Files merged: 1,245 (from 1,312 total)
+  MD5 duplicates removed: 45
+  Case conflicts resolved: 22
+```
+
+**Output:** `markdown-merged/<framework>_merged.md` - One file per framework
+
+**Use Cases:**
+- Storage systems with file count limits (e.g., cloud storage, note-taking apps)
+- Easier distribution as single-file packages
+- Simplified backups
+
 ### Complete Archive Structure
 
 After downloading all frameworks and generating documentation:
@@ -505,6 +548,11 @@ Apple-Developer-Documentation-Offline-Archive/
 │   │   └── ...
 │   └── ...
 │
+├── markdown-merged/          # Merged markdown (for file-count-limited storage)
+│   ├── swift_merged.md       # All Swift docs in one file
+│   ├── swiftui_merged.md     # All SwiftUI docs in one file
+│   └── ...
+│
 ├── raw-json/                 # Original Apple JSON (backup)
 │   ├── swift/                # ~1.2 GB
 │   ├── swiftui/              # ~200 MB
@@ -521,6 +569,7 @@ Apple-Developer-Documentation-Offline-Archive/
     ├── 03_json_to_markdown.py
     ├── 04_markdown_to_pdf.py
     ├── 05_markdown_to_html.py
+    ├── 06_markdown_merge.py
     ├── update_check.py
     ├── update_pull.py
     └── update_status.py
