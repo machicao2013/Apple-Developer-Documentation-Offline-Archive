@@ -180,6 +180,9 @@ apple-docs-offline/
 │   ├── 04_markdown_to_pdf.py  # Generate PDFs from Markdown
 │   ├── 05_markdown_to_html.py # Generate browsable HTML site
 │   ├── 06_markdown_merge.py   # Merge markdown files to reduce file count
+│   ├── 07_discover_appstore_help.py    # App Store Connect Help crawler
+│   ├── 08_download_appstore_html.py    # HTML content downloader
+│   ├── 09_html_to_markdown.py          # HTML to Markdown converter
 │   ├── update_check.py        # Check for updates (git fetch)
 │   ├── update_pull.py         # Download updates (git pull)
 │   ├── update_status.py       # Show status (git status)
@@ -363,6 +366,9 @@ python scripts/03_json_to_markdown.py --help
 python scripts/04_markdown_to_pdf.py --help
 python scripts/05_markdown_to_html.py --help
 python scripts/06_markdown_merge.py --help
+python scripts/07_discover_appstore_help.py --help
+python scripts/08_download_appstore_html.py --help
+python scripts/09_html_to_markdown.py --help
 python scripts/update_check.py --help
 python scripts/update_pull.py --help
 python scripts/update_status.py --help
@@ -521,6 +527,35 @@ Processing: storekit
 - Storage systems with file count limits (e.g., cloud storage, note-taking apps)
 - Easier distribution as single-file packages
 - Simplified backups
+
+### Scrape App Store Connect Help Documentation
+
+Download the HTML-based help documentation from App Store Connect:
+
+```bash
+# Step 1: Discover all help pages
+python scripts/07_discover_appstore_help.py
+
+# Step 2: Download HTML content
+python scripts/08_download_appstore_html.py
+
+# Step 3: Convert to Markdown
+python scripts/09_html_to_markdown.py
+```
+
+**Output:** `markdown/appstore-connect/*.md` - Clean markdown files
+
+**Features:**
+- ✅ Crawls navigation to discover all pages
+- ✅ Extracts main content from HTML
+- ✅ Converts to clean, AI-readable Markdown
+- ✅ Generates filenames from page titles
+- ✅ Resume support for interrupted operations
+
+**Expected Results:**
+- **~200-300 pages** from App Store Connect Help
+- **~5-10 MB** markdown storage
+- **~15-25 minutes** total time
 
 ### Complete Archive Structure
 
