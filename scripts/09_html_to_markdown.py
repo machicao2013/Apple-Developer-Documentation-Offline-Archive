@@ -189,14 +189,14 @@ class AppStoreHtmlToMarkdown:
         if thead:
             header_row = thead.find('tr')
             if header_row:
-                cells = [th.get_text().strip() for th in header_row.find_all(['th', 'td'])]
+                cells = [self.convert_children(th).strip() for th in header_row.find_all(['th', 'td'])]
                 rows.append('| ' + ' | '.join(cells) + ' |')
                 rows.append('| ' + ' | '.join(['---'] * len(cells)) + ' |')
 
         # Process body
         tbody = table.find('tbody') or table
         for tr in tbody.find_all('tr'):
-            cells = [td.get_text().strip() for td in tr.find_all(['td', 'th'])]
+            cells = [self.convert_children(td).strip() for td in tr.find_all(['td', 'th'])]
             if cells:  # Skip empty rows
                 rows.append('| ' + ' | '.join(cells) + ' |')
 
