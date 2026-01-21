@@ -180,9 +180,9 @@ apple-docs-offline/
 │   ├── 04_markdown_to_pdf.py  # Generate PDFs from Markdown
 │   ├── 05_markdown_to_html.py # Generate browsable HTML site
 │   ├── 06_markdown_merge.py   # Merge markdown files to reduce file count
-│   ├── 07_discover_appstore_help.py    # App Store Connect Help crawler
-│   ├── 08_download_appstore_html.py    # HTML content downloader
-│   ├── 09_html_to_markdown.py          # HTML to Markdown converter
+│   ├── 07_discover_appstore_help.py    # NEW: App Store Connect Help crawler
+│   ├── 08_download_appstore_html.py    # NEW: HTML content downloader
+│   ├── 09_html_to_markdown.py          # NEW: HTML to Markdown converter
 │   ├── update_check.py        # Check for updates (git fetch)
 │   ├── update_pull.py         # Download updates (git pull)
 │   ├── update_status.py       # Show status (git status)
@@ -363,12 +363,6 @@ All scripts support `--help`:
 python scripts/01_discover_docs.py --help
 python scripts/02_download_json.py --help
 python scripts/03_json_to_markdown.py --help
-python scripts/04_markdown_to_pdf.py --help
-python scripts/05_markdown_to_html.py --help
-python scripts/06_markdown_merge.py --help
-python scripts/07_discover_appstore_help.py --help
-python scripts/08_download_appstore_html.py --help
-python scripts/09_html_to_markdown.py --help
 python scripts/update_check.py --help
 python scripts/update_pull.py --help
 python scripts/update_status.py --help
