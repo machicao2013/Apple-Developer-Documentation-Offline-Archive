@@ -11,7 +11,16 @@
       "Bash(pandoc:*)",
       "Bash(python:*)",
       "Bash(ls:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Skill(superpowers:brainstorming)",
+      "Bash(git add docs/plans/2026-01-21-appstore-connect-help-scraper-design.md)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd design document for App Store Connect Help scraper\n\nDesign for three new scripts \\(07-09\\) to scrape and convert\nApp Store Connect Help documentation to Markdown format.\n\nFollows existing project patterns:\n- 07_discover_appstore_help.py: Navigation crawler\n- 08_download_appstore_html.py: HTML downloader\n- 09_html_to_markdown.py: Markdown converter\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Skill(superpowers:writing-plans)",
+      "Skill(superpowers:subagent-driven-development)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git show:*)",
+      "Bash(test:*)"
     ],
     "deny": [],
     "ask": []
