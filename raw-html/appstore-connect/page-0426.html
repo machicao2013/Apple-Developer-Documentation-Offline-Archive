@@ -1,0 +1,442 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="3.0">
+<h1>Pre-Order Report</h1>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/pre-order-report#sample-pre-order-report">sample report</a>.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Pre-order report field definitions" class="table-4-col table-4-col-even table-no-center-align table-custom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Report Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Values</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Provider</p>
+</td>
+<td>
+<p>CHAR(5) - APPLE</p>
+</td>
+<td>
+<p>Up to 5 Characters</p>
+</td>
+<td>
+<p>Service provider in your reports (typically Apple).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Provider Country</p>
+</td>
+<td>
+<p>CHAR(2) - US</p>
+</td>
+<td>
+<p>Up to 2 Characters</p>
+</td>
+<td>
+<p>Service provider country code (typically US).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SKU</p>
+</td>
+<td>
+<p>VARCHAR(100)</p>
+</td>
+<td>
+<p>Up to 100 Characters</p>
+</td>
+<td>
+<p>Product identifier provided by you during app setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer</p>
+</td>
+<td>
+<p>VARCHAR(4000)</p>
+</td>
+<td>
+<p>Up to 4000 Characters</p>
+</td>
+<td>
+<p>Provided by you during the initial account setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>VARCHAR(600)</p>
+</td>
+<td>
+<p>Up to 600 Characters</p>
+</td>
+<td>
+<p>Provided by you during app setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pre-Order Start Date</p>
+</td>
+<td>
+<p>DATE</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>Date the app becomes available for pre-order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pre-Order End Date</p>
+</td>
+<td>
+<p>DATE</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>Last date the app is available for pre-order, after which the app is available for sale.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Ordered</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Aggregated number of pre-orders for the period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Canceled</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Aggregated number of canceled pre-orders for the period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cumulative Ordered</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Total number of pre-orders since the start of the pre-order period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cumulative Canceled</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Total number of canceled pre-orders since the start of the pre-order period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start Date</p>
+</td>
+<td>
+<p>DATE</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>Start date of report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End Date</p>
+</td>
+<td>
+<p>DATE</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>End date of report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country Code</p>
+</td>
+<td>
+<p>CHAR(2)</p>
+</td>
+<td>
+<p>Up to 2 Characters</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region of the pre-order. For more information, visit <a href="/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies">Financial report regions and currencies</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="no-glossary">Apple Identifier</span></p>
+</td>
+<td>
+<p>DECIMAL(18,0)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Apple ID for your app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>VARCHAR(10)</p>
+</td>
+<td>
+<p>Up to 10 Characters</p>
+</td>
+<td>
+<p>Type of device used for purchase: Values include iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Supported Platforms</p>
+</td>
+<td>
+<p>VARCHAR(12)</p>
+</td>
+<td>
+<p>Up to 12 Characters</p>
+</td>
+<td>
+<p>List of platforms that your app supports: iOS, macOS, tvOS, iOS and tvOS, visionOS, or iOS and visionOS.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Category</p>
+</td>
+<td>
+<p>VARCHAR(50)</p>
+</td>
+<td>
+<p>Up to 50 Characters</p>
+</td>
+<td>
+<p>Indicates the category of the app, such as Games.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client</p>
+</td>
+<td>
+<p>VARCHAR(30)</p>
+</td>
+<td>
+<p>Up to 30 Characters</p>
+</td>
+<td>
+<p>Indicates where the purchase happened: App Store, App Store for iMessage, or blank.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-pre-order-report">
+<h3>Sample Pre-Order Report</h3>
+<div>
+<h3>Pre-Orders</h3>
+<div class="table-wrapper">
+<table aria-label="Scenario 1: Pre-Orders" class="table-8-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">PreOrder Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Ordered</p>
+</th>
+<th scope="col">
+<p class="TableHead">Canceled</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cumulative Ordered</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cumulative Canceled</p>
+</th>
+<th scope="col">
+<p class="TableHead">Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">End Date</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>12/6/2017</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>150</p>
+</td>
+<td>
+<p>25</p>
+</td>
+<td>
+<p>12/17/2017</p>
+</td>
+<td>
+<p>12/25/20177</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>App One has 10 pre-orders and 2 cancelations for the selected date range of 12/17/2017 - 12/25/2017, and has a cumulative total of 150 pre-orders and 25 cancelations since the pre-order began on 12/06/2017.</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Pre-Orders" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Ordered</p>
+</th>
+<th scope="col">
+<p class="TableHead">Canceled</p>
+</th>
+<th scope="col">
+<p class="TableHead">Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">End Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Device</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Two</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>12/17/2017</p>
+</td>
+<td>
+<p>12/25/2017</p>
+</td>
+<td>
+<p>iPhone</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Two</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>12/17/2017</p>
+</td>
+<td>
+<p>12/25/2017</p>
+</td>
+<td>
+<p>iPad</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>App Two has 10 pre-orders and 2 cancelations on iPhone, and 5 pre-orders and 1 cancelation on iPad during the selected date range of 12/17/2017 - 12/25/2017.</p>
+<img src="/help/app-store-connect/reference/reporting/pre-order-report/images/sample-pre-order-report_2x.png"/>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</link></article> </div>

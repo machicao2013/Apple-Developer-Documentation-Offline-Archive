@@ -1,0 +1,57 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="4.0">
+<h1>Apple-hosted asset pack size limits</h1>
+<p>There are limits on the amount of storage used by Apple-hosted asset packs when you upload to App Store Connect. The table below outlines the different size limits for these asset packs. These limits are shared across all platforms offered for your app.</p>
+<p>You can make additional space available by archiving asset packs. This removes all versions of an asset pack from App Store Connect, including those being tested in TestFlight and live on the App Store. <a href="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs#archive-asset-packs">Learn more.</a></p>
+<div class="table-wrapper">
+<table aria-label="Maximum build file sizes" class="table-3-col table-3-col-middle-wide table-no-center-align">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Item</p>
+</th>
+<th scope="col">
+<p class="TableHead">Size limit description</p>
+</th>
+<th scope="col">
+<p class="TableHead">Size limit</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Asset pack total</p>
+</td>
+<td>
+<p>The total sum of size usage for all asset packs uploaded to an app record in App Store Connect.</p>
+<p>For each asset pack in App Store Connect, Apple calculates the maximum size over all versions that are eligible to be tested in TestFlight or submitted for App Store distribution. This calculation doesn’t include versions that have the Awaiting Upload, Processing, or Failed TestFlight status, nor those that have the Superseded status for both TestFlight and the App Store. Then, the maximum size of each asset pack is added together to reach the <i>asset pack total</i>.</p>
+<p>For example, AssetPackID1 has two versions: version 1 is 4 GB, and version 2 is 2 GB. AssetPackID2 has one version: version 1 is 1 GB. The asset pack total for this app is 5 GB, since the maximum size for AssetPackID1 is 4 GB and the maximum size for AssetPackID2 is 1 GB.</p>
+<p>If you upload a new asset pack version and reach 80% or more of the asset pack total limit, you'll be notified via email. A banner will also display on the asset pack page in the TestFlight section of App Store Connect.</p>
+</td>
+<td>
+<p>200 GB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Asset pack count</p>
+</td>
+<td>
+<p>The total number of asset packs that are allowed to be uploaded to an app record in App Store Connect.</p>
+</td>
+<td>
+<p>100</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs">Overview of Apple-hosted asset packs</a>
+<a href="/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs">Upload Apple-hosted asset packs</a>
+<a href="https://developer.apple.com/documentation/backgroundassets/downloading-apple-hosted-asset-packs">Downloading asset packs hosted by Apple</a>
+</div>
+</article> </div>

@@ -1,0 +1,151 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Getting paid</span>
+<article _v="7.0">
+<h1>Download financial reports</h1>
+<p>Financial reports show your monthly proceeds, as well as final unit sales by country or region and order type. They’re automatically generated once a month, based on Apple’s <a href="https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=fiscalcalendar" target="_blank">fiscal calendar</a>, and are only generated if there are purchases or refunds during that fiscal period.</p>
+<p>Financial reports for the previous fiscal month's earnings are available by the first Friday of the current fiscal month. You can sign up to receive email notifications as soon as your financial reports are available each month. <a href="/help/app-store-connect/manage-your-team/view-and-edit-your-profile#set-email-notifications">Learn more.</a> Financial reports remain available for a period of ten years from the reporting date.</p>
+<p>You can manually download reports from App Store Connect. <a href="https://developer.apple.com/documentation/appstoreconnectapi">Learn how to download sales and financial reports using the App Store Connect API.</a></p>
+<p>There are four types of reports available.</p>
+<div class="Subhead">
+<h2>All Countries or Regions (Detailed)</h2>
+<p>This detailed financial report covers all locations in which you have sales on the App Store and includes the transaction and settlement dates for purchases. It’s available once all respective individual currency reports are available, starting with your March 2020 report.</p>
+</div>
+<div class="Subhead">
+<h2>All Countries or Regions (Single File)</h2>
+<p>This consolidated financial report covers all locations in which you have sales on the App Store, and is based on processed and settled transactions during the Apple fiscal month. It’s available once all respective individual currency reports are available, starting with your March 2020 report.</p>
+</div>
+<div class="Subhead">
+<h2>All Countries or Regions (Multiple Files)</h2>
+<p>Separate financial reports cover each location in which you have sales on the App Store and are based on processed and settled transactions during the Apple fiscal month. If you change the location where your products are available for sale, the number of reports you receive may increase or decrease accordingly. The introduction of new currencies for customers on the App Store may lead to more reports.</p>
+</div>
+<div class="Subhead">
+<h2>Transaction tax report (Single File)</h2>
+<p>This summary report covers the sales tax, use tax, goods and services tax, and other similar taxes applied on your transactions in the US and Canada. The report is summarized at a tax rate and jurisdiction level, and is available the first full month after you've <a href="/help/app-store-connect/manage-app-information/set-a-tax-category/">configured your tax category settings</a>.</p>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, or <span class="force-glossary">Finance</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="download-and-view-financial-reports-from-app-store-connect">
+<h3>Download and view financial reports from App Store Connect</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the homepage, click Payments and Financial Reports.</p>
+</li>
+<li>
+<p>In the top-right corner, click Create Reports.</p>
+</li>
+<li>
+<p>Select the fiscal month for the report you'd like to download.</p>
+</li>
+<li>
+<p>Select which locations you'd like to include in your report. By default, this is set to All Countries or Regions (Multiple Files).</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>When All Territories is selected, an App Store Connect user can only download the reports for which they have access.</p>
+</div>
+</li>
+<li>
+<p>Click Create Reports. A status bar will display showing progress of your reports being created.</p>
+</li>
+<li>
+<p>When reports are ready, a download link will be provided. Click Download Reports.</p>
+</li>
+<li>
+<p>Unzip the compressed GZIP (<code>.gz</code>) file by opening it or using a utility.</p>
+</li>
+<li>
+<p>Open the extracted tab-delimited text (<code>.txt</code>) file in a spreadsheet application.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="download-and-view-the-transaction-tax-report-from-app-store-connect">
+<h3>Download and view the transaction tax report from App Store Connect</h3>
+<div>
+<p>The monthly transaction tax report shows the sales tax, use tax, goods and services tax, and other similar taxes that Apple applies to your transactions in the US and Canada. Apple’s tax calculation service uses multiple inputs to calculate tax on customer transactions in the jurisdictions where we administer tax, including your tax category selection in App Store Connect, app metadata, legal entity status, customer attributes, and other requirements in accordance with the local laws and regulations.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To review input taxes, adjustments, or withholding taxes for a region, please locate the Taxes and Adjustments field in your <a href="https://appstoreconnect.apple.com/itc/payments_and_financial_reports#/">Payments and Financial Reports</a>. These taxes aren’t included in the Transaction tax report.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In the homepage, click Payments and Financial Reports.</p>
+</li>
+<li>
+<p>On the top right, click Create Reports.</p>
+</li>
+<li>
+<p>In the date picker, choose a month.</p>
+</li>
+<li>
+<p>In the menu, select Transaction Tax Report.</p>
+</li>
+<li>
+<p>Click Create Reports.</p>
+</li>
+<li>
+<p>When the reports are ready, click Download Reports.</p>
+</li>
+</ol>
+<p><a href="/help/app-store-connect/reference/reporting/transaction-tax-report-fields">Learn more about transaction tax report fields.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="download-and-view-reports-for-Windows-users">
+<h3>Download and view reports for Windows users</h3>
+<div>
+<p>If you're using Microsoft Windows, you may need to take additional steps to open your financial reports.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the homepage, click <a href="https://appstoreconnect.apple.com/itc/payments_and_financial_reports#/" target="_blank">Payments and Financial Reports</a>.</p>
+</li>
+<li>
+<p>In the top-right corner, click Create Reports.</p>
+</li>
+<li>
+<p>Select the fiscal month for the report you'd like to download.</p>
+</li>
+<li>
+<p>Click Create Reports. A status bar will display showing progress of your reports being created.</p>
+</li>
+<li>
+<p>When the reports are ready, click Download Reports.</p>
+</li>
+<li>
+<p>Unzip the compressed GZIP (<code>.gz</code>) file by opening it or using a utility.</p>
+</li>
+<li>
+<p>Once extracted, you’ll have a tab-delimited text file (<code>xxx.txt</code>). If your system doesn’t know how to open it, a dialog with a list of apps to choose from will display. Select WinZip or a WinZip-equivalent application to extract the file.</p>
+</li>
+<li>
+<p>Launch Microsoft Excel.</p>
+</li>
+<li>
+<p>In the File menu in Excel, choose Open and the file name. The Import Wizard will start.</p>
+</li>
+<li>
+<p>In the Original data type box, select Delimited and click Next.</p>
+</li>
+<li>
+<p>In the Delimiters box, select Tab and click Next.</p>
+</li>
+<li>
+<p>Select the columns titled UPC, ISRC, and Vendor Identifier by holding the shift key and clicking the top of each column. Once selected, in the top-right Column Data Format box, choose Text. The label above those three columns will change from General to Text.</p>
+</li>
+<li>
+<p>Click Finish.</p>
+</li>
+<li>
+<p>Once the file opens, save it as an Excel Workbook.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/reporting/financial-report-fields">Financial report fields</a>
+<a href="/help/app-store-connect/reference/reporting/apple-legal-entities">Apple legal entities</a>
+<a href="/help/app-store-connect/reference/reporting/product-type-identifiers">Product type identifiers</a>
+</div>
+</link></article> </div>

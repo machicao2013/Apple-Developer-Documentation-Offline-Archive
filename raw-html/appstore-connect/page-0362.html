@@ -1,0 +1,207 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="3.0">
+<h1>Challenges</h1>
+<p><a href="/help/app-store-connect/configure-game-center/manage-challenges">Learn how to configure challenges in App Store Connect.</a></p>
+<div class="Subhead anchor-scroll-top" id="challenges-properties">
+<h2>Challenges properties</h2>
+</div>
+<div class="table-wrapper">
+<table aria-label="challenges properties" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Properties</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reference Name</p>
+</td>
+<td>
+<p>An internal name that you must provide for each challenge. It can be up to 255 alphanumeric characters and spaces. This is the name that you use if you search for your challenges in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Challenge ID</p>
+</td>
+<td>
+<p>A chosen alphanumeric identifier for your challenge. It can be up to 100 alphanumeric characters, spaces, and periods (assumes single-byte characters). Your challenge ID is a permanent setting and can't be changed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Repeatable</p>
+</td>
+<td>
+<p>For repeatable gameplay, players can choose from the options 1 try, 3 tries, and unlimited tries. For instance, if you select "3 tries" for Repeatable and "1 day" for Duration, the player with the highest score in 3 rounds within a 24-hour countdown wins.</p>
+<p>For non-repeatable gameplay, players can only attempt a challenge with 1 try.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Associated Leaderboard</p>
+</td>
+<td>
+<p>The selected leaderboard will be used as the basis for challenge.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default image</p>
+</td>
+<td>
+<p>An image that represents your challenge across all localizations. It appears in Game Center when someone is playing the challenge. The image must be a .jpeg, .jpg, or .png file that’s 3840 x 2160 pixels, at least 72 ppi, no transparency and in the RGB color space.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="challenge-language-properties">
+<h2>Challenge language properties</h2>
+<p>Challenge language properties collect language-specific text used in challenge’s display. You must include these properties for at least one language.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Challenge language properties" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Localization</p>
+</td>
+<td>
+<p>The language in which your challenge appears. There must be at least one language defined.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Display Name</p>
+</td>
+<td>
+<p>The display name of the challenge in the specified language. For example, if you choose Finnish from the Language menu, enter the Finnish name for the challenge.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>A short description that helps players understand the details of the challenge.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Image</p>
+</td>
+<td>
+<p>A localized image that represents the challenge. The image must be a .jpeg, .jpg, or .png file that’s 3840 x 2160 pixels, at least 72 ppi, no transparency and in the RGB color space. If you don't provide this image, the default image will display.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="challenge-statuses">
+<h2>Challenge statuses</h2>
+<p>Challenge statuses indicate whether the challenge has been approved and made live with the app.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Challenge statuses" class="table-2-col table-2-col-wide-middle">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Prepare for Submission</p>
+</td>
+<td colspan="6">
+<p>You’ve created a Game Center component in App Store Connect but you're still preparing information for it.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Review</p>
+</td>
+<td colspan="6">
+<p>You’ve entered all of the required metadata for your Game Center component and indicated that you intend to submit it for review, but haven’t submitted it yet.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="6">
+<p>Apple received your submission, but hasn’t started the review.</p>
+<p>While you're waiting for the review, you can <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">remove your Game Center component from submission</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="6">
+<p>App Review is reviewing your Game Center component.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Accepted</p>
+</td>
+<td colspan="6">
+<p>This Game Center component has been accepted, but one or more items in your submission were rejected.</p>
+<p>The component can only publish when all items in the submission are accepted. You can edit the rejected items and resubmit, or remove them from the submission to move forward with the currently accepted items.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Live</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component has been accepted and is ready for distribution.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component wasn't accepted. App Review notifies App Store Connect users with the Admin, App manager, or Developer role with the issues.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Rejected</p>
+</td>
+<td colspan="6">
+<p>You <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">removed your Game Center component from review</a>. When you’re ready, resubmit your component.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article> </div>

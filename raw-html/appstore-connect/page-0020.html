@@ -1,0 +1,42 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="9.0">
+<h1>Overview of Game Center</h1>
+<p>Game Center is Apple’s social gaming network that lets players track their progress, invite friends to play, start multiplayer games through auto-match, and more. It also boosts the discovery of your games across players’ devices. Once you’ve implemented Game Center features, you’re ready to enter related metadata in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To add a game with Game Center features to a new app bundle, the game must be “Ready for Distribution" on at least one App Store storefront. For games distributed through <a href="/support/dma-and-apps-in-the-eu">alternative distribution</a>, availability on at least one App Store storefront is required to utilize Game Center functionality.</p>
+</div>
+<p>You can complete the steps below in the order they're listed or move between steps as needed.</p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<div class="Task no-header">
+<ol class="compound-item-list">
+<li>
+<p><b>Enable Game Center in Xcode.</b></p>
+<p>In Xcode, create your project, enter an app name and bundle ID, then enable Game Center, which adds the GameKit framework and Game Center Entitlement to your project. <a href="https://developer.apple.com/documentation/gamekit/enabling_and_configuring_game_center">Learn more about enabling Game Center in Xcode.</a></p>
+</li>
+<li>
+<p><b>Configure Game Center in App Store Connect.</b></p>
+<p>In App Store Connect, <a href="/help/app-store-connect/create-an-app-record/add-a-new-app">add an app to your account</a> that matches the bundle ID in Xcode, <a href="/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center">enable your app version for Game Center</a>, and <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">configure Game Center components</a>, such as <a href="/help/app-store-connect/configure-game-center/manage-leaderboards">leaderboards</a>, <a href="/help/app-store-connect/configure-game-center/manage-achievements">achievements</a>, <a href="/help/app-store-connect/configure-game-center/manage-challenges">challenges</a>, <a href="/help/app-store-connect/configure-game-center/manage-activities">activities</a>, <a href="/help/app-store-connect/configure-game-center/overview-of-game-center-groups">groups</a>, and <a href="/help/app-store-connect/configure-game-center/add-multiplayer-compatibility">multiplayer compatibility</a>.</p>
+</li>
+<li>
+<p><b>Implement Game Center features.</b></p>
+<p>To integrate Game Center into your app using Xcode, add the necessary code and configure the service's components. Although these components are set up independently from your app bundle, they must be closely integrated with your game's code to fulfill all design and development requirements. <a href="https://developer.apple.com/documentation/gamekit">Learn more.</a></p>
+<p><a href="https://developer.apple.com/design/human-interface-guidelines/game-center">Learn the guidance and best practices that can help you design a great experience for Game Center.</a></p>
+</li>
+<li>
+<p><b>Test your game.</b></p>
+<p>Ensure that your Game Center components work individually and together. Apple enables all prerelease development to take place in the same server environment as released games, so you can play with the full player base, not just other testers.</p>
+</li>
+<li>
+<p><b>Distribute your game.</b></p>
+<p>Add your Game Center components to your desired platform version before submitting your game for review.</p>
+</li>
+</ol>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/game-center/">Game Center</a>
+<a href="https://games.apple.com">Games</a>
+<a href="https://developer.apple.com/videos/play/tech-talks/110366/">Use Game Center to boost discovery and engagement</a>
+</div>
+</article> </div>

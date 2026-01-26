@@ -1,0 +1,104 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="2.0">
+<h1>Larger Text evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Users can adjust the size of text and icons to make them more legible, visible, and comfortable to read.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. Ensuring that extra large fonts work well in your app makes the interface more convenient and accessible to more people. While some low-vision or legally blind users may be able to manage default font sizes by using screen zoom or holding their device extremely close to see the text and small icons in your app, this isn't a good user experience.</p>
+<p>The following sections provide more detail about how to determine whether your app supports Larger Text well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Larger Text</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>Most accessibility guidelines recommend allowing users to enlarge their text to, at minimum, 200% larger than the default size. For some low-vision users, 200% may still not be enough, so you should strive to allow body text to scale as large as possible, while still retaining reasonable usability in your app. <a href="https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type">Dynamic Type</a> on iOS, for example, allows body text sizes over 300%, but developers sometimes forget to test their apps at the largest sizes, leading to overly truncated or overlapping text in some cases.</p>
+<p>Be sure to design for and test small, medium, large, and extra large accessibility sizes.</p>
+<p>While you’re not required to use Apple frameworks to indicate support for Larger Text, we recommend reviewing how Apple’s system apps respond to the systemwide settings to understand what a good experience is like for users. If you offer your own in-app setting, it should either support similar functionality to the systemwide setting, or offer more granular user interface customization.</p>
+<p>To ensure proficiency in testing with larger text, review the linked resources below to learn how to adjust the system text size settings for each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, watch <a href="https://www.youtube.com/watch?v=_R0mpzMkSjI">“How to adjust text size on iPhone or iPad”</a> and visit <a href="https://support.apple.com/guide/iphone/iph3c076905a">Make text easier to read on iPhone</a>.</p>
+</li>
+<li>
+<p>For iPad, watch <a href="https://www.youtube.com/watch?v=_R0mpzMkSjI">“How to adjust text size on iPhone or iPad”</a> and visit <a href="https://support.apple.com/guide/ipad/ipad9a246013">Make text easier to read on iPad</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tan5b0340be2">Text display settings on Apple Vision Pro</a>.</p>
+</li>
+<li>
+<p>For Apple Watch, visit <a href="https://support.apple.com/guide/watch/apd766b7bd85">Adjust text size and other visual settings on Apple Watch</a>.</p>
+</li>
+</ul>
+</div>
+<h2>Indicating support for Larger Text</h2>
+<div class="spacing-bottom">
+<p>You may indicate your app supports Larger Text if users can enlarge the text to at least 200% (or 140% on watchOS apps.) Ideally, users should have the option to resize text and meaningful icons even more. Most text in the main views should increase in size without negatively impacting readability due to an overlapping layout or severe truncation. If you have controls that can't reasonably increase in size, review the details below for other ways to make those perceivable, usable, and understandable.</p>
+<p>Don’t rely on system-provided assistive technology like <i>Zoom</i> or <i>Hover Text</i> to claim support for Larger Text. These features are available to users regardless of your app’s implementation, so users will already be aware that they can enlarge most or all on-screen text to a sufficient size using Zoom or Hover Text.</p>
+<p>The Larger Text label is useful to users of your app as a way to determine whether the user interface of your app supports font size enlargement separate from these built-in features like Zoom. You may indicate support for Larger Text if your app’s UI supports enlarging text to 200% or more than the default size, either by using an Apple-provided feature like <a href="https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type">Dynamic Type</a>, or by using your own in-app font size control.</p>
+<p>You’re not required to adopt Apple frameworks to indicate support for Larger Text, but we recommend detecting when a user has Apple system settings enabled so they don’t have to manually update another setting for the app to function as expected. If you offer your own in-app setting that has additional customization or granular controls, you may not need to use the Apple system setting.</p>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+<p><b>Use the system font size, or manage your own.</b></p>
+<p>Most iOS apps typically use <a href="https://developer.apple.com/design/human-interface-guidelines/typography#Supporting-Dynamic-Type">Dynamic Type</a>, but some developers of games or apps that rely heavily on the use of text may choose to manage their own font sizes with an in-app setting. You're not required to use an Apple API like Dynamic Type to indicate support for Larger Text, but for most apps, using the system frameworks is often easier and better than implementing your own.</p>
+<p>Apple Books is a good example of an app that supports larger text well, but doesn’t rely on Dynamic Type. While the Books app doesn’t leverage the system font size setting, it offers more granular controls. For example, users can change text to their preferred size, and the app’s layout changes from two columns to a single column at larger text sizes in landscape orientation, so that low-vision users can perceive more words in an uninterrupted line of text.</p>
+<p>Safari on iOS is another great example of an app with a custom font size controller. Since not all web pages scale to larger text sizes well, Safari allows users to adjust the font size for each site they visit. If your app uses a web view as part of its common tasks, provide a font size controller or let Safari handle this task for your users.</p>
+<figure style="width: 50%;"><img alt="Screenshot of an iPhone displaying enlarged text. A Reader settings overlay is visible, with buttons to increase and decrease the font size." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria/images/larger-text-1_2x.png"/></figure>
+<p class="spacing-top"><b>Use responsive design principles to adjust layout and information hierarchy based on needed text size.</b></p>
+<p>Consider which text to enlarge to reinforce a clear information hierarchy to low-vision users of your app, and prioritize scaling the main content areas before repeated, predictable navigational elements.</p>
+<p>On devices with smaller screens, you should also consider the value of screen real estate when determining which elements to scale. For example, the Back and Edit buttons remain small in the example below since they are repeated, predictable, but secondary elements of the user interface. Meanwhile, primary content and action buttons are enlarged and take advantage of the space available by extending elements to a full screen-width and lengthening the page. Vertical scrolling is preferred by low-vision users to avoid difficulty perceiving small sizes for primary content and action buttons. As seen in the example below, note that the layout of the message sender, receiver, and date, changes from horizontal to vertical to take advantage of the larger, more readable text size.</p>
+<figure style="width: 69%;"><img alt="Apple Mail app showing an email at smaller and larger font size. Several interface elements are re-flowed to allow more room for the larger text." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria/images/larger-text-2_2x.png"/></figure>
+<p>Keep in mind that some features, like Tab Bars, don’t grow with dynamic text to avoid overlapping valuable screen estate. Consider other ways to make those elements accessible, such as the Large Content Viewer.</p>
+<figure style="width: 60%; margin-left: 5%;"><img alt="" class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria/images/larger-text-3_2x.png"/></figure>
+<p class="spacing-top"><b>Avoid overlapping text and excessive or unusable truncation.</b></p>
+<p>Scaling text to 200% or larger may result in unpredictable scenarios that require design consideration and testing, especially on devices with smaller screens. As text is enlarged, consider how that changes the experience:</p>
+<ul>
+<li>
+<p>Content may overlap making it difficult to read.</p>
+</li>
+<li>
+<p>Content that was originally designed for a single line might become truncated, resulting in users only seeing the first several characters. </p>
+</li>
+</ul>
+<p>Follow these principles for a great experience: </p>
+<ul>
+<li>
+<p>Avoid overlapping text.</p>
+</li>
+<li>
+<p>Avoid truncating text to the point that it becomes unreadable or ambiguous for the user. Consider allowing the text to wrap to two or more lines instead of truncation.</p>
+</li>
+<li>
+<p>If text is truncated, ensure that users are still able to access the same information as if the text were smaller. For example, in a list view, you can truncate text to a single line or two as long as the full text is available in a different view so users can dive into the details. </p>
+</li>
+<li>
+<p>Test your app's larger text layout with different languages. In addition to languages with a longer average word length, test right-to-left languages and those with larger ascenders, descenders, and diacritics that may by clipped by layout constraints.</p>
+</li>
+</ul>
+</div>
+<h2>Larger Text on watchOS apps</h2>
+<div class="spacing-bottom">
+<p>Due to the significantly smaller screens on Apple Watch, the largest Dynamic Type size on watchOS is about 150% larger than the default size, so watchOS app developers may indicate support for Larger Text by supporting at least 140% larger than the default size for body text or other primary content.</p>
+<figure><img alt="Apple Watch Settings, displaying the default font size and the maximum font size." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria/images/larger-text-5_2x.png"/></figure>
+<p>You might also consider some of the techniques employed by the X-Large watch faces, where each complication can be set up as its own watch face, taking advantage of the full screen size. Low-vision users can still view multiple complications (including your app’s watch face complications) by swiping through each of their saved watch faces.</p>
+<figure><img alt="Apple Watch Ultra displaying the X-Large watch face which displays a single, large complication. Low vision users can add multiple X-Large watch faces, and swipe between them to see different types of information." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria/images/larger-text-6_2x.png"/></figure>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Larger Text in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Larger Text every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/videos/play/wwdc2024/10074/">Watch “Get started with Dynamic Type”</a>
+<a href="/videos/play/wwdc2019/261/">Watch “Large Content Viewer - Ensuring Readability for Everyone”</a>
+<p>Human Interface Guidelines &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/accessibility#Vision">Vision</a></p>
+<p class="no-margin-top">Human Interface Guidelines &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/typography">Typography</a></p>
+<a href="https://developer.apple.com/documentation/uikit/scaling-fonts-automatically">Scaling Fonts Automatically</a>
+<a href="https://developer.apple.com/documentation/swiftui/applying-custom-fonts-to-text/">Applying custom fonts to text</a>
+</div>
+</article> </div>

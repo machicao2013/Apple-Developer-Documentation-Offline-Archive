@@ -1,0 +1,119 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage subscriptions</span>
+<article _v="6.0">
+<h1>Set up promotional offers for auto-renewable subscriptions</h1>
+<p>Apps on the App Store with auto-renewable subscriptions can provide a discounted price for a specific duration for existing and previously subscribed customers on iOS, macOS, and tvOS. You can use these offers to help win back subscribers who canceled their subscriptions or promote an upgrade to a higher-ranked subscription at a special price. Customers can accept the offer even if they've already accepted an introductory offer.</p>
+<p>To get started, <a href="/help/app-store-connect/configure-in-app-purchase-settings/generate-keys-for-in-app-purchases">generate keys for In-App Purchases</a>, create a promotional offer on your app's In-App Purchase page for each product, and choose a duration and offer type <a href="/help/app-store-connect/reference/pricing-and-availability/in-app-purchase-and-subscriptions-pricing-and-availability">(pay as you go, pay up front, free)</a>. You can have up to 10 active offers per subscription.</p>
+<p>Once you've created offers in App Store Connect, use Xcode 10.2 or later to implement the <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/implementing_subscription_offers_in_your_app">StoreKit APIs</a> to allow these offers to be accepted by customers running iOS 12.2, macOS 10.14.4, and tvOS 12.2, or later.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<p><a href="/app-store/subscriptions/">Get business guidance for auto-renewable subscriptions.</a></p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/auto-renewable_subscriptions/subscription_promotional_offers">Learn how to set up promotional offers with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-up-a-promotional-offer">
+<h3>Set up a promotional offer</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click the subscription, then go to the Subscription Prices section and click the add button (+).</p>
+</li>
+<li>
+<p>Select Create Promotional Offer.</p>
+<figure><img alt="Select Create Promotional offer screenshot" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions/images/subs-offer-set-up-step4_2x.png"/></figure>
+</li>
+<li>
+<p>Enter a Promotional Offer Reference Name and a Promotional Offer Identifier, then click Next.</p>
+<figure><img alt="Enter offer code and reference name pop up screenshot" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions/images/subs-offer-set-up-step5_2x.png"/></figure>
+</li>
+<li>
+<p>Choose Pay as you go, Pay up front, or Free, then choose the appropriate duration and the price for the selected country or region. To search from a larger list of price points, click See Additional Prices. Click Next.</p>
+<figure><img alt="Type of promotional offer pop up screenshot" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions/images/subs-offer-set-up-step6_2x.png"/></figure>
+</li>
+<li>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Make sure the details of your promotional offer are correct and click Confirm.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-a-promotional-offer">
+<h3>Edit a promotional offer</h3>
+<div>
+<p>Once you create a promotional offer, only the price can be edited. To edit the duration, type, or offer code, you must create a new offer.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click the subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>Navigate to the Promotional Offers tab, where you'll find all your promotional prices listed.</p>
+</li>
+<li>
+<p>Click the offer you'd like to edit.</p>
+</li>
+<li>
+<p>Choose a new price from the menu, and click recalculate to view the updated price in each country or region.</p>
+<figure><img alt="Promotional prices pop up screenshot" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions/images/subs-offer-edit-step6_2x.png"/></figure>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-promotional-offer">
+<h3>Delete a promotional offer</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click auto-renewable subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>Click the offer you'd like to delete, then click Delete Offer.</p>
+<figure><img alt="Promotional prices pop up screenshot" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions/images/subs-offer-delete-step4_2x.png"/></figure>
+</li>
+<li>
+<p>Confirm your changes in the dialogue.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/configure-in-app-purchase-settings/generate-keys-for-in-app-purchases">Generate keys for In-App Purchases</a>
+</div>
+</link></article> </div>

@@ -1,0 +1,48 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Create an app record</span>
+<article _v="11.0">
+<h1>Add platforms</h1>
+<p>You can add platforms to an app to create a universal purchase to let customers access your app and in‑app purchases across multiple platforms with a single purchase. For example, you can include the macOS, tvOS, and visionOS versions of your app within an existing iOS app. This distribution model lets customers obtain the iOS, macOS, tvOS, and visionOS together.</p>
+<p> Similar to creating a new version, a macOS, tvOS, visionOS app, or any combination of creating these platforms, uses the same Apple ID (an app identifier), <span class="force-glossary">SKU</span>, and bundle ID as the iOS app.</p>
+<p><b>iPhone and iPad.</b>  To offer your app on iPhone and iPad, your app needs to support both devices.</p>
+<p><b>Apple Watch.</b> To offer your app on iPhone and Apple Watch, <a href="https://developer.apple.com/documentation/watchkit/setting_up_a_watchos_project">create an iOS app in Xcode that includes a watchOS counterpart</a>. Upload both apps to App Store Connect from the same Xcode project. <a href="https://developer.apple.com/documentation/watchos-apps/creating-independent-watchos-apps/#">Watch-only apps</a> can’t be part of a universal purchase. <a href="/help/app-store-connect/create-an-app-record/add-watchos-app-information">Learn how to add watchOS app information.</a></p>
+<p><b>Mac Catalyst.</b> Apps built with <a href="/mac-catalyst/">Mac Catalyst</a> using <a href="https://developer.apple.com/downloads/">Xcode 11.4</a> or later can share a bundle ID with the iOS version of the app, supporting universal purchase. You can’t add additional platform versions to apps built with Mac Catalyst using Xcode 11.3 or earlier on the Mac App Store.</p>
+<p><b>Apple Vision Pro.</b> You can't make apps that have been in the Kids category available on visionOS.</p>
+<p><b>Multiple app records.</b> If your app is currently available on multiple platforms through separate app records, note that you can't merge them. To offer universal purchase, remove all but one version from sale, and add the other versions to the remaining app's record. Once you remove an app from sale, you make its original product page on the App Store unavailable, you're no longer able to provide updates to existing users. Ratings and reviews are not transferred to the new product page.</p>
+<p>When adding macOS, tvOS, visionOS, or any combination of these platforms, you must upload the builds for macOS, tvOS, and visionOS from a separate Xcode target. In the Xcode project, set the bundle IDs to match the iOS app's bundle ID. However, the apps for macOS, tvOS, and visionOS may each have different version numbers and build strings than the iOS app.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once App Store Review approves at least two platform versions, your app becomes available as a universal purchase. Once it’s a universal purchase, your app stays as universal purchase—not being able to remove a single platform version from the app record.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/create_an_app_store_version">Learn about adding a platform using App Store Connect API.</a></p>
+<p class="spacing-bottom"><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<div class="Task no-header">
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Add Platform.</p>
+</li>
+<li>
+<p>In the Add Platform dialog that appears, choose the platform you want to add, then click Add.</p>
+<p>A version for the platform appears selected in the sidebar with the version number 1.0. You can change the version number in the Version section in the sidebar under App Information.</p>
+<figure><img alt="Screenshot of Add Platform dialog on the app detail page that lists iOS, macOS, tvOS, and visionOS platform, which you can select for your app. The Cancel and Add buttons are at the bottom of the dialog." class="help-screens-retro" src="/help/app-store-connect/create-an-app-record/add-platforms/images/my-apps-add-platform_2x.png"/></figure>
+</li>
+<li>
+<p>Review and enter <span class="force-glossary">metadata</span> for the new platform version.</p>
+<p>When you add a platform, metadata from the existing platform version is transferred to the new one, except for the promotional text, description, and screenshots.</p>
+<p>Learn more about the <a href="/help/app-store-connect/reference/app-information/platform-version-information">platform version information</a> and its <a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">required, localizable, and editable properties.</a></p>
+</li>
+</ol>
+<p>The Account Holder or an administrator can delete a platform if a build has never been uploaded for the specified platform and at least one existing platform version is in <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">an editable app status</a>. To delete a platform, hold the pointer over the platform you want to delete, and then click the delete button (–), which will appear to the right of the platform.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-builds/upload-builds">Upload builds</a>
+<a href="/help/app-store-connect/manage-builds/choose-a-build-to-submit">Choose a build to submit</a>
+<a href="/help/app-store-connect/update-your-app/create-a-new-version">Create a new version</a>
+<a href="/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots">Upload app previews and screenshots</a>
+<a href="/help/app-store-connect/manage-app-information/add-an-app-icon">Add an app icon</a>
+<a href="/app-store/product-page/">Creating your product page</a>
+</div>
+</article> </div>

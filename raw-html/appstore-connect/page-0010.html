@@ -1,0 +1,153 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="25P">
+<h1>Manage challenges</h1>
+<p>Leaderboards allow players to measure and track their game progress. However, some players find it more engaging to top a friend’s score and challenge each other directly. Game Center facilitates this through challenges.</p>
+<p>Challenges are built on top of leaderboards and allow players to connect with their friends and participate in time-limited competitions. Players receive notifications when their friends challenge them or pass their score on a leaderboard.</p>
+<p>You can create up to 20 challenges per app. Challenges must be approved before they are available to players. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+<p>Learn how to configure <a href="https://developer.apple.com/documentation/gamekit/creating-engaging-challenges-from-leaderboards">challenges</a> and <a href="https://developer.apple.com/documentation/gamekit/creating-activities-for-your-game">activities</a> with the GameKit.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Specify details of your challenges directly in App Store Connect. The option to turn on challenges from the Legacy Challenges (Deprecated) section is no longer necessary.</p>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="configure-challenges">
+<h3>Configure challenges</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Challenges section, click Challenges.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<ul>
+<li>
+<p>If challenges exist, click the add button (+) in the Challenges section.</p>
+</li>
+<li>
+<p>You no longer have to turn on Challenges from the Legacy Challenges (Deprecated) section.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/challenges">reference name and challenge ID</a>.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/challenges">metadata for your challenge.</a></p>
+</li>
+<li>
+<p>Under the Associated Leaderboard section, click Choose a leaderboard.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<ul>
+<li>
+<p>If a leaderboard is already associated, click Edit in the Associated Leaderboard section. To remove the associated leaderboard, click Remove Association in the prompt.</p>
+</li>
+<li>
+<p>If this is the first leaderboard you’re adding to an app,  <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit it for review</a> with the challenge.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Choose a leaderboard you want to associate with your challenge.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+<li>
+<p>Under Challenge Localization section, add one or more languages by clicking Add Localization.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If localizations exist, click the add button (+) in the Challenge Localization section.</p>
+</div>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/challenges#challenge-language-properties">localization information</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>To add additional language support for your challenge, repeat the step 10 to 12 for each language.</p>
+<p>When you're ready, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit your challenge for review</a>.</p>
+</li>
+</ol>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>When you edit a localization that’s currently live in Game Center, a new version of the localization is created in “Prepare for Submission” state. Submit the edit with your next app version.</p>
+</div>
+<figure><img alt="A screenshot of the challenge detail page for 'The Coast.CapeCodChallenge', showing 'Prepare for Submission' status and completed fields including reference name, challenge ID, image, and associated leaderboard." class="help-screens-retro" src="/help/app-store-connect/configure-game-center/manage-challenges/images/manage-challenges_x2.png"/></figure>
+</div>
+</accordion-panel>
+<accordion-panel id="set-challenges-minimum-version">
+<h3>Set challenges minimum version</h3>
+<div>
+<p>To keep challenges fair between users on different game version, you can set a minimum version. This disables challenges for users with older versions of the game. If you make major changes to game mechanics that affect the leaderboard, consider raising the minimum version.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To set a minimum compatible version for challenges, at least one Game Center-enabled version of the app must be in Ready for Distribution status on at least one App Store storefront.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Challenges section, select “Set Challenges Minimum Version” from the ellipsis menu (…).</p>
+</li>
+<li>
+<p>Select the version information for the supported platforms.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-archive-or-unarchive-a-challenges">
+<h3>Delete, archive or unarchive a challenge</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Challenges section, select the challenge that you want to archive, unarchive, or delete.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If you’ve grouped your challenges, select that challenge that you want to archive, unarchive, or delete from the Group Challenges section.</p>
+</div>
+</li>
+<li>
+<p>Click Archive or Delete Challenge at the end of the page.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If a challenge is already archived, click 'Unarchive Challenge' to restore it.</p>
+</div>
+</li>
+<li>
+<p>Click Archive or Delete.</p>
+</li>
+</ol>
+<p>To view the list of archived challenge, click the ellipsis menu (…) within the Challenge section, and select View Archived Challenge.</p>
+<p>This may take up to 24 hours to go live through Game Center.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/gamekit">GameKit</a>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Submit Game Center components</a>
+</div>
+</link></article> </div>

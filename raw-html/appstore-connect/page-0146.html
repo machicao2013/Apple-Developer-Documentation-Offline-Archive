@@ -1,0 +1,126 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app information</span>
+<article _v="7.0">
+<h1>Upload app previews and screenshots</h1>
+<p>Use screenshots and app previews to visually communicate your app’s user experience. You can upload screenshots and app previews on the platform section of your app’s page in App Store Connect when the app has one of the following statuses:</p>
+<ul class="compound-item-list">
+<li>
+<p>Prepare for Submission</p>
+</li>
+<li>
+<p>Ready for Review</p>
+</li>
+<li>
+<p>Invalid Binary</p>
+</li>
+<li>
+<p>Rejected</p>
+</li>
+<li>
+<p>Metadata Rejected</p>
+</li>
+<li>
+<p>Developer Rejected</p>
+</li>
+</ul>
+<p>Learn the specifications for creating <a href="/help/app-store-connect/reference/app-information/screenshot-specifications">screenshots</a> and <a href="/help/app-store-connect/reference/app-information/app-preview-specifications">app previews</a> on iPhone, iPad, Mac, TV, Apple Vision Pro, and Apple Watch.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/uploading_assets_to_app_store_connect">Learn how to upload assets using the App Store Connect API.</a></p>
+<p>If your app's user interface is the same across multiple device sizes and localizations, provide only the highest resolution screenshots required. They automatically scale down to smaller device sizes.</p>
+<p>If you prefer not to use scaled versions, you can add specific screenshots and app previews for other device sizes and localizations using Media Manager. If a localized app preview is missing for <a href="/help/app-store-connect/manage-app-information/localize-app-information">your localized metadata</a>, the app preview in the next best available language will be used on App Store product pages and displayed to users when they install your app.</p>
+<p>For marketing guidelines, visit <a href="/app-store/product-page/"><i>Creating your product page</i></a> or <a href="/app-store/app-previews/"><i>Show more with app previews</i></a>.</p>
+<h3>Screenshot requirements:</h3>
+<p>You can upload a minimum of one and a maximum of ten screenshots in <code>.jpeg</code>, <code>.jpg</code>, and <code>.png</code> formats.</p>
+<h3>App preview requirements:</h3>
+<p>Providing an app preview is optional. You can upload up to three app previews per supported device size and language for iOS, macOS, tvOS, and visionOS apps. To create and upload an app preview, you must have:</p>
+<ul>
+<li>
+<p>A Mac running macOS 10.10 or later, with Safari 8 or later.</p>
+</li>
+<li>
+<p>A video editor, such as iMovie or Final Cut Pro X.</p>
+</li>
+<li>
+<p>An iPhone with a 6.5-inch display and iOS 8 or later installed, an iPad with a 13-inch display and iOS 8 or later installed, an Apple TV, or an Apple Vision Pro.</p>
+</li>
+</ul>
+<p><a href="/support/app-previews/">Learn how to create videos for app previews.</a></p>
+<p>When you upload your app previews, keep the following in mind:</p>
+<ul>
+<li>
+<p>App previews always precede screenshots on iPhone, iPad, Mac, and Apple TV, even if you rearrange them when editing the app record.</p>
+</li>
+<li>
+<p><code>.mov</code>, <code>.m4v</code>, <code>.mp4</code> formats are accepted for app previews in H.264 and <code>.mov</code> format for ProRes 422 (HQ only).</p>
+</li>
+<li>
+<p>You <a href="/help/app-store-connect/manage-app-information/set-an-app-preview-poster-frame">set the app preview poster frame</a>, which is the image that displays to customers on App Store product pages and when users install your app.</p>
+</li>
+<li>
+<p>After you upload your app previews, processing may take up to 24 hours.</p>
+</li>
+<li>
+<p>App previews aren't available on the App Store for iMessage.</p>
+</li>
+<li>
+<p>For iOS apps, you can upload app previews in Landscape or Portrait mode. When the customer plays the video, the app preview rotates to the original orientation. For macOS, tvOS, and visionOS apps, you can only provide app previews in landscape.</p>
+</li>
+</ul>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or Marketing. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="upload-app-previews-and-screenshots">
+<h3>Upload app previews and screenshots</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version under the platform you wish to select.</p>
+</li>
+<li>
+<p>Drag your screenshots and app preview into the appropriate well. For the iOS version of your app, select the iPhone or iPad tab, then upload screenshots in the iOS Previews and Screenshots section.</p>
+<figure><img alt="Screenshot of App Previews and Screenshots section, which is on the iOS platform detail page." class="help-screens-retro" src="/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots/images/my-apps-upload-app-preview-screenshots_2x.png"/></figure>
+<p class="spacing-top-paragraph">Click View All Sizes in Media Manager to upload the required screenshots for iMessage and watchOS apps. You can also view high-resolution screenshots scaled for other device sizes.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-app-previews-and-screenshots-for-other-device-sizes-and-localizations">
+<h3>Add app previews and screenshots for other device sizes and localizations</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version under the platform you wish to select.</p>
+</li>
+<li>
+<p>On the top right, choose the language from the pop-up menu.</p>
+</li>
+<li>
+<p>In the App Previews and Screenshots section, click View All Sizes in Media Manager.</p>
+</li>
+<li>
+<p>Click the appropriate device tab, and then click Edit for the device size for which you want to upload custom screenshots.</p>
+</li>
+<li>
+<p>Drag the screenshots or app previews to the appropriate device size well.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="Task">
+<p>Once your app is <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submitted for review</a> and approved, you must <a href="/help/app-store-connect/update-your-app/create-a-new-version">create a new version</a> to update the screenshots.</p>
+</div>
+<div class="LinkUniversal"><b>Related</b>
+<a href="/help/app-store-connect/reference/app-information/app-preview-specifications">App preview specifications</a>
+<a href="/help/app-store-connect/reference/app-information/screenshot-specifications">Screenshot specifications</a>
+<a href="/videos/play/tech-talks/110358/?time=21">Get started with app discovery and marketing</a>
+<a href="/visionos/submit/">Submit your apps to the App Store for Apple Vision Pro</a>
+</div>
+</link></article> </div>

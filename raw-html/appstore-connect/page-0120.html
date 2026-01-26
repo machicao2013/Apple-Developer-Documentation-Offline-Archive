@@ -1,0 +1,185 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="3.0">
+<h1>VoiceOver evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Using Apple’s VoiceOver screen reader, users can navigate an app’s interface without needing to see the screen. Many people who are blind or low vision use VoiceOver to understand and control apps.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. If you can tap, click, or drag something in your app using a mouse or touchscreen gestures, you should strive to make it work with VoiceOver, too. If you can see an important item on the screen, your app should use a label or description that a VoiceOver user would perceive in audible speech or braille.</p>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Most of the work that goes into making your app accessible to <b><i>VoiceOver</i></b> users will also make it more accessible for users of other assistive technologies like Voice Control, Switch Control, and Hover Text. For this reason, we recommend you start your accessibility evaluation with VoiceOver before moving on to test Voice Control.</p>
+</div>
+<p>The following sections provide more detail about how to determine whether your app supports VoiceOver well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports VoiceOver</b> on the App Store.</p>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>In order to accurately evaluate this label, proficient testing of your app using VoiceOver is necessary on all devices your app supports. To ensure your proficiency in testing with VoiceOver, take some time to review the resources below.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>For iPhone, watch<a href="https://www.youtube.com/watch?v=ROIe49kXOc8"> "How to Navigate your iPhone or iPad with VoiceOver,”</a> then visit <a href="https://support.apple.com/guide/iphone/turn-on-and-practice-voiceover-iph3e2e415f/ios">Turn on and practice VoiceOver on iPhone</a>, <a href="https://support.apple.com/guide/iphone/use-voiceover-gestures-iph3e2e2281/ios">Use VoiceOver Gestures on iPhone</a>, and <a href="https://support.apple.com/guide/iphone/operate-iphone-when-voiceover-is-on-iph3e2e2329/ios">Operate iPhone when VoiceOver is on</a>.</p>
+</li>
+<li>
+<p>For iPad, watch <a href="https://www.youtube.com/watch?v=ROIe49kXOc8"> "How to Navigate your iPhone or iPad with VoiceOver,”</a> then visit <a href="https://support.apple.com/guide/ipad/turn-on-and-practice-voiceover-ipad9a246898/ipados">Turn on and practice VoiceOver on iPad,</a> <a href="https://support.apple.com/guide/ipad/use-voiceover-gestures-ipad9a246584/ipados">Use VoiceOver gestures on iPad</a>, and<a href="https://support.apple.com/guide/ipad/operate-ipad-when-voiceover-is-on-ipad9a24752e/ipados"> Operate iPad when VoiceOver is on</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/voiceover/learn-and-practice-voiceover-mchlp2687/mac">Learn and practice VoiceOver on Mac</a>, then review other topics in the <a href="https://support.apple.com/guide/voiceover/welcome/mac">VoiceOver User Guide for macOS</a>.</p>
+</li>
+<li>
+<p>For Apple TV, visit <a href="https://support.apple.com/guide/tv/use-voiceover-atvbfa4ff6cd/tvos">Use VoiceOver on Apple TV</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/turn-on-and-practice-voiceover-tanae5174040/visionos">Turn on and practice VoiceOver on Apple Vision Pro</a>, and <a href="https://support.apple.com/guide/apple-vision-pro/learn-voiceover-gestures-tanf5c9d873d/visionos">Learn VoiceOver gestures on Apple Vision Pro</a>.</p>
+</li>
+<li>
+<p>For Apple Watch, visit <a href="https://support.apple.com/guide/watch/voiceover-apdaabc79d3b/watchos">Use VoiceOver on Apple Watch</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p>Once you’ve learned the basics of VoiceOver, you’re ready to begin testing. However, to ensure the best VoiceOver experience for users, we recommend diving deeper into the user guides to learn about advanced functionality that experienced VoiceOver users may rely on.</p>
+</div>
+<h2>Indicating support for VoiceOver</h2>
+<div class="spacing-bottom">
+<p>You may indicate your app supports VoiceOver if users are able to navigate and interact with visual elements, including text, media, buttons, and controls, using only VoiceOver. Using gestures or keyboard commands, users should be able to focus on each part of the UI, hear what it is, and activate it. Make sure users can complete all of the common tasks of your app using only VoiceOver, without sighted assistance.</p>
+<p><b>All controls should have concise, accurate labels.</b></p>
+<p>Labels, also known as “alternative text,” help VoiceOver users to quickly understand the purpose of each control or interface element.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>Buttons, icons, form controls, and all other elements should contain a concise label providing a text equivalent for VoiceOver users. Interactive text fields and similar form controls should have a label (for example, “phone number”) in addition to the text value (“555-555-1212”) of the selection or contents.</p>
+</li>
+<li>
+<p>Labels should be concise, so that the interface isn’t tedious for a user to navigate and understand quickly. For example, a button for composing a new message should be labeled “New Message” rather than something more verbose like “Press to compose a new message.” </p>
+</li>
+<li>
+<p>Ensure the labels make sense out of context. Because VoiceOver users may land on an element in different ways, avoid ambiguous labels that are unclear when the user encounters the item in a non-linear order, such as “Click here” or “Learn more.” If multiple action elements have the same label, like “Delete” in a Shopping Cart, the label text should make it clear what the action will do, especially in the case of destructive actions. For example, which cart item will be deleted?</p>
+</li>
+<li>
+<p>Ensure that labels don’t include control types like "checkbox" or states like "checked." Otherwise, VoiceOver may speak redundant information to the user, such as “Unsubscribe <b>checkbox, checkbox.</b>” Instead, implement these in your app as <a href="https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits">traits</a> or through similar APIs appropriate to the device.</p>
+</li>
+<li>
+<p>Most images should include a relevant description or alternative text. If an image is purely decorative, make sure it’s ignored completely by VoiceOver.</p>
+</li>
+<li>
+<p>If your app provides a way for users to upload media, such as images, ensure users have a way to include labels or descriptions for the user-generated content, so that VoiceOver users can hear this description when encountering the media.</p>
+</li>
+<li>
+<p>Charts and other data visualizations should include accessibility information through a more specific chart API, or at minimum, include a reasonably complete text alternative.</p>
+</li>
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+<li>
+<p>For more ideas, watch <a href="https://developer.apple.com/videos/play/wwdc2019/254/">“Writing Great Accessibility Labels“</a> and <a href="https://developer.apple.com/videos/play/wwdc2021/10122/">"Bring accessibility to charts in your app."</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>VoiceOver users should be aware of element type and control status or value.</b></p>
+<p>People who rely on VoiceOver often need to hear more information than just labels and text content, since the status or value may be conveyed only through visual means such as a checked box. Implement this information in your app as <a href="https://developer.apple.com/documentation/UIKit/UIAccessibilityTraits">traits</a>  or through similar APIs appropriate to the device.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>When a VoiceOver user lands on an item, VoiceOver should speak the type of element in addition to the label or text content. For example, “Unsubscribe from all emails, <b>checkbox</b>."</p>
+</li>
+<li>
+<p>Users should be able to understand control state and values. Keep in mind that default states, like the “unchecked” state of a checkbox, are implied so they may not be spoken by VoiceOver. For example, “Unsubscribe from all emails, checkbox.” Additionally, take care to update the API for control state and values. For example, once the user has checked the checkbox, VoiceOver will describe the control, including its new state, as, “Unsubscribe from all emails, <b>checked</b> checkbox."</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>VoiceOver should be able to speak all visible text in your app, and all text entry methods should be operable by VoiceOver users.</b></p>
+<p>The accessibility of most visible text will be automatically supported when using Apple frameworks. However, if your app uses another framework, or custom text entry methods, extra work may be required. For example, Apple has an <a href="https://github.com/apple/unityplugins/tree/main">open-source accessibility plug-in for Unity-based apps</a>.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>All visible text in the app should be accessible to assistive technologies, including VoiceOver. Plain text elements, such as paragraphs, don’t need a separate label, though you should ensure that VoiceOver can speak the text content.</p>
+</li>
+<li>
+<p>Custom keyboards and text entry methods (for example, custom keyboards or PIN code entry widgets) should be operable with VoiceOver, and produce correct speech/braille output for the user, in addition to providing accurate text entry and selection.</p>
+</li>
+<li>
+<p>Temporary status banners and important in-app alerts should be conveyed to VoiceOver users in a timely but non-disruptive manner, often done so with an <a href="https://developer.apple.com/documentation/accessibility/accessibilitynotification">AccessibilityNotification</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>VoiceOver navigation and grouping should be consistent, complete, and use a logical order.</b></p>
+<p>VoiceOver users should be able to navigate in page order, or move directly to a part of the screen using features like the VoiceOver rotors.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>VoiceOver users should be able to navigate <b><u>to</u></b> any visible element, either in order (swipe right, VO+Right, and so on) or by using a rotor and touch navigation on most platforms.</p>
+</li>
+<li>
+<p>VoiceOver users should be able to navigate <b><u>away</u></b> from the element they are on, whether by continuing forward, going backward (Swipe Left, VO+Left, etc), or by using a rotor or touch navigation on most platforms.</p>
+</li>
+<li>
+<p>If multiple elements or actions are presented as a group, VoiceOver users should be able to either move to each item in the group, or be able to interact with the grouped behaviors (for example, reply, forward, delete) through features like <a href="/videos/play/wwdc2019/250/">custom actions</a>.</p>
+</li>
+<li>
+<p>VoiceOver users should be able to progress to each element without skipping items or looping back to the same item repeatedly. Try navigating forward through all contents, then backwards through all contents. Try looping through all rotor items forward and backwards, too.</p>
+</li>
+<li>
+<p>When content reloads or refreshes in the background, a VoiceOver user’s reading position shouldn’t reset unexpectedly. For example, if a VoiceOver user is near the bottom of a content feed when the app loads more content, the VoiceOver cursor shouldn’t accidentally reset to the top of the list.</p>
+</li>
+<li>
+<p>When the screen changes or a modal dialog appears, the VoiceOver cursor should move logically into the new content area. VoiceOver users shouldn’t be able to move into invisible, offscreen, or background content.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>All interactive elements and controls should be discoverable, operable, and work consistently with VoiceOver.</b></p>
+<p>As a reminder, if you can tap, click, or drag something in your app using a mouse or touchscreen gestures, you should make it work with VoiceOver, too.</p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>VoiceOver’s activation gesture (select then double-tap) and keyboard command (VO+space) should trigger the same behavior as a standard tap or click.</p>
+</li>
+<li>
+<p>Standard keyboard operations (for example, arrow keys) and keyboard modifier shortcuts should continue to work, even when VoiceOver is active, and the VoiceOver cursor should follow changes triggered by standard keyboard navigation like the Tab key, arrow keys, and more.</p>
+</li>
+<li>
+<p>If your app’s controls provide a context menu, overload a long press, or provide other non-default behaviors, consider providing the same behaviors as a <a href="/videos/play/wwdc2019/250/">custom action </a>using VoiceOver’s actions rotor or its equivalent “show context menu” keyboard command (VO+Shift+M).</p>
+</li>
+<li>
+<p>VoiceOver should work with modal views, like dialogs. Apps should ensure that inactive content behind the modal view isn’t accessible to VoiceOver while the content is inactive. Apps should also support VoiceOver users being able to dismiss modal views, like closing the dialog, using the Escape key or an <a href="https://developer.apple.com/documentation/objectivec/nsobject-swift.class/accessibilityperformescape()">accessibilityPerformEscape</a> action.</p>
+</li>
+<li>
+<p>Complex app behaviors, such as drag and drop or multi-touch gestures, should be provided in an accessible, discoverable way, such as through a custom rotor or action. Whenever possible, use the Apple-provided native API to reduce implementation complexity.</p>
+</li>
+<li>
+<p>Custom elements, if used by the app or any included frameworks, should provide equivalent accessibility of native elements provided by the Apple UIKit, AppKit, and SwiftUI frameworks. For example, custom buttons, tab bars, and sliders should be operable with VoiceOver and convey the same information as controls using standard API equivalents.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for VoiceOver in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app's support for VoiceOver every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/accessibility/voiceover/">Learn more about VoiceOver</a>
+<a href="https://developer.apple.com/documentation/uikit/supporting-voiceover-in-your-app">Support VoiceOver in your app</a>
+<p>Human Interface Guidelines &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/accessibility#VoiceOver">Accessibility</a></p>
+<a href="https://developer.apple.com/videos/play/wwdc2021/10121/">Watch "Tailor the VoiceOver experience in data-rich apps</a>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10116">Watch "VoiceOver efficiency with custom rotors</a>
+</div>
+</article> </div>

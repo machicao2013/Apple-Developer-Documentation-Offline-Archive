@@ -1,0 +1,550 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="10.0">
+<h1>App and submission statuses</h1>
+<developer-accordion>
+<accordion-panel id="app-statuses">
+<h3>App statuses</h3>
+<div>
+<p>The <em>app status</em> indicates where an app is in the review and release process.</p>
+<ul>
+<li>
+<p>A red status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-red-icon_2x.png"/>) means that you need to perform an action before the app distributes.</p>
+</li>
+<li>
+<p>A yellow status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-yellow-icon_2x.png"/>) means that a process, controlled either by you or Apple, is still happening.</p>
+</li>
+<li>
+<p>A green status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-green-icon_2x.png"/>) means that the app is Ready for Distribution.</p>
+</li>
+</ul>
+<p>If an app status indicates as editable below, you can edit app <span class="force-glossary">metadata</span> when the app has this status.</p>
+<p>Receive automatic notifications to your web server whenever the status of your app changes by using webhooks. <a href="/help/app-store-connect/manage-your-team/manage-webhooks">Learn more</a>.</p>
+<div class="table-wrapper">
+<table aria-label="App statuses" class="table-3-col table-3-col-wide-middle">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Editable</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Prepare for Submission</p>
+</td>
+<td colspan="6">
+<p>You’ve created an app record in App Store Connect but are still preparing information for it.</p>
+</td>
+<td class="Center" colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Review</p>
+</td>
+<td colspan="6">
+<p>You’ve entered all of the required metadata for your app and indicated that you intend to submit it for review, but haven’t submitted it yet.</p>
+<p>You can submit the app by itself or include other items, such as In-App Events or custom product pages.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Invalid Binary</p>
+</td>
+<td colspan="6">
+<p>You’ve submitted your app to App Review, but the build does not meet the current binary requirements. You must upload a new build, or select one that meets all the current build requirements.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="6">
+<p>You’ve submitted a new app or updated version. Apple received your submission, but hasn’t started the review.</p>
+<p>While you're waiting for the review, you can:</p>
+<ul>
+<li>
+<p>Edit certain <a href="/help/app-store-connect/reference/app-information/app-information">app information</a>.</p>
+</li>
+<li>
+<p>Delete app previews.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">Remove the build from review</a>.</p>
+</li>
+</ul>
+<p>However, you can't upload or edit screenshots or app previews.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="6">
+<p>App Review is reviewing your app. You can <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">remove the build from review</a>.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Accepted</p>
+</td>
+<td colspan="6">
+<p>This item has been accepted, but one or more items in your submission were rejected.</p>
+<p>The app can only publish when all items in the submission are accepted. You can edit the rejected items and resubmit, or remove them from the submission to move forward with the currently accepted items.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Export Compliance</p>
+</td>
+<td colspan="6">
+<p>Your CCATS file is in Apple’s <a href="/help/app-store-connect/manage-app-information/overview-of-export-compliance">export compliance</a> review process.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Developer Release</p>
+</td>
+<td colspan="6">
+<p>Your app was accepted, but you still need to release it for distribution on the App Store.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing for Distribution</p>
+</td>
+<td colspan="6">
+<p>Your app is processing and will be ready for distribution within 24 hours.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Apple Release</p>
+</td>
+<td colspan="6">
+<p>Apple is holding your app version until the corresponding Apple operating system version releases to the public.</p>
+<p>If you think an app should be released on the existing operating system versions, review the deployment target set in your app build. If you rebuild your app with a different deployment target, reject the build for this version and submit the new version.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending App Transfer</p>
+</td>
+<td colspan="6">
+<p>The app transferor has initiated the app transfer, but the recipient hasn't yet accepted. The transferor and the recipient can each cancel the transfer. No changes can be made to the app except changes to pricing.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing App Transfer</p>
+</td>
+<td colspan="6">
+<p>The recipient accepts the app transfer. You can't cancel or make changes to the app until the transfer is complete.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Ready for Distribution</p>
+</td>
+<td colspan="6">
+<p>Your app has been accepted and is ready for distribution.</p>
+<p>To distribute your app, your <a href="/help/app-store-connect/manage-agreements/view-agreements-status">agreements</a> must be in effect. The Account Holder can accept the latest agreements in the Business section.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="6">
+<p>Your app wasn't accepted. App Review notifies App Store Connect users with the Admin, App manager, or Developer role with the issues. <a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages.</a></p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Metadata Rejected</p>
+</td>
+<td colspan="6">
+<p>App Review didn’t accept your metadata. Read the message from App Review, edit the metadata to resolve the issue, and reply to the message from App Review.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Rejected</p>
+</td>
+<td colspan="6">
+<p>You <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">removed your app from review</a>. When you’re ready, resubmit your build or submit a new build.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="submission-statuses">
+<h3>Submission statuses</h3>
+<div>
+<p>These statuses are shown for <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submissions to App Review</a>. Once all items within the submission are accepted, the submission moves from the In Progress section to the Completed section on the App Review page.</p>
+<div class="table-wrapper">
+<table aria-label="Submission statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="8">
+<p>Apple received your submission, but hasn’t started review.</p>
+<p>While waiting for review, you can:</p>
+<ul>
+<li>
+<p><a href="/help/app-store-connect/reference/app-information/app-information">Edit certain information</a></p>
+</li>
+<li>
+<p>Delete app previews</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">Remove items from review</a></p>
+</li>
+</ul>
+<p>However, you can't:</p>
+<ul>
+<li>
+<p>Upload or edit screenshots or app previews</p>
+</li>
+<li>
+<p>Edit In-App Event metadata</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="8">
+<p>App Review is reviewing your submission. You can <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">cancel the submission</a> to remove it from review.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing</p>
+</td>
+<td colspan="8">
+<p>You removed your submission from review and your action is being processed. When it's done processing the submission moves to Completed in the App Review section.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Unresolved Issues</p>
+</td>
+<td colspan="8">
+<p>App Review rejected one or more items in the submission. <a href="/help/app-store-connect/manage-submissions-to-app-review/manage-a-submission-with-unresolved-issues">Learn how to manage a submission with unresolved issues.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="8">
+<p>App Review rejected your app bundle or TestFlight submission. For TestFlight, you must submit a new build for review before you can invite external testers.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="item-statuses">
+<h3>Item statuses</h3>
+<div>
+<p>These statuses are shown for items within a <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submission to App Review</a>. You can locate the status of each item on the item’s page (for example, the app record or In-App Event’s page), or when you click View or Resolve next to the submission. Once all items within the submission are accepted, the submission moves from the In Progress section to the Completed section on the App Review page.</p>
+<div class="table-wrapper">
+<table aria-label="Item Statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Ready for Review</p>
+</td>
+<td colspan="8">
+<p>The item has been added to a submission, but it hasn’t been submitted to App Review yet.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Waiting for Review</p>
+</td>
+<td colspan="8">
+<p>Apple received your submission, but hasn’t started review.</p>
+<p>While waiting for review, you can:</p>
+<ul>
+<li>
+<p><a href="/help/app-store-connect/reference/app-information/app-information">Edit certain information</a></p>
+</li>
+<li>
+<p>Delete app previews</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">Remove items from review</a></p>
+</li>
+</ul>
+<p>However, you can't:</p>
+<ul>
+<li>
+<p>Upload or edit screenshots or app previews</p>
+</li>
+<li>
+<p>Edit In-App Event metadata</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>In Review</p>
+</td>
+<td colspan="8">
+<p>App Review is reviewing your submission. You can <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">cancel the submission</a> to remove it from review.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Accepted</p>
+</td>
+<td colspan="8">
+<p>This item has been accepted, but there are one or more rejected items in the submission. All items in the submission must be accepted before any can be published.</p>
+<p>You can edit the rejected items and resubmit, or you can remove them from the submission.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Rejected</p>
+</td>
+<td colspan="8">
+<p>App Review didn’t accept your item. You can edit the item and resubmit, or you can remove the item from the submission.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/manage-a-submission-with-unresolved-issues">Learn how to manage a submission with unresolved issues.</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="app-store-availability-statuses">
+<h3>App Store availability statuses</h3>
+<div>
+<p>The <em>App Store status</em> tells you whether your app is available in a specific country or region, or if there are any reasons your app isn’t appearing somewhere.</p>
+<ul>
+<li>
+<p>A red status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-red-icon_2x.png"/>) means your app isn’t available in the country or region.</p>
+</li>
+<li>
+<p>A yellow status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-yellow-icon_2x.png"/>) means your app needs action from you before the app is available in the country or region, or the app is currently processing.</p>
+</li>
+<li>
+<p>A green status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-green-icon_2x.png"/>) means your app is available in the country or region.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="App Store availability statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Available</p>
+</td>
+<td colspan="6">
+<p>Your app is live on the App Store for users in this country or region.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Available on App Release</p>
+</td>
+<td colspan="6">
+<p>Your app is ready to be released in this country or region after your scheduled release date or after you manually release the app. This status only appears if your app has never released in any regions. <a href="/help/app-store-connect/manage-your-apps-availability/select-an-app-store-version-release-option">Learn how to select an App Store version release option.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pre-Order Pending Developer Release</p>
+</td>
+<td colspan="6">
+<p>You've set up a pre-order that publishes in this country or region after you release a version of your app. <a href="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order">Learn more.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Pre-Order (Scheduled Release [date])</p>
+</td>
+<td colspan="6">
+<p>The pre-order is live and your app will be releases for download or purchase in this country or region on the date indicated. Customers in this country or region can pre-order your app on the store.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing to Available</p>
+</td>
+<td colspan="6">
+<p>Your app is processing and should be available in this country or region within 24 hours. If your app is in this status for more than 24 hours, <a href="/contact">contact us</a>.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing to Not Available</p>
+</td>
+<td colspan="6">
+<p>Your app is processing and should no longer be available in this country or region within 24 hours. If your app is in this status for more than 24 hours, <a href="/contact">contact us</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing to Pre-Order</p>
+</td>
+<td colspan="6">
+<p>Your app is processing and should publish for pre-order in this country or region within 24 hours. If your app is in this status for more than 24 hours, <a href="/contact">contact us</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Not Available</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in this country or region because you've indicated that you don't intend to distribute in this location. <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store">Learn how to select the regions where you want to make your app available.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Missing App Rating</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in this country or region because you haven't set an age rating for your app. <a href="/help/app-store-connect/manage-app-information/set-an-app-age-rating">Learn how to set an app age rating.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Missing Tax Form</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in Brazil because you haven't submitted Brazilian tax information. <a href="/help/app-store-connect/manage-tax-information/provide-tax-information">Learn more.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Missing Game registration number</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in China mainland because you haven't provided an approval number and supporting documents from China's National Press and Publication Administration. <a href="/help/app-store-connect/reference/app-information/app-information">Learn more.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> ICP Filing Number Missing</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in China mainland because you haven't provided a valid Internet Content Provider (ICP) Filing Number. <a href="/help/app-store-connect/reference/app-information/app-information">Learn more.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> ICP Filing Number Invalid</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in China mainland because the Internet Content Provider (ICP) Filing Number or metadata you provided doesn't match the information you have filed with China’s Ministry of Industry and Information Technology (MIIT), or both. <a href="/help/app-store-connect/reference/app-information/app-information">Learn more.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Cannot Sell App</p>
+</td>
+<td colspan="6">
+<p>Your app isn't available in this country or region. Hold the pointer over the status to locate the reason why. If you have any questions, <a href="/contact">contact us</a>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">Overview of submitting for review</a>
+<a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">App build statuses</a>
+<a href="/help/app-store-connect/reference/app-information/app-information">App information</a>
+<a href="/help/app-store-connect/reference/app-information/platform-version-information">Platform version information</a>
+<a href="/help/app-store-connect/reference/app-information/app-bundle-information">App bundle information</a>
+</div>
+</link></article> </div>

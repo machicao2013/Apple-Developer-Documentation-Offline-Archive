@@ -1,0 +1,131 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="25P">
+<h1>In-App Purchase information</h1>
+<h2>General Information</h2>
+<p>The main In-App Purchase properties identify the product in App Store Connect and in the app.</p>
+<div class="table-wrapper">
+<table aria-label="In-App Purchase information - general" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Apple ID</p>
+</td>
+<td colspan="8">
+<p>A unique identifier automatically generated for your In-App Purchase when you add the In-App Purchase to your account.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Reference Name</p>
+</td>
+<td colspan="8">
+<p>A unique name you give to your In-App Purchase for internal tracking that's not visible to customers, but used in App Store Connect and Sales and Trends reports. The reference name can include any characters and can be as long as 64 characters.</p>
+<p>The reference name can be edited at any time without review.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Product ID</p>
+</td>
+<td colspan="8">
+<p>A unique ID specific to your app that you can assign to your In-App Purchases to uniquely identify them within your app.</p>
+<p>The product ID can contain letters, numbers, hyphens, periods, and underscores, and can be as long as 100 characters. You need separate identifiers for In-App Purchases in your iOS apps and your macOS apps.</p>
+<p>When your app uses StoreKit to communicate with the App Store, it uses product IDs to retrieve the configuration data you provided for each In-App Purchase. When a user wants to make a purchase, your app identifies the In-App Purchase using its product ID.</p>
+<p>The product ID isn't editable after you save the In-App Purchase.</p>
+<p>Once a product ID is assigned to an in-app puchase, it can't be reused for another In-App Purchase within the same app, even if you delete the original In-App Purchase with that ID.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Review Notes</p>
+</td>
+<td colspan="8">
+<p>Additional information about the In-App Purchase that might help Apple review the submission, such as test user accounts and passwords. Review notes should not exceed 4000 characters.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Image</p>
+</td>
+<td colspan="8">
+<p>An image is required if you want to <a href="/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases">promote your In-App Purchase</a> on your App Store product page or <a href="https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers">set up win-back offers</a>. This image will represent your In-App Purchase in all countries or regions where your app is available. If you’re also using <a href="/help/app-store-connect/manage-subscriptions/set-up-subscription-offer-codes">offer codes</a> for auto-renewable subscriptions, your promotional image will appear on the App Store page when customers redeem their codes on iOS 14 or later. Your promotional image must meet the following requirements:</p>
+<ul>
+<li>
+<p>JPG or PNG.</p>
+</li>
+<li>
+<p>Dimensions of 1024 x 1024 pixels.</p>
+</li>
+<li>
+<p>72 dpi, RGB, flattened and no rounded corners.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Show to all App Store users, even those who don’t have the app installed </p>
+</td>
+<td colspan="8">
+<p>An indication that you'd like all customers to locate your promoted In-App Purchases, which is based on the user device information. By default, this is selected. If you deselect the checkbox, but haven’t implemented the <a href="https://developer.apple.com/documentation/storekit/skproductstorepromotioncontroller">SKProductStorePromotionController API</a>, your In-App Purchase will not be visible on the App Store. Visit <a href="/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases">Promote In-App Purchases to relevant customers only</a>. Note that a customer needs to have opened your app on their device at least once to locate your order and visibility settings inside your app.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Review Screenshot</p>
+</td>
+<td colspan="8">
+<p>A screenshot of the In-App Purchase that clearly shows the item or service being offered. This screenshot is used for review only and isn't displayed on the App Store.</p>
+<p>Upload a screenshot that meets any of the <a href="/help/app-store-connect/reference/app-information/screenshot-specifications">screenshot specifications</a> your app supports. Once you’ve uploaded a screenshot, you can update it but not remove it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="spacing-top">Localizable information</h2>
+<p>Add localizable In-App Purchases information used in the product display. You must include these properties for at least one language. For a list of languages, visit <a href="/help/app-store-connect/reference/app-information/app-store-localizations">App Store localizations</a>.</p>
+<p>Changes to the localized information require review. The existing text displays on the store until the new text is approved. The change has its own status separate from the overall status of the In-App Purchase. Before your changes are reviewed, you can revert the change.</p>
+<div class="table-wrapper no-margin-bottom">
+<table aria-label="In-App Purchase localizable information" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Display Name</p>
+</td>
+<td colspan="8">
+<p>The name of the In-App Purchase that is displayed to customers. The display name must be at least two characters and no more than 30 characters.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Description</p>
+</td>
+<td colspan="8">
+<p>A description of the In-App Purchase that potentially displays to users. If you make your In-App Purchase available for promotion, this displays under your In-App Purchase name on the App Store. The description must be no more than 45 characters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article> </div>

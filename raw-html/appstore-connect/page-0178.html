@@ -1,0 +1,252 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage In-App Purchases</span>
+<article _v="25P">
+<h1>Schedule price changes for In-App Purchases</h1>
+<p>You can update your In-App Purchase pricing at any time in App Store Connect. Price changes can have definite start and end dates, or they can be permanent changes with no end. For example, you can set a promotional price for a month, then return to the regular price.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Price Change" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Global Price Change</p>
+</td>
+<td colspan="8">
+<p>You change the price of your app in your base country or region in App Store Connect. Apple provides comparable prices for all other countries or regions, and may adjust some prices on your behalf in the future to account for changes in taxes and foreign exchange rates. Pricing in your base country or region won't be affected.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Temporary Price Change</p>
+</td>
+<td colspan="8">
+<p>You select the start and end dates for a temporary price change in certain countries or regions. During this time, Apple won’t adjust prices on your behalf in these countries or regions.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Custom Price Change</p>
+</td>
+<td colspan="8">
+<p>You manually manage prices for some or all countries or regions. Apple won't adjust prices on your behalf in these countries or regions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="schedule-a-global-price-change">
+<h3>Schedule a global price change</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions. Then scroll down to the Non-Renewing Subscriptions section and click Manage.)</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to edit.</p>
+</li>
+<li>
+<p>Next to Price Schedule, click the add button (+).</p>
+</li>
+<li>
+<p>Select Global Price Change, then click Next.</p>
+<figure><img alt="Screenshot of a Create Price Change  pop-up window. Options include Global, Temporary, and Custom Price Changes. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-global-price-change_2x.png"/></figure>
+</li>
+<li>
+<p>Select an effective date. Effective dates can be scheduled from today up to the end of the next calendar year.</p>
+</li>
+<li>
+<p>Select a price for your base country or region. Apple uses this base to provide comparable prices on the other 174 storefronts. As taxes and foreign exchange rates change, prices on the other storefronts will be automatically updated by Apple periodically. the prices for each country or region, then click Confirm.</p>
+<figure><img alt="Screenshot of a Schedule Price Change pop-up window. Users can select an effective date for the price change and calculate new prices based on a base country or region. A dropdown menu displays various price points ranging from $0.99 to $929.99 for the United States (USD), with a link to see additional prices. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-global-price-change-2_2x.png"/></figure>
+</li>
+<li>
+<p>Review the prices for each country or region, then click Confirm.</p>
+<figure><img alt="Screenshot of a price change confirmation pop-up window. The pop-up lists countries or regions with current and new prices. Buttons for navigation include Back, Cancel, and Confirm." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-global-price-change-3_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="schedule-a-temporary-price-change">
+<h3>Schedule a temporary price change</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions. Then scroll down to the Non-Renewing Subscriptions section and click Manage.)</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to edit.</p>
+</li>
+<li>
+<p>Next to Price Schedule, click the add button (+).</p>
+<figure><img alt="Screenshot of a Create Price Change pop-up window. Options include Global, Temporary, and Custom Price Changes. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change_2x.png"/></figure>
+</li>
+<li>
+<p>Select Temporary Price Change, then click Next.</p>
+</li>
+<li>
+<p>Select start and end dates, then click Next. Start dates can be scheduled from today up to the end of the next calendar year. The longest length for a temporary price change is one year.</p>
+<figure><img alt="Screenshot of a pop-up window for scheduling a price change for In-App Purchases. The pop-up is titled Choose Dates and allows users to select a start date and end date for a temporary price change. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change-2_2x.png"/></figure>
+</li>
+<li>
+<p>Select the App Store countries or regions where you'd like the price change to go into effect, then click Next.</p>
+<figure><img alt="Screenshot of a pop-up window for selecting countries or regions on the App Store Connect, with options to proceed using Back, Cancel, and Next buttons." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change-3_2x.png"/></figure>
+</li>
+<li>
+<p>Select a country or region and a price, then click Next. Apple will use this to provide comparable prices across the selected countires or regions.</p>
+<figure><img alt="Screenshot of a Calculate Prices pop-up window. The window allows users to select a country or region and choose a price for an In-App Purchase. A dropdown menu displays various price options. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change-4_2x.png"/></figure>
+</li>
+<li>
+<p>Review the pricing that Apple suggested for each country or region. Make any necessary changes, then click Next.</p>
+<p>If your temporary price change includes your base country or region, keep in mind that Apple won’t make any automatic adjustments to your In-App Purchase pricing in all 175 countries or regions during the start and end dates you’ve selected. If you’d like to add more countries or regions, click Back or Cancel. Otherwise, click Next.</p>
+<figure><img alt="Screenshot of a pop-up window for selecting country or region prices on the App Store Connect. It shows the United States as the base country with a price of $2.29 and options to adjust prices for other countries. Buttons for Back, Cancel, and Next are at the bottom." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change-5_2x.png"/></figure>
+</li>
+<li>
+<p>Review your temporary price change, then click Confirm.</p>
+<figure><img alt="Screenshot of Apple interface for scheduling a temporary price change for In-App Purchases. Dates: Feb 16-24, 2023. All countries or regions are listed at $2.29. Includes Confirm, Cancel, and Back buttons." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-temporary-price-change-6_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions">
+<h3>Schedule a custom price change (manually manage prices in specific countries or regions)</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions. Then scroll down to the Non-Renewing Subscriptions section and click Manage.)</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to edit.</p>
+</li>
+<li>
+<p>Next to Price Schedule, click the add button (+).</p>
+</li>
+<li>
+<p>Select Custom Price Change, then click Next.</p>
+<figure><img alt="Screenshot of a Create Price Change  pop-up window. Options include Global, Temporary, and Custom Price Changes. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions_2x.png"/></figure>
+</li>
+<li>
+<p>Select an effective date. Effective dates can be scheduled from today up to the end of the next calendar year.</p>
+</li>
+<li>
+<p>Choose the first option, “Manually manage prices in specific countries or regions”.</p>
+<figure><img alt="Screenshot of Apple's interface for scheduling a custom price change. The pop-up window titled Schedule Price Change shows an Effective Date of Feb 16, 2023. Options for Price Management include managing prices manually in specific or all countries or regions. Back, Cancel, and Next buttons are at the bottom." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions-2_2x.png"/></figure>
+</li>
+<li>
+<p>Select the App Store countries or regions where you'd like the price change to go into effect, then click Next. Your base country or region can't be selected.</p>
+<figure><img alt="Screenshot of a Choose Country or Region  pop-up window. It lists countries alphabetically under Availability and there are navigation buttons like Select All, None, Cancel, Back, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions-3_2x.png"/></figure>
+</li>
+<li>
+<p>Select a country or region and a price, then click Next. Apple will use this to provide comparable prices across the other storefronts you selected.</p>
+<figure><img alt="Screenshot of a Calculate Prices pop-up window. The window allows users to select a country or region and choose a price for an In-App Purchase. A dropdown menu displays various price options. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions-4_2x.png"/></figure>
+</li>
+<li>
+<p>Review the prices for each country or region. Make any necessary changes, then click Next.</p>
+<figure><img alt="Screenshot of a Country or Region Prices pop-up window. It shows the current price of ¥310.00 for Japan, a new proposed price of ¥240.00, and a difference of -¥70.00. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions-5_2x.png"/></figure>
+</li>
+<li>
+<p>Review your upcoming changes, then click Confirm.</p>
+</li>
+</ol>
+<p>Once the change goes into effect, Apple will no longer update your In-App Purchase’s pricing to account for changes in taxes or foreign exchange rates in the countries or regions you selected. Ensure that you’ve read and understand the impact of Apple’s pricing capabilities.</p>
+<figure><img alt="Screenshot of a pricing confirmation pop-up window. It shows the current price of ¥310.00 for Japan, a new price of ¥240.00, and a difference of -¥70.00. There's a warning that says Apple won't adjust future prices in this country or region for tax or foreign exchange rate changes. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-specific-countries-or-regions-6_2x.png"/></figure>
+</div>
+</accordion-panel>
+<accordion-panel id="schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions">
+<h3>Schedule a custom price change (manually manage prices in all 175 countries or regions)</h3>
+<div>
+<p>If you plan a Custom Price Change that includes your base country or region in App Store Connect, Apple will no longer automatically update prices in any of the 175 App Store countries or regions.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions. Then scroll down to the Non-Renewing Subscriptions section and click Manage.)</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to edit.</p>
+</li>
+<li>
+<p>Next to Price Schedule, click the add button (+).</p>
+</li>
+<li>
+<p>Select Custom Price Change, then click Next.</p>
+<figure><img alt="Screenshot of a Create Price Change pop-up window. Options include Global, Temporary, and Custom Price Changes. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions_2x.png"/></figure>
+</li>
+<li>
+<p>Select an effective date. Effective dates can be scheduled from today up to the end of the next calendar year.</p>
+</li>
+<li>
+<p>Choose the second option, “Manually manage prices in all countries or regions,” then click Next. This price must be selected for you to manually manage prices in all 175 countries or regions, and you can keep the price as is or update it.</p>
+<figure><img alt="Screenshot of a Schedule Price Change pop-up window. There is a field to set the date you want your price change to begin. Under the Price Management section, there are options to manually manage prices in select countries/regions or all. Buttons for navigation include Cancel and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions-5_2x.png"/></figure>
+</li>
+<li>
+<p>Select a price for your base country or region. This price must be selected for you to manually manage prices in all 175 countries or regions, and you can keep the price as is or update it.</p>
+<figure><img alt="Screenshot of Country or Region Prices. It displays a list of countries or regions with their current price and the option to choose a new price. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions-2_2x.png"/></figure>
+</li>
+<li>
+<p>Review the current pricing for any countries or regions you didn’t select a price for, then click Next.</p>
+<figure><img alt="Screenshot of a Future Price Adjustments pop-up window. It shows a list of countries with their current price and the price after February 17, 2023. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions-3_2x.png"/></figure>
+</li>
+<li>
+<p>Review all of your upcoming changes, then click Confirm.</p>
+<p>Once the change goes into effect, Apple won’t update pricing to account for changes in taxes or foreign exchange rates. If you do want Apple to automatically adjust prices for you, you need to create a Global Price Change. Ensure you’ve read and understand the impact of Apple’s pricing capabilities.</p>
+<figure><img alt="Screenshot of app store price change confirmation pop-up window. Displays current and new prices for countries or regions. Buttons for navigation include Back, Cancel, and Next." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/schedule-a-custom-price-change-manually-manage-prices-in-all-175-countries-or-regions-4_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-or-edit-upcoming-price-changes">
+<h3>View or edit upcoming price changes</h3>
+<div>
+<p>You may view or make changes to your upcoming price changes in App Store Connect at any time.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click Pricing and Availability.</p>
+</li>
+<li>
+<p>Under Price Schedule, view your upcoming changes and their start and end dates.</p>
+<p>The price schedule indicates whether Apple may make adjustments to pricing in certain countries or regions due to changes in taxes or foreign exchange rates. Countries where pricing won’t be adjusted display Manually Adjusted. When Apple automatically adjusts prices, you can locate the upcoming scheduled price details in the Price Schedule. Upcoming Apple reprices are marked Foreign Exchange or Tax Rate Adjustment.</p>
+<figure><img alt="Screenshot of a form that includes options to edit and download pricing information for In-App Purchases. The form is titled Price Schedule and includes sections for Upcoming Changes and Current Price" src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/view-or-edit-upcoming-price-changes_2x.png"/></figure>
+</li>
+<li>
+<p>You can delete scheduled price changes by hovering over the red delete button (-). In certain cases, such as upcoming tax or foreign exchange rate adjustments, or when a manually adjusted price is starting or reverting, you may not be able to remove an upcoming price change. Click the date of the price change for details.</p>
+<figure><img alt="Screenshot of a pricing schedule form for Apple App Store In-App Purchases. The form includes options to edit the current price schedule, view upcoming price changes, and download price information." src="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases/images/view-or-edit-upcoming-price-changes-2_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal"><b>Related</b>
+<a href="/help/app-store-connect/manage-app-pricing/set-a-price">Set a price</a>
+<a href="/help/app-store-connect/reference/pricing-and-availability/in-app-purchase-and-subscriptions-pricing-and-availability">In-App Purchase and subscriptions pricing and availability</a>
+<a href="/help/app-store-connect/reference/app-information/app-store-localizations">App Store localizations</a>
+</div>
+</link></article> </div>

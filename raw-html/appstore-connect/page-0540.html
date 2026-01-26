@@ -1,0 +1,97 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">View App Analytics</span>
+<article _v="6.0">
+<h1>View peer group benchmarks</h1>
+<p>Peer group benchmarks help you put your app’s performance into context by comparing your results to those of apps that are similar to yours.</p>
+<p>You can view peer group benchmarks across several key metrics, such as conversion rate, and day 1, day 7, and day 28 retention rates, crash rate, and average proceeds per paying user. These metrics are defined in the same way as <a href="/help/app-store-connect/reference/reporting/performance-metrics">the standard app metrics in App Analytics</a> and are displayed at weekly intervals.</p>
+<p>Compare your app’s performance to the most relevant benchmark using peer groups based on various attributes:</p>
+<div class="Subhead">
+<h3>App Store category</h3>
+<p>Apps are grouped into peer groups based on their <a href="/app-store/categories/">App Store category</a>. Apps that belong to multiple categories, such as primary and secondary categories, will be included in each category when calculating the respective benchmarks. You can view benchmarks for each category your app belongs to, provided there are enough apps in the group to protect individual app performance, and your app won't appear in unassigned categories. Check your <a href="/help/app-store-connect/reference/app-information/app-information">app information</a> in App Store Connect to see which App Store categories your app is included in.</p>
+</div>
+<div class="Subhead">
+<h3>App Store business model</h3>
+<p>Apps are grouped into peer groups based on their <a href="/app-store/business-models/">business model</a>, which include free, freemium, paid, paymium, and subscriptions. Apps with In-App Purchases are considered freemium or paymium. Apps that have an associated cost to download are considered paid or paymium. In order to be considered part of the subscription business model, a freemium or paymium app must generate at least 50% of its revenue from auto-renewable subscriptions. An app’s business model assignment will only switch between the freemium and subscription business models after the app has belonged to the new business model for three consecutive weeks. Other business model changes, such as from free to paid, will occur immediately.</p>
+</div>
+<div class="Subhead">
+<h3>App Store download volume</h3>
+<p>Apps with similar levels of download volume in a given week are grouped together into low download volume, medium download volume, and high download volume peer groups. Apps are placed into these groups based on the number of first-time downloads and redownloads they have compared to the rest of the apps in the peer group. Because download volume is assessed within each peer group, your app may fall into different volume tiers across various groups. You can toggle between these peer groups after you click into the detailed view for a specific metric on the Benchmarks tab.</p>
+<p><a href="/app-store/peer-group-benchmarks/">Learn how to take action on insights from peer group benchmarks.</a></p>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, <span class="force-glossary">Finance</span>, or <span class="force-glossary">Sales</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-app-benchmarks-data">
+<h3>View app benchmark data</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In App Analytics, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the Benchmarks tab to open the Benchmarks overview page, and compare your app’s performance across a variety of metrics.</p>
+<p>Available benchmark metrics include download conversion rate, proceeds per paying user, crash rate, and retention metrics. In each metric widget, you can view how your app compares to your peer group’s 25th, 50th, and 75th percentile values.</p>
+<p>By default, peer groups for your app's primary App Store category and business model are displayed, showing data from the most recent week benchmarks are available. To view peer groups for subcategories or secondary categories, click the peer group name. To view data for apps in all categories using the same business model as yours, select All Categories.</p>
+<p>If your assigned peer group is too small to display a benchmark, select a different group using the category menu. Keep in mind that if your app is a free app, a benchmark for proceeds per paying user won’t display.</p>
+</li>
+<li>
+<p>Click View Trends next to any of the performance metrics to open a detailed view containing a graph that illustrates your app’s performance over time. You can view a more granular peer group by further refining the data by app download volume.</p>
+<p>The detailed view opens with the last 26 weeks displayed by default. Click the date picker to select a different date range.</p>
+</li>
+<li>
+<p>Next to Compare To, select a peer group percentile to compare your app against a different percentile value. This returns a dotted line on the graph to illustrate the performance of your peer group's apps compared to yours.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>How does Apple protect the privacy of individual apps in each peer group?</h3>
+<p>Peer group benchmark values are calculated using a technique called <a href="https://machinelearning.apple.com/research/learning-with-privacy-at-scale">differential privacy</a>, which is the gold standard for ensuring that aggregated data remains both helpful and private. Metrics are displayed only when a group's app count meets a minimum threshold, with controlled noise added to data points. This noise decreases as the number of apps in a group increases, maintaining privacy.</p>
+<h3>Why does App Analytics display benchmarks for a particular week, but not others?</h3>
+<p>There are several reasons why benchmark data might show for one week and not another:</p>
+<ul>
+<li>
+<p>Peer groups require a minimum number of apps in order to show data in a manner that preserves privacy. If the number of apps in the peer group drops below the minimum threshold, data won’t appear for that week.</p>
+</li>
+<li>
+<p>Day 28 retention takes longer to calculate than other metrics since it’s a longer duration. When selecting a recent weekly date range, day 28 retention data won’t appear.</p>
+</li>
+<li>
+<p>If your app undergoes a change in category or business model and you have selected the previous peer group, the trend line will pause until your app aligns with a new peer group.</p>
+</li>
+</ul>
+<h3>Why does App Analytics display benchmarks for a particular metric, but not others? </h3>
+<p>The number of benchmarks that display for an app varies based on its relevance to the peer group. Developers can view only the benchmarks relevant to their app category. For example, free apps won’t display a proceeds per paying user benchmark, and Arcade apps will only display crash rate benchmarks in order to avoid showing unhelpful comparisons.</p>
+<p>Additionally, a benchmark won’t be shown if it doesn’t meet the privacy threshold. For example, if your app uses a lesser-used business model, such as paid or paidmium, your benchmarks may not all meet the privacy threshold and, as a result, you may observe fewer benchmarks.</p>
+<h3>Can I change my peer group? </h3>
+<p>In most cases, yes.</p>
+<ul>
+<li>
+<p>Category: If you switch your App Store category, then your peer group comparison will change. You’ll be able to view benchmarks for each App Store category you belong to, as long as there are enough apps in that peer group to ensure individual app performance is protected. If you switch App Store categories, you’ll maintain the ability to access historical benchmark data for the time you were in that category, but you won’t be able to view new benchmark data for that category. You’ll be able to view benchmark data for your new category starting from the week you switched.</p>
+</li>
+<li>
+<p>Business model: You can change which business model you’ll be compared against by updating your app’s metadata. If you have In-App Purchases in your metadata, you’ll be considered freemium or paymium. If you don’t have any In-App Purchases and offer your app for free, you’ll be considered free. In order to be considered part of the subscription business model, your app must generate at least 50% of its revenue from auto-renewable subscriptions. Both free and paid apps can be subscription apps.</p>
+</li>
+<li>
+<p>Download volume: Apps are placed into download volume groups based on the number of first-time downloads and redownloads they have when compared to the rest of the apps in their peer group. As a result, you can't manually change which download volume groups your app is in. However, App Analytics lets you view peer group benchmarks for any download volume group you want, so you can easily determine what your benchmark would be if you received more or fewer downloads in the future.</p>
+</li>
+</ul>
+<h3>How will benchmark data be impacted if I change my app’s category or business model?</h3>
+<p>App Analytics detects when you change your app’s category or business model and automatically switches your app to the new peer group. You’ll retain access to historical benchmark data from previous groups, while data from your new group will appear in subsequent weeks. An annotation will appear in the benchmark trends chart when your peer group changes.</p>
+<h3>What benchmark data is available for Apple Arcade games?</h3>
+<p>Apple Arcade games are included in the paid business model peer group and benchmark data is only available for the crash rate metric.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/videos/play/wwdc2022/10044/">Watch “Discover benchmarks in App Analytics”</a>
+<a href="/app-store/peer-group-benchmarks/">Learn how to take action on insights from benchmarks</a>
+<a href="/videos/play/tech-talks/110365/">Watch “Measure and improve acquisition with App Analytics”</a>
+</div>
+</link></article> </div>

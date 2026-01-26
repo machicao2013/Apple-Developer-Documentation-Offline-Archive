@@ -1,0 +1,180 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Transfer an app</span>
+<article _v="12.0">
+<h1>Overview of app transfer</h1>
+<p>You’ll need to transfer the ownership of an app when you’ve sold the app to another developer or you want to move it to another App Store Connect account or organization.</p>
+<p>You can transfer your app while keeping it available for download on the App Store. During and after the transfer, the app retains its reviews and ratings, and users continue to receive updates. When an app is transferred it maintains its Bundle ID, which can’t be changed once a build has been uploaded for the app.</p>
+<div class="Subhead">
+<h3 class="Name">1: Verify that the app can be transferred</h3>
+<p>The app must meet all <a href="/help/app-store-connect/transfer-an-app/app-transfer-criteria">app transfer criteria</a> to be transferable.</p>
+</div>
+<div class="Subhead">
+<h3 class="Name">2: Back up all app information</h3>
+<p>Because an app is removed from your account after an app transfer, you should back up all information about the app before you transfer it.</p>
+</div>
+<div class="Subhead">
+<h3 class="Name">3: Initiate the app transfer</h3>
+<p>Your membership Account Holder initiates the app transfer. <a href="/help/app-store-connect/transfer-an-app/initiate-an-app-transfer">Learn more.</a></p>
+</div>
+<div class="Subhead">
+<h3 class="Name">4: Accept the app transfer</h3>
+<p>The receiving Account Holder accepts the app transfer. <a href="/help/app-store-connect/transfer-an-app/accept-an-app-transfer">Learn more.</a></p>
+</div>
+<developer-accordion>
+<accordion-panel id="apps-using-auto-renewable-subscriptions">
+<h3>Apps using auto-renewable subscriptions</h3>
+<div>
+<p>Apps that offer auto-renewable subscriptions must use an app-specific shared secret.</p>
+<ul class="ListSingle">
+<li>
+<p><b>Initiate an app transfer</b></p>
+<p>Before initiating a transfer for an app that offers auto-renewable subscriptions, <a href="/help/app-store-connect/configure-in-app-purchase-settings/generate-a-shared-secret-to-verify-receipts">generate an app-specific shared secret</a>. Then, share the code with the user of the developer account you're transferring the app to. After sharing the code, <a href="/help/app-store-connect/transfer-an-app/initiate-an-app-transfer">initiate the app transfer</a>.</p>
+</li>
+<li>
+<p><b>Accept an app transfer</b></p>
+<p>Before you <a href="/help/app-store-connect/transfer-an-app/accept-an-app-transfer">accept an app transfer</a> for an app that offers auto-renewable subscriptions, obtain the app-specific shared secret from the initiator, so that you can update your servers to use the code to verify auto-renewable subscriptions. Once the app transfer is complete, <a href="/help/app-store-connect/configure-in-app-purchase-settings/generate-a-shared-secret-to-verify-receipts">generate an app-specific shared secret</a> so that users outside of your organization no longer have access to it.</p>
+</li>
+</ul>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-testflight">
+<h3>Apps using TestFlight</h3>
+<div>
+<p>TestFlight beta testing should be turned off for all beta versions of the app prior to initiating app transfer. You can do this by removing all builds and testers from the app you want transferred and clearing each information field below Test Information for every localization.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-xcode-cloud">
+<h3>Apps using Xcode Cloud</h3>
+<div>
+<p>All Xcode Cloud related data from the app you want transferred must be removed prior to initiating app transfer. You can <a href="https://developer.apple.com/documentation/xcode/removing-your-project-from-xcode-cloud">remove all Xcode Cloud data</a> from Settings under the Xcode Cloud tab in App Store Connect.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-app-groups">
+<h3>Apps using App Groups</h3>
+<div>
+<p>Once an app has completed transfer, the app group can be deleted from the transferor’s <a href="https://developer.apple.com/account">account</a> and registered to the recipient’s <a href="https://developer.apple.com/account">account</a>. This won't impact the app’s availability on the App Store.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-keychain-sharing">
+<h3>Apps using keychain sharing</h3>
+<div>
+<p>Keychain sharing continues to work only until the app is updated. Therefore, you must rebuild the keychain when submitting updates. If your keychain group is defined in the Xcode project, replace it with a group created by the recipient, incorporating their Team ID for continued keychain sharing. After the update, users must re-login once as the app cannot retrieve the authentication token from the keychain.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-push-notifications">
+<h3>Apps using push notifications</h3>
+<div>
+<p>The recipients <a href="https://developer.apple.com/documentation/usernotifications/establishing-a-certificate-based-connection-to-apns">APNs certificates</a> remain valid until their expiration date. After that, the recipient team must generate a new APNs certificate to continue signing pushes. If you use keys instead of certificates, you can generate new <a href="https://developer.apple.com/documentation/usernotifications/establishing-a-token-based-connection-to-apns">APNs keys</a> within the recipient team or reuse an existing APNs-enabled key from the recipient team. In both cases, you must update your APNs servers with the chosen key.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-apple-pay">
+<h3>Apps using Apple Pay</h3>
+<div>
+<p>If you transfer an app that uses Apple Pay, the merchant ID isn't transferred along with the app. Transactions continue to be successful as long as the original certificates are valid. However, when you submit an update, a new merchant ID must be created on the recipient’s account.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-sign-in-with-apple">
+<h3>Apps using Sign in with Apple</h3>
+<div>
+<p>As part of preparing your data for the recipient before the transfer, you'll need to <a href="https://developer.apple.com/documentation/signinwithapple/transferring-your-apps-and-users-to-another-team">generate a transfer identifier</a> for each user in your database. You can do this through a REST service endpoint provided by Apple.</p>
+<p>If you have grouped your apps for Sign in with Apple, you'll need to ungroup them before initiating the transfer.</p>
+<p>When you transfer an app configured with "Sign in with Apple," the associated Service ID will also transfer. If you want to avoid transferring the Service ID, you must <a href="/help/account/configure-app-capabilities/configure-sign-in-with-apple-for-the-web">remove its association</a> before you start the transfer process.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-created-with-mac-catalyst">
+<h3>Apps created with Mac Catalyst</h3>
+<div class="Task">
+<p>To transfer apps created with <a href="/mac-catalyst/">Mac Catalyst</a> that don’t <a href="/help/app-store-connect/create-an-app-record/add-platforms/">offer universal purchase</a>, both the iPad app (primary app ID) and the Mac app (Mac Catalyst app ID) need to be transferred.</p>
+<p>Initiate the transfer of your iPad app first, and then the associated Mac app. It’s important to transfer the Mac app as well, as the transfer recipient won’t be able to use Mac Catalyst to create a new Mac app based on the iPad app.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-wallet">
+<h3>Apps using Wallet</h3>
+<div>
+<p>If your app distributes Wallet passes that require updates from your app or web service, you will need to reissue these passes with a new identifier after the transfer. The new identifiers ensure that the passes are signed with certificates from your Apple Developer account. To minimize user confusion and avoid interruption, we recommend providing a message in your app to let users know that their previously issued pass will become inactive and to download a new pass from your app or web service.</p>
+<p><a href="/wallet/get-started/">Learn about distributing, updating, and accepting passes.</a></p>
+<p><a href="https://developer.apple.com/design/human-interface-guidelines/components/presentation/alerts/">Learn about best practices for setting alerts.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-icloud">
+<h3>Apps using iCloud</h3>
+<div>
+<p>If your app uses any of the following, it will be transferred to the transfer recipient after they accept the app transfer.</p>
+<ul>
+<li>
+<p>iCloud to store user data</p>
+</li>
+<li>
+<p>iCloud containers</p>
+</li>
+<li>
+<p>KVS identifiers associated with the app</p>
+</li>
+</ul>
+<p>When you transfer an app that shares a CloudKit container with other apps on your account, the transfer will impact those apps. Other apps will lose their ability to read or store data in the transferred CloudKit container. Additionally, the transferor will no longer have access to user data for the transferred app through the iCloud dashboard. Any app updates will disable the app’s ability to read or store data using the transferred CloudKit container.</p>
+<p>If your app uses iCloud Key-Value Storage (KVS), the full KVS value will be embedded in any new provisioning profiles you create for the transferred app. Update your entitlements plist with the full KVS value in your provisioning profile.</p>
+<p><a href="/icloud/">Learn about building apps using CloudKit.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-game-center-and-apple-arcade">
+<h3>Apps using Game Center and Apple Arcade</h3>
+<div>
+<p><b>Multiplayer Compatibility: </b> Apps that are part of a cross-app multiplayer compatibility matrix are no longer compatible with or appear in the other app’s matrix. Once the app transfers, the recipient must <a href="/help/app-store-connect/configure-game-center/add-multiplayer-compatibility/">add multiplayer compatibility</a> to the app in order for it to work with their existing apps.</p>
+<p><b>Game Center Groups: </b>Apps that are part of a Game Center group are removed from the group during the transfer. After the transfer, all leaderboards and achievements revert to their original status. Leaderboards that were originally a group leaderboard retain the <code>grp.</code> prefix in their identifier. After the transfer is complete, the recipient can add the app to the <a href="/help/app-store-connect/configure-game-center/add-multiplayer-compatibility/">Game Center groups</a>.</p>
+<p><b>Merged Leaderboards: </b>Leaderboards that were originally single leaderboards but were merged into a group lose the grp.prefix after transfer. They'll revert to their original leaderboard IDs before the merge. After the app transfer, the recipient must update the app build with the new leaderboard IDs so that scores post correctly.</p>
+<p><b>Matchmaking: </b>Matchmaking configuration isn’t transferred along with the app. For Game Center matchmaking to work, <a href="https://developer.apple.com/documentation/gamekit/matchmaking_rules">matchmaking rules must be created or modified</a> on the recipient’s side after transfer is complete.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-distributed-on-alternative-app-marketplaces">
+<h3>Apps distributed on alternative app marketplaces</h3>
+<div>
+<p>Before initiating a transfer, the transferor should notify any impacted alternative app marketplaces about the transfer of the app. Both the transferor and recipient are responsible for notifying marketplaces of any changes.</p>
+<p>If you’re transferring an app that’s distributed on an alternative app marketplace, the recipient must have signed <a href="/support/dma-and-apps-in-the-eu/#distribution-eu">the Alternative Terms Addendum for Apps in the EU</a> and have <a href="/help/app-store-connect/managing-alternative-distribution/manage-distribution-on-an-alternative-app-marketplace">the same marketplace added in App Store Connect</a> before the transfer for the app to remain available for download. Transferred apps are only available on alternative app marketplaces that were added in App Store Connect by both the transferor and recipient before the transfer.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="nominations">
+<h3>Nominations</h3>
+<div>
+<p>Nominations can't be transferred. If you wish to share nomination details with the recipient, please document your current nominations and provide them to the recipient directly before initiating the transfer.</p>
+<p><a href="/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring">Learn more about nominating your app for featuring.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="app-bundles">
+<h3>App bundles</h3>
+<div>
+<p>When you transfer an app that is part of an app bundle, you can no longer view your app bundle’s history. It’s important to make a record of your app bundle information before you transfer the app.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="accessibility-nutrition-labels">
+<h3>Accessibility Nutrition Labels</h3>
+<div>
+<p>If you <a href="/help/app-store-connect/manage-app-accessibility/manage-accessibility-nutrition-labels">indicate support</a> for accessibility features for your app or include an accessibility URL, these support details and the URL will transfer to the recipient. After the transfer is complete, the recipient may want to update the accessibility URL to their own website.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="apps-using-webhooks">
+<h3>Apps using webhooks</h3>
+<div>
+<p>If you have webhooks configured for your app, they will transfer to the recipient. If you don’t want webhook events delivered to your web server after the transfer, <a href="/help/app-store-connect/manage-your-team/manage-webhooks#delete-a-webhook">delete the webhooks</a> before you transfer the app. Alternatively, the recipient can <a href="/help/app-store-connect/manage-your-team/manage-webhooks#manage-webhook-details">update the webhooks</a> to their own web server after the transfer is complete.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<!-- accordion end -->
+<div class="Task">
+<h2>What happens during and after an app transfer</h2>
+<p>After an app is transferred, its associated App ID is also transferred to the recipient’s <span class="force-glossary">developer account</span>. If the transferor’s App ID was a wildcard App ID, it’s converted to an explicit App ID that exactly matches the app’s bundle ID.</p>
+<p>The transferor is responsible for exchanging the actual code set and building assets directly with the recipient. Be sure to inform the recipient about any capabilities or App Store configuration added to the app, such as keychain sharing, Game Center, or push notifications, so these are maintained in future updates.</p>
+<p>Keep in mind after an app transfer, you can’t generate new or additional promo codes, regardless of the app's ownership status. You can create up to 100 promo codes per app version, and these codes remain valid for four weeks from the date of generation.</p>
+<h2>Data for Sales and Trends and Payments and Financial Reports</h2>
+<p>If you transfer your app, you’ll continue to have access to information for payments and sales that occurred prior to the transfer. However, after the transfer, you won’t have access to information regarding sales and payments that take place afterward. The recipient of the transferred app will only receive payment and sales information for transactions that occurred after the transfer.</p>
+<h2>Data for App Analytics</h2>
+<p>When you transfer an app from your account to someone else, you'll no longer have access to the app's data in App Analytics. However, you can still view historical performance data in the <a href="https://appstoreconnect.apple.com/trends" target="_blank">Sales and Trends</a> section. If someone transfers an app to you, you'll get access to all analytics data as of April 1, 2015, or since the app was first made available on the App Store, whichever occurred later.</p>
+</div>
+<div class="LinkUniversal"><b>Related</b>
+<a href="/help/app-store-connect/transfer-an-app/app-transfer-criteria">App transfer criteria</a>
+<a href="/help/app-store-connect/transfer-an-app/initiate-an-app-transfer">Initiate an app transfer</a>
+<a href="/help/app-store-connect/transfer-an-app/accept-an-app-transfer">Accept an app transfer</a>
+</div>
+</link></article> </div>

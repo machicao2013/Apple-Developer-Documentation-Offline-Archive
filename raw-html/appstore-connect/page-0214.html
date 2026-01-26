@@ -1,0 +1,235 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage subscriptions</span>
+<article _v="25P">
+<h1>Offer auto-renewable subscriptions</h1>
+<p>App Store Connect offers tools to help you run a subscription business on the App Store. How you configure your subscriptions in App Store Connect determine how users subscribe to your service, how often they are billed, and how they upgrade and downgrade between offerings. To begin offering a subscription in your app, you will need to create a Subscription Group, then add one or more Subscription products to that group, then assign levels to those products. Subscription setup is structured as the following:</p>
+<ul>
+<li>
+<p><b>Subscription group:</b> A set of subscription products with varying levels and durations. You can have up to 100 subscriptions per group. Users can subscribe to one subscription product per group at a time.</p>
+</li>
+<li>
+<p><b>Subscription: </b>A product that lets users purchase dynamic content for a set period. Auto-renewable subscriptions renew automatically, unless cancelled by the user. Subscription duration and price is configured in App Store Connect.</p>
+</li>
+<li>
+<p><b>Subscription levels:</b> A ranking system of subscriptions within a subscription group that determines the upgrade, downgrade, and crossgrade path available to subscribers. Levels make it possible to offer varying access (basic, premium) of the same service.</p>
+</li>
+<li>
+<p><b>Subscription duration: </b>The length of time before the subscription renews and the subscriber is charged. Possible durations are 1 week, 1 month, 2 months, 3 months, 6 months, and 1 year.</p>
+</li>
+</ul>
+<div class="Subhead">
+<h2>Single subscription product setup</h2>
+<p>If you offer only one subscription product in your app, the subscription defaults to a single level within the subscription group.</p>
+<figure><img alt="MacBook Pro screen with a subscription page for an app called Ocean Journal. The page shows the App Store Connect navigation menu at the top and the Subscriptions page below with one available subscription option listed." class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-OfferAutoRenew-Single_2x.png"/></figure>
+</div>
+<div class="Subhead">
+<h2>Multiple subscription and durations product setup </h2>
+<p>Arrange your subscriptions in order from the one that offers the most (level 1) to the one that offers the least. You can stack subscriptions with equal content but different durations and other similar variables, at the same level. Each level can have multiple subscription products, offering multiple durations and prices for people to choose from. This lets them upgrade, downgrade, and crossgrade within the subscription group without impacting their days of paid service.</p>
+<figure><img alt="A MacBook Pro screen and a mobile phone screen. The screens show a subscription page for an app called Ocean Journal. The page shows the App Store Connect navigation menu at the top and the Subscriptions page below with one available subscription option listed." class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-OfferAutoRenew-Multi_2x.png"/></figure>
+</div>
+<div class="Subhead">
+<h2>Subscription proceeds rate</h2>
+<p>During a subscriber’s first year of service, you receive 70% of the subscription price at each billing cycle, minus applicable taxes. After a subscriber accumulates one year of paid service in the same subscription group, your net revenue increases to 85% of the subscription price, minus applicable taxes. Time spent within a subscription offer is also counted toward the total. Members of the <a href="/app-store/small-business-program/">App Store Small Business Program</a> receive 85% starting on the first day.</p>
+<p>When an auto-renewable subscription expires, the days of paid service stop accumulating. If someone resubscribes or the subscription is recovered within 60 days, the days of paid service continue from the recovery date. Conversely, if the subscription is recovered after 60 days, the rate reverts to 70% and the day count starts over.</p>
+<p>When a subscription expires due to a billing issue, Apple attempts to renew the subscription and collect payment. If you enabled the billing grace period for your apps, there won’t be any interruption to days of paid service or to your revenue, if Apple is able to recover the subscription within the billing grace period (either 6 or 16 days, depending on the subscription duration). <a href="/help/app-store-connect/manage-subscriptions/enable-billing-grace-period-for-auto-renewable-subscriptions">Learn more about billing grace periods.</a></p>
+<p>You can find information about subscription performance, subscriber activity, and proceeds in your Sales and Trends reports. <a href="/help/app-store-connect/view-sales-and-trends/view-subscription-data">Learn more</a>.</p>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-subscription-group">
+<h3>Create a subscription group</h3>
+<div>
+<p>To offer subscriptions within your app, you must first create a subscription group in App Store Connect. When you create subscription products, you'll be able to add these products to the subscriptions group. Before creating subscriptions, ensure that you understand the right subscription setup for your business model. <a href="/app-store/subscriptions/">Learn about offering subscriptions.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the add button (+).</p>
+</li>
+<li>
+<p>Enter a reference name.</p>
+</li>
+<li>
+<p>Click Create</p>
+<figure><img alt="Screenshot of Subscriptions page.  Subscription Groups section displays a plus (+) button for adding new groups. A single subscription group is currently listed in the section." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-subscriptions-mainpg_2x.png"/></figure>
+</li>
+</ol>
+<div class="Subhead">
+<h3 class="Name">Create an additional subscription group</h3>
+<p>If you want to offer groups of subscriptions with varying subscription levels, you’ll need to create more than one subscription group.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Since users can only buy one subscription within a group at a time, creating a single group is the best practice for most apps, as it prevents people from accidentally purchasing multiple subscriptions. Users who buy subscriptions in multiple groups are billed separately for each subscription.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the add button (+).</p>
+</li>
+<li>
+<p>Read and acknowledge the warning by selecting the checkbox and clicking Next.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You’ll only be prompted with a warning when creating your second subscription group.</p>
+</div>
+<figure><img alt="Screenshot of Create an Additional Subscription Group? pop-up window. A checkbox labeled 'I understand, create additional subscription group' is selected. Buttons for navigation include Cancel and Next." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subs-addsub-checkbox_2x.png"/></figure>
+</li>
+<li>
+<p>Enter the reference name for the new group.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+</ol>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="add-subscription-products">
+<h3>Add subscription products</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the Sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click a subscription group name.</p>
+</li>
+<li>
+<p>Click Create.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If you're adding a subscription to a group that already has existing subscriptions, you'll click the add button (+).</p>
+</div>
+<figure class="spacing-top-paragraph"><img alt="Screenshot of the Subscriptions page. A ‘Create’ button is located in the Subscriptions section." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew_2x.png"/></figure>
+</li>
+<li>
+<p>Enter the subscription’s reference name and Product ID, then click Create. Once you've created your subscription product, you'll be taken to its information page to add more details.</p>
+<figure><img alt="Screenshot of a Create Subscription pop-up window. There are fields to enter a reference name and product ID. Buttons for navigation include Cancel and Create." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew2_2x.png"/></figure>
+</li>
+<li>
+<p>Under Subscription Duration, choose a duration and click Save.</p>
+<figure><img alt="Screenshot of a Create Subscription pop-up window. A dropdown menu for Subscription Duration is open, displaying a list of duration options." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew3_2x.png"/></figure>
+</li>
+<li>
+<p>Under Subscription Prices, set a price.</p>
+<figure><img alt="Screenshot of a Subscription Price pop-up window with dropdown menu for Currency and Price. Buttons for navigation include Cancel and Next." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew4_2x.png"/></figure>
+</li>
+<li>
+<p>Under Review Information, provide any additional information that may help the App Review team review your In-App Purchase.</p>
+<figure><img alt="Screenshot of a Review Information section. There is a section to upload a screenshot and add review notes." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew5_2x.png"/></figure>
+</li>
+<li>
+<p>Optionally, enable <a href="/help/app-store-connect/configure-in-app-purchase-settings/turn-on-family-sharing-for-in-app-purchases">Family Sharing</a>, edit the <a href="/help/app-store-connect/configure-in-app-purchase-settings/set-a-tax-category-for-in-app-purchases">subscription’s tax category</a>, and add localizations.</p>
+<figure><img alt="Screenshot of Subscription detail page. Below Family Sharing section, there is a link to turn it on." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Subscription-CreateNew6_2x.png"/></figure>
+</li>
+<li>
+<p>Click Save.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note:</b> If you'd like your subscription to be accessible from more than one app, create an equivalent subscription product for each app. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/offering_a_subscription_across_multiple_apps">Learn how to offer subscriptions across multiple apps</a>.</p>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="assign-subscription-levels">
+<h3>Assign subscription levels</h3>
+<div>
+<p>Once you create a subscription product, you can add subscription group information and set subscription levels. These levels determine the upgrades, downgrades, and crossgrades available within a group.</p>
+<p>You don’t have to assign multiple levels. You can choose to offer a single subscription product or offer multiple subscription products and assign them all to the same level within a group. Learn about setting up subscription groups and ensure that you understand the right level setup for your business model.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group you want to edit.</p>
+</li>
+<li>
+<p>To set subscription levels, click Edit Order.</p>
+</li>
+<li>
+<p>In the window that opens, click the reordering control on the left of the subscription name and drag it to a new position to change the subscriptions’ level.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<figure><img alt="Screenshot of Edit Subscription Order page. Subscriptions are listed with sort icons for reordering, names, and durations. There's a Cancel and Save button at the bottom of the page." class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions/images/InApp-Assign-SubLevels_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-localizations">
+<h3>Add localizations</h3>
+<div>
+<p>You can add languages and enter localized metadata for your auto-renewable subscriptions and subscription groups. For a list of supported languages, visit <a href="/help/app-store-connect/reference/app-information/app-store-localizations">App Store localizations</a>. Subscription group localizations and subscription localizations are reviewed independently from your In-App Purchase submission. For the properties you can localize, visit <a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">Required, localizable, and editable properties</a>. For a detailed example visit <a href="/help/app-store-connect/manage-app-information/localize-app-store-information">Localize app information</a>.</p>
+<div class="callout callout-note">
+<p class="note"><b>Important: </b>You can manage languages only when the <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">app status is editable</a>.</p>
+</div>
+<div class="Subhead">
+<h3 class="Name">Add subscription group localizations</h3>
+<p>In each localization, you can customize subscription group names and app display options. Users will see these names when they manage subscriptions on their devices.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group name.</p>
+</li>
+<li>
+<p>Click the add button (+) next to App Store Localizations.</p>
+</li>
+<li>
+<p>Follow the prompts to select localizations and enter localized subscription group display names and descriptions.</p>
+</li>
+<li>
+<p>Click Add.</p>
+</li>
+</ol>
+</div>
+<div class="Subhead">
+<h3 class="Name">Add subscription localizations</h3>
+<p>The localized display name and description for your subscription appear to each customer could be impacted by certain factors, such as the language of the App Store for their location and the language settings on their device.</p>
+<p><a href="/help/app-store-connect/reference/app-information/app-store-localizations">Learn about App Store localization.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group name.</p>
+</li>
+<li>
+<p>Select the subscription.</p>
+</li>
+<li>
+<p>Click the add button (+) next to App Store Localizations.</p>
+</li>
+<li>
+<p>Follow the prompts to select localizations and enter localized subscription group display names and descriptions.</p>
+</li>
+<li>
+<p>Click Add.</p>
+</li>
+</ol>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions">Manage pricing for auto-renewable subscriptions</a>
+<a href="/help/app-store-connect/manage-in-app-purchases/create-consumable-or-non-consumable-in-app-purchases">Create consumable or non-consumable In-App Purchases</a>
+</div>
+</link></article> </div>

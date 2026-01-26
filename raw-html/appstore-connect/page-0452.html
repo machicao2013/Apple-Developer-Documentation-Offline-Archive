@@ -1,0 +1,1378 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="9.0">
+<h1>Summary Sales Report</h1>
+<p>Summary Sales Report shows aggregated sales and download data from the App Store for your apps and In-App Purchases.</p>
+<p>The following table shows columns for <b>Summary Sales Report Version 1_3</b>.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="Tip icon" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/summary-sales-report#sample-summary-sales-report">sample report.</a></p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Sales report field definitions" class="table-4-col table-4-col-even">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Report Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Values</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Provider</p>
+</td>
+<td>
+<p>CHAR(5) - APPLE</p>
+</td>
+<td>
+<p>Up to 5 Characters</p>
+</td>
+<td>
+<p>Service provider in your reports (typically Apple).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Provider Country</p>
+</td>
+<td>
+<p>CHAR(2) - US</p>
+</td>
+<td>
+<p>Up to 2 Characters</p>
+</td>
+<td>
+<p>Service provider country code (typically US).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SKU</p>
+</td>
+<td>
+<p>VARCHAR(2000)</p>
+</td>
+<td>
+<p>Up to 2000 Characters</p>
+</td>
+<td>
+<p>Product identifier provided by you during app setup.</p>
+<p>If you are participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge that was created using <a class="break-word" href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.SKU</a> that you provided, surrounded by single quotes.</p>
+<p>For subscriptions created using <a class="break-word" href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a>  that you provided. If the subscriptions consists of more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> within the subscription appears, listed in order of their corresponding display names in the Title field. Each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> is surrounded by single quotes and separated by a comma.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer</p>
+</td>
+<td>
+<p>VARCHAR(4000)</p>
+</td>
+<td>
+<p>Up to 4000 Characters</p>
+</td>
+<td>
+<p>Provider name provided by you during the initial account setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>VARCHAR(4000)</p>
+</td>
+<td>
+<p>Up to 4000 Characters</p>
+</td>
+<td>
+<p>The name of the content being purchased. For downloads, the field will populate the name of the app as set in App Store Connect. For In-App Purchases, the field will populate the Product ID as set in App Store Connect.</p>
+<p>If you're participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge created using <a class="break-word" href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.displayName</a> that you provided, surrounded by single quotes.</p>
+<p>For subscriptions created using <a class="break-word" href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> that you provided. If the subscription consists of more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> within the subscription appears, listed in alphanumeric order. Each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> is surrounded by single quotes and separated by a comma.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Version</p>
+</td>
+<td>
+<p>VARCHAR(100)</p>
+</td>
+<td>
+<p>Up to 100 Characters</p>
+</td>
+<td>
+<p>Version number provided by you during app setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Product Type Identifier</p>
+</td>
+<td>
+<p>VARCHAR(20)</p>
+</td>
+<td>
+<p>Up to 20 Characters</p>
+</td>
+<td>
+<p>Defines the type of transaction (for example, initial download or update). <a href="/help/app-store-connect/reference/reporting/product-type-identifiers">Learn about product type identifiers.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Aggregated number of units. Negative values indicate refunds, or CMB credits for previously purchased apps when the CMB column shows "CMB-C". A value of 0 may indicate a partial refund.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer Proceeds (per unit)</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Amount you receive per unit. This is the customer price minus applicable taxes and Apple’s commission, per Schedule 2 of your Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Begin Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>Start date of report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date in MM/DD/YYYY</p>
+</td>
+<td>
+<p>End date of report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Currency</p>
+</td>
+<td>
+<p>CHAR(3)</p>
+</td>
+<td>
+<p>Up to 3 Characters</p>
+</td>
+<td>
+<p>Three-character ISO code indicating the customer’s currency. <a href="/help/app-store-connect/reference/reporting/currency-codes">Learn about currency codes.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country Code</p>
+</td>
+<td>
+<p>CHAR(2)</p>
+</td>
+<td>
+<p>Up to 2 Characters</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region through which the purchase was made. <a href="/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies">Learn about financial report regions and currencies.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Currency of Proceeds</p>
+</td>
+<td>
+<p>CHAR(3)</p>
+</td>
+<td>
+<p>Up to 3 Characters</p>
+</td>
+<td>
+<p>The currency in which the customer is paid. <a href="/help/app-store-connect/reference/reporting/currency-codes">Learn about currency codes.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="no-glossary">Apple Identifier</span></p>
+</td>
+<td>
+<p>DECIMAL(18,0)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>Your app's Apple ID.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Price</p>
+</td>
+<td>
+<p>DECIMAL(18,2)</p>
+</td>
+<td>
+<p>Up to 18 Characters</p>
+</td>
+<td>
+<p>The price per unit billed to the customer, which you set for your app or In-App Purchase in App Store Connect. *The customer price is inclusive of any applicable taxes we collect and remit per Schedule 2 of the Paid Apps Agreement. Negative values indicate refunds or CMB credits for previously purchased apps when the CMB column shows "CMB-C’".</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promo Code</p>
+</td>
+<td>
+<p>VARCHAR(10)</p>
+</td>
+<td>
+<p>Up to 10 Characters</p>
+</td>
+<td>
+<p>This field includes the promotional code used to redeem the promotion or the custom offer code used to make an In-App Purchase at a discounted price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Parent Identifier</p>
+</td>
+<td>
+<p>VARCHAR(100)</p>
+</td>
+<td>
+<p>Up to 100 Characters</p>
+</td>
+<td>
+<p>SKU of the app associated with the In-App Purchase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription</p>
+</td>
+<td>
+<p>VARCHAR(10)</p>
+</td>
+<td>
+<p>Up to 10 Characters</p>
+</td>
+<td>
+<p>Defines whether an auto-renewable subscription is new or a renewal. When <a href="/app-store/subscriptions/#retaining-subscribers">a previous subscriber resubscribes</a>, it's classified as a renewal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Period</p>
+</td>
+<td>
+<p>VARCHAR(30)</p>
+</td>
+<td>
+<p>Up to 30 Characters</p>
+</td>
+<td>
+<p>Defines the duration of an auto-renewable subscription purchase: 7 days, 1 month, 2 months, 3 months, 6 months, and 1 year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Category</p>
+</td>
+<td>
+<p>VARCHAR(50)</p>
+</td>
+<td>
+<p>Up to 50 Characters</p>
+</td>
+<td>
+<p>Indicates the primary category of the app, such as Games.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>CMB</p>
+</td>
+<td>
+<p>VARCHAR(5)</p>
+</td>
+<td>
+<p>Up to 5 Characters</p>
+</td>
+<td>
+<p>If the transaction completes an app bundle, this field will contain a value of “CMB.” App credits for completed bundles will show a value of “CMB-C.” Otherwise this field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Supported Platforms</p>
+</td>
+<td>
+<p>VARCHAR(12)</p>
+</td>
+<td>
+<p>Up to 12 Characters</p>
+</td>
+<td>
+<p>List of platforms that your app supports: iOS, macOS, tvOS, iOS and tvOS, visionOS, or iOS and visionOS.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>VARCHAR(10)</p>
+</td>
+<td>
+<p>Up to 10 Characters</p>
+</td>
+<td>
+<p>Type of device used for purchase or redownload: Values include iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Preserved Pricing</p>
+</td>
+<td>
+<p>VARCHAR(3)</p>
+</td>
+<td>
+<p>Up to 3 Characters</p>
+</td>
+<td>
+<p>For Renew events, if the price is preserved then this field equals “Yes”. Otherwise, it’s blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Reason</p>
+</td>
+<td>
+<p>VARCHAR(20)</p>
+</td>
+<td>
+<p>Up to 20 Characters</p>
+</td>
+<td>
+<p>If a subscription is active for more than a year, you receive 85% of the customer price (minus applicable taxes) and this field equals “Rate After One Year”. Otherwise, you receive 70% and the field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client</p>
+</td>
+<td>
+<p>VARCHAR(30)</p>
+</td>
+<td>
+<p>Up to 30 Characters</p>
+</td>
+<td>
+<p>Indicates where the purchase happened: App Store for iMessage, News, or blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Order Type</p>
+</td>
+<td>
+<p>VARCHAR(30)</p>
+</td>
+<td>
+<p>Up to 30 Characters</p>
+</td>
+<td>
+<p>For pre-orders, indicates whether a purchase originated from a pre-order.</p>
+<p>For introductory subscription offers, displays offer pricing: Pay Up Front or Pay As You Go.</p>
+<p>For promotional subscription offers, displays the offer ID.</p>
+<p>For In-App Purchase offer codes and subscription win-back offers, displays the offer code reference name you entered in App Store Connect when setting up the offer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-summary-sales-report">
+<h3>Sample Summary Sales Report</h3>
+<div>
+<div class="Subhead">
+<h2 class="Name">Purchases</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 1: Purchases" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Country Code</p>
+</th>
+<th scope="col">
+<p class="TableHead">Currency of Proceeds</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>100</p>
+</td>
+<td>
+<p>.70</p>
+</td>
+<td>
+<p>.99</p>
+</td>
+<td>
+<p>US</p>
+</td>
+<td>
+<p>USD</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>100 app purchases were made in the United States. The Product Type Identifier column value “1F” indicates that these were universal app purchases. Customers paid .99 USD for each unit and you received .70 USD for each.</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 1: Purchases" class="table-8-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Country Code</p>
+</th>
+<th scope="col">
+<p class="TableHead">Currency of Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Parent Identifier</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>In-App One</p>
+</td>
+<td>
+<p>IA1</p>
+</td>
+<td>
+<p>50</p>
+</td>
+<td>
+<p>.42</p>
+</td>
+<td>
+<p>.69</p>
+</td>
+<td>
+<p>GB</p>
+</td>
+<td>
+<p>GBP</p>
+</td>
+<td>
+<p>AppOne</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>50 In-App Purchases were made in Great Britain. The Product Type Identifier column value “IA1” indicates that these were In-App Purchases. Customers paid .69 GBP for each unit and you received .42 GBP for each. The Parent Identifier shows the SKU of the parent app.</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 1: Purchases" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Country Code</p>
+</th>
+<th scope="col">
+<p class="TableHead">Currency of Proceeds</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Bundle One</p>
+</td>
+<td>
+<p>1-B</p>
+</td>
+<td>
+<p>25</p>
+</td>
+<td>
+<p>2.10</p>
+</td>
+<td>
+<p>2.99</p>
+</td>
+<td>
+<p>US</p>
+</td>
+<td>
+<p>USD</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>25 app bundle purchases were made in the United States. The Product Type Identifier column value “1-B” indicates that these were app bundle purchases. Customers paid 2.99 USD for each unit and you received 2.10 USD for each.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Refunds</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>-50</p>
+</td>
+<td>
+<p>.7</p>
+</td>
+<td>
+<p>-0.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Refunds have negative values for Units and Customer Price, and positive values for Developer Proceeds.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Subscription Upgrade with Partial Credit (for sales before <span class="nowrap">November 17, 2016).</span></h2>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7.00</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report on Day 25 of Upgrade</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>19.83</p>
+</td>
+<td>
+<p>28.32</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a subscriber upgrades, any remaining credit is applied to the cost of the new subscription, as long as the credit is not greater than the new price.</p>
+<p>For example, Report on Day 1 shows a sale of a 1-month subscription for 9.99. On Day 25, the subscriber upgrades to a subscription priced at 29.99. Note that the upgrade goes into effect immediately. Because the pro-rated credit of 1.67 (9.99/30 days x 5 days left) is less than 29.99, the cost of the new subscription is recorded at only 28.32 (29.99 - 1.67).</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Subscription Upgrade with Partial Credit (for sales after <span class="nowrap">November 17, 2016</span>).</h2>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7.00</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report on Day 25 of Upgrade</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>21</p>
+</td>
+<td>
+<p>29.99</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>-1</p>
+</td>
+<td>
+<p>1.17</p>
+</td>
+<td>
+<p>-1.67</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a subscriber upgrades, the pro-rated credit is refunded and the new subscription is charged at full price, as long as the credit is not greater than the new price.</p>
+<p>For example, Report on Day 1 shows a sale of a 1-month subscription for 9.99. On Day 25, the subscriber upgrades to a subscription priced at 29.99. Note that the upgrade goes into effect immediately. The pro-rated credit of 1.67 (9.99/30 days x 5 days left) is refunded and the full price of 29.99 is charged.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Subscription Upgrade with Full Credit</h2>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>21.00</p>
+</td>
+<td>
+<p>29.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report on Day 15 of Upgrade</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 2: Refunds" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>-1</p>
+</td>
+<td>
+<p>10.50</p>
+</td>
+<td>
+<p>-15.00</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7.00</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a subscriber upgrades and the remaining credit is greater than the cost of the new subscription then a refund is issued.</p>
+<p>For example, Report on Day 1 shows a purchase of a 1-month subscription for 29.99. On Day 15, the subscriber upgrades to a 1-month subscription priced at 9.99. Because the pro-rated credit of 15.00 (29.99/30 days x 15 days left) is greater than 9.99, a full refund is issued for -15.00 and a new sale for 9.99 is recorded.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Developer codes</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 3: Developer codes" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promo Code</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Two</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>CR-RW</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This row shows five sales in which customers used a developer code. Developer Proceeds and Customer Price are 0. The Promo Code column value will be “CR-RW.”</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Completed app bundles</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 4: Completed app bundles" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Row</p>
+</th>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">CMB</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>App Bundle One</p>
+</td>
+<td>
+<p>1-B</p>
+</td>
+<td>
+<p>25</p>
+</td>
+<td>
+<p>2.10</p>
+</td>
+<td>
+<p>2.99</p>
+</td>
+<td>
+<p>CMB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>-25</p>
+</td>
+<td>
+<p>.70</p>
+</td>
+<td>
+<p>-.99</p>
+</td>
+<td>
+<p>CMB-C</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>App Two</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>-25</p>
+</td>
+<td>
+<p>.70</p>
+</td>
+<td>
+<p>-.99</p>
+</td>
+<td>
+<p>CMB-C</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A completed paid app bundle purchase creates two types of records:</p>
+<ul>
+<li>
+<p>One record for the bundle itself, indicated by the Product Type Identifier column value “1-B” (for iOS apps), or “F1-B” (for macOS apps) and the CMB column value “CMB”</p>
+</li>
+<li>
+<p>A record for credits for the previously purchased apps, indicated by the CMB column value “CMB-C”</p>
+</li>
+</ul>
+<p>Every paid app CMB record has one or more corresponding CMB-C records. The Customer Price of the CMB record plus the sum of the corresponding CMB-C records equals the price the customer paid for completing the bundle. Credits, like refunds, have negative values for Units and Customer Price, and positive values for Developer Proceeds.</p>
+<p>Row 1 shows 25 app bundle purchases. The previously purchased apps are shown as credits in rows 2 and 3, as indicated by the value “CMB-C” in the CMB column. Customers paid 1.01 USD to complete the bundle (2.99 + -.99 + -.99).</p>
+<p>Please note, in the case of a free app CMB record, a negative unit value row will not be created for previously downloaded apps. Instead, the report will show only the record for the free app bundle purchase.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">App updates</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 5: App updates" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Version</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Three</p>
+</td>
+<td>
+<p>2.4.9</p>
+</td>
+<td>
+<p>7F</p>
+</td>
+<td>
+<p>75</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>75 app updates were made, as indicated by Product Type Identifier value “7F.” Developer Proceeds and Customer Price are 0. The Version is the version that customers upgraded from.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Gift purchases</h2>
+<div class="table-wrapper">
+<table aria-label="Scenario 6: Gift purchases" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promo Code</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Three</p>
+</td>
+<td>
+<p>1F</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>.70</p>
+</td>
+<td>
+<p>.99</p>
+</td>
+<td>
+<p>GP</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Three gift purchases were made, as indicated by Promo Code value “GP.”</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Introductory Offers and Subscription Offers</h2>
+<p>Report on day of purchase </p>
+<div class="table-wrapper">
+<table aria-label="Scenario 7: Introductory Price" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Product Type Identifier</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Order Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>3 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7.99</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+<td>
+<p>Pay Up Front Intro Offer</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3 Month Basic</p>
+</td>
+<td>
+<p>1AY</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>.07</p>
+</td>
+<td>
+<p>0.99</p>
+</td>
+<td>
+<p>ExampleOfferID</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a subscriber signs up for a pay up front introductory offer, the event is shown in the Summary Sales Report. In the example above, a subscriber purchases a 3 Month Basic pay up front introductory offer. Another subscriber redeems a subscription offer for the same SKU and the Order Type column is populated with the Promotional Offer ID.</p>
+</div>
+<div class="Subhead">
+<h2 class="Name">Pre-Orders</h2>
+<p>Report on day of purchase</p>
+<div class="table-wrapper">
+<table aria-label="Scenario 7: Introductory Price" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Order Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>0.7</p>
+</td>
+<td>
+<p>0.99</p>
+</td>
+<td>
+<p>Pre-Order</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App One</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>0.7</p>
+</td>
+<td>
+<p>0.99</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>App One has 1 unit that originated from a pre-order, and another unit that originated after the app went live. Units that originated from a pre-order will have “Pre-Order” in the Order Type column. Units that were not from pre-orders will either have a blank field in the Order Type column, or be populated with a different Order Type value (such as a value for an Introductory Offer).</p>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</link></article> </div>

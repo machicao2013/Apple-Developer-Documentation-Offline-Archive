@@ -1,0 +1,435 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Managing alternative distribution</span>
+<article _v="4.0">
+<h1>Submit for Notarization</h1>
+<p>If you’ve set up alternative distribution, you can choose to make your app version eligible for distribution only on alternative app marketplaces or websites (in the European Union (EU)) by selecting to have it evaluated based on the Notarization Review Guidelines (a subset of the <a href="/app-store/review/guidelines/">App Review Guidelines</a>). Otherwise, App Review uses the <span class="no-glossary">App Review</span> Guidelines to evaluate your app version to make it eligible for distribution on the App Store, alternative app marketplaces, and websites (in the EU) if approved. After you've <a href="/help/app-store-connect/managing-alternative-distribution/manage-distribution-on-an-alternative-app-marketplace">added your app as eligible for distribution on a marketplace</a> in App Store Connect or <a href="https://developer.apple.com/documentation/appstoreconnectapi/alternative_marketplaces_and_web_distribution">an alternative distribution domain</a> using the App Store Connect API, follow these steps.</p>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<div class="Task no-header">
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version you want to submit.</p>
+</li>
+<li>
+<p>Scroll down to the App Review Information section, click Edit under Review Type.</p>
+<figure><img alt="The Review Type section appears at the bottom of the App Review Information section." class="help-screens-retro" src="/help/app-store-connect/managing-alternative-distribution/submit-for-notarization/images/submit-notarization-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>Select “Notarization” and click Save.</p>
+<figure><img alt=" prompt displays two options: App Store or Notarization." class="help-screens-retro" src="/help/app-store-connect/managing-alternative-distribution/submit-for-notarization/images/submit-notarization-step-2_2x.png"/></figure>
+</li>
+<li>
+<p>On the top right, click “Add for Review”. The app status changes to “Ready for Review”. If you changed any app information, you need to click Continue in the dialog that appears.</p>
+</li>
+<li>
+<p>Click “Submit to App Review”. The app status changes to “Waiting for Review”. When the review process starts, the app status changes to “In Review”. <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">Learn about the tasks you can do in these statuses.</a></p>
+<p>The app version is accepted, an alternative distribution package automatically generates.</p>
+</li>
+</ol>
+</div>
+<developer-accordion>
+<accordion-panel id="required-localizable-and-editable-properties-for-notarization">
+<h3>Required, localizable, and editable properties for Notarization</h3>
+<div>
+<p>The tables below show the app and version properties required to submit your app for Notarization. The tables also indicate the properties that you can localize and edit at any time without submitting a new version of your app.</p>
+<p><a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">Learn about the required, localizable, and editable properties for App Store distribution.</a></p>
+<div class="Subhead" id="app-information">
+<h5>App information</h5>
+<div class="table-wrapper">
+<table aria-label="Required, localizable, editable properties - App information" class="table-4-col">
+<thead>
+<tr>
+<th colspan="6" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Required</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Localized</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Editable</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6">
+<p>Name</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Subtitle</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Rating</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Bundle ID</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>SKU</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Content Rights</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>License Agreement</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<div class="row">
+<figure alt="Localized." class="icon icon-checkcircle"></figure><sup>1</sup>
+</div>
+</td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Primary Language</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Primary Category</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Secondary Category</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Availability in the Republic of Korea<sup>2</sup></p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Availability in China mainland<sup>3</sup></p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2">
+<div class="row">
+<figure alt="Editable." class="icon icon-checkcircle"></figure><sup>4</sup>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> <sup>1</sup> Custom License Agreement text box can include localized text.</p>
+<p> <sup>2</sup> Required for developers who enroll as an organization and distribute apps on the App Store in South Korea.</p>
+<p> <sup>3</sup> Required for apps that meet certain criteria to be available on the App Store in China mainland. <a href="/help/app-store-connect/reference/app-information/app-information">Learn about availability requirements.</a></p>
+<p> <sup>4</sup> Enter at any time, but submits for review with the next version submission.</p>
+</div>
+<div class="Subhead" id="platform-version-information">
+<h5>Platform version information</h5>
+<div class="table-wrapper">
+<table aria-label="Required, localizable, editable properties - platform version information" class="table-4-col">
+<thead>
+<tr>
+<th colspan="6" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Required</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Localized</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Editable</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6">
+<p>Screenshots</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>App Preview</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Promotional Text</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Description</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Keywords</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Support URL</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Marketing URL</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Version Number</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Copyright</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Routing App Coverage File</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>App Review Information</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Version Release settings</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>What’s New in this Version</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Phased Release for Automatic Updates</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Reset overview rating</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="Subhead" id="app-privacy">
+<h5>App privacy</h5>
+<div class="table-wrapper">
+<table aria-label="Required, localizable, editable properties - App privacy" class="table-4-col">
+<thead>
+<tr>
+<th colspan="6" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Required</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Localized</p>
+</th>
+<th colspan="2" scope="col">
+<p class="TableHead">Editable</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6">
+<p>Privacy Policy URL</p>
+</td>
+<td colspan="2">
+<figure alt="Required" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Privacy Choices URL</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Localized" class="icon icon-checkcircle"></figure>
+</td>
+<td colspan="2"></td>
+</tr>
+<tr>
+<td colspan="6">
+<p>Data Types</p>
+</td>
+<td colspan="2"></td>
+<td colspan="2"></td>
+<td colspan="2">
+<figure alt="Editable" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

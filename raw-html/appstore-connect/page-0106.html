@@ -1,0 +1,70 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="3.0">
+<h1>Differentiate Without Color Alone evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Users shouldn't have to rely on color to distinguish different selection states or values in an app. Instead, apps should use additional methods beyond color, such as text labels or icons, to convey information to users with common forms of color blindness.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. The goal is to ensure that your app doesn’t exclude users who may not be able to perceive all colors. Color blindness is one of the most common forms of disability, affecting up to 10% of some populations.</p>
+<p>Color is <i>extremely</i> useful in communicating information quickly. Don’t remove color from your app to support this capability; just make sure color isn’t the <i>only</i> way you’re conveying information.</p>
+<p>The following sections provide more detail about how to determine whether your app supports Differentiate Without Color Alone well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Differentiate Without Color Alone</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>A great way to evaluate your app is to try testing using the <i>Grayscale</i> color filter in Accessibility Display settings. While this's <i>not</i> a representation of what color-blind users see, it's a good way to discover unanticipated problems with the use of color in your app. If you can’t use your own app in grayscale, rethink your app’s design and differentiate without color <i>alone</i>.</p>
+<p>Ideally, your app should be designed by default to convey information using more than color alone. Using a setting to invoke this experience should be a last resort or stop-gap solution until your app's reliance on color can be improved.</p>
+</div>
+<h2>Indicating support for Differentiate Without Color Alone</h2>
+<div class="spacing-bottom">
+<p>You may indicate your app supports Differentiate Without Color Alone if the common tasks of your app don't rely on color as the <b><i>only</i></b> way to convey information. For example, a game may distinguish teams using symbols, in addition to representing them with colors. If your app does use color as the only differentiator (e.g. color-coded charts), make sure that users can customize the design for their needs with a setting or by choosing multiple color schemes.</p>
+<ul>
+<li>
+<p>Consider where your elements, controls, or content rely solely on color to differentiate or communicate key information. Examples include status buttons or icons whose only distinguishing difference is red 🔴 vs green 🟢 to indicate positive or negative, online or offline. This visual difference may not be easy for people with red-green color-blindness to perceive.</p>
+</li>
+<li>
+<p>Instead of relying on color alone, consider using placement, order, shape, iconography, or other stylistic differences <i>in addition</i> to color. Differences like a red square 🟥 or green circle 🟢 are perceivable by all sighted users, regardless of color perception ability.</p>
+</li>
+<li>
+<p>Consider allowing multiple color schemes so users can avoid the problematic color combinations they have difficulty distinguishing. One example is in apps and games where color is used to indicate different teams or characters.</p>
+</li>
+<li>
+<p>In complex charts or data visualization apps, consider arranging the chart colors in the same order as the legend keys. Alternatively, you can provide options for in-chart iconography or labels on each element directly to help communicate the data.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>These differences reduce cognitive load and help users of all abilities remember what each color means.</p>
+</div>
+<div class="row">
+<div class="column large-6 medium-6 small-12">
+<figure><img alt="Example of inaccessible status indicators: two circles differentiated only by color, green and red." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria/images/indicating-support-for-differentiate-without-color-alone_2x.png"/></figure>
+<small style="display: block; text-align: center;"> <sf-symbol name="xmark" scale="large" style="width: 1.373em; --s-primary: var(--s-label-s, #7f7f7f); display: inline-flex;vertical-align: center;" weight="heavy"><svg style="width: 1.37304em; overflow: visible;" viewbox="0 0 137.304 70.459"><defs><path d="M19.043 84.916C23.038 88.881 29.89 88.747 33.593 85.05L68.678 49.929L103.71 85.005C107.555 88.881 114.259 88.836 118.229 84.871C122.194 80.871 122.239 74.197 118.363 70.346L83.331 35.275L118.363 0.279C122.239-3.602 122.224-10.306 118.229-14.27C114.229-18.21 107.555-18.255 103.71-14.404L68.678 20.622L33.593-14.449C29.89-18.121 23.008-18.285 19.043-14.315C15.103-10.32 15.237-3.468 18.909 0.235L54.025 35.275L18.909 70.391C15.237 74.063 15.073 80.946 19.043 84.916Z" id="LHM100184_264_p0"></path></defs><g data-sa="play" style="--sa-m: 1; --sa-w: 137.304; --sa-h: 70.459;"><g class="sa-helper"></g><g><use data-g="0" fill="var(--s-primary, currentColor)" href="#LHM100184_264_p0" style="--sa-g: 0;"></use></g></g></svg></sf-symbol> For Someone with red-green color blindness, these indicators might appear the same.</small>
+</div>
+<div class="column large-6 medium-6 small-12 spacing-bottom">
+<figure><img alt="Example of accessible status indicators: a green circled checkmark glyph and a red octagon containing an 'X'. This design uses both color and shape to differentiate." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria/images/indicating-support-for-differentiate-without-color-alone2_2x.png"/></figure>
+<small style="display: block; text-align: center;"><sf-symbol name="checkmark" scale="large" style="--s-primary: var(--s-label-s, #7f7f7f); display: inline-flex;vertical-align: center;" weight="heavy"><svg style="width: 1.50036em; overflow: visible;" viewbox="0 0 150.036 70.459"><defs><path d="M62.272 92.645C66.88 92.645 70.471 90.91 72.943 87.223L131.443-1.75C133.228-4.404 133.95-6.973 133.95-9.32C133.95-15.68 129.096-20.385 122.527-20.385C118.055-20.385 115.236-18.801 112.503-14.498L62.012 64.979L36.503 33.824C34.046 30.891 31.301 29.545 27.493 29.545C20.919 29.545 16.084 34.306 16.084 40.74C16.084 43.633 16.947 46.096 19.407 48.93L51.897 87.787C54.739 91.144 58.016 92.645 62.272 92.645Z" id="LHM100185_265_p0"></path></defs><g data-sa="play" style="--sa-m: 1; --sa-w: 150.036; --sa-h: 70.459;"><g class="sa-helper"></g><g><use data-g="0" fill="var(--s-primary, currentColor)" href="#LHM100185_265_p0" style="--sa-g: 0;"></use></g></g></svg></sf-symbol> Both visual indicators and color help differentiate between indicators.</small>
+</div>
+</div>
+</li>
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+</ul>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Differentiate Without Color Alone in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Differentiate Without Color Alone every time you update the app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<p>Human Interface Guidelines &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/accessibility#Vision">Vision</a> &gt; Convey information with more than color alone</p>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10020/">Watch “Make your app visually accessible”</a>
+</div>
+</article> </div>

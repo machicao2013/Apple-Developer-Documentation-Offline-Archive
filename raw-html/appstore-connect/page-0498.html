@@ -1,0 +1,148 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="7.0">
+<h1>View tester feedback</h1>
+<p>Feedback submitted by testers running TestFlight 2.3 or later appears in App Store Connect. This feedback includes screenshots, comments related to crashes, and general comments. It’s also available in TestFlight for Mac and Apple Vision Pro.</p>
+<p>Testers running iOS 14 or iPadOS 14 or later can submit feedback on the App Clip experience.</p>
+<p>Testers running TestFlight 2.2.1 or earlier on iOS 12.4 or earlier can send feedback to the email address you specify in the Feedback Email field in Test Information.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>When a tester is invited by an invitation email, their email address is displayed in the detailed feedback view. If a tester is invited using a public link, they appear as anonymous unless they enter their email address when submitting feedback. In such cases, the email address is only displayed for that specific piece of feedback. <a href="/help/app-store-connect/reference/testflight/beta-tester-feedback">Learn more about the detailed feedback view.</a> </p>
+</div>
+<div>
+<p>Receive automatic notifications to your web server whenever new feedback is submitted through TestFlight by using webhooks. <a href="/help/app-store-connect/manage-your-team/manage-webhooks">Learn more.</a></p>
+</div>
+<p class="spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-feedback">
+<h3>View feedback</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, below Feedback, click Screenshots. Testers' screenshots and comments appear.</p>
+</li>
+<li>
+<p>Click Add Filter to filter your view by platform, app version, build group, build, OS version, or device.</p>
+</li>
+<li>
+<p>Click the feedback to view the full screenshot and written comments from testers. The detailed feedback view also includes information about testers, apps, and devices. <a href="/help/app-store-connect/reference/testflight/beta-tester-feedback">Learn more about tester feedback.</a>
+</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To view screenshot feedback in Xcode, click Open in Xcode in the detailed feedback view.</p>
+</div>
+</li>
+<li>
+<p>In the top-right, click the download icon to download the feedback as a .zip file. This file includes the screenshot and associated comments.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-crash-feedback">
+<h3>View crash feedback</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, below Feedback, click Crashes. The table on the right displays information on feedback submission times and crash details.</p>
+</li>
+<li>
+<p>Click Add Filter to filter your view by platform, app version, build group, build, OS version, or device.</p>
+</li>
+<li>
+<p>Click the feedback to read written comments from testers. The detailed feedback view also includes information about testers, apps, and devices. <a href="/help/app-store-connect/reference/testflight/beta-tester-feedback">Learn more about tester feedback</a>.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To view screenshot feedback in Xcode, click Open in Xcode in the detailed feedback view.</p>
+</div>
+</li>
+<li>
+<p>In the top-right, click the download icon to download the feedback as a .zip file. This file includes the crash report and associated comments.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<ul>
+<li>
+<p>Crash reports are available for download for 120 days.</p>
+</li>
+<li>
+<p>If an app becomes unresponsive due to a crash, a crash report won't be included in the .zip file.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-feedback">
+<h3>Delete feedback</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, below Feedback, click Crashes or Screenshots.</p>
+</li>
+<li>
+<p>Then, click on the feedback you want to delete.</p>
+</li>
+<li>
+<p>In the detailed feedback view, click Delete.</p>
+</li>
+<li>
+<p>In the dialog that appears, click Delete Feedback</p>
+</li>
+</ol>
+<p>To remove a tester who submitted feedback, click Delete Tester &amp; Feedback. This action will remove the tester from TestFlight. Testers who have been removed can be re-invited to test your app in the future.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="disable-feedback">
+<h3>Disable feedback</h3>
+<div>
+<p>You can disable the ability for tester groups to take screenshots and submit feedback directly from your beta app, including details about crashes. To receive feedback through the app again, you can re-enable this feature. All testers can still send email feedback using the TestFlight app.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, below Testers &amp; Groups, select a tester group.</p>
+</li>
+<li>
+<p>Click the settings tab within the group, under Tester Feedback, click Disable.</p>
+</li>
+<li>
+<p>In the dialog that appears, select Disable.</p>
+</li>
+<li>
+<p>To enable feedback, click Enable below Tester Feedback. In the dialog that appears, select Enable.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>Why is one of my testers unable to submit feedback through my beta app even though they are part of a group that feedback is enabled for?</h3>
+<p>If a tester is part of multiple groups, and one of the groups has feedback disabled, the tester will only be able to submit feedback with email from the TestFlight app.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

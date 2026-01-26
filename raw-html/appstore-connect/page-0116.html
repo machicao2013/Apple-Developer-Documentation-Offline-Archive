@@ -1,0 +1,95 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="2.0">
+<h1>Sufficient Contrast evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Sufficient Contrast helps users whose vision is reduced due to a disability or situational impairment such as bright sunlight. Users can increase or adjust the contrast between text or iconography and the background, improving readability.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. The goal of the Sufficient Contrast feature is to support low-vision users who may have reduced visual acuity, clarity, and/or contrast perception.</p>
+<p>The following sections provide more detail about how to determine whether your app supports Sufficient Contrast well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app Supports <b>Sufficient Contrast</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>The accessibility settings for each device include a number of features that can help users customize contrast to fit their needs. Most users that have a need for higher contrast will enable the settings for <i>Bold Text</i>, <i>Increase Contrast</i>, and <i>Reduce Transparency</i>. You’re not required to use the built-in system settings, but testing with them on may give you an understanding of the contrast minimums your users expect. If you offer your own in-app setting, it should either support similar functionality to the systemwide settings, or offer more granular user interface customization.</p>
+<p>Enable all three settings before testing your app for sufficient contrast. Review the resources below for details about turning on these settings for each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, visit <a href="https://support.apple.com/guide/iphone/iph3e2e1fb0">Change display colors on iPhone to make it easier to see what’s onscreen</a>.</p>
+</li>
+<li>
+<p>For iPad, visit <a href="https://support.apple.com/guide/ipad/ipad9a246013">Make text easier to read on iPad</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/mchld786f2cd">Make text and icons bigger on Mac</a> and <a href="https://support.apple.com/guide/mac-help/unac089">Change Display settings for accessibility on Mac</a>.</p>
+</li>
+<li>
+<p>For Apple TV, visit <a href="https://support.apple.com/guide/tv/atvb0222141c">Display bold text on Apple TV</a> and <a href="https://support.apple.com/guide/tv/atvb81aeaf3f">Increase Apple TV screen contrast</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tan5b0340be2">Text display settings on Apple Vision Pro</a> and <a href="https://support.apple.com/guide/apple-vision-pro/tandd53c64c3">Adjust colors and contrast on Apple Vision Pro</a>.</p>
+</li>
+<li>
+<p>For Apple Watch, visit <a href="https://support.apple.com/guide/watch/apd766b7bd85">Adjust text size and other visual settings on Apple Watch</a>.</p>
+</li>
+</ul>
+<p>You can check the contrast of elements in your app by using Xcode’s <a href="https://developer.apple.com/documentation/accessibility/accessibility-inspector">Accessibility Inspector</a> or other color contrast checkers to determine contrast ratios for elements in your app. Most modern accessibility guidelines recommend a minimum contrast ratio of “4.5 to 1 between foreground text and its background” based on a formula provided by the World Wide Web Consortium’s (W3C’s) <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">Web Content Accessibility Guidelines</a>.</p>
+<p>If your app supports Dark Mode, be sure to check the minimum contrast in both light and dark modes. A common mistake is supporting sufficient contrast in your light mode interface, but forgetting to support sufficient contrast in a dark interface. Many developers use gray-on-black for dark mode reading, which can reduce eye strain for standard vision in low-light scenarios, but this reduced contrast variant may be more difficult to read for those with low vision or light sensitivity. Consider testing your app while combining the dark mode color scheme alongside the Increase Contras setting.</p>
+<p>Consider not only contrast, but also translucency (opacity/blurring) of your background materials, controls, and content. Include legibility of text, icons, and other content, elements, and controls in your evaluation. Remember to test with Increase Contrast on and Reduce Transparency off, and with both settings on.</p>
+<p>Make sure to provide sufficient contrast on interactive controls and non-text representations of a state, such as a selection. For example, if you design a custom checkbox, make sure there is sufficient contrast between the checked and unchecked states. Meeting a 3:1 minimum contrast ratio is commonly recommended for non-text contrast.</p>
+<p>If you don’t have an existing proficiency in testing sufficient contrast, take some time to go beyond the basics. Review <a href="https://developer.apple.com/design/human-interface-guidelines/accessibility#Vision">Strive to meet color contrast minimum standards</a> in the Human Interface Guidelines to understand if the contrast of adjacent colors in your UI meets minimum acceptable levels.</p>
+<div class="row spacing-top">
+<div class="column large-6 medium-6 small-12">
+<figure><img alt="Example of inaccessible button: blue background with light blue text, resulting in insufficient color contrast." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria/images/getting-started-with-testing-1_2x.png" style="width: 80%; height: auto;"/></figure>
+<small style="display: block; text-align: center; margin-left: -24%; margin-top: 2%;"> <sf-symbol name="xmark" scale="large" style="width: 1.373em; --s-primary: var(--s-label-s, #7f7f7f); display: inline-flex;vertical-align: center;" weight="heavy"><svg style="width: 1.37304em; overflow: visible;" viewbox="0 0 137.304 70.459"><defs><path d="M19.043 84.916C23.038 88.881 29.89 88.747 33.593 85.05L68.678 49.929L103.71 85.005C107.555 88.881 114.259 88.836 118.229 84.871C122.194 80.871 122.239 74.197 118.363 70.346L83.331 35.275L118.363 0.279C122.239-3.602 122.224-10.306 118.229-14.27C114.229-18.21 107.555-18.255 103.71-14.404L68.678 20.622L33.593-14.449C29.89-18.121 23.008-18.285 19.043-14.315C15.103-10.32 15.237-3.468 18.909 0.235L54.025 35.275L18.909 70.391C15.237 74.063 15.073 80.946 19.043 84.916Z" id="LHM100184_264_p0"></path></defs><g data-sa="play" style="--sa-m: 1; --sa-w: 137.304; --sa-h: 70.459;"><g class="sa-helper"></g><g><use data-g="0" fill="var(--s-primary, currentColor)" href="#LHM100184_264_p0" style="--sa-g: 0;"></use></g></g></svg></sf-symbol> A button with insufficient color contrast.</small>
+</div>
+<div class="column large-6 medium-6 small-12 spacing-bottom">
+<figure><img alt="Example of accessible button: blue background with white text providing high contrast and readability." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria/images/getting-started-with-testing-2_2x.png" style="width: 80%; height: auto;"/></figure>
+<small style="display: block; text-align: center; margin-right: 24%; margin-top: 2%;"><sf-symbol name="checkmark" scale="large" style="--s-primary: var(--s-label-s, #7f7f7f); display: inline-flex;vertical-align: center;" weight="heavy"><svg style="width: 1.50036em; overflow: visible;" viewbox="0 0 150.036 70.459"><defs><path d="M62.272 92.645C66.88 92.645 70.471 90.91 72.943 87.223L131.443-1.75C133.228-4.404 133.95-6.973 133.95-9.32C133.95-15.68 129.096-20.385 122.527-20.385C118.055-20.385 115.236-18.801 112.503-14.498L62.012 64.979L36.503 33.824C34.046 30.891 31.301 29.545 27.493 29.545C20.919 29.545 16.084 34.306 16.084 40.74C16.084 43.633 16.947 46.096 19.407 48.93L51.897 87.787C54.739 91.144 58.016 92.645 62.272 92.645Z" id="LHM100185_265_p0"></path></defs><g data-sa="play" style="--sa-m: 1; --sa-w: 150.036; --sa-h: 70.459;"><g class="sa-helper"></g><g><use data-g="0" fill="var(--s-primary, currentColor)" href="#LHM100185_265_p0" style="--sa-g: 0;"></use></g></g></svg></sf-symbol> A button with sufficient color contrast.</small>
+</div>
+</div>
+<div class="row">
+<div class="column large-6 medium-6 small-12">
+<figure><img alt=" Illustration of systemRed color appearing nearly identical on light and dark mode. The color's lack of contrast adjustment between the backgrounds highlights a potential accessibility concern for users in different display modes." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria/images/getting-started-with-testing-3_2x.png" style="width: 80%; height: auto;"/></figure>
+<small style="display: block; text-align: center; margin-left: -24%;  margin-top: 5%;">The systemRed default color in iOS.</small>
+</div>
+<div class="column large-6 medium-6 small-12 spacing-bottom">
+<figure><img alt="Illustration of systemRed color with increased contrast variants on light and dark mode. The color darkens on the light background and lightens on the dark background, improving visibility and accessibility in different display modes." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility//sufficient-contrast-evaluation-criteria/images/getting-started-with-testing-4_2x.png" style="width: 80%; height: auto;"/></figure>
+<small style="display: block; text-align: center; margin-right: 24%;  margin-top: 5%;">The systemRed accessible color in iOS.</small>
+</div>
+</div>
+</div>
+<h2>Indicating support for Sufficient Contrast</h2>
+<div class="spacing-bottom">
+<p>You may indicate your app supports Sufficient Contrast if the user interface for your common tasks, including text, buttons, and other controls, meets general contrast guidelines by default — usually 4.5 to 1 for most text elements.</p>
+<p>If your app doesn't provide this minimum contrast by default: </p>
+<ul>
+<li>
+<p>If your app uses Apple-provided UI frameworks, verify that the Increase Contrast setting applies sufficient contrast.</p>
+</li>
+<li>
+<p>If your app supports custom frameworks, provide users with a choice of multiple color schemes that meet contrast minimums.</p>
+</li>
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+</ul>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Sufficient Contrast in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Sufficient Contrast every time you update the app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10020/">Watch “Make your app visually accessible”</a>
+</div>
+</article> </div>

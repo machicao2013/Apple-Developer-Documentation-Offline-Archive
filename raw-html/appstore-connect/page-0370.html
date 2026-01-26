@@ -1,0 +1,325 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="4.0">
+<h1>Leaderboards</h1>
+<p>In App Store Connect, leaderboard metadata defines each leaderboard, outlines score details, and manages language-specific text for display. The platform also tracks the leaderboard type and shows the approval status, indicating if it’s live with the app.</p>
+<p>Set these properties in the Leaderboard section of the Game Center page for an app, as described in <a href="/help/app-store-connect/configure-game-center/manage-leaderboards">Manage leaderboards</a>.</p>
+<div class="Subhead anchor-scroll-top" id="leaderboard-properties">
+<h2>Leaderboard properties</h2>
+<p>The main leaderboard properties identify each leaderboard in App Store Connect. These properties describe how the scores are organized and formatted.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Promotional codes" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Properties</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reference Name</p>
+</td>
+<td>
+<p>An internal name that you must provide for each leaderboard. This is the name that you use if you search for your leaderboard in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Leaderboard ID</p>
+</td>
+<td>
+<p>An alphanumeric identifier you choose for your leaderboard. This ID is limited to 100 characters (assumes single-byte characters). Note that the leaderboard ID is equivalent to the “category” in GameKit API. Your leaderboard ID is a permanent setting and therefore can’t be edited at a later date.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Leaderboard Description</p>
+</td>
+<td>
+<p>A short description that helps players understand what they must do to rank on this leaderboard.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Format</p>
+</td>
+<td>
+<p>The type of format in which you want scores for this app to be expressed in your leaderboard—for example, integer, elapsed time, or money.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Range</p>
+</td>
+<td>
+<p>The score range using 64-bit signed integers. The values must be between the long min (-2^63) and long max (2^63 - 1). Any scores outside of this range are deleted. Score range values are optional, but if they’re added, both values must be set and they must not be equal. When first adding a score range, or when changing it in the future to a smaller range that will restrict data, all data outside of the range is lost and can’t be recovered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Submission Type</p>
+</td>
+<td>
+<p>The score from players to display in the leaderboard: Best Score or Most Recent Score.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sort Order</p>
+</td>
+<td>
+<p>The order of the score. Choose between “Low to High” and “High to Low.” Choose “Low to High” if you want lowest scores displayed first. Choose “High to Low” if you want the highest scores displayed first.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start Date and Time<sup>1</sup></p>
+</td>
+<td>
+<p>The date and time in which scores begin posting to your leaderboard. The date and time are based on Coordinated Universal Time (UTC).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Duration<sup>1</sup></p>
+</td>
+<td>
+<p>The length of time scores on this leaderboard are posted for.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Restarts Interval<sup>1</sup></p>
+</td>
+<td>
+<p>How often scores on this leaderboard are reset.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> <sup>1</sup>This property is only available for recurring leaderboards.</p>
+<div class="Subhead anchor-scroll-top" id="leaderboard-language-properties">
+<h2>Leaderboard language properties</h2>
+<p>Leaderboard language properties collect language-specific text used in a leaderboard’s display. You must include these properties for at least one language.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Leaderboard language codes" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Localization</p>
+</td>
+<td>
+<p>The language in which your leaderboard appears. There must be at least one language defined.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Display Name</p>
+</td>
+<td>
+<p>The display name of the leaderboard in the specified language.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Leaderboard Description</p>
+</td>
+<td>
+<p>A short description that helps players understand what they must do to rank on this leaderboard.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Format Suffix (Singular)</p>
+</td>
+<td>
+<p>This suffix is added to the end of scores displayed in the singular form. This suffix is optional but is useful for clarifying the type of score stored in the leaderboard. Examples include “point,” “coin,” and “hit.”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Format Suffix (Plural)</p>
+</td>
+<td>
+<p>This suffix is added to the end of scores displayed in the plural form. This suffix is optional but is useful for clarifying the type of score stored in the leaderboard. Examples include “points,” “coins,” and “hits.”</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Score Format</p>
+</td>
+<td>
+<p>This format determines how your scores are displayed on your leaderboard for the specified language. For example, if your app is scored with money, you may want to specify different types of money based on the language you select. The score format type you set for your leaderboard will automatically apply to all languages unless you specify a different type. This is optional.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Image</p>
+</td>
+<td>
+<p>A localized image that represents the leaderboard. The image must be a <code>.jpeg</code>, <code>.jpg</code>, or <code>.png</code> file that’s 1024 x 1024 pixels, at least 72 ppi, and in the RGB color space. This property is optional.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="leaderboard-types">
+<h2>Leaderboard types</h2>
+<p>App Store Connect tracks different data for each type of leaderboard. The leaderboard type determines which scores are included in a leaderboard.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Leaderboard types" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Classic</p>
+</td>
+<td>
+<p>A leaderboard where score data will never reset unless the leaderboard is deleted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Recurring</p>
+</td>
+<td>
+<p>A recurring leaderboard will continually reset based on your preferences.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Combined</p>
+</td>
+<td>
+<p>A leaderboard that combines and ranks together the players’ scores from multiple single leaderboards.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Attached</p>
+</td>
+<td>
+<p>A single leaderboard that’s combined with other leaderboards—the attached child of a combined leaderboard.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="leaderboard-statuses">
+<h2>Leaderboard statuses</h2>
+<p>Leaderboard statuses indicate whether the leaderboard has been approved and made live with the app.</p>
+<div class="table-wrapper">
+<table aria-label="Leaderboard statuses" class="table-2-col table-2-col-wide-middle">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Prepare for Submission</p>
+</td>
+<td colspan="6">
+<p>You’ve created a Game Center component in App Store Connect but you're still preparing information for it.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Review</p>
+</td>
+<td colspan="6">
+<p>You’ve entered all of the required metadata for your Game Center component and indicated that you intend to submit it for review, but haven’t submitted it yet.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="6">
+<p>Apple received your submission, but hasn’t started the review.</p>
+<p>While you're waiting for the review, you can <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">remove your Game Center component from submission</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="6">
+<p>App Review is reviewing your Game Center component.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Accepted</p>
+</td>
+<td colspan="6">
+<p>This Game Center component has been accepted, but one or more items in your submission were rejected.</p>
+<p>The component can only publish when all items in the submission are accepted. You can edit the rejected items and resubmit, or remove them from the submission to move forward with the currently accepted items.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Live</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component has been accepted and is ready for distribution.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component wasn't accepted. App Review notifies App Store Connect users with the Admin, App manager, or Developer role with the issues.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Rejected</p>
+</td>
+<td colspan="6">
+<p>You <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">removed your Game Center component from review</a>. When you’re ready, resubmit your component.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article> </div>

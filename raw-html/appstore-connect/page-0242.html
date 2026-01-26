@@ -1,0 +1,78 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage your app's availability</span>
+<article _v="6.0">
+<h1>Manage availability of iPhone and iPad apps on Macs with Apple silicon</h1>
+<p>Users running macOS 11 or later on Macs with Apple silicon can access iPhone and iPad apps through the Mac App Store, provided no edits are made to the app availability. There's no porting process since these apps use the same frameworks, resources, and runtime environments as they do on iOS and iPadOS.</p>
+<p>When an app supports <a href="/help/app-store-connect/create-an-app-record/add-platforms/">universal purchase</a> and already has a presence on the Mac App Store through the macOS platform, you won’t have the option to offer the iOS app on the Mac App Store. Additionally, if your iOS app is available on the Mac App Store by using this option and you later add a macOS app by adding the macOS platform in App Store Connect, releasing it to the store will replace the iOS app on the Mac App Store. Existing users of the iOS app will be updated to the macOS app.</p>
+<p>You can choose to make your iPhone and iPad apps available, or not, on the Mac App Store for users running macOS 11 or later on Macs with Apple silicon. This is set at the app level and will apply to all versions of your app.</p>
+<p>Apple automatically calculates the minimum macOS version using the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/lsminimumsystemversion">LSMinimumSystemVersion</a> from your build (if applicable) and the macOS version corresponding to your build's <a href="https://developer.apple.com/documentation/bundleresources/information-property-list/minimumosversion">MinimumOSVersion</a>. If you’ve selected a minimum macOS version in Pricing and Availability that's higher than either the LSMinimumSystemVersion or the macOS version corresponding to the MinimumOSVersion, the version you selected will be displayed instead.</p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="edit-availability-on-an-individual-app-basis">
+<h3>Edit availability on an individual app basis</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability and scroll down to the iPhone and iPad Apps on Apple Silicon Mac section.</p>
+</li>
+<li>
+<p>Under Apple Silicon Mac Availability, deselect “Make this app available” to opt out of offering your app on the Mac App Store. Select the checkbox if you want the app to be available on the Mac App Store.</p>
+<p>You can change the minimum macOS version required for compatibility in the menu. This selection also applies to tester groups <a href="/help/app-store-connect/test-a-beta-version/add-testers-to-builds">enabled for testing iPhone and iPad apps on Macs with Apple silicon</a> with TestFlight.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-availability-for-multiple-apps-at-a-time">
+<h3>Edit availability for multiple apps at a time</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select iOS Apps on Mac Availability from the ellipsis menu (...) in the top left.</p>
+</li>
+<li>
+<p>In the dialog that appears, deselect the iPhone and iPad apps you don’t want to make available on the Mac App Store.</p>
+</li>
+<li>
+<p>Click Done.</p>
+<p>To opt out of offering any of your iPhone and iPad apps on the Mac App Store for users running macOS 11 or later on Macs with Apple silicon, click Don’t Make Available.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="verify-your-apps-compatibility-with-Macs-with-Apple-silicon">
+<h3>Verify your app’s compatibility with Macs with Apple silicon</h3>
+<div>
+<p>If your iPhone and iPad apps are compatible with Macs with Apple silicon and function as intended, verify them in App Store Connect to let users know they’ll receive a great experience on macOS. Once verified, this option will no longer be available in App Store Connect.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability and scroll down to the iPhone and iPad Apps on Apple Silicon Mac section.</p>
+</li>
+<li>
+<p>Under Compatibility with Apple Silicon Macs, click Verify Compatibility.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Compatibility with Apple Silicon Macs isn’t available if a build has never been uploaded for the platform.</p>
+</div>
+</li>
+<li>
+<p>In the dialog that appears, click Verify.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>The Compatibility with Apple Silicon Macs section specifies whether your current and future app versions are compatible with Apple silicon Macs.</p>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

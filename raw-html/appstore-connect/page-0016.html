@@ -1,0 +1,239 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="11.0">
+<h1>Manage leaderboards</h1>
+<p>Leaderboards help encourage friendly competition within your game. When you configure leaderboards in App Store Connect, you specify details such as the scores to collect and how to order them. For each language you want a leaderboard to display in, you specify the leaderboard name, score format, and score unit. You can also include a localized image to illustrate the score in the leaderboard.</p>
+<p>There are two types of leaderboards that can be created:</p>
+<ul>
+<li>
+<p><b>Classic leaderboards:</b> A leaderboard where score data will never reset unless the leaderboard is deleted.</p>
+</li>
+<li>
+<p><b>Recurring leaderboards:</b> A leaderboard where score data will continually be reset based on set preferences.</p>
+</li>
+</ul>
+<p>The limit to how many leaderboards you can create per app differs based on whether it’s with or without <a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets">leaderboard sets</a>:</p>
+<p>Without Leaderboard sets:</p>
+<ul>
+<li>
+<p>Up to 100 leaderboards per app</p>
+</li>
+</ul>
+<p>With Leaderboard sets:</p>
+<ul>
+<li>
+<p>Up to 500 leaderboards total per app</p>
+<ul>
+<li>
+<p>Maximum 100 leaderboard sets per app</p>
+</li>
+<li>
+<p>Maximum 100 leaderboards per set</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Leaderboards must be approved before they are available to players. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+<p><a href="https://developer.apple.com/documentation/gamekit/encourage-progress-and-competition-with-leaderboards">Learn how to configure leaderboards with the GameKit.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-classic-leaderboard">
+<h3>Create a classic leaderboard</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you wish to enable for Game Center.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Click Add Leaderboard.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If a leaderboard already exists, click the add button (+) in the Leaderboards section. If a leaderboard set already exists, either <a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets#add-a-new-leaderboard-set">create a new leaderboard set</a> or select a set and <a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets#add-a-new-leaderboard-to-a-set">add your new leaderboard to that set</a>.</p>
+</div>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-properties">reference name and leaderboard ID</a>.</p>
+</li>
+<li>
+<p>Select Classic Leaderboard.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-properties">score format</a> information.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+<li>
+<p>Under Leaderboard Localization, add one or more languages by clicking Add Localization.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-language-properties">localization information</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>To add additional language support for your leaderboards, repeat the above steps for each language.</p>
+<p>When you're ready, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit your leaderboard for review</a>.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-a-recurring-leaderboard">
+<h3>Create a recurring leaderboard</h3>
+<div>
+<p>Recurring leaderboards add flexibility to your leaderboard configuration by allowing you to reset your leaderboards’ scores. The ability to reset your leaderboards creates a more competitive gaming experience, as it allows players to set a new top score for each leaderboard recurrence.</p>
+<p>Leaderboards have a minimum recurrence of five minutes, a maximum recurrence of 30 days, and aren't allowed to overlap.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Click Add Leaderboard.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If a leaderboard already exists, click the add button (+) in the Leaderboards section. If a leaderboard set already exists, either <a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets#add-a-new-leaderboard-set">create a new leaderboard set</a> or select a set and add your <a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets#add-a-new-leaderboard-to-a-set">new leaderboard to that set</a>.</p>
+</div>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-properties">reference name and leaderboard ID</a>.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Select Recurring Leaderboard.</p>
+</li>
+<li>
+<p>Complete the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-properties">Start Date and Time, Duration, and Restarts Interval</a> fields.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-properties">score format</a> information.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+<li>
+<p>Under Leaderboard Localization, add one or more languages by clicking Add Localization.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/leaderboards#leaderboard-language-properties">localization information</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>To add additional language support for your leaderboards, repeat the above steps for each language.</p>
+<p>When you're ready, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit your leaderboard for review</a>.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="set-a-default-leaderboard">
+<h3>Set a default leaderboard</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Locate the Default column in the Leaderboards section, then hold the pointer over the leaderboard you'd like to set as default.</p>
+</li>
+<li>
+<p>Click Make Default.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="arrange-leaderboards">
+<h3>Arrange leaderboards</h3>
+<div>
+<p>Leaderboards are presented to players in the order they appear in App Store Connect. You can change the order of the leaderboards on the app’s Game Center page.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Click Edit Order on top right.</p>
+<p>To arrange your leaderboards within a leaderboard set, select the leaderboard set that you want to view and click Edit Order.</p>
+</li>
+<li>
+<p>Click the reordering control on the left side of the Leaderboards row and drag it to a new position.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="archive-or-unarchive-a-leaderboard">
+<h3>Archive or unarchive a leaderboard</h3>
+<div>
+<p>You can archive live <a href="/help/app-store-connect/configure-game-center/manage-leaderboards">leaderboards</a> to remove them from all relevant sections of Game Center’s user interface. This also ensures they won’t return when retrieving a <a href="https://developer.apple.com/documentation/gamekit/gkleaderboard">GKLeaderboard</a>. You can archive and unarchive leaderboards at any time but it may take up to 24 hours to take effect to the players.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app that you want to manage.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboards section, select the leaderboard that you want to archive.</p>
+<p>If leaderboard sets exist, select the leaderboard set that you want to view and select the leaderboard that you want to archive.</p>
+</li>
+<li>
+<p>Click Archive Leaderboard.</p>
+<p>If the leaderboard is already archived, the Unarchive Leaderboard option will be displayed. Click it and follow the prompt to unarchive it.</p>
+</li>
+<li>
+<p>Click Archive.</p>
+</li>
+</ol>
+<p>To view the list of archived leaderboards, click the ellipsis menu (…) within the Leaderboards section, and select View archived leaderboard. If there are Leaderboard Sets, select the set you want to view first.</p>
+<p>Learn how to set default leaderboard in <a href="/help/app-store-connect/configure-game-center/manage-leaderboards#set-a-default-leaderboard">App Store Connect</a> or <a href="https://developer.apple.com/documentation/gamekit/gklocalplayer/1515408-setdefaultleaderboardidentifier">GameKit</a>.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-leaderboard">
+<h3>Delete a leaderboard</h3>
+<div>
+<p>The status of a leaderboard is displayed in the Status column of the Leaderboards table. The possible status values are described in Leaderboard Statuses. A Delete button appears in this column when a leaderboard is eligible for deletion. After a leaderboard is available in Game Center, it can’t be deleted. Once you <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit a leaderboard for review</a>, you can’t delete it.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboard section, hold the pointer over the leaderboard you want to delete, then click the delete button.</p>
+</li>
+<li>
+<p>Click Delete.</p>
+</li>
+<p>Optionally, you can delete a leaderboard by selecting one from the Leaderboard section and clicking Delete this leaderboard on bottom left.</p>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/game-center/leaderboards">Leaderboards</a>
+<a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets">Manage leaderboard sets</a>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Submit Game Center components</a>
+</div>
+</link></article> </div>

@@ -1,0 +1,530 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="6.0">
+<h1>Financial report fields</h1>
+<div class="Subhead">
+<p>Financial reports show your monthly proceeds, as well as final unit sales by country or region and order type, for transactions on the App Store. <a href="/help/app-store-connect/getting-paid/download-financial-reports">Learn more.</a></p>
+<h3>All Countries or Regions (Single File, Multiple File) report fields:</h3>
+<div class="table-wrapper">
+<table aria-label="All Countries or Regions (Single File, Multiple File) report fields:" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Values</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Start Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>This is the period start date, based on Apple’s <a href="https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=fiscalcalendar" target="_blank">fiscal calendar</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>This is the period end date, also based on Apple’s fiscal calendar.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>UPC</p>
+</td>
+<td>
+<p>Up to 20 characters</p>
+</td>
+<td>
+<p>This field is not applicable to developers. This will display as blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ISRC / ISBN</p>
+</td>
+<td>
+<p>Up to 20 characters</p>
+</td>
+<td>
+<p>For apps, this is your SKU. For details, visit <a href="/help/app-store-connect/reference/app-information/app-information">App information</a>. For In-App Purchases, this is the product ID. Visit <a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information">In-App Purchase information</a> for details.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Vendor Identifier</p>
+</td>
+<td>
+<p>Up to 20 characters</p>
+</td>
+<td>
+<p>This is the “SKU” that was provided for an app, or a “Product ID” provided for an In-App Purchase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quantity</p>
+</td>
+<td>
+<p>Number with no decimal places (positive or negative)</p>
+</td>
+<td>
+<p>Aggregated number of units sold.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partner Share</p>
+</td>
+<td>
+<p>Number with two decimal places (always positive)</p>
+</td>
+<td>
+<p>The proceeds you receive per unit. This is the Customer Price minus applicable taxes and Apple’s commission, per Schedule 2 of your Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Extended Partner Share</p>
+</td>
+<td>
+<p>Number with two decimal places (positive or negative)</p>
+</td>
+<td>
+<p>Quantity multiplied by Partner Share.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partner Share Currency</p>
+</td>
+<td>
+<p>Three characters</p>
+</td>
+<td>
+<p>Three-character ISO code for the currency of the amounts earned.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sale or Return</p>
+</td>
+<td>
+<p>“S” or “R”</p>
+</td>
+<td>
+<p>S indicates a Sale, R indicates a Return</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="no-glossary">Apple Identifier</span></p>
+</td>
+<td>
+<p>Up to 18 characters</p>
+</td>
+<td>
+<p><span class="no-glossary">Apple ID</span>, a unique identifier automatically generated for your app when you add the app to your account. You can view this property in the App information section in App Store Connect. This identifier is also used in the URL for the App Store on desktop computers. You can’t edit this property.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Artist / Show / Developer / Author</p>
+</td>
+<td>
+<p>Up to 1000 characters</p>
+</td>
+<td>
+<p>Your legal entity name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>Up to 4000 characters</p>
+</td>
+<td>
+<p>The name of the content being purchased. For downloads, the field will populate the name of the app as set in App Store Connect. For In-App Purchases, the field will populate the Product ID as set in App Store Connect.</p>
+<p>If you're participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.displayName</a> that you provided.</p>
+<p>For subscriptions created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> that you provided. If the subscription consists of more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> within the subscription appears, listed in alphanumeric order. Each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> is surrounded by quotes and separated by a comma.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Label / Studio / Network / </p>
+<p>Developer / Publisher</p>
+</td>
+<td>
+<p>Up to 1000 characters</p>
+</td>
+<td>
+<p>This field is not applicable to developers. This will display as blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grid</p>
+</td>
+<td>
+<p>Up to 30 characters</p>
+</td>
+<td>
+<p>This field is not applicable to developers. This will display as blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Product Type Identifier</p>
+</td>
+<td>
+<p>Up to five characters</p>
+</td>
+<td>
+<p>The type of product purchased. Visit <a href="/help/app-store-connect/reference/reporting/product-type-identifiers">Product type identifiers</a> for more information.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>ISAN / Other Identifier</p>
+</td>
+<td>
+<p>Up to 2000 characters</p>
+</td>
+<td>
+<p>If you're participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge that was created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.SKU</a> that you provided.</p>
+<p>For subscriptions created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a>, the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> that you provided. If the subscriptions consists of more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> within the subscription appears, listed in order of their corresponding display names in the Title field. Each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> is surrounded by single quotes and separated by a comma.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country of Sale</p>
+</td>
+<td>
+<p>Two characters</p>
+</td>
+<td>
+<p>Two-character ISO code (such as US for the United States) that indicates the country or region for the App Store where the purchase occurred. This is based on the customer <a href="https://support.apple.com/HT201389">Apple Account country or region</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pre-order Flag</p>
+</td>
+<td>
+<p>“P” or null</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>Promo Code</p>
+</td>
+<td>
+<p>Up to 10 characters</p>
+</td>
+<td>
+<p>If the transaction was part of a promotion, a gift, or was downloaded through the Volume Purchase Program for Education, this field will contain a value. This field is empty for all non-promotional items. For more information, visit <a href="/help/app-store-connect/reference/reporting/promotional-codes">Promotional codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Price</p>
+</td>
+<td>
+<p>Number with two decimal places (positive or negative)</p>
+</td>
+<td>
+<p>The price per unit billed to the customer, which you set for your app or In-App Purchase in App Store Connect. *Customer price is inclusive of any applicable taxes we collect and remit per Schedule 2 of the Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Currency</p>
+</td>
+<td>
+<p>Three characters</p>
+</td>
+<td>
+<p>Three-character ISO code for the currency type paid by the customer. For example, USD for the United States Dollar.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> An asterisk (*) indicates you provided this information to us. Sometimes we may change this information for consistency.</p>
+</div>
+<div class="Subhead">
+<h3>All Countries or Regions (Detailed) report fields:</h3>
+<div class="table-wrapper">
+<table aria-label="All Countries or Regions (Detailed) report fields:" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Field Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Date Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Vendor Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Provided by you when signing your Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>This is the period start date, based on Apple’s <a href="https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=fiscalcalendar" target="_blank">fiscal calendar</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>End Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>This is the period end date, also based on Apple’s fiscal calendar.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Transaction Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>Date the customer purchased the app or In-App Purchase. The transaction date is only populated if it occurred within 30 days of the settlement date. Otherwise the field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Settlement Date</p>
+</td>
+<td>
+<p>MM/DD/YYYY</p>
+</td>
+<td>
+<p>Date when the customer’s payment was processed and collected and an invoice was issued.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Apple Identifier</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>An app <span class="no-glossary">Apple ID</span> is a unique identifier automatically generated for your app when you add a new app record in Apps and can't be edited. You can view this identifier in the App information section of the app record. It is also used in your app’s App Store link on desktop computers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>SKU</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The name of the content being purchased. For paid apps, the field will populate the name of app as set in App Store. For In-App Purchases, the field will populate the name of the Product ID as set in App Store Connect.</p>
+<p>If you're participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a> the title appears <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.SKU</a> that you provided.</p>
+<p>For subscriptions created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a> the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> that you provided. If the subscriptions consists of more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.SKU</a> within the subscription appears, listed in order of their corresponding display names in the Title field.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Title</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The name of the content being purchased. For paid apps, the field will populate the name of app as set in App Store. For In-App Purchases, the field will populate the name of the Product ID as set in App Store Connect.</p>
+<p>If you're participating in the <a href="https://developer.apple.com/in-app-purchase/advanced-commerce-api/">Advanced Commerce API program</a> and the product represents a one-time charge created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargecreaterequest">OneTimeChargeCreateRequest</a> the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/onetimechargeitem">item.displayName</a> that you provided.</p>
+<p>For subscriptions created using <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreaterequest">SubscriptionCreateRequest</a> the field displays the <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> that you provided. If the subscriptions consists of  more than one item, each <a href="https://developer.apple.com/documentation/advancedcommerceapi/subscriptioncreateitem">items.displayName</a> within the subscription appears, listed in alphanumeric order.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Your legal entity name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Product Type Identifier</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of product purchased. Visit <a href="/help/app-store-connect/reference/reporting/product-type-identifiers">Product type identifiers</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country of Sale</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Two-character ISO code (such as US for the United States) that indicates the country or region of the App Store where the purchase occurred. This is based on the customer’s Apple Account country or region.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quantity</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Aggregate number of units sold.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partner Share</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>Proceeds you receive per unit. This is the Customer Price minus applicable taxes and Apple’s commission, per Schedule 2 of the Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Extended Partner Share</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>Quantity multiplied by Partner Share.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Partner Share Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Three-character ISO code for the currency of the amounts earned.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Price</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>Price per unit billed to the customer, which you set for your app or In-App Purchase in App Store Connect. This includes any applicable taxes we collect and remit per Schedule 2 of the Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Three-character ISO code for the currency type paid by the customer. For example, USD for the United States Dollar.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sale or Return</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>S indicates a Sale. R indicates a Return.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promo Code</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If the transaction was part of a promotion, a gift, or was downloaded through the Volume Purchase Program for Education, this field will contain a value. This field is empty for all non-promotional items. For more information, visit <a href="/help/app-store-connect/reference/reporting/promotional-codes">Promotional codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Order Type</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For introductory offers or promotional offers, indicates what type of transaction this line item is: Pay Up Front or Pay As You Go. For pre-orders, indicates whether a purchase originated from a Pre-Order. For promotional offers, the field will populate the Order ID. For offer codes, the field will populate the offer code reference name used in App Store Connect when setting up the subscription offer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Region</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Shows a two-character state or province code for transactions in the United States and Canada.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article> </div>

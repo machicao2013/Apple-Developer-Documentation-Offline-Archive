@@ -1,0 +1,130 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="25P">
+<h1>Manage achievements</h1>
+<p>When setting up achievements in App Store Connect, you define the criteria that players must meet to earn them. Specify the points awarded for each achievement and decide whether the achievement should remain hidden until it’s earned. Indicate if the achievement can be earned multiple times by the same player.</p>
+<p>For each language or region in which your app will appear, provide a title for each achievement along with descriptions for both pre- and post-earning states. These help keep players engaged during gameplay. Additionally, include an image to visually represent each achievement. You can create up to 100 achievements per app.</p>
+<p>Achievements must be approved before they are available to players. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+<p><a href="https://developer.apple.com/documentation/gamekit/rewarding-players-with-achievements">Learn how to configure achievements with the Gamekit.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="add-an-achievement">
+<h3>Add an achievement</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Click Add Achievement in the Achievements section.</p>
+<p>If an achievement already exists, click the add button (+) in the Achievements section.</p>
+</li>
+<li>
+<p>Enter the <a class="ember-view xRef Subhead subTopicLink" href="/help/app-store-connect/reference/game-center/achievements#achievement-properties">reference name and achievement ID</a>.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+<li>
+<p>Enter the <a href="/help/app-store-connect/reference/game-center/achievements#achievement-properties">achievement metadata</a>.</p>
+</li>
+<li>
+<p>Add one or more languages in the Achievement Localization section by clicking Add Localization.</p>
+</li>
+<li>
+<p>Enter the <a class="ember-view xRef Subhead subTopicLink" href="/help/app-store-connect/reference/game-center/achievements#achievement-language-properties">localization information</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>To add additional language support for your achievements, repeat the above steps for each language.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>When you're ready, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit your achievement for review</a>.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="arrange-achievements">
+<h3>Arrange achievements</h3>
+<div>
+<p>Achievements are presented to players in the order they appear in App Store Connect. You can change the order of the achievements on the app’s Game Center page.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>Click Edit Order on top right.</p>
+</li>
+<li>
+<p>Click the reordering control on the left side of the Achievements row and drag it to a new position.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="archive-or-unarchive-an-achievement">
+<h3>Archive or unarchive an achievement</h3>
+<div>
+<p>You can archive live <a href="/help/app-store-connect/configure-game-center/manage-achievements">achievements</a> to remove them from all relevant sections of Game Center’s user interface. This also ensures they won’t return when retrieving a <a href="https://developer.apple.com/documentation/gamekit/gkachievement">GKAchievement</a>. You can archive and unarchive achievements at any time but it may take up to 24 hours to take effect to the players.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app that you want to manage.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Achievements section, select the achievement that you want to archive.</p>
+</li>
+<li>
+<p>Click Archive this achievement.</p>
+<p>If the achievement is already archived, the Unarchive Achievement option will be displayed. Click it and follow the prompt to unarchive it.</p>
+</li>
+<li>
+<p>Click Archive.</p>
+</li>
+</ol>
+<p>To view the list of archived achievements, click the ellipsis menu (… ) within the Achievements section, and select View archived achievements.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-an-achievement">
+<h3>Delete an achievement</h3>
+<div>
+<p>The status of an achievement is displayed in the far-right column of the Achievements table. The possible status values are described in Achievement Statuses. A Delete button appears in this column when an achievement is eligible for deletion. After an achievement is available to players for any version of your app, it can’t be deleted and the point value can’t be changed.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Achievements section, hold the pointer over the achievement you want to delete, then click the delete button.</p>
+<figure><img alt="Delete an achievement" class="help-screens-retro" src="/help/app-store-connect/configure-game-center/manage-achievements/images/GC-Delete-Achievement_2x.png"/></figure>
+</li>
+<li>
+<p>Click Delete.</p>
+</li>
+</ol>
+<p>Optionally, you can delete an achievement by selecting one from the Achievements section and clicking Delete this achievement on bottom left.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/game-center/achievements">Achievements</a>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Submit Game Center components</a>
+<a href="https://developer.apple.com/documentation/gamekit">GameKit</a>
+</div> </link></article></div>

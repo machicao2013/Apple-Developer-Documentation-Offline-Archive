@@ -1,0 +1,238 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="5.0">
+<h1>App metrics</h1>
+<div class="margin-top">
+<h2>Sales</h2>
+<div class="table-wrapper">
+<table aria-label="Sales" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Term</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>In-App Purchases</p>
+</td>
+<td>
+<p>The number of In-App Purchases on devices running a minimum of iOS 8, macOS 10.14.1, tvOS 9, or visionOS 1.</p>
+<p>Introductory price subscriptions and subscription renewals are included in this metric. Restored In-App Purchases, whether on the same or different device, aren't counted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds</p>
+</td>
+<td>
+<p>The estimated amount of proceeds you'll receive from your sales on the App Store. This is the Customer Price minus applicable taxes and Apple’s commission, per Schedule 2 of the Paid Apps Agreement.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sales</p>
+</td>
+<td>
+<p>The total amount billed to customers for purchasing apps, app bundles, and In-App Purchases on the App Store. Taxes are only included in the sales if those taxes were included in the product price. Note that sales totals aren't the same as your proceeds. Locate your payments in <a href="https://www.apple.com/itunes/go/itunesconnect/financialreports" target="_blank">Payments and Financial Reports</a> on App Store Connect if you have the Admin or Finance roles.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paying Users</p>
+</td>
+<td>
+<p>The number of unique users, based on Apple Account, that paid for an app or an In-App Purchase on the App Store.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="margin-top">
+<h2>Usage</h2>
+<p>Usage data totals are based on App Store users who agree to share their data with you.</p>
+<div class="table-wrapper">
+<table aria-label="Usage" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Term</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Installations</p>
+</td>
+<td>
+<p>The total number of times your app has been installed on devices running a minimum of iOS 8, macOS 11, tvOS 9, or visionOS 1. Redownloads on the same device, downloads to multiple devices sharing the same Apple Account, and Family Sharing installations are included. Only completed installations are counted. Failed or incomplete installations aren't included.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Sessions</p>
+</td>
+<td>
+<p>The number of times the app has been used for at least two seconds. If the app is in the background and is later used again, that counts as another session.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Devices</p>
+</td>
+<td>
+<p>The number of devices with at least one session during the selected period. Based on devices running a minimum of iOS 8, macOS 11, tvOS 9, or visionOS 1.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active in Last 30 Days</p>
+</td>
+<td>
+<p>The number of active devices with at least one session during the previous 30 days.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crashes</p>
+</td>
+<td>
+<p>The total number of crashes on devices running a minimum of iOS 8, macOS 11, tvOS 9, or visionOS 1.</p>
+<p>Get detailed crash logs and crash reports in Xcode, such as unique totals for each type of crash and how many users experienced it. <a href="https://developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs" target="_blank">Learn more about acquiring crash reports.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Deletions</p>
+</td>
+<td>
+<p>The number of times your app was deleted on devices running a minimum of iOS 12.3, macOS 11, tvOS 9, or visionOS 1. This data includes deletions of the app from the Home Screen and deletions of the app through Manage Storage. Data from resetting or erasing a device’s content and settings is not included.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="margin-top">
+<h2>App Store</h2>
+<div class="table-wrapper">
+<table aria-label="App Store" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Term</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Impressions</p>
+</td>
+<td>
+<p>The number of times your app was viewed on the Today, Games, Apps, and Search tabs of the App Store. Includes Product Page Views.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Impressions (Unique Devices)</p>
+</td>
+<td>
+<p>The number of unique devices that have viewed your app on the Today, Games, Apps, and Search tabs of the App Store. Includes Unique Product Page views.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Product Page Views</p>
+</td>
+<td>
+<p>The total number of times your App Store product page was viewed.</p>
+<p>Includes when apps use <a href="https://developer.apple.com/documentation/storekit">StoreKit</a> to load your product page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Product Page Views (Unique Devices)</p>
+</td>
+<td>
+<p>The number of unique devices that have viewed your App Store product page.</p>
+<p>Includes when apps use <a href="https://developer.apple.com/documentation/storekit">StoreKit</a> to load your product page.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pre-Orders</p>
+</td>
+<td>
+<p>The total number of pre-orders placed, minus cancelations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Updates</p>
+</td>
+<td>
+<p>The total number of app updates. Includes auto-updates.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="margin-top">
+<h2>Downloads</h2>
+<div class="table-wrapper">
+<table aria-label="Downloads" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Term</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>First Time Downloads</p>
+</td>
+<td>
+<p>The total number of first times an app is downloaded per Apple Account; Counted when an app is downloaded from the App Store after a user taps the "Buy" or "Get" button. This doesn't include app updates, redownloads, or device restores.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Redownloads</p>
+</td>
+<td>
+<p>The total number of redownloads of your app on the App Store. Doesn't include auto-updates or device restores. Counted when a customer clicks the redownload button.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total Downloads</p>
+</td>
+<td>
+<p>The sum of First Time Downloads and Redownloads.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article> </div>

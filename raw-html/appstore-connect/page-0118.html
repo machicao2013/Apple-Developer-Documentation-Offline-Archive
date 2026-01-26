@@ -1,0 +1,138 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="3.0">
+<h1>Voice Control evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">visionOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Using Apple’s Voice Control feature, users with reduced mobility or dexterity can navigate an app’s interface using only their voice. When looking at the screen, they can use commands like “tap," "click," or "swipe" to interact with on-screen elements.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+		Everyone should be able to use your app, regardless of whether they have a disability. If you can tap, click, or drag something in your app using a mouse or touchscreen gestures, you should strive to make it work with Voice Control, too.
+		<div class="callout callout-note">
+<p class="note"><b>Note: </b>Most of the work that goes into making your app accessible to <b><i>VoiceOver</i></b> users will also make it more accessible for Voice Control users. For this reason, we recommend you start with the <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria"> VoiceOver evaluation criteria</a> before evaluating Voice Control.</p>
+</div>
+<p>The following sections provide more detail about how to determine whether your app supports Voice Control well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Voice Control</b> on the App Store. </p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>In order to accurately indicate support, proficient testing of your app using Voice Control is necessary on all platforms for your app. Even if you already have a basic proficiency in testing with Voice Control, take some time to go beyond the basics. </p>
+<p>Review the resources below to learn more about using Voice Control for each device your app supports. </p>
+<ul>
+<li>
+<p>For iPhone, watch <a href="https://www.youtube.com/watch?v=eg22JaZWAgs">“How to use Voice Control on iPhone, iPad, and iPod touch,”</a> then visit <a href="https://support.apple.com/guide/iphone/use-voice-control-iph2c21a3c88/ios">Use Voice Control commands to interact with iPhone</a> and <a href="https://support.apple.com/en-us/111778"> Use Voice Control on your iPhone, iPad, or iPod touch</a>.</p>
+</li>
+<li>
+<p>For iPad, watch <a href="https://www.youtube.com/watch?v=eg22JaZWAgs">“How to use Voice Control on iPhone, iPad, and iPod touch,”</a> then visit <a href="https://support.apple.com/guide/ipad/use-voice-control-commands-ipad4b6c9ee4/ipados"> Use Voice Control commands to interact with iPad</a> and <a href="https://support.apple.com/en-us/111778">Use Voice Control on your iPhone, iPad, or iPod touch</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/get-started-mchl1a04f324/mac">Get started with Voice Control on Mac</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit the <a href="https://support.apple.com/guide/apple-vision-pro/perform-actions-with-your-voice-tan14d179ad1/visionos">Use Voice Control to interact with Apple Vision Pro</a>.</p>
+</li>
+</ul>
+</div>
+<h2>Indicating support for Voice Control </h2>
+<div class="spacing-bottom">
+<p>You may say your app supports Voice Control if users are able to navigate and interact with your app using only voice commands. Users should be able to complete all of the common tasks, actions, and functions of your app using only Voice Control, without touching the display.</p>
+</div>
+<div class="spacing-bottom">
+<p><b>Using only their voice, users should be able to activate all tappable or clickable elements on the screen.</b></p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>Speak “Show numbers” to make sure all buttons, links, and other interactive elements display a number. </p>
+<figure><img alt="iPhone home screen displaying Voice Control’s ‘Show numbers’ overlay. Each app icon is numbered so that the user understands speaking ‘Tap 6’ will launch the Clock app." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria/images/voice-control-1_2x.png"/></figure>
+</li>
+
+<li>
+<p>Speak “Show names” to make sure all buttons, links, and other interactive elements display a label, also known as “alternative text.” Refer to the <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver evaluation criteria</a> for more tips on writing good default labels, and review how to <a href="https://developer.apple.com/documentation/swiftui/view/accessibilityinputlabels(_:)-6nafd"> use accessibilityInputLabels(_:) for Voice Control</a>.</p>
+<figure><img alt="iPhone home screen displaying Voice Control’s ‘Show names’ overlay. Each app icon is labeled so that the user understands speaking ‘Tap Clock’ will launch the Clock app." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria/images/voice-control-2_2x.png"/></figure>
+</li>
+
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+<li>
+<p>Use commands like “tap” or “click” plus the name or number of a control to drive your app’s common workflows. For example, “Tap Compose,” “Click Back,” or “Tap 4.” </p>
+</li>
+<li>
+<p>Match Voice Control labels to the visible text. If the Voice Control label is different from the visible text in your app (for example, “Leave call” instead of “End call”), users may be confused. Your users may be forced to speak “Show names” in order to understand why Voice Control isn’t working as they expected with your app.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>Using only their voice, users should be able to operate all interactions in your app, including those that are more complex.</b></p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>If your app uses swipes, long presses, secondary clicks, or other ways to show additional interactive controls, make sure those are accessible to Voice Control users. For example, use a <a href="/videos/play/wwdc2019/250/">custom action</a>. Elements with custom actions will be indicated with a double chevron; try speaking “Show actions for &lt;number&gt;.”</p>
+</li>
+<li>
+<p>If your app reveals a hidden user interface (for example, on hover or swipe), make sure that the user has a speech-only way to show the hidden elements or trigger the same behavior through an action or context menu.</p>
+</li>
+<li>
+<p>Ensure scrolling works in your app. For example, “Scroll down.” For panning views like maps or layout canvases, try out speech commands such as “Pan left” and “Zoom out.”</p>
+</li>
+<li>
+<p>If other multi-touch gestures are required, try speaking the gesture, such as “Swipe up with two fingers.”</p>
+</li>
+<li>
+<p>If your app has a recording option, or if you have a custom dictation function, ensure users can start and stop the recording using only their voice.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="spacing-bottom">
+<p><b>Using only their voice, users should be able to dictate and edit text in any text field.</b></p>
+<div>
+<ul class="compound-item-list">
+<li>
+<p>Make sure that users can dictate text in any text field in your app. Speak “type” and the text you’d like to type.</p>
+</li>
+<li>
+<p>Try speaking commands like “Select” and the text you want selected. Ensure the text is selected, then speak “Delete that” and verify the text is deleted. </p>
+</li>
+<li>
+<p>If you use standard text fields from Apple frameworks, Voice Control will be automatically supported. However, if you use your own custom text entry or a third-party framework, extra work may be required. For example, Apple has an <a href="https://github.com/apple/unityplugins/tree/main">open-source accessibility plug-in for Unity-based apps</a>.</p>
+</li>
+<li>
+<p>If your app uses any custom text fields, text entry behavior, or input validation, review and test the rest of Voice Control’s text commands very carefully.</p>
+</li>
+</ul>
+</div>
+</div>
+<h3>Additional suggestions</h3>
+<div class="spacing-bottom">
+<div>
+<ul class="compound-item-list">
+<li>
+<p>Some users with physical or cognitive impairments may need more time, or wish to avoid distracting auto-play defaults. If aspects of your app auto-play or auto-hide on a time delay, consider allowing users to cancel or extend that delay. </p>
+</li>
+<li>
+<p>Consider implementing <a href="https://developer.apple.com/documentation/SiriKit">SiriKit</a> and <a href="https://developer.apple.com/documentation/appintents">App Intents</a> to make your app better for all users, including Voice Control users. Review <a href="https://developer.apple.com/videos/play/wwdc2024/10133/"> “Bring your app to Siri”</a> for more details.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Voice Control in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app's support for Voice Control every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/accessibility/voice-control">Learn How to Develop for Voice Control</a>
+<a href="https://developer.apple.com/videos/play/wwdc2019/254/">Watch “Writing Great Accessibility Labels“</a>
+<a href="https://developer.apple.com/documentation/swiftui/view/accessibilityinputlabels(_:)-6nafd">Review how to use accessibilityInputLabels(_:) for Voice Control</a>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10117">Watch “Accessibility design for Mac Catalyst”</a>
+<a href="https://developer.apple.com/videos/play/wwdc2024/10073/">Watch “Catch up on accessibility in SwiftUI”</a>
+<a href="https://www.youtube.com/playlist?list=PLIl2EzNYri0fW5fg5zT4TTW11E0wKPalY">Watch Apple Support “Mobility Features“ playlist for iPhone &amp; iPad</a>
+</div>
+</article> </div>

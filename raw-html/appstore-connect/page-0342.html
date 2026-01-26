@@ -1,0 +1,225 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="2.0">
+<h1>Apple-hosted asset pack statuses</h1>
+<p>The <em>asset pack</em> status tells you immediately whether your asset pack version needs attention. The status applies only to the version of an asset pack, not the entire app or asset pack.</p>
+<ul>
+<li>
+<p>A red status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-red-icon_2x.png"/>) means that you need to perform some action.</p>
+</li>
+<li>
+<p>A yellow status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-yellow-icon_2x.png"/>) means that some process is ongoing, controlled either by you or by Apple.</p>
+</li>
+<li>
+<p>A green status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-green-icon_2x.png"/>) means the asset pack is ready to be tested in TestFlight or live on the App Store.</p>
+</li>
+</ul>
+<developer-accordion>
+<accordion-panel id="testflight-statuses">
+<h3>TestFlight statuses</h3>
+<div class="table-wrapper">
+<p>You can view the TestFlight status of an asset pack version <a href="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs">under the TestFlight tab in App Store Connect</a> and in the Asset Packs section under General on the Distribution tab.</p>
+<table aria-label="TestFlight statuses" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Awaiting Upload</p>
+</td>
+<td>
+<p>You've created a new asset pack version using the <span class="no-glossary">App Store Connect API</span> but haven't uploaded it yet.</p>
+<p>If you're using Transporter, iTMSTransporter, or altool, new asset pack versions are automatically created when you upload an asset pack, so the Processing status will likely display instead. If you've uploaded a version using these tools and it's stuck in the Awaiting Upload status for more than 24 hours, <a href="https://developer.apple.com/contact/" target="_blank">contact us</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Processing</p>
+</td>
+<td>
+<p>Your asset pack version is still being processed. You'll receive an email notification when the version is ready.</p>
+<p>If you upload an asset pack and it remains in the Processing status for more than 24 hours, there may be an issue. To resolve the issue, <a href="https://developer.apple.com/contact/" target="_blank">contact us</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Failed</p>
+</td>
+<td>
+<p>Apple received your asset pack version, but it has one or more issues and can't be tested. You'll receive an email with more details about why the delivery failed. Resolve any issues, then redeliver the asset pack.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Ready for Internal Testing</p>
+</td>
+<td>
+<p>Your asset pack version is ready to be tested internally. TestFlight will automatically use this asset pack version for internal testing once you've invited testers and have a build available for testing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> Ready to Submit</p>
+</td>
+<td>
+<p>You've uploaded an asset pack version to App Store Connect but haven't submitted it to TestFlight App Review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td>
+<p>Your asset pack version has been submitted to TestFlight App Review for external testing. It'll need to be approved before it can be tested externally.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td>
+<p>Your asset pack version is currently being reviewed by TestFlight App Review for external testing. It'll need to be approved before it can be tested externally.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td>
+<p>Your asset pack version was rejected by TestFlight App Review and can no longer be tested externally. To begin external testing, upload a new version and submit it to TestFlight App Review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Ready for External Testing</p>
+</td>
+<td>
+<p>Your asset pack version is ready to be tested externally. TestFlight will automatically use this version for external testing once you've invited testers and have a build available for testing.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> Superseded</p>
+</td>
+<td>
+<p>A new asset pack version is being tested internally and externally in TestFlight so this version is no longer in use.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="app-store-statuses">
+<h3>App Store statuses</h3>
+<div class="table-wrapper">
+<p>You can view the App Store status of an asset pack version in the Asset Packs section under General on the Distribution tab.</p>
+<table aria-label="App Store statuses" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Prepare for Submission</p>
+</td>
+<td>
+<p>You've uploaded an asset pack version to App Store Connect but haven't submitted it to App Review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Review</p>
+</td>
+<td>
+<p>Your asset pack version has been added to a submission, but it hasn’t been submitted to App Review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td>
+<p>Apple received your submission, but hasn’t started the review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td>
+<p>App Review is reviewing your asset pack version. You can <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">cancel the submission</a> to remove it from review.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Accepted</p>
+</td>
+<td>
+<p>Your asset pack version has been accepted, but there are one or more rejected items in the submission. All items in the submission must be accepted before any can be published.</p>
+<p>You can edit the rejected items and resubmit, or you can remove them from the submission.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td>
+<p>App Review didn’t accept your asset pack version. You can <a href="/help/app-store-connect/manage-submissions-to-app-review/manage-a-submission-with-unresolved-issues#edit-and-resubmit-rejected-items">edit the asset pack and resubmit</a>. Alternatively, you can <a href="/help/app-store-connect/manage-submissions-to-app-review/manage-a-submission-with-unresolved-issues#remove-rejected-items">remove the asset pack from the submission</a> or <a href="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review">cancel the submission</a>, which will move it back to the Prepare for Submission status.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Processing for Distribution</p>
+</td>
+<td>
+<p>Your asset pack version is processing and will be ready for distribution within 24 hours.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Distribution</p>
+</td>
+<td>
+<p>Your asset pack version has been accepted and is ready for distribution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p> Superseded</p>
+</td>
+<td>
+<p>A new asset pack version is live on the App Store so this version is no longer in use.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs">Overview of Apple-hosted asset packs</a>
+<a href="/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs">Upload Apple-hosted asset packs</a>
+<a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">App and submission statuses</a>
+<a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">App build statuses</a>
+</div>
+</link></article> </div>

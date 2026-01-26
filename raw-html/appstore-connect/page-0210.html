@@ -1,0 +1,319 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage subscriptions</span>
+<article _v="8.0">
+<h1>Manage pricing for auto-renewable subscriptions</h1>
+<p>Auto-renewable subscriptions can be priced by App Store country or region (also known as storefronts.) You can choose from 800 price points in each currency, with the option for the <span class="no-glossary">Account Holder</span> to submit a request for additional higher price points.</p>
+<p>After you set a starting price for your auto-renewable subscription, you can schedule one future price change at a time, per country or region. If you schedule a second price change when you already have a change scheduled, the first scheduled change will be overwritten. You also have the option to preserve prices for existing subscribers.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/auto-renewable_subscriptions/managing_auto-renewable_subscriptions">Learn how to configure auto-renewable subscription pricing with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-a-starting-price-for-your-auto-renewable-subscription">
+<h3>Set a starting price for your auto-renewable subscription</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group name.</p>
+</li>
+<li>
+<p>Click the subscription reference name.</p>
+</li>
+<li>
+<p>Scroll down to the Subscription Prices section and click Add Subscription Price.</p>
+</li>
+<li>
+<p>Choose a country or region and price, then click Next. To search from a larger list of price points, click See Additional Prices.</p>
+</li>
+<li>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Make sure your subscription’s starting price is correct and click Confirm.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="decrease-the-price-of-an-auto-renewable-subscription">
+<h3>Decrease the price of an auto-renewable subscription</h3>
+<div>
+<p>If you decrease the price of your auto-renewable subscription, existing subscriptions will automatically renew at the lower price. You don’t have the option to preserve the higher price for existing subscribers.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group name.</p>
+</li>
+<li>
+<p>Click the subscription reference name.</p>
+</li>
+<li>
+<p>Scroll down to the Subscription Prices section and click the add button (+).</p>
+<figure><img alt="Screenshot showing subscription management options for Ocean Journal Monthly. The page includes details like status, Apple ID, and product ID, along with options to adjust subscription prices and create offers." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Making-Price-changes-to-Auto-Renewable-Subscriptions-Step5_2x.png"/></figure>
+</li>
+<li>
+<p>Click Plan Subscription Price Change, then select the storefronts where you want to edit pricing.</p>
+<figure><img alt="Screenshot of a subscription pricing page with checkboxes for countries and regions. Options to Select All or None are at the top right, with Cancel and Next buttons at the bottom." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Making-Price-changes-to-Auto-Renewable-Subscriptions-Step7_2x.png"/></figure>
+</li>
+<li>
+<p>Choose a start date, country or region, and price, then click Next. To search from a larger list of price points, click See Additional Prices.</p>
+<figure><img alt="Screenshot of a subscription pricing page for scheduling price changes. The Price field has a drop-down menu open showing examples of price options. There is a Back and Next button at the bottom." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Making-Price-changes-to-Auto-Renewable-Subscriptions-Step8-3_2x.png"/></figure>
+</li>
+<li>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Make sure the details of your price decrease are correct and click Confirm.</p>
+<p>You can schedule one future price change at a time, per storefront. If you schedule a second price change when you already have a change scheduled, the first scheduled change will be overwritten.</p>
+</li>
+<li>
+<p>Once a price decrease goes into effect, it can’t be reversed. However, you can schedule a price increase later.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="increase-the-price-of-an-auto-renewable-subscription">
+<h3>Increase the price of an auto-renewable subscription</h3>
+<div>
+<p>Increases in auto-renewable subscription prices result in either a notice to active subscribers or a request for consent, based on certain criteria below. Subscribers on introductory or promotional price subscriptions, including free trials and paid offers, will renew for at least one more billing period at the price that was displayed when they subscribed, to ensure their notice or request for consent for the new price is sent at least 30 days in advance. If a subscriber doesn’t consent before the first renewal at the higher price, their subscription will expire at the end of the last billing cycle at the former price.</p>
+<div class="Subhead">
+<h3 class="Name">Consent needed</h3>
+<p>If any of the following applies, subscribers must consent to the price increase before their next renewal date in order for the subscription to renew. * Apple will automatically contact subscribers by email or push notification to request consent.</p>
+<p class="lighter smaller">* If you increase the price of an auto-renewable subscription in India, subscribers who have enabled UPI AutoPay must consent to the new price and have a sufficient payment balance associated with their Apple Account, or they’ll go into the billing retry state at the end of their current billing period. Apple will notify these subscribers as part of the price increase notice, but you may also wish to notify subscribers separately. Subscribers who don’t have a sufficient Apple Account balance or who wish to continue paying with UPI AutoPay must repurchase the subscription at the new price. <a href="https://support.apple.com//HT212781">Learn more.</a></p>
+<p class="lighter smaller">* For users converting from trials or offers in South Korea, Apple will collect consent via email, in-app sheets, or push notifications. The timing and frequency of these communications may differ from those shown for standard subscription price increases. <a href="https://www.ftc.go.kr/www/selectBbsNttList.do?bordCd=3&amp;key=12&amp;searchCtgry=01,02">Learn more.</a></p>
+<ul>
+<li>
+<p>The subscriber is located in a region that requires consent for any price changes.</p>
+</li>
+<li>
+<p>The price increase is more than 50% of the current price and the difference in price exceeds approximately US$5 per period for non-annual subscriptions, or US$50 per year for annual subscriptions. (International equivalents for prices not in USD are based on current exchange rates with specific thresholds that are subject to change based on changes in taxes or foreign exchange rates.) <a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/auto-renewable-subscription-price-increase-thresholds">View a list of thresholds per storefront.</a></p>
+</li>
+<li>
+<p>The subscriber experienced a price increase for that subscription within the past 12 months.</p>
+</li>
+</ul>
+<p>The timing of price consent requests from Apple depends on the length of the subscription. If a price increase occurs within the minimum required notice period (7 days for weekly subscriptions, 27 days for 1 month subscriptions, and 30 days for subscription durations longer than 1 month), subscribers will renew at their existing price for one more billing period and will be notified before the end of their next billing period.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Auto-Renewable Subscriptions" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Subscription duration</p>
+</th>
+<th scope="col">
+<p class="TableHead">First email notification (email, push, in-app messaging)</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2 month, 3 month, and 6 month, and annual subscriptions</p>
+</td>
+<td>
+<p>60 days before renewal date</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Monthly subscriptions</p>
+</td>
+<td>
+<p>27 days before renewal date</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Weekly subscriptions</p>
+</td>
+<td>
+<p>7 days before renewal date</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If a subscriber doesn’t agree to the new price or takes no action, Apple will continue to request consent approximately weekly through email, push notifications, and in-app messaging until their subscription expires at the end of their current billing cycle. <a href="https://developer.apple.com/documentation/storekit/skpaymentqueue/3521327-showpriceconsentifneeded">Learn about displaying in-app consent messaging with StoreKit.</a></p>
+<figure><img alt="Example screenshots of consent needed and not" class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Consent-Not-needed_2x.png"/></figure>
+<div class="Subhead">
+<h3 class="Name">Consent not needed</h3>
+<p>If none of the criteria apply, Apple will automatically notify subscribers of the price increase with no additional request for consent. Notifications are sent via email and push notifications if enabled by the subscriber 27 or 7 days before the next renewal date. On iOS 13.4 or later, Apple will also notify subscribers via in-app messaging. If a price increase occurs within the minimum required notice period, subscribers will renew at their existing price for one more billing period and will be notified before the end of their next billing period.</p>
+<div class="table-wrapper">
+<table aria-label="Auto-Renewable Subscriptions" class="table-3-col table-3-col-even">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">First email</p>
+</th>
+<th scope="col">
+<p class="TableHead">First in-app messaging</p>
+</th>
+<th scope="col">
+<p class="TableHead">Push notification</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>27 days before renewal date.</p>
+<p><b>Note:</b> Weekly subscriptions renew at the increased price on the fourth consecutive renewal.</p>
+</td>
+<td>
+<p>First app launch after entering notice period.</p>
+</td>
+<td>
+<p>7 days before renewal date, if in-app messaging wasn't viewed.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Price changes only apply to active subscribers. If a subscription is recovered in the billing retry or grace period state, it will renew at the existing price for one more billing period. 27 days before the renewal date, the subscriber receives notice of the price change, and the subscription renews at the next renewal date at the new price. Subscribers won't receive a notification if the subscription isn't going to renew.</p>
+</div>
+<p>To schedule a price increase:</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Click an auto-renewable subscription, go to the Subscription Prices section, and click the add button (+).</p>
+</li>
+<li>
+<p>Click Plan Subscription Price Change, then select the countries or regions where you want to edit pricing.</p>
+</li>
+<li>
+<p>Choose a start date, country or region, and price, then click Next. To search from a larger list of 800 price points, click See Additional Prices.</p>
+<p>App Store Connect will determine the soonest your price change can be scheduled for based on timezones for your desired date (generally 1 to 2 days in advance.) The time of day your price change goes into effect will <a href="/help/app-store-connect/reference/pricing-and-availability/app-store-pricing-and-availability-start-times-by-country-or-region">vary by region</a>. Ensure you're scheduling your price changes with enough time in advance.</p>
+</li>
+<li>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Choose an option for subscribers paying the current price shown in App Store Connect:</p>
+<ul>
+<li>
+<p><b>A</b>: Keep the current price for existing subscribers. Anyone who subscribed before the start date of this price change won’t be affected. Subscribers whose subscription expires can resubscribe at the preserved price within 60 days of expiration.</p>
+</li>
+</ul>
+<ul>
+<li>
+<p><b>B</b>: Apply the price change to existing subscribers who are paying the price of your subscription currently displayed on the App Store. App Store Connect will provide an indication if consent is required (or if they'll simply be notified) for each country or region. If you have customer groups that have had their prices preserved and your change is scheduled for the future, keep in mind that circumstances may change and consent will be required based on the conditions of the customer at the time of the increase. you're responsible for ensuring you understand when consent will be required.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>View the list of planned price changes.</p>
+<figure><img alt="Screenshot of  alerts about a price increase effective Apr 15, 2022. Subscribers who don't agree might have subscriptions expire. It lists countries or regions with new prices and old-to-new pricing details, ending with Back and Confirm buttons." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Increase-price-to-Auto-Renewable-Subscriptions-Step8_2x.png"/></figure>
+</li>
+<li>
+<p>If all of the information is correct, click Confirm.</p>
+</li>
+</ol>
+<p>Once a price increase goes into effect, it can’t be reversed.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="Un-preserve-prices-for-subscribers">
+<h3>Un-preserve prices for subscribers</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group name.</p>
+</li>
+<li>
+<p>Click the subscription reference name.</p>
+</li>
+<li>
+<p>Scroll down to the Subscription Pricing section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>Click Starting Price.</p>
+</li>
+<li>
+<p>Click Edit Price.</p>
+</li>
+<li>
+<p>App Store Connect displays the countries or regions where subscribers currently pay a lower price</p>
+</li>
+<li>
+<p>Select the countries or regions where you want to increase the price. Click Next.</p>
+<figure><img alt="A screenshot of a modal titled Price Change Options: Subscribers in one country or region must accept a price increase or their subscriptions will expire. Lists Europe with a current price of $1.49 and a new price of $13.99. Includes Cancel and Next buttons." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Increasing-Pricing-for-Subscribers-with-Preserved-Pricing-Step2_2x.png"/></figure>
+</li>
+<li>
+<p>Click Confirm. Any changes you make can’t be reversed.</p>
+<figure><img alt="A screenshot of a modal titled Confirm Price Change?: Notifies that new prices will take effect immediately and can't be undone. Lists Iceland with a current price of $1.49, increasing to $13.99. Includes Back, Cancel, and Confirm buttons at the bottom." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Increasing-Pricing-for-Subscribers-with-Preserved-Pricing-Step3_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-or-modify-your-planned-price-changes">
+<h3>View or modify your planned price changes</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription name, go to the Subscription Prices section, then click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>View your planned price changes.</p>
+<p>You can download a list of prices customers are currently paying for your auto-renewable subscriptions, as well as a list of upcoming prices. Click Export as CSV.</p>
+<figure><img alt="A webpage section titled Subscription Pricing detailing upcoming price changes: Lists dates with corresponding regions: Aug 9, 2022 (175 regions), Jun 24, 2021 (44 regions), Apr 15, 2022 (1 region). States price changes will apply to existing subscribers. Provides an option to Export as CSV." class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Modify-to-Auto-Renewable-Subscriptions-Step4_2x.png"/></figure>
+</li>
+<li>
+<p>To cancel a scheduled price change, move your pointer over the right side of the price change row until the delete button (—) appears. Click the delete button.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>In certain cases, such as upcoming tax or foreign exchange rate adjustments, or when a manually adjusted price is starting or reverting, you may not be able to remove an upcoming price change.</p>
+</div>
+<figure><img alt='A screenshot of Subscription Pricing indicating a new subscription price creation: Notification states Subscription Price Created with an option to learn more. Lists upcoming price changes: Apr 21, 2022, for 175 countries or regions; Mar 30, 2022, for 1 country or region; Mar 26, 2022, for 175 countries or regions. Includes a link to "Learn more about subscription pricing."' class="help-screens-retro help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions/images/Modify-to-Auto-Renewable-Subscriptions-Step5_2x.png"/></figure>
+</li>
+<li>
+<p>In the dialog that appears, click Delete.</p>
+<p>Click the date to view the set or planned price. If you’ve previously preserved pricing for existing subscribers, the current prices paid by these subscribers and the start date of the prices will also appear.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>How will changes to foreign exchange rates and tax adjustments affect auto-renewable subscription pricing?</h3>
+<p>Apple will not make price adjustments on your auto-renewable subscription products. Retail price changes initiated by Apple due to tax changes and significant foreign exchange rate movements will exclude auto-renewable subscriptions. For any value-added tax (VAT) rate changes, your proceeds and Apple’s commission will be calculated after the deduction of VAT, which means that your proceeds will change. You can choose to pass any changes caused by taxation or foreign exchange onto your subscribers by adjusting the price for your subscription.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

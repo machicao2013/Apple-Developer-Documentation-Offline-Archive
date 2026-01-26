@@ -1,0 +1,505 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Understanding the Core Technology Fee</span>
+<article _v="4.0">
+<h1>Estimate fees for alternative business terms</h1>
+<p>Apple offers an Alternative Terms Addendum for developers distributing apps in the European Union (EU), which allows them to distribute apps outside the App Store. For developers who want nothing to change for them — from how the App Store works currently and in the rest of the world — no action is needed, and they can continue to distribute their apps only on the App Store and use its private and secure In-App Purchase system. For those who adopt the new terms, the fees you may owe to Apple may change. Access the available data to help you determine how these terms may apply to your business if you choose to adopt them, including new App Install reports, and the Sales and Trends dashboard.</p>
+<p>This information is provided for estimation purposes only.</p>
+<p>To understand potential fees if you choose the new business terms, you can use your app’s historical performance to estimate future fees. You'll need:</p>
+<ul>
+<li>
+<p>The number of first annual installs your app generated in a 12 month period, which is available in the Historical App Install Reports in Sales and Trends. Fees won’t be charged against installs in these reports.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>App Clip installs and installs from Apple Business Manager and Apple School Manager aren't included in these reports, but will be measured and counted if you agree to the new business terms.</p>
+</div>
+</li>
+<li>
+<p><i>If you offer In-App Purchases:</i> Your app’s previous sales from iPhone and iPad devices in the EU, available in the Sales and Trends dashboard.</p>
+</li>
+</ul>
+<p><b>Required role: </b>Account Holder, Admin, Finance, or Sales with Reports. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="calculating-the-monthly-fee">
+<h3>Calculating the monthly fee</h3>
+<div>
+<p>The Core Technology Fee is calculated by looking at the number of first annual installs in the past 12 months. On a monthly basis, developers are only billed for one-twelfth of the Core Technology Fee for each first annual install in excess of one million. If an app has fewer than one million first annual installs, there's no Core Technology Fee for that app that month.</p>
+<p>For example, let’s look at the Forest Explorer app for the month of August. Apple looks back 12 months and considers the five months. In this case, the Forest Explorer app has generated 1.05 million first annual installs through the current month. In August, Apple only charges one-twelfth of the Core Technology Fee owed for the 50,000 first annual installs over one million, resulting in an amount of €2,083.33 due for that month. The developer will receive an invoice for the month of August presenting the monthly fee.</p>
+<figure><img alt="Diagram breaking down the calculation of monthly fees." class="help-screens-retro" src="/help/app-store-connect/understanding-the-core-technology-fee/estimate-fees-for-alternative-business-terms/images/monthly-fees_2x.png"/></figure>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<p>In many cases, developers who exceed one million first annual installs do not pay the CTF, including:</p>
+<ul>
+<li>
+<p>Non-profit organizations, governments and education institutions with an Apple Developer Program fee waiver.</p>
+</li>
+<li>
+<p>Non-commercial developers with a no revenue business offering a free app without any monetization.</p>
+</li>
+<li>
+<p>Small developers (earning less than €10 million global business revenue) that have not previously exceeded one million first annual installs receive a 3-year free on-ramp to the CTF.</p>
+</li>
+</ul>
+<p>Learn more about these conditions under the <a href="/help/app-store-connect/understanding-the-core-technology-fee/core-technology-fee-overview#how-the-fee-works">"How the fee works"</a> section to help you put these business terms into context with your own performance.</p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="download-historical-app-install-reports">
+<h3>Download Historical App Install Reports</h3>
+<div>
+<p><b>Required role: </b>Account Holder, Admin, Finance, or Sales with Reports. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>Historical App Install Reports are available for download through App Store Connect on the web and the App Store Connect API. To get started using the API, <a href="/help/app-store-connect/get-started/app-store-connect-api">generate an API Key</a>, <a href="/help/app-store-connect/manage-your-team/overview-of-accounts-and-roles">assign user permissions</a>, and learn how to <a href="https://developer.apple.com/documentation/appstoreconnectapi/download_sales_and_trends_reports">download Sales and Trends Reports</a>.</p>
+<p>There are three versions of reports available:</p>
+<ul>
+<li>
+<p class="margin-left-small"><b>Version 1_0:</b> historical report of first annual installs from only iPhone devices in 2023.</p>
+</li>
+<li>
+<p class="margin-left-small"><b>Version 1_1:</b> historical reports of first annual installs from both iPhone and iPad devices in 2023.</p>
+</li>
+<li>
+<p class="margin-left-small"><b>Version 1_2:</b> historical reports of first annual installs from both iPhone and iPad devices for any 12 month period.</p>
+</li>
+</ul>
+<p>To download them through App Store Connect on the web:</p>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect homepage, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left, choose Sales and Trends Reports.</p>
+</li>
+<li>
+<p>Go to the Historical App Install Reports section.</p>
+</li>
+<li>
+<p>Choose a vendor.</p>
+</li>
+<li>
+<p>Use the date picker to select a desired month or year.</p>
+</li>
+<li>
+<p>Click Download.</p>
+</li>
+<p>Unzip the compressed GZIP (.gz) files by opening them or using a utility.</p>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="estimate-your-core-technology-fee">
+<h3>Estimate your Core Technology Fee</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>Open the extracted Install Summary report file in a spreadsheet application.</p>
+</li>
+<li>
+<p>Headers at the top of the report indicate your developer name, the region (European Union), and the reporting year.</p>
+</li>
+<li>
+<p>Data appears for the number of first annual installs generated by each app in your developer account, including the number of first annual installs above the threshold, the total number of first annual installs for each app, and a breakdown of first annual installs by install type.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="estimate-your-sales-on-iphone-and-ipad-in-the-eu">
+<h3>Estimate your sales on iPhone and iPad devices in the EU</h3>
+<div>
+<p>If you sell digital goods and services in your app, you can input your sales data from Sales and Trends into the fee calculator to understand how your commission may change under the new fee model.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect homepage, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left, choose Sales.</p>
+</li>
+<li>
+<p>In the date picker, select your desired date range. Ensure the date range matches the range of the historical App Install report you're using to estimate potential install fees.</p>
+</li>
+<li>
+<p>Select “Add Filters”, “Device”, “iPhone”, and "iPad".</p>
+</li>
+<li>
+<p>Select "Add Filters", "Territory". Under "My Groups", select "European Union".</p>
+</li>
+<li>
+<p>Select “Add Filters”, “Parent App”, and enter the name or <span class="no-glossary">Apple ID</span> of the app you want to evaluate.</p>
+</li>
+<li>
+<p>A rounded sales value appears at the top of the dashboard. For a more exact value, click the export button on the top right of the chart and choose your preferred export option.</p>
+</li>
+<li>
+<p>If you have exported your data from the chart, open the file in your preferred spreadsheet program and scroll all the way to the right to view your total sales on iPhone and iPad in the European Union.</p>
+</li>
+<li>
+<p>Subtract any taxes applicable to your sales from this number. Consult your tax advisor if you have any questions.</p>
+</li>
+</ol>
+<p>Use the Historical App Install Reports to help you understand how you may accumulate first annual installs in the European Union if you choose to adopt the new business terms.</p>
+<figure><img alt="" class="help-screens-retro" src="/help/app-store-connect/overview-of-distributing-apps-in-the-eu/estimate-fees-in-the-eu/images/estimate-2023-proceeds-on-iphones-in-the-european-union_2x.png"/></figure>
+</div>
+</accordion-panel>
+</developer-accordion>
+<div class="table-wrapper">
+<table aria-label="App Install Report" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Report Name</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Install Summary Report</p>
+</td>
+<td colspan="8">
+<p>Provides estimated first annual installs in the last 12 months for each app, and the number of installs over the threshold.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Install <span class="nowrap">Detail Report</span></p>
+</td>
+<td colspan="8">
+<p>Provides first annual installs by app, territory, install type, install channel, and month for the last 12 months.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Learn about downloading these reports using the <a href="https://developer.apple.com/documentation/appstoreconnectapi/sales_and_finance_reports">App Store Connect API</a> or <a href="https://help.apple.com/itc/appsreporterguide/">Reporter</a>.</p>
+<p><a href="/support/core-technology-fee/">Learn about the Core Technology Fee.</a></p>
+<developer-accordion>
+<accordion-panel id="install-summary-by-install-type-report">
+<h3>Install Summary Report</h3>
+<div>
+<table aria-label="Install Summary Report" class="table-3-col table-3-col-even">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Developer</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The developer name you set in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App ID</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The ID of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The name of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs Above Threshold</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs above one million.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>First Annual Installs</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The total number of first annual installs.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="install-detail-report">
+<h3>Install Detail Report</h3>
+<div>
+<table aria-label="Install Detailed Report" class="table-3-col table-3-col-even">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Developer</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The developer name you set in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App ID</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The ID of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The name of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Territory</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The territory where the app was installed. Based on the territory of the user's Apple Account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Install Type</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The type of install that occurred.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Channel</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The channel from which the install was initiated. Possible values include App Store or TestFlight.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MM-YY</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs for the month and year displayed in the column title.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="report-file-names">
+<h3>Report File Names</h3>
+<div>
+<div class="table-wrapper">
+<table aria-label="Report File Names" class="table-5-col table-custom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Available Versions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Date Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Naming Convention</p>
+</th>
+<th scope="col">
+<p class="TableHead">Example</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Summary by Territory</p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_0, 1_1</p>
+</td>
+<td>
+<p class="custom-font table-small-font">YEARLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Territory_<span class="nowrap">&lt;Vendor_ID&gt;</span>_<span class="nowrap">&lt;date&gt;</span>_V1_1</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Territory_80012345_20231231_V1_1.txt</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Summary by <span class="nowrap">Install Type</span></p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_0, 1_1</p>
+</td>
+<td>
+<p class="custom-font table-small-font">YEARLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Install_Type_<span class="nowrap">&lt;Vendor_ID&gt;</span>_<span class="nowrap">&lt;date&gt;</span>_V1_1</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Install_Type_80012345_20231231_V1_1.txt</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Summary by <span class="nowrap">Install Channel</span></p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_0, 1_1</p>
+</td>
+<td>
+<p class="custom-font table-small-font">YEARLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Install_Channel_<span class="nowrap">&lt;Vendor_ID&gt;</span>_<span class="nowrap">&lt;date&gt;</span>_V1_1</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_By_Install_Channel_80012345_20231231_V1_1.txt</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Detailed <span class="nowrap">Report</span></p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_0, 1_1</p>
+</td>
+<td>
+<p class="custom-font table-small-font">YEARLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalDetail_<span class="nowrap">&lt;Vendor_ID&gt;</span>_<span class="nowrap">&lt;date&gt;</span>_V1_1</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalDetail_80012345_20231231_V1_1.txt</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Summary <span class="nowrap">Report</span></p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_2</p>
+</td>
+<td>
+<p class="custom-font table-small-font">MONTHLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_&lt;Vendor_ID&gt;_&lt;date&gt;_V1_2</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalSummary_1234567_123456_V1_2.txt</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="custom-font table-small-font padding-right-small">Install Detailed Report</p>
+</td>
+<td>
+<p class="custom-font table-small-font">1_2</p>
+</td>
+<td>
+<p class="custom-font table-small-font">MONTHLY</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalDetail_<span class="nowrap">&lt;Vendor_ID&gt;</span>_<span class="nowrap">&lt;date&gt;</span>_V1_2</p>
+</td>
+<td>
+<p class="custom-font smaller break-word padding-right-small">InstalDetail_1234567_1234567_V1_2.txt</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3 class="Name">I’m seeing two report versions when I download my Historical App Install reports. Which one should I use?</h3>
+<p>Report version 1_1 will include first annual install data from both iOS and iPadOS, whereas report version 1_0 only includes data from iOS. We recommend using report version 1_1 in order to understand how installs across iOS and iPadOS may impact the fees you owe.</p>
+<h3 class="Name">Why do the Historical App Install reports contain data for some of my apps, but not all of my apps?</h3>
+<p>Apps must have received at least one install from an Apple account in the EU on iOS or iPadOS in 2023 in order to appear in the Historical App Install reports.</p>
+<h3 class="Name">When I try to download the Historical App Install reports, there’s a message that says “Your apps did not generate any data for this report in the selected reporting period.” What does this mean?</h3>
+<p>If none of your apps generated any installs in the EU on iOS or iPadOS in 2023, you’ll receive this message when you try to download your Historical App Install reports.</p>
+<h3 class="Name">My app launched this year, but I’m seeing reinstalls and updates appear as first annual installs in my reports. Why is this happening?</h3>
+<p>In some cases, users may first install your app in regions outside the EU or on devices other than iPhone before downloading your app on iOS in the EU. Since first annual installs can only occur on iOS in the EU and these users may have already installed your app outside iOS or the EU, these first annual installs may appear as reinstalls or updates.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal"><b>Related</b>
+<a href="/help/app-store-connect/understanding-the-core-technology-fee/measure-your-first-annual-installs">Measure Your First Annual Installs</a>
+<a href="/support/core-technology-fee/">Learn more about the Core Technology Fee for iOS apps in the EU</a>
+</div>
+</link></article> </div>

@@ -1,0 +1,173 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="7.0">
+<h1>Maximum build file sizes</h1>
+<p>Verify that your app, along with each Mach-O executable file (for example, <code>app_name.app/app_name</code>), doesn’t exceed the maximum file size limits on the supported operating systems.</p>
+<p>For iOS, iPadOS, macOS, tvOS, and visionOS apps, you can use <a href="https://developer.apple.com/documentation/backgroundassets">Background Assets</a> to host larger assets that are managed separately from your build.</p>
+<div class="table-wrapper">
+<table aria-label="Maximum build file sizes" class="table-4-col table-4-col-middle-wide table-no-center-align">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Platform</p>
+</th>
+<th scope="col">
+<p class="TableHead">Minimum deployment target</p>
+</th>
+<th scope="col">
+<p class="TableHead">Maximum uncompressed app size</p>
+</th>
+<th scope="col">
+<p class="TableHead">Maximum executable file size</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>iOS and iPadOS</p>
+</td>
+<td colspan="4">
+<p>iOS 9.0 and later</p>
+<p>iOS 7.X through iOS 8.X</p>
+<p>Earlier than iOS 7.0</p>
+</td>
+<td colspan="2">
+<p>4 GB</p>
+</td>
+<td colspan="2">
+<p>500 MB <sup>1</sup></p>
+<p>60 MB <sup>2</sup></p>
+<p>80 MB <sup>1</sup></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>macOS</p>
+</td>
+<td colspan="4">
+<p>All macOS versions</p>
+</td>
+<td colspan="2">
+<p>200 GB</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td colspan="2">
+<p>tvOS</p>
+</td>
+<td colspan="4">
+<p>tvOS 9.0 and later</p>
+</td>
+<td colspan="2">
+<p>4 GB</p>
+</td>
+<td colspan="2">
+<p>500 MB <sup>1</sup></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>visionOS</p>
+</td>
+<td colspan="4">
+<p>visionOS 1.0 and later</p>
+</td>
+<td colspan="2">
+<p>4 GB</p>
+</td>
+<td colspan="2">
+<p>500 MB <sup>1</sup></p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>watchOS</p>
+</td>
+<td colspan="4">
+<p>All watchOS versions</p>
+</td>
+<td colspan="2">
+<p>75 MB</p>
+</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p> <sup>1</sup> For the total of all <em>__TEXT</em> sections in the binary.</p>
+<p> <sup>2</sup> For the <em>__TEXT</em> sections in each architecture slice. An architecture slice is a part of the fat binary layout that targets a specific architecture. For example, a fat binary might include slices for 32-bit and 64-bit architectures.</p>
+<h3>App Clips</h3>
+<p>To ensure a successful launch experience, verify that the uncompressed main bundle of any App Clip variant, after app thinning, doesn’t exceed the maximum size limit for the minimum deployment target used in the App Clip.</p>
+<p><a href="https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode#Keep-your-App-Clip-small-in-size">Learn how to measure the size of your App Clip.</a></p>
+<div class="table-wrapper">
+<table aria-label="App Clips" class="table-3-col">
+<thead>
+<tr>
+<th colspan="2" scope="col">
+<p class="TableHead">Minimum deployment target</p>
+</th>
+<th colspan="4" scope="col">
+<p class="TableHead">Maximum variant size</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>iOS 17 and later</p>
+</td>
+<td colspan="4">
+<p>100 MB</p>
+</td>
+<td colspan="6">
+<p>Following requirements must be met:</p>
+<ul>
+<li>
+<p>The App Clip only supports digital invocations — for example, from your website or Spotlight search — and not from physical invocations like App Clip Codes, QR codes, or NFC tags.</p>
+</li>
+<li>
+<p>People use your App Clip in situations where a reliable internet connection is likely, for example, at home.</p>
+</li>
+<li>
+<p>Your App Clip doesn’t support iOS versions prior to iOS 17.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>iOS 16 and later</p>
+</td>
+<td colspan="4">
+<p>15 MB</p>
+</td>
+<td colspan="6">
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Earlier than iOS 16</p>
+</td>
+<td colspan="4">
+<p>10 MB</p>
+</td>
+<td colspan="6">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/test-a-beta-version/add-testers-to-builds">Add testers to builds</a>
+<a href="/help/app-store-connect/manage-builds/upload-builds">Upload builds</a>
+<a href="https://help.apple.com/xcode/mac/current/#/devbbdc5ce4f" target="_blank">What is app thinning? (iOS, tvOS, watchOS)</a>
+<a href="https://developer.apple.com/documentation/xcode/gathering-information-about-memory-use">Gathering information about memory use</a>
+<a href="https://developer.apple.com/documentation/xcode/reducing-your-app-s-size">Reducing your app’s size</a>
+</div>
+</article> </div>

@@ -1,0 +1,459 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="3.0">
+<h1>Sales Events Report</h1>
+<p>Sales Events Report shows the dates of significant sales events for your apps and In-App Purchases on the App Store across various countries or regions and devices.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="Tip icon" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/sales-events-report#sample-sales-events-report">sample report.</a></p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Sales events report field definitions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Report Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>The date the sales event occurred.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Provided by you during app setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Event</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The sales event that occurred.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Metric</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of metric: Units, Sales, or Proceeds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Territory</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The country or region of the sales event that occurred. Values include the name of the country or region, or Worldwide.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The device for which the sales event occurred: Values include iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time Frame</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The time frame of the sales event. For example, All Time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span class="no-glossary">Apple Identifier</span></p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>The Apple ID for your app or In-App Purchase.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-sales-events-report">
+<h3>Sample Sales Events Report</h3>
+<div>
+<p>On February 2nd, Tide Minder reached 10,000 units worldwide, across all devices.</p>
+<div class="table-wrapper">
+<table aria-label="Sample Sales Event report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Metric</p>
+</th>
+<th scope="col">
+<p class="TableHead">Territory</p>
+</th>
+<th scope="col">
+<p class="TableHead">Device</p>
+</th>
+<th scope="col">
+<p class="TableHead">Time</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Worldwide</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In addition to worldwide milestones, you can reach milestones for specific countries or regions or device types.</p>
+<p>In this example, Tide Minder is launched on February 2nd and 10,000 units are sold on the iPhone in the United States. Since a Sales Event occurred for the iPhone, it will automatically reach that same sales event across All Devices. Since the sales event was reached in the United States, it automatically reaches a Worldwide sales event as well.</p>
+<div class="table-wrapper">
+<table aria-label="Sample Sales Event report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Metric</p>
+</th>
+<th scope="col">
+<p class="TableHead">Territory</p>
+</th>
+<th scope="col">
+<p class="TableHead">Device</p>
+</th>
+<th scope="col">
+<p class="TableHead">Time</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Worldwide</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Worldwide</p>
+</td>
+<td>
+<p>iPhone</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>U.S.</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>U.S.</p>
+</td>
+<td>
+<p>iPhone</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>In this example, Tide Minder reaches 10,000 units on iPhone in the United States on February 2nd, 2018.</p>
+<p>On the same day, 10,000 units are reached in France across all devices.</p>
+<p>Individual milestones are reached for each country and device, as well as worldwide events and events across all devices.</p>
+<div class="table-wrapper">
+<table aria-label="Sample Sales Event report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Metric</p>
+</th>
+<th scope="col">
+<p class="TableHead">Territory</p>
+</th>
+<th scope="col">
+<p class="TableHead">Device</p>
+</th>
+<th scope="col">
+<p class="TableHead">Time</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Worldwide</p>
+</td>
+<td>
+<p>iPhone</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>U.S.</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>U.S.</p>
+</td>
+<td>
+<p>iPhone</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Worldwide</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2/2/2018</p>
+</td>
+<td>
+<p>Tide Minder</p>
+</td>
+<td>
+<p>10,000</p>
+</td>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>FR</p>
+</td>
+<td>
+<p>All Devices</p>
+</td>
+<td>
+<p>All Time</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</link></article> </div>

@@ -1,0 +1,178 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Update your app</span>
+<article _v="6.0">
+<h1 class="platforms-header-spacing">Release a version update in phases</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+</div>
+<p>When you release a version update of your app, you can choose to release the new version to the App Store in stages. This option is available when you submit a version update and your app has one of the following <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">statuses</a>:</p>
+<ul class="no-bullet no-margin-left">
+<li>
+<p><img alt="Yellow clock symbol" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Prepare for Submission</p>
+</li>
+<li>
+<p><img alt="Yellow clock symbol" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</li>
+<li>
+<p><img alt="Yellow clock symbol" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</li>
+<li>
+<p><img alt="Yellow clock symbol" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Export Compliance</p>
+</li>
+<li>
+<p><img alt="Yellow clock symbol" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Developer Release</p>
+</li>
+<li>
+<p><img alt="Red X square fill symbol" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Rejected</p>
+</li>
+<li>
+<p><img alt="Red X square fill symbol" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</li>
+<li>
+<p><img alt="Red X square fill symbol" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Metadata Rejected</p>
+</li>
+</ul>
+<p>Selecting this option will release your app's update gradually over 7 days. A random sample of users with automatic updates on eligible devices will receive the update, without any notification of their participation in the phased release.</p>
+<div class="table-wrapper">
+<table aria-label="Release a version update in phases" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Day of Phased Release</p>
+</th>
+<th scope="col">
+<p class="TableHead">Percentage of Users</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>1%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>5%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>10%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>5</p>
+</td>
+<td>
+<p>20%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>6</p>
+</td>
+<td>
+<p>50%</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>100%</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Keep in mind that apps and app updates in phased release can be manually downloaded from the App Store by anyone at any time.</p>
+<p>During phased release, you may pause the release for up to 30 days, with no limit on the number of pauses. If you remove your app from sale, phased release will stop and won’t be available for that version again.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/app_store_version_phased_releases">Learn how to manage phased releases using the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="release-a-version-update-in-phases">
+<h3>Release a version update in phases</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version you want to submit.</p>
+</li>
+<li>
+<p>On the right, scroll down to the Phased Release for Automatic Updates section, select Release update over a 7-day period using phased release.</p>
+<figure><img alt='Screenshot of the app version detail page, where there are two options under Phased Release for Automatic Update section: "Release update to all users immediately" and "Release update over 7-day period using phased release". The "Release update over 7-day period using phased release" option is selected.' class="help-screens-retro" src="/help/app-store-connect/update-your-app/release-a-version-update-in-phases/images/ReleaseVersionUpdatePhases-3_2x.png"/></figure>
+</li>
+<li>
+<p>Click save.</p>
+</li>
+</ol>
+<p>When you <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submit your app for review</a> and it's approved, the app status will be Ready for Distribution, and will be appended with “Phased Release” next to the status when viewing your app's version page.</p>
+<p>When the update is complete, all users with Admin or App Manager roles who have access to this app will receive a notification regarding the completion of the phased release.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="pause-and-resume-a-phased-release">
+<h3>Pause and resume a phased release</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the Ready for Distribution app version.</p>
+</li>
+<li>
+<p>In the Phased Release for Automatic Updates section, you can either pause the release by selecting Pause Phased Release or resume it by using the Use Phased Release option.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+<p>You can pause your release for a total of 30 days. For example, if you pause the release for 10 days and then choose to resume it, you will have 20 days remaining to pause the release again. If you resume a release that was previously paused, your phased release will pick up on the day it was left off when it was paused.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="release-a-version-update-to-all-users">
+<h3>Release a version update to all users</h3>
+<div>
+<p>If you decide to release your app in phases, you can release it to all users at any time once it has the Ready for Distribution status. When you select this option, all users whose devices have automatic updates turned on gets the latest app version supported on the user’s device.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version that you've submitted.</p>
+</li>
+<li>
+<p>On the top right of the page, click Release to All Users.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

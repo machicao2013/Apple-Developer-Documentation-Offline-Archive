@@ -1,0 +1,154 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Create an app record</span>
+<article _v="5.0">
+<h1>Edit app bundle information</h1>
+<p>You can edit which apps belong to your app bundle only until App Review approves it. If you have submitted your app bundle to App Review and it‘s still pending approval, you can <a href="/help/app-store-connect/create-an-app-record/create-and-submit-app-bundles">remove it from review</a> to make changes.</p>
+<p>You can make the following changes without needing additional review:</p>
+<ul>
+<li>
+<p>Rearrange the apps in the bundle</p>
+</li>
+<li>
+<p>Edit the bundle description and marketing URL</p>
+</li>
+<li>
+<p>Change the primary language of the bundle</p>
+</li>
+<li>
+<p>Adjust the pricing and availability of the bundle</p>
+</li>
+<li>
+<p>Use an automatically generated app bundle icon</p>
+</li>
+<li>
+<p>Remove custom app bundle icon</p>
+</li>
+</ul>
+<p>Your app bundle requires another review if you make the following changes:</p>
+<ul>
+<li>
+<p>Add localizations</p>
+</li>
+<li>
+<p>Change an existing app bundle name or a custom app bundle icon</p>
+</li>
+</ul>
+<p>To change a property of derived metadata, <a href="/help/app-store-connect/create-an-app-record/view-and-edit-app-information">edit the app information</a> for the primary app. The app bundle metadata updates automatically when you make changes to the app's information. Alternatively, you can choose a different primary app for the app bundle.</p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or Marketing. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="edit-app-bundle-information">
+<h3>Edit app bundle information</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app bundle you want to view.</p>
+</li>
+<li>
+<p>Under App information, edit the name, description, or marketing URL.</p>
+</li>
+<li>
+<p>To add, delete, or reorder the apps in the bundle, click the Edit button next to Apps in This Bundle.</p>
+<p>Making changes to the apps in the bundle—adding, deleting, or rearranging them—will update the derived information once you save those changes.</p>
+</li>
+<li>
+<p>Under Availability and Price, change the price or select or unselect Cleared for Sale option.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-custom-app-bundle-icon">
+<h3>Remove a custom app bundle icon</h3>
+<div>
+<p>The ability to upload a bundle icon has been deprecated. If your app bundle is using a custom app bundle icon, you can delete it at any time. Your bundle reverts back and App Store Connect automatically generates an icon that displays for the first four apps in your bundle.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once the custom icon has been removed, you can only use the default icon going forward.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app bundle you want to view.</p>
+</li>
+<li>
+<p>Scroll down to the General Information section.</p>
+</li>
+<li>
+<p>Hold the pointer over the icon you want to delete, then click the delete button (–).</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<div class="Task no-margin-top spacing-bottom padding-top">
+<h2>Set availability for an app bundle</h2>
+<p>After submitting an app bundle for App Review, and it’s been approved, it’ll automatically become available for sale when all apps within the bundle are available and all other requirements are met.</p>
+<p>For an app bundle to be available, it must meet the following requirements:</p>
+<ul class="spacing-top-paragraph">
+<li>
+<p>All apps in the bundle must be either all paid or all free. A paid app bundle can only include paid apps and must be offered at a reduced price. Each app in a free app bundle must be free and offer at least one auto-renewable subscription.</p>
+</li>
+<li>
+<p>Paid app bundles must be sold at a reduced price, which is a price tier lower than the sum of the individual app prices in the bundle.</p>
+</li>
+<li>
+<p>A paid app bundle’s price must not be lower than the highest app price in the bundle. If an app in the bundle goes to a price that’s higher than the price of the bundle, the bundle will automatically be removed from the store.
+					</p>
+</li>
+<li>
+<p>There are no bundle-specific country or region settings. An app bundle will be live only where all member apps have common countries or regions.</p>
+</li>
+<li>
+<p>Only ten bundles can be marked as cleared for sale at any given time per developer account. If you have ten bundles marked as cleared for sale, you can create additional bundles, but you can’t select Cleared for Sale option for an additional bundle unless you first unselect it from another bundle.</p>
+</li>
+<li>
+<p>A single app can be in no more than three cleared-for-sale bundles at one time.</p>
+</li>
+</ul>
+</div>
+<accordion-panel id="view-an-app-bundles-availability">
+<h3>View an app bundle’s availability</h3>
+<div class="Task">
+<p>While an app bundle can have the status Ready for Sale, it might not be available on the App Store. You can check its availability from the app bundle page.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app bundle you want to view.</p>
+<p>If the app bundle isn’t available, a warning message appears at the top of the page. The message states the reasons that the app bundle isn’t available, such as incompatible pricing.</p>
+<figure><img alt="Screenshot of a warning message that reads “To make this bundle available on the App Store, you must choose a compatible price.” displays on the App bundle detail page." class="help-screens-retro" src="/help/app-store-connect/create-an-app-record/edit-app-bundle-information/images/app-bundle-price-error_2x.png"/></figure>
+</li>
+<li>
+<p>Under Availability and Price, you can view the reason why your app bundle might not be available in a specific country or region.</p>
+<p>For example, this section might show that the number of countries or regions is 0.</p>
+<figure><img alt="Screenshot of the Availability and Price section of the App Bundle page, that includes the number of countries or regions (out of 175) where your app bundle is available displays below Countries or Regions. This number is clickable." class="help-screens-retro" src="/help/app-store-connect/create-an-app-record/edit-app-bundle-information/images/app-bundle-countries-or-regions-error_2x.png"/></figure>
+</li>
+<li>
+<p>To view the country or region details, click the number of countries or regions on the top right.</p>
+<p>The reason the app bundle isn’t available in a country or region appears in the Reason column.</p>
+<figure><img alt="Screenshot of the Countries or Regions detail page, where a table lists all the countries and regions, showing your app bundle's status in each one. When applicable, the table also provides a reason why the app bundle isn’t available in a particular country or region." class="help-screens-retro" src="/help/app-store-connect/create-an-app-record/edit-app-bundle-information/images/app-bundle-countries-or-regions-error-details_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-an-app-bundle-from-sale">
+<h3>Remove an app bundle from sale</h3>
+<div>
+<p>Once approved, you can’t delete an app bundle, but you can remove it from the App Store.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app bundle you want to view.</p>
+</li>
+<li>
+<p>In the Availability and Price section, unselect Cleared for Sale.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/create-an-app-record/create-and-submit-app-bundles">Create and submit app bundles</a>
+<a href="/help/app-store-connect/reference/app-information/app-bundle-information">App bundle information</a>
+</div>
+</link></article> </div>

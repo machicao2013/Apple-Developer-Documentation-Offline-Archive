@@ -1,0 +1,659 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test In-App Purchases</span>
+<article _v="5.0">
+<h1>Manage Sandbox Apple Account settings</h1>
+<p>When managing Sandbox accounts, you can choose from different In-App Purchase scenarios to ensure they work as expected.</p>
+<p>App Store Connect displays the last purchase date for active testers, or Sandbox accounts that have completed a purchase within the last 180 days. You can use filters to identify inactive testers and testers associated with a particular country or region.</p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Developer</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="edit-country-or-region-on-the-app-store">
+<h3>Edit country or region on the App Store</h3>
+<div>
+<p>Each test account is associated with one of the 175 App Store storefronts. You can edit a tester's App Store country or region at any time in App Store Connect to test on different App Store storefronts using the same Sandbox account, without having to create new testers.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>All members of a Sandbox Test Family must be associated with the same App Store country or region as the family organizer. If the tester is a member of a Sandbox Test Family and you want to change their country or region, you’ll need to first remove the account from the Sandbox Test Family.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>From Users and Access, click Sandbox to view Sandbox accounts.</p>
+</li>
+<li>
+<p>Click the Sandbox account you want to modify.</p>
+</li>
+<li>
+<p>Under Country or Region, make your desired change.</p>
+<figure><img alt="Test Accounts page showing the Sandbox account detail dialog with a menu for 'country or region'." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/edit-sandbox-country-or-region_2x.png"/></figure>
+</li>
+<li>
+<p>Click Save. Once you change the country or region, the tester will need to sign in again with their Sandbox account on their iOS device to complete this change.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-subscription-renewal-speed">
+<h3>Edit subscription renewal rate</h3>
+<div>
+<p>The subscription renewal rate is the speed at which subscriptions renew for each tester in sandbox. The subscription renewal rate also determines the length of Billing Retry and Billing Grace Period for those testers.</p>
+<p>You can change a tester’s subscription renewal rate at any time in their <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">iOS Sandbox Account Settings</a> or by following these steps in App Store Connect:</p>
+<ol class="compound-item-list">
+<li>
+<p>From Users and Access, click Sandbox to view Sandbox accounts.</p>
+</li>
+<li>
+<p>Click the Sandbox account you want to modify.</p>
+</li>
+<li>
+<p>In the dialog that appears under Subscription Renewal Rate, select a renewal speed and click Save.</p>
+<p>By default, accounts are set to a speed equalization of 1 month = 5 minutes. You can slow down or speed up the renewal period using the options below. Subscriptions automatically renew up to 12 times before auto-renewal turns off on the thirteenth renewal attempt. Note that the speed of renewal in sandbox depends on the length of the subscription.</p>
+<figure><img alt="Test Accounts page showing the Sandbox account detail dialog with a menu for 'subscription renewal rate'." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/edit-sandbox-renewal-rate_2x.png"/></figure>
+</li>
+</ol>
+<h3>Renewal every 3 minutes</h3>
+<div class="table-wrapper">
+<table aria-label="renewal-every-3-minutes-default" class="table-8-col table-8-col-wide-middle" data-type="Multicolumn">
+<thead>
+<tr>
+<th>
+</th>
+<th scope="col" style="grid-column: span 6;">
+<p class="TableHead">Subscription duration</p>
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+</tr>
+<tr>
+<th scope="col">
+</th>
+<th scope="col">
+<p class="TableHead">1 week</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 month</p>
+</th>
+<th scope="col">
+<p class="TableHead">2 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">3 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">6 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 year</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Subscription renewal speed</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>9 minutes</p>
+</td>
+<td>
+<p>18 minutes</p>
+</td>
+<td>
+<p>36 minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Billing Retry</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+<td>
+<p>6 minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Biling Grace Period</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Renewal every 5 minutes (default)</h3>
+<div class="table-wrapper">
+<table aria-label="renewal-every-5-minutes-default" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+</th>
+<th scope="col" style="grid-column: span 6;">
+<p class="TableHead">Subscription duration</p>
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+</tr>
+<tr>
+<th scope="col">
+</th>
+<th scope="col">
+<p class="TableHead">1 week</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 month</p>
+</th>
+<th scope="col">
+<p class="TableHead">2 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">3 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">6 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 year</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Subscription renewal speed</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>15 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Billing Retry</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Biling Grace Period</p>
+</td>
+<td>
+<p>3 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+<td>
+<p>5 minutes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Renewal every 30 minutes</h3>
+<div class="table-wrapper">
+<table aria-label="renewal-every-30-minutes" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+</th>
+<th scope="col" style="grid-column: span 6;">
+<p class="TableHead">Subscription duration</p>
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+</tr>
+<tr>
+<th scope="col">
+</th>
+<th scope="col">
+<p class="TableHead">1 week</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 month</p>
+</th>
+<th scope="col">
+<p class="TableHead">2 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">3 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">6 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 year</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Subscription renewal speed</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour 30 minutes</p>
+</td>
+<td>
+<p>3 hours</p>
+</td>
+<td>
+<p>6 hours</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Billing Retry</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Biling Grace Period</p>
+</td>
+<td>
+<p>10 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+<td>
+<p>30 minutes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3>Renewal every hour</h3>
+<div class="table-wrapper">
+<table aria-label="renewal-every-30-minutes" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+</th>
+<th scope="col" style="grid-column: span 6;">
+<p class="TableHead">Subscription duration</p>
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+<th scope="col">
+</th>
+</tr>
+<tr>
+<th scope="col">
+</th>
+<th scope="col">
+<p class="TableHead">1 week</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 month</p>
+</th>
+<th scope="col">
+<p class="TableHead">2 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">3 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">6 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 year</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Subscription renewal speed</p>
+</td>
+<td>
+<p>15 minutes</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+<td>
+<p>3 hours</p>
+</td>
+<td>
+<p>6 hours</p>
+</td>
+<td>
+<p>12 hours</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Billing Retry</p>
+</td>
+<td>
+<p>15 minutes</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Length of Biling Grace Period</p>
+</td>
+<td>
+<p>1 hour</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+<td>
+<p>2 hours</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="enable-interrupted-purchases-for-a-sandbox-apple-id">
+<h3>Enable interrupted purchases for a Sandbox account</h3>
+<div>
+<p>You can test interrupted purchase scenarios on a device running iOS 14 or later by enabling interrupted purchases for a specific Sandbox account. An interrupted purchase is experienced anytime a customer tries to complete an App Store transaction but needs to perform an action outside of your app first. For example, they may need to agree to updated terms and conditions or update an expired payment method.</p>
+<p>You can enable or disable interrupted purchases for a tester at any time in their <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">iOS Sandbox Account Settings</a>  or by following these steps in App Store Connect:</p>
+<ol class="compound-item-list">
+<li>
+<p>From Users and Access, click Sandbox to view Sandbox accounts.</p>
+</li>
+<li>
+<p>Click the Sandbox account you want to modify.</p>
+</li>
+<li>
+<p>In the dialog that appears, select the checkbox next to “Interrupt Purchases for This Tester” to enable interrupted purchases. Deselect the checkbox to disable interrupted purchases.</p>
+<figure><img alt="Test Accounts page showing the Sandbox account detail dialog with checkbox for 'interrupt purchase for this tester'." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/sandbox-enable-interrupted-purchase_2x.png"/></figure>
+</li>
+<li>
+<p>Click Save.</p>
+<p>Once interrupted purchases are enabled, on-device purchase attempts by that Sandbox account will be interrupted in the sandbox environment and continue to be interrupted until the option is deselected or the tester agrees to terms and conditions on their iOS device.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="clear-sandbox-apple-id-purchase-history">
+<h3>Clear Sandbox account purchase history</h3>
+<div>
+<p>You can clear the purchase history for a tester to continue testing with the same Sandbox account. Clearing purchase history deletes all past purchases made by the selected testers in the sandbox environment. This action can’t be reversed. Customer accounts aren’t affected.</p>
+<p>You can clear a tester’s purchase history at any time in their <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">iOS Sandbox Account Settings</a>  or by following these steps in App Store Connect:</p>
+<ol class="compound-item-list">
+<li>
+<p>From Users and Access, click Sandbox to view Sandbox accounts.</p>
+</li>
+<li>
+<p>Select the testers you want to modify and click Clear Purchase History.</p>
+<figure><img alt="Test Accounts page with one sandbox account selected. The Clear Purchase History button appears in the upper-right corner." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/sandbox-clear_2x.png"/></figure>
+</li>
+<li>
+<p>Click Clear Purchase History in the dialog that appears.</p>
+<p class="spacing-top-paragraph">Sandbox accounts with a high number of purchases may take longer to clear.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-a-sandbox-test-family">
+<h3>Create a Sandbox Test Family</h3>
+<div>
+<p><a href="https://developer.apple.com/documentation/storekit/in-app_purchase/original_api_for_in-app_purchase/supporting_family_sharing_in_your_app">Family Sharing</a> lets people share and access <a href="/help/app-store-connect/configure-in-app-purchase-settings/turn-on-family-sharing-for-in-app-purchases/">auto-renewable subscriptions or non-consumables that have Family Sharing enabled</a> with with up to five family members. You can use Sandbox Test Families to make sure Family Sharing works in your app as expected.</p>
+<p>After you’ve <a href="/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account">created at least two Sandbox accounts</a>, you can create a Sandbox Test Family in App Store Connect.</p>
+<ol class="compound-item-list">
+<li>
+<p>From the homepage, click Users and Access.</p>
+</li>
+<li>
+<p>In the top navigation, click Sandbox, then click Family Sharing.</p>
+</li>
+<li>
+<p>Click the add button (+) or, if it’s your first time creating a test family, click Create Test Family.</p>
+</li>
+<li>
+<p>Select a test account to serve as the family organizer, then click Next.</p>
+<figure><img alt="Family Sharing page showing the Create a test family dialog, with a menu for 'family organizer'." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/create-test-family-1_2x.png"/></figure>
+</li>
+<li>
+<p>Choose up to five test accounts to serve as family members. All members must be from the same country or region as the family organizer, and members can only belong to one Sandbox Test Family.</p>
+<figure><img alt="Family Sharing page showing the Create a test family dialog, with menu for five 'family members'." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/create-test-family-2_2x.png"/></figure>
+</li>
+<li>
+<p>Select whether each member in the family is allowed to share and receive purchases with each other in the Share Purchases menu, then click Create.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="manage-a-sandbox-test-family">
+<h3>Manage a Sandbox Test Family</h3>
+<div>
+<p>You can manage a Sandbox Test Family at any time in App Store Connect. Use the following steps to add or remove test accounts serving as family members and modify whether they can share purchases.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Testers can also modify whether each family member shares purchases with other members of the Sandbox Test Family in their iOS Sandbox Account Settings. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">Learn more.</a> </p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>From the homepage, click Users and Access.</p>
+</li>
+<li>
+<p>In the top navigation, click Sandbox, then click Family Sharing.</p>
+</li>
+<li>
+<p>Click Manage next to the Sandbox Test Family the tester is a member of.</p>
+<figure><img alt="Family sharing page showing a list view of family members, with 'Manage' link next to the first member." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/manage-sandbox-family-1_2x.png"/></figure>
+</li>
+<li>
+<p>Make your changes, then click Save.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Changes to purchase sharing may take time to appear in the sandbox environment.</p>
+</div>
+<p>If a family member is removed from a Sandbox Test Family, they can no longer share their purchases or access purchases made by members of that family.</p>
+<figure><img alt="Family sharing page showing the 'manage test family' dialog, with 'Remove' link next to the first member." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/manage-sandbox-family-2_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-sandbox-test-family">
+<h3>Delete a Sandbox Test Family</h3>
+<div>
+<p>You can delete a Sandbox Test Family at any time in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Members of a deleted test family will no longer be able to share their purchases or access purchases made by members of that family. Members will retain access to purchases made from their own account.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>From the homepage, click Users and Access.</p>
+</li>
+<li>
+<p>In the top navigation, click Sandbox, then click Family Sharing.</p>
+</li>
+<li>
+<p>Click Manage next to the Sandbox Test Family you want to delete.</p>
+<figure><img alt="Family sharing page showing a list view of family members, with 'Manage' link next to the first member." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/delete-sandbox-family-1_2x.png"/></figure>
+</li>
+<li>
+<p>Click Delete Test Family.</p>
+<figure><img alt="Family sharing page showing the 'manage test family' dialog, with 'Remove' link next to the first member." class="help-screens-retro" src="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings/images/delete-sandbox-family-2_2x.png"/></figure>
+</li>
+<li>
+<p>Click Delete in the dialog that appears.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">Testing In-App Purchases with sandbox</a>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase">In-App Purchase</a>
+</div>
+</link></article> </div>

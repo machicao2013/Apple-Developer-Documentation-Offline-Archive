@@ -1,0 +1,125 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="25P">
+<h1>In-App Purchase statuses</h1>
+<p>The <em>In-App Purchase status</em> indicates whether your In-App Purchase is available or if it needs your attention.</p>
+<p>In-App Purchase products have statuses such as “Ready to Submit” or “Approved” or a status indicator. The status tells you immediately whether your product needs attention.</p>
+<ul>
+<li>
+<p>A red status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-red-icon_2x.png"/>) means that you need to perform some action before a product can be made available.</p>
+</li>
+<li>
+<p>A yellow status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-yellow-icon_2x.png"/>) means that some process is ongoing, controlled either by you or by Apple.</p>
+</li>
+<li>
+<p>A green status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-green-icon_2x.png"/>) means that the In-App Purchase is available.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="In-App Purchase statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Missing Metadata</p>
+</td>
+<td colspan="8">
+<p>Your In-App Purchase has been created, but you have not yet uploaded a screenshot or completed your metadata.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready to Submit</p>
+</td>
+<td colspan="8">
+<p>You uploaded all the metadata needed, but you have not yet sent it to Apple for review.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Binary Approval</p>
+</td>
+<td colspan="8">
+<p>The app this In-App Purchase is associated with is currently in review.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="8">
+<p>You have submitted your In-App Purchase to be reviewed by Apple. You can make edits to the product while it is in this status.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="8">
+<p>Your In-App Purchase product is currently being reviewed by Apple. Only edits to the product’s reference name, pricing, and availability can be made when it has this status.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Approved</p>
+</td>
+<td colspan="8">
+<p>Apple has approved your In-App Purchase to go live on the App Store with its associated app.</p>
+<p>For this status to appear, you must provide country or region <a href="/help/app-store-connect/manage-consumable-and-non-consumable-in-app-purchases/set-availability-for-in-app-purchases">availability for your In-App Purchases</a>. If you select "Remove from sale," or if you dont make at least one country or region available, the status appears as "Developer Removed from Sale."</p>
+<p>If your In-App Purchase is being released with an app version, it won’t have an Approved status until the app is approved.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="8">
+<p>Apple has rejected your In-App Purchase product during the review process. If you have not already been contacted by Apple with more information about your rejection, you can inquire through <a href="https://appstoreconnect.apple.com/WebObjects/iTunesConnect.woa/wa/jumpTo?page=contactUs" target="_blank">Contact Us</a>.</p>
+<p>You can't resubmit a rejected In-App Purchase and will need to submit a new one.</p>
+<p>Your In-App Purchase product status changes to Developer Action Needed if there is a detail in the In-App Purchase that requires a change by you.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Developer Action Needed</p>
+</td>
+<td colspan="8">
+<p>The In-App Purchase product changes that you submitted have been rejected. you're required to take action to edit the detail information or cancel the request to change the detail information before this In-App Purchase can be reviewed again.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Removed from Sale</p>
+</td>
+<td colspan="8">
+<p>You removed the In-App Purchase from sale. When you remove an In-App Purchase product from sale, customers that already purchased the product will retain access. Those transactions will be available with StoreKit and in App Store Server API.</p>
+<p>If you clear the product for sale, the status changes to Approved.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Removed from Sale</p>
+</td>
+<td colspan="8">
+<p>Appears when Apple removes an In-App Purchase product from sale.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information">In-App Purchase information</a>
+<a href="/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases">Set availability for In-App Purchases</a>
+<a href="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases">Schedule price changes for In-App Purchases</a>
+</div>
+</article> </div>

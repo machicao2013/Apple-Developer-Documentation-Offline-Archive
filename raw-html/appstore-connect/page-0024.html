@@ -1,0 +1,35 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="5.0">
+<h1>Overview of testing Game Center</h1>
+<p>Apple allows all prerelease development and testing to occur in exactly the same server environment as released games. This allows you to test how your app interacts with Game Center and brings several advantages including:</p>
+<ul>
+<li>
+<p>Simplifying the testing of version updates by allowing testers to play with the full player base, not just other testers</p>
+</li>
+<li>
+<p>Removing implementation differences between the sandbox and production environments</p>
+</li>
+</ul>
+<p>By design, the achievements and high scores of a particular Game Center user are visible to that user's friends. This includes leaderboard scores, achievements, challenges, and activities that haven't been formally released as part of a particular game version. Similarly, any game a Game Center player has played is visible to all of that player’s friends, even if that game has not yet been released.</p>
+<p>If this data needs to be kept private as part of your release strategy, consider creating separate accounts for prerelease testing and carefully manage which Game Center users are allowed to become friends with those accounts.</p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>Testing a Game Center-enabled app involves the following steps:</p>
+<ol class="compound-item-list">
+<li>
+<p><a href="/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center#enable-app-version-for-game-center">Enable an app version for Game Center.</a></p>
+</li>
+<li>
+<p>Add leaderboards, achievements, challenges, or activities to the app version that you’d like to test. Learn more about configuring <a href="/help/app-store-connect/configure-game-center/manage-leaderboards">leaderboards</a>, <a href="/help/app-store-connect/configure-game-center/manage-achievements">achievements</a>, <a href="/help/app-store-connect/configure-game-center/manage-challenges">challenges</a>, and <a href="/help/app-store-connect/configure-game-center/manage-activities">activities</a>.</p>
+</li>
+<li>
+<p>Identify additional apps that you want to play with the app you’re testing. <a href="/help/app-store-connect/configure-game-center/add-multiplayer-compatibility">Learn more about adding multiplayer compatibility.</a></p>
+</li>
+<li>
+<p>Test your Game Center components to ensure they work individually and together. <a href="/testflight/">Learn more about testing your app with TestFlight.</a></p>
+</li>
+<li>
+<p>Once you’ve finished testing, <a href="/help/app-store-connect/configure-game-center/remove-leaderboard-test-data">remove leaderboard test data</a>.</p>
+</li>
+</ol>
+</article> </div>

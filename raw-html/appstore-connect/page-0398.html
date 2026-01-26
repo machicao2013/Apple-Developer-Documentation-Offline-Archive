@@ -1,0 +1,236 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="25P">
+<h1>In-App Purchase and subscriptions pricing and availability</h1>
+<p>Pricing and availability properties describe when the In-App Purchase is available and at what price.</p>
+<div class="table-wrapper">
+<table aria-label="Pricing and availability" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Availability</p>
+</td>
+<td colspan="8">
+<p>Allows you to select country or region availability for your In-App Purchases. To remove your In-App Purchases from the App Store, deselect individual countries or regions, or select "Remove from sale."</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Price</p>
+</td>
+<td colspan="8">
+<p>The price you choose for the In-App Purchase, which determines both the customer price and your proceeds. Click All Prices and Currencies from Pricing to view the price values in each currency.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Start Date</p>
+</td>
+<td colspan="8">
+<p>The date when the price becomes available.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>End Date</p>
+</td>
+<td colspan="8">
+<p>The date that a price is no longer in effect. The price is the last tier scheduled if this value is No end Date.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>These properties describe pricing and availability options for auto-renewable subscriptions.</p>
+<div class="table-wrapper">
+<table aria-label="Auto-renewable subscription pricing and availability" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Subscription Prices</p>
+</td>
+<td colspan="8">
+<p>Pricing for your auto-renewable subscriptions. Auto-renewable subscriptions can be priced by country or region, with up to 800 price points in each available currency. You have the option to preserve the current price for existing subscribers if you increase the price. Promotional and introductory price points are also available.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Introductory Offers</p>
+</td>
+<td colspan="8">
+<p>A discounted introductory price you can set for your auto-renewable subscriptions with a specified duration and type (pay as you go, pay up front, free) for new customers. Introductory offers can be used to acquire new customers. Keep in mind that:</p>
+<ul>
+<li>
+<p>You can have one current and one future introductory offer set up per country or region.</p>
+</li>
+<li>
+<p>You can manage country or region availability and start and end dates in App Store Connect. <a href="/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions">Learn more</a>.</p>
+</li>
+<li>
+<p>Introductory offers display on your App Store product page if you’ve <a href="/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases">promoted your In-App Purchase</a>.</p>
+</li>
+<li>
+<p>Customers are eligible for one introductory offer per subscription group.</p>
+</li>
+<li>
+<p>Introductory offers are available to customers running iOS 10, macOS 10.12.6, and tvOS 10, or later.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Offer Codes</p>
+</td>
+<td colspan="8">
+<p>Redeemable codes that provide a free or discounted price for your auto-renewable subscriptions with a specified duration and type (pay as you go, pay up front, free) for new, existing, and previously subscribed customers. Offer codes can be used to acquire, retain, and win back subscribers. Keep in mind that:</p>
+<ul>
+<li>
+<p>You can create codes for a maximum of 1 million redemptions per app, per quarter.</p>
+</li>
+<li>
+<p>You can select customer eligibility rules, timing, territories, pricing, duration, and number of codes in App Store Connect. <a href="/help/app-store-connect/manage-subscriptions/set-up-subscription-offer-codes">Learn more</a>.</p>
+</li>
+<li>
+<p>Customers are eligible to redeem one code per active offer.</p>
+</li>
+<li>
+<p>Offer codes can be redeemed by customers running iOS 14, iPadOS 14, and macOS 15, or later.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Promotional Offers</p>
+</td>
+<td colspan="8">
+<p>A discounted price you can set for your auto-renewable subscriptions for a specific duration and type(Pay as you go, Pay up front, Free) for existing and previously subscribed customers. Offers can be used to help win back subscribers who have canceled their subscriptions or promote an upgrade to a higher-ranked subscription at a special price. Keep in mind that:</p>
+<ul>
+<li>
+<p>You determine when to present the offers through StoreKit APIs.</p>
+</li>
+<li>
+<p>Customers that have completed an introductory offer are still eligible to get a promotional offer.</p>
+</li>
+<li>
+<p>You must generate a subscription key in Users and Access to validate your offers.</p>
+</li>
+<li>
+<p>You can have up to 10 active offers per subscription.</p>
+</li>
+<li>
+<p>Offers don’t display on your App Store product page.</p>
+</li>
+<li>
+<p>You can select price and duration in App Store Connect. <a href="/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions">Learn more</a>.</p>
+</li>
+<li>
+<p>Customers that have completed an introductory offer are still eligible to get a promotional offer.</p>
+</li>
+<li>
+<p>Customers running iOS 12.2, macOS 10.14.4, and tvOS 12.2, or later can accept these offers.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Promotional Offer Reference Name</p>
+</td>
+<td colspan="8">
+<p>An internal name for a promotional offer that you can reference.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Promotional Offer Identifier</p>
+</td>
+<td colspan="8">
+<p>An identifier that you create. This string is case sensitive and must be unique for each offer you create. You won’t be able to reuse an offer identifier, even if it’s been deleted.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Duration (for promotional and introductory offers)</p>
+</td>
+<td colspan="8">
+<p>The length of time between auto-renewals that you select for your promotional or introductory offers. The offer durations available to you depend on the standard duration of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Pay As You Go</p>
+</td>
+<td colspan="8">
+<p>If you select Pay as you go, customers pay a discounted price for each billing period for a selected duration (for example, $1.99 per month for 3 months for a subscription with a standard price of $9.99).</p>
+<p>The duration can be:</p>
+<ul>
+<li>
+<p>1-week subscription, 1 to 12 week</p>
+</li>
+<li>
+<p>1-month subscription, 1 to 12 month</p>
+</li>
+<li>
+<p>2-month subscription, 2, 4, 6, 8, 10 and 12 month</p>
+</li>
+<li>
+<p>3-month subscription, 3, 6, 9 and 12 month</p>
+</li>
+<li>
+<p>6-month subscription, 6 and 12 month</p>
+</li>
+<li>
+<p>1-year subscription, 1 year</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Pay Up Front</p>
+</td>
+<td colspan="8">
+<p>If you select Pay up front, customers pay a one-time discounted price for a selected duration (for example, $1.99 for 2 months for a subscription with a standard price of $9.99).</p>
+<p>The duration can be: 1 Month, 2 Months, 3 Months, 6 Months, 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Free</p>
+</td>
+<td colspan="8">
+<p>If you select Free, customers access the subscription for free for a selected duration. The duration can be 3 days, 1 week, 2 weeks, 1 month, 2 months, 3 months, 6 months, or 1 year. A one-month trial can vary between 28 days and 31 days.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases">Overview for configuring In-App Purchases</a>
+<a href="/help/app-store-connect/reference/pricing-and-availability/app-pricing-and-availability">App pricing and availability</a>
+<a href="/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases">Schedule price changes for In-App Purchases</a>
+</div>
+</article> </div>

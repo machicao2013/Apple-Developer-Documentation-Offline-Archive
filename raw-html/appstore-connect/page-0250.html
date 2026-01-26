@@ -1,0 +1,112 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage your app's availability</span>
+<article _v="8.0">
+<h1>Set distribution methods</h1>
+<p>In App Store Connect, you can choose between two distribution options for your app:</p>
+<p><b>Public Distribution:</b> Your app will be publicly available on the App Store in the <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store">selected countries or regions</a>. It can also be available to anyone for volume purchase through Apple Business Manager or Apple School Manager. You can request to <a href="/help/app-store-connect/manage-your-apps-availability/set-distribution-methods#make-your-app-available-only-through-a-direct-link">change your publicly available app to an unlisted app</a> to make your app discoverable on the App Store only with a direct link.  <a href="/support/unlisted-app-distribution">Learn about unlisted app distribution.</a></p>
+<p><b>Private Distribution:</b> Your app will be available only on Apple Business Manager or Apple School Manager to specific businesses and organizations that you specify in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once your app is approved, the distribution method can't be changed. However, you can <a href="/help/app-store-connect/manage-your-apps-availability/set-distribution-methods#make-your-app-available-only-through-a-direct-link">change a publicly available app to an unlisted app</a>. To switch from private to public distribution—or vice versa—you must create a new app record and resubmit your binary.</p>
+</div>
+<developer-accordion>
+<accordion-panel id="make-your-app-available-publicly-on-the-app-store-and-for-volume-purchase">
+<h3>Make your app available publicly on the App Store and for volume purchase</h3>
+<div>
+<p><b>Required role: </b>Account Holder, Admin or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>Apps on the App Store are automatically available for volume purchase for the same price in Apple Business Manager and Apple School Manager, where businesses and educational institutions can download them for distribution in bulk.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability.</p>
+</li>
+<li>
+<p>Under App Distribution Methods, select Public.</p>
+</li>
+<li>
+<p>To offer educational institutions a discount, select the checkbox “Offer a reduced price on Apple School Manager for volume purchases.” Your app will be available at 50% of its listed price for purchases of 20 or more units by educational institutions.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+<p>Once your app is approved, it’ll be available on the App Store in the <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store"> selected countries or regions</a>, and in the Apps and Books section of Apple Business Manager or Apple School Manager.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="make-an-app-available-only-to-specific-businesses-or-organizations">
+<h3>Make an app available only to specific businesses or organizations</h3>
+<div>
+<p><b>Required role: </b>Account Holder, Admin or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>If you don’t want individual users to be able to download your app from the App Store, you can restrict the availability of your app to only specific businesses or organizations. This includes the ability to distribute proprietary apps for internal use within your organization.</p>
+<p>You can specify one or more organizations that can view and download the app in Apple Business Manager or Apple School Manager. They can then distribute it through Mobile Device Management or redemption codes.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability.</p>
+</li>
+<li>
+<p>Under App Distribution Methods, select Private.</p>
+<figure><img alt='Screenshot of the App Distribution Methods section, where there are two distribution method options: "Public - Discoverable by anyone on the App Store (default)" and "Private - Available as a custom app on Apple Business Manager or Apple School Manager." The Public section is selected.' class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/set-distribution-methods/images/private-dist_2x.png"/></figure>
+</li>
+<li>
+<p>Under Type, choose either Organization ID or Apple Account, and enter the required information. Enter the Organization ID to make the app visible in the organization's Apple Business Manager or Apple School Manager account. For businesses still using the legacy Volume Purchase Program, you can assign an app to their volume purchasing account.</p>
+</li>
+<li>
+<p>In the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="make-your-app-available-only-through-a-direct-link">
+<h3>Make your app available only through a direct link</h3>
+<div>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>Apps that aren’t suited for public distribution can be made discoverable as unlisted on the App Store with a direct link. Unlisted apps don’t show in any categories, recommendations, charts, search results, or other listings in the App Store. You can also use this direct link within Apple Business Manager and Apple School Manager.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability.</p>
+</li>
+<li>
+<p>Under App Distribution methods, make sure your app’s availability is set to Public. If your app has been approved for private download on Apple Business Manager or Apple School Manager, you must create a new app record in App Store Connect, upload your binary, and set the distribution method to Public before proceeding to the next step.</p>
+</li>
+<li>
+<p>Submit your app for review, if you haven’t already.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once your app is approved, the distribution method can't be changed. The only exception to this is to change your publicly available app to an unlisted app. To switch from private to public, or vice versa, you’ll need to create a new app record and resubmit your binary.</p>
+</div>
+</li>
+<li>
+<p>To receive an unlisted link, <a href="/support/unlisted-app-distribution">submit a request</a>. Upon approval, your app's distribution method will change to Unlisted in the Pricing and Availability section of the app information page. Future versions of your app will remain unlisted.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>I currently have an app that is available privately in Apple Business Manager and I’d like to make it available publicly on the App Store, can I change my app’s distribution method?</h3>
+<p>No. Changing your app's distribution method from public to private, or vice versa, requires submitting a new app for review.</p>
+<h3>Where can users download my app in volume?</h3>
+<p>Downloading apps in volume requires either an Apple School Manager or Apple Business Manager account. Apple Business Manager and Apple School Manager are available in many <a href="https://support.apple.com/HT207305">countries and regions</a>.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/support/volume-purchase-and-custom-apps/">Distributing Apps on Apple Business Manager and Apple School Manager</a>
+<a href="https://support.apple.com/guide/apple-school-manager/">Apple School Manager User Guide</a>
+<a href="https://support.apple.com/guide/apple-business-manager/">Apple Business Manager User Guide</a>
+<a href="https://support.apple.com/business">Apple Business Manager Support</a>
+<a href="https://support.apple.com/guide/deployment/">Apple Platform Deployment</a>
+</div>
+</link></article> </div>

@@ -1,0 +1,136 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage builds</span>
+<article _v="25P">
+<h1>Upload builds</h1>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Developer</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>After <a href="/help/app-store-connect/create-an-app-record/add-a-new-app">adding an app to your account</a>, you can upload a build using Xcode, Swift Playground, altool, or Transporter. If you use the <a href="https://developer.apple.com/documentation/appstoreconnectapi">App Store Connect API</a>, you might want to upload your binary using the Transporter command-line tool and JSON Web Tokens (JWTs) for authentication. You can use the same JWTs that you use for the API to upload your binary. As your app changes, you can upload more builds, <a href="/help/app-store-connect/test-a-beta-version/testflight-overview">distribute a build for testing</a>, or <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submit your app for review</a>.</p>
+<p>The first time you upload a build, a beta version of the app is created in your account. However, the build needs to be processed in Apple’s system before it appears in App Store Connect. You’ll receive an email when this process is complete.</p>
+<p>Each time you upload a build, the bundle ID and version number, which are located in the app bundle, are used to associate the build with the app and version record in App Store Connect. The build string is used to uniquely identify the build throughout the system.</p>
+<p class="spacing-bottom">You can also create and upload your build using Xcode Cloud. Xcode Cloud lets you adopt continuous integration and continuous delivery (CI/CD), a standard practice that helps monitor and improve software quality over time, ensuring your app or framework is always in a releasable state. <a href="https://developer.apple.com/documentation/xcode/xcode-cloud">Learn more about Xcode Cloud</a>.</p>
+<p>You also have the option to upload assets that are managed separately from a build by using Apple-Hosted Background Assets. <a href="/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs ">Learn more.</a></p>
+<p><a href="/news/upcoming-requirements/">Learn about upcoming upload requirements.</a></p>
+<developer-accordion>
+<accordion-panel id="upload-your-app-binary-files-with-xcode">
+<h3>Upload your app binary files with Xcode</h3>
+<div>
+<p>Xcode is Apple’s integrated development environment (IDE). You use Xcode to build apps for Apple products, including iPhone, iPad, Mac, Apple TV, Apple Vision Pro, and Apple Watch. Xcode provides tools to manage your entire development workflow—from creating your app to testing, optimizing, and submitting it for review.</p>
+<p>To learn how to upload your app binary using Xcode, visit <a href="https://developer.apple.com/documentation/xcode/distributing-your-app-for-beta-testing-and-releases">Distributing your app for beta testing and releases</a>, or in Xcode, choose Help &gt; Xcode Help and search for “Distributing your app for beta testing and releases.”</p>
+<p><a href="https://apps.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Download Xcode</a> on the Mac App Store.</p>
+<div class="Subhead no-margin-bottom">
+<h3 class="Name">Supported Xcode Versions</h3>
+<p>App Store Connect supports the following versions of Xcode to upload your app for customer distribution or to testers using TestFlight. You can view delivery progress, including warnings, errors, and delivery logs, as well as a history of past deliveries.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Starting in 2026, you'll be required to use Xcode 14 or later to upload your app to App Store Connect.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Supported Xcode Versions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Target type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Built using Xcode</p>
+</th>
+<th scope="col">
+<p class="TableHead">Uploaded using Xcode</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>iOS app</p>
+<p>iOS app extension</p>
+<p>watchOS app extension</p>
+</td>
+<td>
+<p>Xcode 16 or later</p>
+</td>
+<td>
+<p>Xcode 6 or later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>macOS app</p>
+</td>
+<td>
+<p>Xcode 6 or later</p>
+</td>
+<td>
+<p>Xcode 6 or later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>tvOS app</p>
+</td>
+<td>
+<p>Xcode 16 or later</p>
+</td>
+<td>
+<p>Xcode 7.1 or later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>visionOS app</p>
+</td>
+<td>
+<p>Xcode 16 or later</p>
+</td>
+<td>
+<p>Xcode 15 or later</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Upload for all target types is supported for Transporter and altool.</p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="upload-your-app-binary-files-with-app-store-connect-api">
+<h3>Upload your app binary files with the App Store Connect API</h3>
+<div>
+<p>The App Store Connect API is a REST API that enables the automation of actions you take in App Store Connect.</p>
+<p>Calls to the API require JSON Web Tokens (JWT) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. <a href="https://developer.apple.com/documentation/appstoreconnectapi/creating-api-keys-for-app-store-connect-api">Learn how to create API keys to sign JWT.</a></p>
+<p>You can upload your app binary with the App Store Connect API. <a href="https://developer.apple.com/documentation/appstoreconnectapi/post-v1-builduploads">Learn more.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="upload-your-app-binary-files-with-altool">
+<h3>Upload your app binary files with altool</h3>
+<div>
+<p>You can use <code>xcrun</code>, included with Xcode, to invoke altool, a command-line tool that lets you validate and upload your app binary files to App Store Connect. Specify one of the following in Terminal at the command-line:</p>
+<div>
+<code>$ xcrun altool --validate-app -f file -t platform -u username [-p password] [--output-format xml]</code> <br/>
+<code>$ xcrun altool --upload-app -f file -t platform -u username [-p password] [--output-format xml]</code>
+</div>
+<p class="spacing-top-paragraph"> <a href="https://help.apple.com/asc/appsaltool/" target="_blank"> Learn more about using altool.</a> </p>
+</div>
+</accordion-panel>
+<accordion-panel id="upload-your-app-binary-files-with-transporter">
+<h3>Upload your app binary files with Transporter</h3>
+<div>
+<p>Transporter is a macOS app that provides a simple and easy way to upload an app to App Store Connect for distribution. You can view delivery progress including warnings, errors, delivery logs, and a history of past deliveries.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Starting in 2026, to continue uploading apps using the Aspera and Signiant transfer protocols, you’ll be required to use a version of Transporter that will be released later this year. Uploads using the default HTTPS transfer protocol won’t be impacted.</p>
+</div>
+<p>You can download the latest version of Transporter <a href="https://apps.apple.com/us/app/transporter/id1450874784?mt=12" target="_blank">on the Mac App Store.</a></p>
+<p><a href="https://help.apple.com/itc/transporter/" target="_blank">Learn more about Transporter Help.</a></p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-builds/view-builds-and-metadata">View builds and metadata</a>
+<a href="/help/app-store-connect/manage-builds/choose-a-build-to-submit">Choose a build to submit</a>
+<a href="/help/app-store-connect/reference/app-uploads/maximum-build-file-sizes">Maximum build file sizes</a>
+<a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">App build statuses</a>
+<a href="https://developer.apple.com/documentation/technotes/tn3147-migrating-to-the-latest-notarization-tool">TN3147: Migrating to the latest notarization tool</a>
+</div>
+</link></article> </div>

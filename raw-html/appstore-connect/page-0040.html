@@ -1,0 +1,94 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure In-App Purchase settings</span>
+<article _v="5.0">
+<h1>Turn on Family Sharing for In-App Purchases</h1>
+<p>Family Sharing is a feature supported only by apps that offer <a href="/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases">auto-renewable subscriptions and non-consumable In-App Purchases</a>. This feature enables users to share their purchases with up to five additional family members. To configure which of your In-App Purchases are eligible for Family Sharing, navigate to App Store Connect.</p>
+<p>Whether or not a user’s purchases are automatically shared with their family members depends on the type of In-App Purchase, the user’s sharing preferences, and if the purchase was made before or after Family Sharing was turned on in App Store Connect. Users have the option of turning off Family Sharing in their subscription settings at any time.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Family Sharing for In-App Purchases " class="table-3-col">
+<thead>
+<tr>
+<th colspan="2" scope="col"></th>
+<th colspan="8" scope="col">
+<p class="TableHead">Auto-renewable subscriptions</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Non-consumable In-App Purchases</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">
+<p>New Users</p>
+</td>
+<td colspan="8">
+<p>Family Sharing is enabled by default depending on the preference set by the purchaser in Manage Subscriptions.</p>
+</td>
+<td colspan="8">
+<p>Family Sharing is enabled by default if the following conditions are met:</p>
+<p>- The family organizer has purchase sharing enabled.</p>
+<p>- The purchaser of a non-consumable In-App Purchase has Share Purchases/Share My Purchases enabled.</p>
+<p>- The family member you want to share with has Share Purchases/Share My Purchases enabled.</p>
+<p>- The app isn't hidden from the user's purchase history.</p>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<p>Existing Users</p>
+</td>
+<td colspan="8">
+<p>Users must opt-in to Family Sharing from within their manage subscriptions page.</p>
+</td>
+<td colspan="8">
+<p>You can unlock access to the In-App Purchase using receipt validation or App Store server notifications if the following conditions are met:</p>
+<p>- The family organizer has purchase sharing enabled.</p>
+<p>- The purchaser of a non-consumable In-App Purchase has Share Purchases/Share My Purchases enabled.</p>
+<p>- The family member you want to share with has Share Purchases/Share My Purchases enabled.</p>
+<p>- The app is not hidden from the user's purchase history.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><b>Required role: </b>Account Holder or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="turn-on-family-sharing">
+<h3>Turn on Family Sharing</h3>
+<div>
+<p>Keep in mind that once you turn on Family Sharing for an In-App Purchases in App Store Connect, you can't turn it off.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases, or Subscriptions then the subscription group.</p>
+</li>
+<li>
+<p>Select your In-App Purchase, or subscription, from the list.</p>
+</li>
+<li>
+<p>Scroll down to the Family Sharing section.</p>
+</li>
+<li>
+<p>Click Turn On.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/supporting_family_sharing_in_your_app">Supporting Family Sharing in Your App</a>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/subscriptions_and_offers/enabling_app_store_server_notifications">Enabling App Store Server Notifications</a>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/setting_up_the_transaction_observer_for_the_payment_queue">Setting Up the Transaction Observer for the Payment Queue</a>
+<a href="/app-store/subscriptions/#creating-subscriptions">Auto-Renewable Subscriptions</a>
+<a href="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings">Manage Sandbox Apple Account settings</a>
+</div>
+</link></article> </div>

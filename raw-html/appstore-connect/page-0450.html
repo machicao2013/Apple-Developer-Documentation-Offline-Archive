@@ -1,0 +1,686 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="5.0">
+<h1>Subscription Report</h1>
+<p>The below table shows columns for <b>Subscription Report Version 1_3</b>.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/subscription-report#sample-subscription-report">sample report</a>.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Subscription Report Field Definitions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App <span class="no-glossary">Apple ID</span></p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Apple ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Group ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Your subscription’s Group ID (formerly Family ID).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standard Subscription Duration</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Duration of the standard subscription: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Offer reference name that you set for your subscription offers in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer ID</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>An identifier that you set for your subscription offers in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Price</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>Retail Price displayed on the App Store and charged to the customer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Three-character ISO code indicating the customer’s currency. For more information, visit <a href="/help/app-store-connect/reference/reporting/currency-codes">Currency codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer Proceeds</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>The proceeds for each subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The currency in which your proceeds are earned. For more information, visit <a href="/help/app-store-connect/reference/reporting/currency-codes">Currency codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Preserved Pricing</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For Renew events, if the price is preserved then this field equals “Yes”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Reason</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For Renew events, if the subscription has been active for more than a year then you receive 85% of the customer price, minus applicable taxes, and this field equals “Rate After One Year”. Otherwise, you receive 70% and the field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If the subscription was purchased from News then this field equals “News”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of device used for subscription purchase: iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>State</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>State field in the address submitted by the customer when signing up for their Apple Account. This field is not validated and may be blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region for the purchase. For more information, visit <a href="/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies">Financial report regions and currencies</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Standard Price Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of auto-renewable standard paid subscriptions currently active, excluding free trials, subscription offers, introductory offers, and marketing opt-ins. Subscriptions are active during the period for which the customer has paid without cancellation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Free Trial Introductory Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of introductory offer subscriptions currently in a free trial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Pay Up Front Introductory Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of introductory offer subscriptions currently with a pay up front introductory price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Active Pay as You Go Introductory Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of introductory offer subscriptions currently with a pay as you go introductory price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Free Trial Promotional Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of promotional offers currently in a free trial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay Up Front Promotional Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of promotional offers with a pay up front promotional price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay As You Go Promotional Offer Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of promotional offers with a pay as you go promotional price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Free Trial Offer Code Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of offer code subscriptions currently in a free trial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay Up Front Offer Code Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of offer code subscriptions with a pay up front offer price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay As You Go Offer Code Subscriptions</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of offer code subscriptions with a pay as you go offer price.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing Opt-Ins</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions currently in a marketing opt-in bonus period.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions in the Billing Retry status. This indicates that the App Store is still attempting to automatically renew a subscription when billing issues arise (for example, an expired credit card). Available in reports for dates starting December 7, 2017.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions in the Billing Grace Period state. This indicates that subscriber can continue accessing your content for a certain period of time (6 or 16 days) while Apple attempts to correct the billing issue.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscribers</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>The number of subscribers who have access to the auto-renewable subscription including entitled family members. Note that this field is only populated when the record represents more than 3 subscriptions. <a href="/help/app-store-connect/configure-in-app-purchase-settings/turn-on-family-sharing-for-in-app-purchases">Learn more</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Free Trial Win-Back Offers</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions on a free trial win-back offer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay Up Front Win-Back Offers</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions on a pay up front win-back offer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Pay As You Go Win-Back Offers</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Total number of subscriptions on a pay as you go win-back offer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-subscription-report">
+<h3>Sample Subscription Report</h3>
+<div>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Report" class="table-10-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Proceeds Reason</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Free Trials</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay Up Front Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay As You Go Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Marketing Opt-Ins</p>
+</th>
+<th scope="col">
+<p class="TableHead">Billing Retry</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>11.99</p>
+</td>
+<td>
+<p>8.4</p>
+</td>
+<td></td>
+<td>
+<p>364</p>
+</td>
+<td>
+<p>48</p>
+</td>
+<td>
+<p>10</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>23</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>11.99</p>
+</td>
+<td>
+<p>10.2</p>
+</td>
+<td>
+<p>Rate After One Year</p>
+</td>
+<td>
+<p>208</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>17.99</p>
+</td>
+<td>
+<p>12.6</p>
+</td>
+<td></td>
+<td>
+<p>194</p>
+</td>
+<td>
+<p>33</p>
+</td>
+<td>
+<p>23</p>
+</td>
+<td>
+<p>17</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A total of 572 active subscriptions (364 + 208) for “1 Month Basic” at the regular price of 11.99. There are also 10 subscriptions with a Pay Up Front Introductory Price and 23 subscriptions in a Billing Retry status. The 208 subscriptions have been active for more than a year and receive 85% of the customer price, minus applicable taxes, as indicated by the “Proceeds Reason” column equaling “Rate After One Year.”</p>
+<p>267 active subscriptions for “1 Month Premium” at the 17.99 price. There are also a total of 73 subscriptions with an Introductory Price (33 + 23 + 17).</p>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Report" class="table-12-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Standard Subscription Duration</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promotional Offer Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promotional Offer ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Standard Price Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Free Trial Introductory Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay Up Front Introductory Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay As You Go Introductory Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Free Trial Promotional Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay Up Front Promotional Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Active Pay As You Go Promotional Offer Subscriptions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Billing Retry</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1 month</p>
+</td>
+<td>
+<p>1 Month Basic Winback Offer A</p>
+</td>
+<td>
+<p>ExampleOfferIDa</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>32</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1 month</p>
+</td>
+<td>
+<p>1 Month Basic Winback Offer B</p>
+</td>
+<td>
+<p>ExampleOfferIDb</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>45</p>
+</td>
+<td>
+<p>0</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The above example shows two different subscription offers for “1 Month Basic.” 32 active subscriptions are on the Pay Up Front “1 Month Basic Winback Offer A” and 45 are on the Pay As You Go “1 Month Basic Winback Offer B.”</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</article> </div>

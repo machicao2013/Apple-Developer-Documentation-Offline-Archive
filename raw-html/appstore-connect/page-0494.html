@@ -1,0 +1,204 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="6.0">
+<h1>View and manage tester information</h1>
+<p>If you use <span class="force-glossary">TestFlight</span>, you can view information about testers and measure tester engagement. You can also identify, manage, and engage with relevant testers by filtering tester metrics.</p>
+<p>Public link metrics allow you to measure the effectiveness of your public link in enrolling testers for your app.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/prerelease_versions_and_beta_testers/beta_testers">Learn how to get tester information with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-tester-information">
+<h3>View tester information</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Testers, click All.</p>
+</li>
+<li>
+<p>In the Status column, view the status of testers. If someone was invited with an invitation email, their name and email address will display. If they were invited with a public link, they’ll display as anonymous.</p>
+<p>The possible statuses are:</p>
+<div class="table-wrapper">
+<table aria-label="Tester statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Invited</p>
+</td>
+<td colspan="8">
+<p>The invite was sent to the tester.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Accepted</p>
+</td>
+<td colspan="8">
+<p>The tester accepted the invite. (You can resend email invites to testers who have not yet accepted.)</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Installed</p>
+</td>
+<td colspan="8">
+<p>The tester downloaded the build.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Deleted</p>
+</td>
+<td colspan="8">
+<p>The tester has been deleted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>You can download a CSV by clicking the download button in the top right corner of the page. The CSV includes your testers' first names, last names, and email addresses. However, data points such as Status, Sessions, and Crashes are not included.</p>
+<p>Testers invited with a public link aren’t included in the CSV because their first names, last names, and email addresses are anonymized.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="filter-by-tester-information">
+<h3>Filter by tester information</h3>
+<div>
+<p>Use the provided tester metrics to identify, manage, and engage with testers. Tester data is organized by Tester, Configuration, and Metrics, and includes information such as name, email, enrollment, status, group, app version, device, platform, time range, sessions, crashes, and feedback. Apply filters to identify relevant testers.</p>
+<p>Tester metrics are only available to testers who have installed your app and can take up to 24 hours to appear in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If you set criteria, testers must meet those criteria to enroll in your beta using a public link invite. However, testers can provide feedback from any device they use for testing, not only from devices within the set criteria.</p>
+</div>
+<p><a "="" href="/help/app-store-connect/reference/testflight/testflight-tester-information">Learn more about TestFlight tester information.</a> </p>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Testers, click All.</p>
+</li>
+<li>
+<p>Click Add Filter, then select the filters you want to add.</p>
+<p>After creating your filters, you can perform the following actions at the top of the table: Reinvite, Add to Group, or Delete. You can select all testers by checking the box at the top of the table or individually select testers.</p>
+<figure><img alt="Screenshot of the Testers section on the All Testers page, which includes an Add Filter button that displays a filter menu with categories such as Tester, Configuration, Metrics, Internal, and External." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/view-and-manage-tester-information/images/filter-by-tester-information_2x.png"/></figure>
+</li>
+</ol>
+</div>
+<div class="callout callout-note">
+<p class="Tip"><img alt="Tip icon" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>You can apply filters to an entire tester group to Reinvite or <a "="" href="/help/app-store-connect/test-a-beta-version/remove-testers-from-a-group">Remove testers from a group</a>.</p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="view-public-link-metrics">
+<h3>View public link metrics</h3>
+<div>
+<p>Monitor how many testers viewed and accepted your public link invitation. If you've set criteria for the public link, you can also see how many testers didn't meet the criteria. These metrics are displayed on the group details page and cover a 30-day period.</p>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under External Testing, select the group for which you want to view public link metrics.</p>
+</li>
+<li>
+<p>On the right, under Public link, view metrics.</p>
+</li>
+</ol>
+</div>
+<div class="table-wrapper">
+<table aria-label="Tester statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Metric</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Views in TestFlight</p>
+</td>
+<td colspan="8">
+<p>The number of testers who viewed your public link in the TestFlight app.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Accepted</p>
+</td>
+<td colspan="8">
+<p>The number of testers that accepted your public link invite.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Didn't Meet Criteria</p>
+</td>
+<td colspan="8">
+<p>The number of potential testers that did not meet your tester criteria.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Didn't Accept</p>
+</td>
+<td colspan="8">
+<p>The number of potential testers who declined the public link invite. Click the information icon to view the count of feedback from testers who did not accept the invite. Testers can select from the following feedback options:
+												<ul>
+<li>
+<p>It's not relevant to me.</p>
+</li>
+<li>
+<p>I am not clear what this app does.</p>
+</li>
+<li>
+<p>I didn't find this app interesting.</p>
+</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/test-a-beta-version/testflight-overview">TestFlight overview</a>
+<a href="/help/app-store-connect/test-a-beta-version/add-internal-testers">Add internal testers</a>
+<a href="/help/app-store-connect/test-a-beta-version/invite-external-testers">Invite external testers</a>
+</div>
+</link></article> </div>

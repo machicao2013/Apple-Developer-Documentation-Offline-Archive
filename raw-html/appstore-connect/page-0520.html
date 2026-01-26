@@ -1,0 +1,537 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Understanding the Core Technology Fee</span>
+<article _v="7.0">
+<h1>Measure your first annual installs</h1>
+<p>If you have accepted the Alternative Terms Addendum for Apps in the EU (available for apps in the European Union), you'll begin accumulating first annual installs for your EU apps.</p>
+<p>Use the following two reports to monitor how many first annual installs your apps receive. If any of your apps exceed one million first annual installs, or if you're distributing an app marketplace, you’ll also receive monthly financial reports which will inform you of the amount owed. Nonprofit organizations, accredited educational institutions, and government entities who are approved for a <a href="/support/fee-waiver/">fee waiver</a> will also receive the first annual install reports but not the financial report since they are exempt from the Core Technology Fee, subject to the Apple Developer Program’s existing rules.</p>
+<p>If you have not signed the Alternative Terms Addendum, you can use App Install Reports from 2023 to <a href="/help/app-store-connect/understanding-the-core-technology-fee/estimate-fees-for-alternative-business-terms">estimate your Core Technology Fee</a>.</p>
+<div class="table-wrapper">
+<table aria-label="App Install Report" class="table-3-col table-3-col-wide-middle no-margin-top">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Report Name</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+<th colspan="4" scope="col">
+<p class="TableHead">Availability </p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>First Annual Install Detailed Report</p>
+</td>
+<td colspan="8">
+<p>Provides first annual installs and total installs by territory, channel, install type, and OS version.</p>
+</td>
+<td colspan="4">
+<p>Daily</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>First Annual Install Summary Report</p>
+</td>
+<td colspan="8">
+<p>Provides a rolling 12 month snapshot of first annual installs, installs above the threshold, and total installs by app.</p>
+</td>
+<td colspan="4">
+<p>Monthly</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel id="first-annual-install-types">
+<h3>First annual install types</h3>
+<div>
+<p>Install type descriptions, and whether they may be counted as a first annual install.</p>
+<div class="table-wrapper">
+<table aria-label="Metrics" class="table-3-col table-3-col-wide-middle no-margin-top">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Scenario</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+<th scope="col">
+<p class="TableHead">Can be a first annual install</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>First-time install</p>
+</td>
+<td>
+<p>The first time an app is installed onto a device by an Apple Account account.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Re-install</p>
+</td>
+<td>
+<p>A subsequent installation of an app onto a device by an Apple Account account.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App update</p>
+</td>
+<td>
+<p>The process of replacing an app on a device with another version of the same app. Includes auto-updates.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App bundle</p>
+</td>
+<td>
+<p>A group of apps made available together as a single download.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Clip</p>
+</td>
+<td>
+<p>A small part of an app that lets you do a task quickly, like rent a bike, pay for parking, or order food.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>TestFlight app installs and updates</p>
+</td>
+<td>
+<p>Pre-release versions of your app.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs from Apple Business Manager</p>
+</td>
+<td>
+<p>An App Store program that enables businesses to easily buy and distribute content.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs from Apple School Manager</p>
+</td>
+<td>
+<p>An App Store program that enables schools to easily buy and distribute content.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs of unlisted apps</p>
+</td>
+<td>
+<p>Apps that are discoverable only with a direct link, and don't appear in any App Store categories, recommendations, charts, search results, or other listings.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs from Apple Configurator</p>
+</td>
+<td>
+<p>A software application that enables users to quickly configure large numbers of devices.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>iOS app with Watch app</p>
+</td>
+<td>
+<p>iOS apps with watchOS extensions.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standalone iMessage/Stickers apps</p>
+</td>
+<td>
+<p>Installs of standalone iMessage apps or sticker packs downloaded from the App Store for iMessage.</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs of Enterprise apps</p>
+</td>
+<td>
+<p>Proprietary, internal-use apps developed and deployed by large organizations in the Apple Developer Enterprise Program.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App installs on iPadOS, tvOS, macOS, visionOS, or watchOS</p>
+</td>
+<td>
+<p>Apps installed on Apple platforms other than iOS.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Auto-installs</p>
+</td>
+<td>
+<p>The process of automatically installing an iOS app onto a device other than where the app was manually installed. Controlled by the device's settings.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="https://support.apple.com/108344">iCloud transfers</a></p>
+</td>
+<td>
+<p>The process of installing an app onto a fresh device from <span class="no-glossary">iCloud</span> Backup, where the app has been previously installed by the associated Apple Account account.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Demo accounts</p>
+</td>
+<td>
+<p>Downloads associated with an account provided to Apple for App Store review purposes only.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Internal testing / Xcode</p>
+</td>
+<td>
+<p>Installs of apps directly from Xcode.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Retail accounts</p>
+</td>
+<td>
+<p>An account created and used for use in Apple Retail stores.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reinstalls of an offloaded app</p>
+</td>
+<td>
+<p><span class="no-glossary">Reinstallations</span> of apps that were offloaded in order to save space on the device.</p>
+</td>
+<td>
+<p>No</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="first-annual-install-detailed-report">
+<h3>First Annual Install Detailed Report</h3>
+<div>
+<div class="table-wrapper">
+<table aria-label="First Annual Install Detailed Report" class="table-3-col table-3-col-even">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Identifier</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The identifier of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The name of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Territory</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The territory in which the install occured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Channel</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The channel from which the install was initiated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Install Type</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The type of install that occured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OS Version</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The OS version on the device used to generate the install.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>First Annual Installs (Month-to-Date)</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs so far in the month associated with the report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total Installs (Month-to-Date)</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of total installs so far in the month associated with the report.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="first-annual-install-summary-report">
+<h3>First Annual Install Summary Report</h3>
+<div>
+<table aria-label="First Annual Install Summary Report" class="table-3-col table-3-col-even">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reporting Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td class="Center" colspan="6">
+<p>The associated date for this report.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The provider name provided by you during the initial account setup.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Identifier</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The identifier of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td class="Center" colspan="6">
+<p>The name of the app that was installed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Installs Above Threshold</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs that qualify for a fee.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>12 Month Total</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs in the last 12 months.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>MM YYYY</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The number of first annual installs for the month and year displayed in the column title.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Total Installs</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td class="Center" colspan="6">
+<p>The total number of installs received in the last 12 months.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3 class="Name">How does Apple know how many installs my apps are getting?</h3>
+<p>Apple provides secure installation APIs that can be called by the App Store, web distribution developers, or alternative app marketplaces to request the installation of iOS and iPadOS apps. This API, along with a signal when the installation is complete, enables Apple to accurately count how many times an app is installed.</p>
+<h3 class="Name">How will Apple protect developers from install spam?</h3>
+<p>Apple already takes a number of steps to prevent fraud and scams and protect developers’ intellectual property. Apple is implementing additional measures to monitor, detect, and prevent install abuse, including:</p>
+<ul>
+<li>An install verification mechanism to ensure that all installs come from real Apple devices.</li>
+<li>Limits on the number of first annual installs that can come from a single device.</li>
+<li>Investigating, and potentially terminating, user or developer accounts that engage in suspicious behavior.</li>
+</ul>
+<p>If a developer believes that their app’s install count was inflated by install spam, they’ll be able to <a href="/support/">contact us</a>.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

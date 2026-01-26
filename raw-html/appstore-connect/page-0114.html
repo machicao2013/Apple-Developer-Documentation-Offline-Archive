@@ -1,0 +1,100 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="25P">
+<h1>Reduced Motion evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Motion can enrich app experience, but certain types of motion, such as scaling, spinning, or peripheral motion, cause dizziness or nausea for people with motion sensitivity. Although motion sickness is commonly discussed in the context of augmented and virtual reality, motion can cause reactions in 2D screens as well for users with severe motion-sensitivity conditions. If your app includes these motion triggers, make them optional or provide alternative animations.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability.</p>
+<p>The goal of Reduced Motion is to support users with extreme motion sensitivity, who may experience negative side effects, such as nausea, dizziness, headaches, or distraction when encountering certain types of motion triggers. Often, the problematic types of motion are spinning or scaling, and other techniques used to simulate three-dimensional effects or depth.</p>
+<p>Well designed animations can convey information intuitively, increasing the usability and understandability of your app. Removing such animations unnecessarily might make your app experience more confusing, so don’t remove or modify all animations prematurely. Review the support criteria below to determine which animations to leave as they are, which animations to modify, and which animations to consider removing entirely.</p>
+<p>The following sections provide more detail about how to determine whether your app supports Reduced Motion well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app supports Reduced Motion on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>While you’re not required to use Apple frameworks to indicate support for Reduced Motion, we recommend reviewing how Apple’s system apps respond to the systemwide setting to understand what a good experience is like for users. If you offer your own in-app setting, it should either support similar functionality to the systemwide setting, or offer more granular user interface customization.</p>
+<p>Review the resources below for details about enabling the <i>Reduce Motion</i> system setting on each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, watch <a href="https://www.youtube.com/watch?v=8Ddva5UUX2U">“How to reduce screen motion on iPhone, iPad, and iPod touch”</a> and visit <a href="https://support.apple.com/guide/iphone/iph0b691d3ed">Customize onscreen motion on iPhone</a>.</p>
+</li>
+<li>
+<p>For iPad, watch <a href="https://www.youtube.com/watch?v=8Ddva5UUX2U">“How to reduce screen motion on iPhone, iPad, and iPod touch”</a> and visit <a href="https://support.apple.com/guide/ipad/ipadc509a80c">Customize onscreen motion on iPad</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/mchlc03f57a1">Customize onscreen motion on Mac</a>.</p>
+</li>
+<li>
+<p>For Apple TV, visit the <a href="https://support.apple.com/guide/tv/atvb1f949820">Reduce screen motion on Apple TV 4K</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tanfba13872a">Stop or reduce visual motion effects or screen movements on Apple Vision Pro</a>.</p>
+</li>
+<li>
+<p>For Apple Watch, visit the <a href="https://support.apple.com/guide/watch/apd766b7bd85">Adjust text size and other visual settings on Apple Watch</a>.</p>
+</li>
+</ul>
+<p>If you don’t have an existing proficiency in testing reduced motion, take some time to go beyond the basics and review the additional resources below.</p>
+<ul>
+<li>
+<p>Human Interface Guideline &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/motion">Motion</a></p>
+</li>
+<li>
+<p>Human Interface Guideline &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/accessibility#Motion">Accessibility</a></p>
+</li>
+</ul>
+<h2>Indicating support for Reduce Motion</h2>
+<div class="spacing-bottom">
+<p>You’re not required to adopt Apple frameworks to indicate support for Reduced Motion, but we recommend detecting when a user has the Apple system setting enabled so they don’t have to manually update another setting for the app to function as expected. If you offer your own in-app setting that has additional customization or granular controls, you may not need to use the Apple system setting.</p>
+<p>When testing your app, determine if any views or transitional animations include potential motion triggers that can cause discomfort or distraction for some users. If your app doesn’t contain any problematic motion triggers, you may indicate that it supports Reduced Motion.</p>
+<ul>
+<li>
+<p>If your app uses depth simulation (including parallax effects, animated blur, and depth-of-field effects), you should disable or change the animation when the user’s setting indicates a need or preference for reduced motion.</p>
+</li>
+<li>
+<p>If your app includes multi-axis motion, multi-speed motion, spinning, or vortex effects, you should disable or change the animation when the user’s setting indicates a need or preference for reduced motion.</p>
+</li>
+<li>
+<p>If your app includes auto-advancing carousel screens or any other ongoing motion, consider stopping the motion based on the user’s setting, or providing a control to allow the user to stop the motion.</p>
+</li>
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+<li>
+<p>Review the related links below for more examples of motion triggers.</p>
+</li>
+</ul>
+<p>If your app does contain these types of motion, consider each animation individually.</p>
+<ul>
+<li>
+<p>Is the animation included purely for stylistic or decorative effect? If so, consider stopping it entirely when the user’s system setting indicates a need or preference for reduced motion.</p>
+</li>
+<li>
+<p>Removing animations entirely can have a negative effect on usability and understandability. If the motion itself conveys some meaning, such as a status change (for example, item moved to cart) or a hierarchical context transition (for example, this view is a subview of the prior view), don’t remove the animation entirely. Instead, consider providing a new animation that avoids motion, or at least reduces full screen motion, such as a dissolve, highlight fade, or color shift. Also consider whether you want to replace your default animation, or only use the new one when the user’s setting indicates a need or preference for reduced motion.</p>
+</li>
+</ul>
+<p>Once your app no longer displays problematic motion triggers to users whose setting indicates a need or preference for reduced motion, you may indicate that it supports Reduced Motion.</p>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Reduced Motion in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Reduced Motion every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/visionOS/improving-accessibility-support-in-your-app">Improving accessibility support in your visionOS app</a>
+<p>Human Interface Guideline &gt; <a href="https://developer.apple.com/design/Human-Interface-Guidelines/designing-for-visionos">Designing for visionOS</a></p>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10020/">Watch “Make your app visually accessible”</a>
+<a href="https://developer.apple.com/videos/play/wwdc2023/10078">Watch “Design considerations for vision and motion“</a>
+<a href="https://webkit.org/blog/7551/responsive-design-for-motion/">Responsive Design for Motion</a>
+</div>
+</div></article> </div>

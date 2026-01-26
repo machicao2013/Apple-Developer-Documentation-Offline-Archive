@@ -123,12 +123,13 @@ class AppStoreHelpCrawler:
 
         # Try multiple navigation selectors
         nav_selectors = [
-            'nav',  # Generic nav element
-            '.nav',  # Nav with class
-            '#nav',  # Nav with ID
-            'aside',  # Sidebar
-            '.sidebar',  # Sidebar with class
-            '[role="navigation"]',  # ARIA navigation
+            # 'nav',  # Generic nav element
+            # '.nav',  # Nav with class
+            # '#nav',  # Nav with ID
+            # 'aside',  # Sidebar
+            # '.sidebar',  # Sidebar with class
+            # '[role="navigation"]',  # ARIA navigation
+            '.sidenav-list',
         ]
 
         nav_element = None

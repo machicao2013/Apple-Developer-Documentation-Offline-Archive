@@ -1,0 +1,231 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="2.0">
+<h1>Game activities</h1>
+<p>Activities metadata identifies each activities and its parameters in App Store Connect.</p>
+<p><a href="https://developer.apple.com/documentation/gamekit/creating-activities-for-your-game">You can configure Game activities via GameKit.</a></p>
+<div class="Subhead anchor-scroll-top" id="activities-properties">
+<h2>Activities properties</h2>
+</div>
+<div class="table-wrapper">
+<table aria-label="activities properties" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Properties</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reference Name</p>
+</td>
+<td>
+<p>An internal name that you must provide for each activity. This is the name that you use if you search for your activity in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Activity ID</p>
+</td>
+<td>
+<p>An alphanumeric identifier you choose for your activity. This ID is limited to 100 characters (assumes single-byte characters). Your activity ID is a permanent setting and therefore can’t be edited at a later date.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Participants Range</p>
+</td>
+<td>
+<p>The accepted range of the minimum and maximum participants for the activity. This is optional.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Supports Party Code</p>
+</td>
+<td>
+<p>For multiplayer activities, players can use the code to invite each other to activities. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start Activity Intent</p>
+</td>
+<td>
+<p>An automatically generated deep link URL that launches the game with the game activity start intent. You can include properties to the URL.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Properties</p>
+</td>
+<td>
+<p>When you configure your activity, you can provide an optional collection of properties that are specific to your game. For example, you can add custom details about which level an activity is for and the difficulty.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Fallback URL</p>
+</td>
+<td>
+<p>A URL that you provide and host for deep linking to your game.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default image</p>
+</td>
+<td>
+<p>An image that represents the Activity. The image must be a .jpeg, .jpg, or .png file that’s 3840 x 2160 pixels, at least 72 ppi, no transparency, and in the RGB color space.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="activity-language-properties">
+<h2>Activity language properties</h2>
+<p>Activity language properties collect language-specific text used in an activity’s display. You must include these properties for at least one language.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Challenge language properties" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Localization</p>
+</td>
+<td>
+<p>The language in which your activities appears. There must be at least one language defined.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Display Name</p>
+</td>
+<td>
+<p>The display name of the activities in the specified language. For example, if you choose Finnish from the Language menu, enter the Finnish name for the activities.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>A short description that helps players understand the details of the activity. </p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Image</p>
+</td>
+<td>
+<p>A localized image that represents the Activity. The image must be a .jpeg, .jpg, or .png file that’s 3840 x 2160 pixels, at least 72 ppi, no transparency and in the RGB color space.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead anchor-scroll-top" id="activity-statuses">
+<h2>Activity statuses</h2>
+<p>Activity statuses indicate whether the Activity has been approved and made live with the app.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Activity statuses" class="table-2-col table-2-col-wide-middle">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Prepare for Submission</p>
+</td>
+<td colspan="6">
+<p>You’ve created a Game Center component in App Store Connect but you're still preparing information for it.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready for Review</p>
+</td>
+<td colspan="6">
+<p>You’ve entered all of the required metadata for your Game Center component and indicated that you intend to submit it for review, but haven’t submitted it yet.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td colspan="6">
+<p>Apple received your submission, but hasn’t started the review.</p>
+<p>While you're waiting for the review, you can <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">remove your Game Center component from submission</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</td>
+<td colspan="6">
+<p>App Review is reviewing your Game Center component.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Accepted</p>
+</td>
+<td colspan="6">
+<p>This Game Center component has been accepted, but one or more items in your submission were rejected.</p>
+<p>The component can only publish when all items in the submission are accepted. You can edit the rejected items and resubmit, or remove them from the submission to move forward with the currently accepted items.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Live</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component has been accepted and is ready for distribution.</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td colspan="6">
+<p>Your Game Center component wasn't accepted. App Review notifies App Store Connect users with the Admin, App manager, or Developer role with the issues.</p>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages">Learn how to reply to App Review messages.</a></p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Developer Rejected</p>
+</td>
+<td colspan="6">
+<p>You <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components#remove-a-game-center-component-from-draft-submission">removed your Game Center component from review</a>. When you’re ready, resubmit your component.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article> </div>

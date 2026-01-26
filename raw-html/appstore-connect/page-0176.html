@@ -1,0 +1,340 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage In-App Purchases</span>
+<article _v="25P">
+<h1>Create offer codes for In-App Purchases</h1>
+<p>Offer codes provide a way to acquire, retain, and win back customers by offering discounted or free access to In-App Purchases. You create and manage offer codes in App Store Connect, defining the eligibility criteria for redemption. Customers can redeem offer codes through a redemption URL, or by entering the code directly in the App Store, or within your app. You can have up to 10 active offers at a time, with a limit of 1 million codes per app, per quarter.</p>
+<p>You define the eligibility criteria for who can redeem the code, including users who:</p>
+<div class="spacing-bottom">
+<ul class="compound-item-list">
+<li>
+<p>Never purchased within your app.</p>
+</li>
+<li>
+<p>Purchased within your app in the last 30 days.</p>
+</li>
+<li>
+<p>Purchased within your app more than 30 days ago.</p>
+</li>
+</ul>
+<p>You can create offer and sandbox codes for your app regardless of its current App Status. However, to generate custom or unique offer codes, your app must be Ready for Distribution, and the associated In-App Purchase must be Approved.</p>
+<p>Carefully consider your offer's eligibility requirements before creating and distributing offer codes.</p>
+</div>
+<p>There are three types of offer codes available:</p>
+<h3>One-time-use codes</h3>
+<p>Unique, randomly generated codes that can each be redeemed only once.</p>
+<div class="spacing-bottom">
+<ul class="compound-item-list">
+<li>
+<p><b>How customers redeem:</b> Customers can redeem these codes through a unique redemption URL, by manually entering the code in the App Store, or directly within your app (if your app supports it). You can set set an expiration date with a maximum of 6 months, after which the code will no longer be valid.</p>
+</li>
+<li>
+<p><b>In-app redemption requirement:</b> Redemption within your app requires the customer to be using a device running iOS 16.3, macOS 15.0, or visionOS 1.0 or later, and your app must support the <a href="https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app">appropriate StoreKit method</a>.</p>
+</li>
+<li>
+<p><b>Best for:</b></p>
+<ul>
+<li>
+<p>Small-scale distribution (i.e., giving codes to individuals as a special discount, or contest winners).</p>
+</li>
+<li>
+<p>Situations where you need strict control over who can redeem the offer (i.e., a limited-quantity giveaway, codes for event attendees only, or a codes to print on a product).</p>
+</li>
+<li>
+<p>Targeted promotions with limited distribution.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><b>Redemption:</b> Each app can have up to 1 million codes per quarter, shared across all In-App Purchases. Customers are limited to redeeming one code per offer. Codes will expire after a maximum of six months. </p>
+</li>
+</ul>
+</div>
+<h3>Custom codes</h3>
+<p>Codes you create yourself, using a unique name (i.e., <code>SUMMER25</code>, <code>VIPACCESS</code>). Unlike one-time use codes, a custom code can be redeemed by multiple users, up to a limit you set.</p>
+<div class="spacing-bottom">
+<ul class="compound-item-list">
+<li>
+<p><b>How customers redeem:</b> Customers can redeem these codes through a redemption URL or directly within your app (if your app supports it).</p>
+</li>
+<li>
+<p><b>In-app redemption requirement:</b> Redemption within your app requires the customer to be using a device running iOS 16.3, macOS 15.0, or visionOS 1.0 or later, and your app must support the <a href="https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app">appropriate StoreKit method</a>.</p>
+</li>
+<li>
+<p><b>Best for:</b></p>
+<ul class="compound-item-list">
+<li>
+<p>Large-scale marketing campaigns (i.e., promoting a discount to all new users).</p>
+</li>
+<li>
+<p>Promotions targeted at specific customer groups (i.e., offering a special deal to users who haven't opened the app in 30 days).</p>
+</li>
+<li>
+<p>Acquiring, retaining, or winning back specific customer cohorts.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><b>Redemption:</b> Each app can have up to 1 million codes per quarter, shared across all In-App Purchases. Customers are limited to redeeming one code per offer. Codes will expire after a maximum of six months. </p>
+</li>
+</ul>
+</div>
+<h3>Sandbox codes</h3>
+<p>One-time use codes for testing purposes. You can test offer redemptions through your sandbox Account settings on iOS 16.3 and iPadOS 16.3 or later, and if your app supports the <a href="https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app">appropriate StoreKit method</a>.</p>
+<div class="spacing-bottom">
+<ul class="compound-item-list">
+<li>
+<p><b>Best for:</b></p>
+<ul>
+<li>
+<p>Verifying the end-to-end offer code redemption flow in your app's sandbox environment.</p>
+</li>
+<li>
+<p>Testing different offer configurations (such as price) without affecting real users or production data.</p>
+</li>
+<li>
+<p>Confirming that your app correctly handles receipt validation and entitlement granting processes for offer code redemptions.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><b>Redemption limits:</b> Each app can distribute up to 10,000 sandbox test codes per quarter, shared across all In-App Purchases. Sandbox test accounts have no redemption limits; if redemptions are blocked, <a href="https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox#Clear-the-purchase-history-for-a-Sandbox-Apple-Account">clear the purchase history for the sandbox Apple account</a> and retest. Code expiration is optional for sandbox test codes.</p>
+</li>
+</ul>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-up-offers">
+<h3>Set up offers</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click  In-App Purchases.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and click Create Offer (or scroll down to the Non-Renewing Subscriptions section and click Manage, then click Create).</p>
+</li>
+<li>
+<p>Enter a reference name for the offer. Use this reference name to manage the offer in App Store Connect. After you’ve created your offer, the reference name can't be changed.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can't use a reference name that has already been used for another offer in the same app.</p>
+</div>
+</li>
+<li>
+<p>Select the customer eligibility for your offer, based on their In-App Purchase history within your app. You can select one or more of the following:</p>
+<ul>
+<li>
+<p>Never purchased within your app.</p>
+</li>
+<li>
+<p>Purchased within your app in the last 30 days.</p>
+</li>
+<li>
+<p>Purchased within your app more than 30 days ago.</p>
+</li>
+</ul>
+<p>Selecting all of the options will make your offer available to everyone.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Select the countries or regions where you want to make your offer available, then click Next.</p>
+</li>
+<li>
+<p>Choose Paid Offer or Free.</p>
+</li>
+<li>
+<p>Choose the discounted price for a base country or region, then click Next. To search from a larger list of price points, click See Additional Prices.</p>
+</li>
+<li>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Make sure the details of your offer are correct and click Confirm.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once you create an offer, you won’t be able to edit it. If changes to customer eligibility are needed, create a new offer.</p>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-one-time-use-codes">
+<h3>Create one-time use codes</h3>
+<div>
+<p>In order for customers to redeem codes, your app must be in the Ready for Distribution state.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click In-App Purchases.</p>
+</li>
+<li>
+<p>Choose the In-App Purchase you wish to create codes for. </p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list.</p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>In the One-Time Use Codes section, click the Create One-Time Use Codes button.</p>
+</li>
+<li>
+<p>Click the “Create One-Time Use Codes” button.</p>
+</li>
+<li>
+<p>In the pop-up window, select the number of codes you want to create.</p>
+<p>You must select a minimum of 500 and a maximum of 25,000. If you need more than 25,000 codes, you can create multiple batches of codes for the same offer.</p>
+</li>
+<li>
+<p>Choose an expiration date to determine how long the codes are valid. One-time use codes can be valid for a maximum of six months. Codes expire at 12:00 a.m. PT on the expiration date.</p>
+</li>
+<li>
+<p>Click Create.</p>
+<p>It may take up to an hour before codes are redeemable by customers.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="download-one-time-use-codes">
+<h3>Download one-time use codes</h3>
+<div>
+<p>Once your one-time use codes are created, you’ll need to download them from App Store Connect so you can share them.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click In-App Purchases (or Non-renewing subscriptions).</p>
+</li>
+<li>
+<p>Choose the In-App Purchase you wish to create codes for.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list.</p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>Locate the codes you want to download and click Download.</p>
+</li>
+<li>
+<p>Open the extracted text (<code>.csv</code>) file in a spreadsheet application.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-custom-codes">
+<h3>Create custom codes</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click In-App Purchases.</p>
+</li>
+<li>
+<p>Choose the In-App Purchase you wish to create codes for.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list. </p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>Select the offer from the list.</p>
+</li>
+<li>
+<p>In the Custom Codes section, click the Create Custom Codes button.</p>
+</li>
+<li>
+<p>Enter a custom code up to 64 characters and without any special characters.</p>
+</li>
+<li>
+<p>Choose a redemption limit. This is the total number of people who can redeem this custom code. You can choose a limit of up to 25,000 at a time. If you need more, use the same custom code multiple times for the same offer.</p>
+</li>
+<li>
+<p>Choose an expiration date to determine how long the codes will be valid (with a maximum of 6 months for codes with an expiration date). Codes expire at 12:00 a.m. PT on the expiration date.</p>
+<p>To create codes with no expiration date, choose No End Date from the date picker. Expiration dates can't be edited.</p>
+</li>
+<li>
+<p>Click Create.</p>
+<p>It may take up to an hour before codes are redeemable by customers.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-sandbox-codes">
+<h3>Create sandbox codes</h3>
+<div>
+<p>Sandbox codes are one-time use codes for testing purposes. You can test offer redemptions through your sandbox account settings on iOS 16.3 and iPadOS 16.3 or later, and if your app supports the required StoreKit APIs. <a href="https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app">Learn more.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click In-App Purchases (or Non-renewing subscriptions).</p>
+</li>
+<li>
+<p>Choose the In-App Purchase you wish to create sandbox codes for.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list. </p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>In the Sandbox Codes section, click the Create Sandbox Codes button.</p>
+</li>
+<li>
+<p>In the pop-up window, choose the number of codes you want to create. You must select a minimum of 10 and a maximum of 10,000 codes. </p>
+</li>
+<li>
+<p>Optionally, choose an expiration date to determine how long the codes are valid. Sandbox codes can be valid for a maximum of six months. Codes expire at 12:00 a.m PT on the expiration date.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="deactivate-offer-codes">
+<h3>Deactivate offer codes</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click In-App Purchases.</p>
+</li>
+<li>
+<p>Choose the In-App Purchase you wish to deactivate codes for.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list.</p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>Locate the offer you want to deactivate and click Deactivate.</p>
+</li>
+<li>
+<p>Click Deactivate again to proceed.</p>
+<p>The codes will expire immediately. Subscribers who have already redeemed the codes won’t be affected. Unredeemed codes will also expire and will not be reapplied to the quarterly limit.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

@@ -1,0 +1,46 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Offer App Clip experiences</span>
+<article _v="8.0">
+<h1>Offer a default App Clip experience</h1>
+<p>A default App Clip experience is required and can be invoked using Safari and Messages, as well as through an NFC tag, QR code, and links in other apps when using an Apple-provided App Clip link. <a href="https://developer.apple.com/documentation/appclip/configuring-the-launch-experience-of-your-app-clip">Learn about configuration options.</a></p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>People can launch your App Clip from other apps on iOS 17 or later.</p>
+</div>
+<p>A default App Clip link is optional, but useful for App Clips that only require a single App Clip experience. This link allows you to invoke the default App Clip experience on devices running iOS 16.4 or later.</p>
+<p>When you upload a build that has an App Clip and configure a default App Clip experience, a default App Clip link and App Clip demo URL are automatically generated in App Store Connect.</p>
+<p><b>Default App Clip link</b></p>
+<p><code>https://appclip.apple.com/id?p=<b>app_clip_bundle_id</b>&amp;key=value</code></p>
+<p><b>Default App Clip demo URL</b></p>
+<p><code>https://apps.apple.com/id?p=<b>app-clip-<span class="no-glossary">bundle-id</span></b>-=value</code></p>
+<p>These will become active once your version has been approved.</p>
+<p>Once you create a default App Clip experience, you can create <a href="/help/app-store-connect/offer-app-clip-experiences/offer-an-advanced-app-clip-experience">advanced App Clip experiences</a>.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/app_clips_and_app_clip_experiences/default_app_clip_experiences">Learn how to create a default App Clip experience using the App Store Connect API.</a></p>
+<div class="Task no-header">
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, select the iOS app version for which you want to add an App Clip experience and scroll down to the App Clip section.</p>
+</li>
+<li>
+<p>Enter a header image, subtitle, and action. This metadata appears on the App Clip card when the experience is invoked from Safari or Messages.</p>
+<p><a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">Learn more about the required, localizable, and editable properties.</a></p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/app-clips/">App Clips</a>
+<a href="/videos/play/wwdc2023/10178/">Watch WWDC23 What’s new in App Clips</a>
+<a href="https://developer.apple.com/design/human-interface-guidelines/app-clips">Design &gt; App Clips</a>
+<a href="https://developer.apple.com/documentation/app_clips">App Clips framework</a>
+<a href="/help/app-store-connect/reference/app-uploads/maximum-build-file-sizes">Maximum build file sizes</a>
+<a href="https://developer.apple.com/documentation/appclip/choosing-the-right-functionality-for-your-app-clip">Choosing the right functionality for your App Clip</a>
+<a href="https://developer.apple.com/documentation/appclip/creating-an-app-clip-with-xcode#Keep-your-App-Clip-small-in-size">Creating an App Clip with Xcode</a>
+</div>
+</article>
+</div>

@@ -1,0 +1,87 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure In-App Purchase settings</span>
+<article _v="6.0">
+<h1 class="platforms-header-spacing">Promote In-App Purchases</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+</div>
+<p>Promoted In-App Purchases appear on your product page, can display in search results, and may be featured on the Today, Games, and Apps tabs.</p>
+<p>You can promote up to 20 In-App Purchases on their App Store product page simultaneously, in all countries or regions, for devices running iOS 11 or later. This gives you the flexibility to change the In-App Purchases that appear on your product page at any time based on your business needs — for example, such as launching a limited-time price promotion or offering exclusive content. Promoting In-App Purchases can also encourage downloads of your app. When a user doesn’t have your app installed but wants to buy a promoted In-App Purchases, they’ll receive a prompt to download the app first. Once the app is downloaded, the transaction will continue in the app.</p>
+<p>Your app must support the PurchaseIntent API in order for the App Store to display your promoted product pages. All In-App Purchases and metadata must be approved by App Review.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/promoted_purchases">Learn how to manage promoted in-app
+purchases and subscriptions with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role
+permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="add-an-image">
+<h3>Add an Image</h3>
+<div>
+<p>You must add an <a href="https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information#add-or-remove-an-imag">image</a> in order to promote an In-App Purchase.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions, then scroll down to Non-Renewing Subscriptions and click Manage).</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to promote.</p>
+</li>
+<li>
+<p>Scroll down to the App Store Image section.</p>
+</li>
+<li>
+<p>To add an image, click Choose File and upload the image.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="promote-an-in-app-purchase">
+<h3>Promote an In-App Purchase</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click In-App Purchases. (For non-renewing subscriptions, click Subscriptions, and then scroll down to Non-Renewing Subscriptions and click Manage).</p>
+</li>
+<li>
+<p>Click the In-App Purchase you want to promote.</p>
+</li>
+<li>
+<p>Scroll down to the App Store Image section.</p>
+</li>
+<li>
+<p>Click Promote on the App Store.</p>
+</li>
+<li>
+<p>In the pop-up window, choose which App Store users will see your promotion. Changes to these settings only impact the In-App Purchase you're editing:</p>
+<ul>
+<li>
+<p><b>Show this promotion to all App Store users, even those who don’t have the app installed. </b>  If you select this option, but haven't implemented the <a href="https://developer.apple.com/documentation/storekit/purchaseintent">PurchaseIntent API</a>, your In-App Purchase won't be visible on the App Store.</p>
+</li>
+<li>
+<p><b>Only show this promotion to users who meet your conditions in the app. </b> You can customize the promoted In-App Purchase a customer views on a specific device by using the <a href="https://developer.apple.com/documentation/storekit/product/promotioninfo">Product.PromotionInfo</a> API.  For example, you can hide an item that a customer has already purchased on that device, or show the most relevant levels in a game based on their gameplay. By default, your promoted In-App Purchases show on all devices, even those without the app installed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Find the In-App Purchase you wish you promote, and then click the checkbox under Promoted. You may also click the reordering control on the left of the In-App Purchase name and drag it to a new position to change its order on your App Store Product page.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+<p>Keep in mind that if an app isn't ready for sale or the In-App Purchase is pending approval, it may not be available on your App Store product page even when it's available for App Store Promotion. Allow up to 24 hours for changes to reflect on your App Store product page.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/storekit/#//apple_ref/doc/uid/TP40008267-CH11-SW1">StoreKit</a>
+</div>
+</link></article> </div>

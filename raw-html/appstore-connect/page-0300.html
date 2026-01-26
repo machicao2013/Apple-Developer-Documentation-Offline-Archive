@@ -1,0 +1,163 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Offer In-App Events</span>
+<article _v="6.0">
+<h1 class="platforms-header-spacing">Offer In-App Events</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+</div>
+<p>You can publish up to 10 In-App Events on the App Store and Apple Games at a time. Additionally, you can have up to 15 approved In-App Events per app in App Store Connect at a time.</p>
+<p>In-app events must be approved before they are visible to users. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-event">Learn how to submit an In-App Event.</a></p>
+<p><a href="/app-store/in-app-events/">Learn how to create a high-quality event.</a></p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/app_events_and_metadata">Learn how to create In-App Event using the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-an-in-app-event">
+<h3>Create an In-App Events</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the left sidebar, click In-App Events.</p>
+</li>
+<li>
+<p>Click Create In-App Event or click the add button (+).</p>
+</li>
+<li>
+<p>Enter a reference name. This name identifies your event in App Store Connect and is not visible on the App Store and Apple Games. Each name must be unique and can be up to 64 characters long.</p>
+</li>
+<li>
+<p>Click Create.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="enter-event-information">
+<h3>Enter event information</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the left sidebar, click In-App Events.</p>
+</li>
+<li>
+<p>Select your event from the list.</p>
+</li>
+<li>
+<p>Enter an event name to appear on the App Store and Apple Games. It can be up to 30 characters.</p>
+</li>
+<li>
+<p>Enter a short description to appear on your event card in places like the Today tab and Search on the App Store and Apple Games. It can be up to 50 characters.</p>
+</li>
+<li>
+<p>Enter a long description that will appear on your event details page when users tap your event card. It can be up to 120 characters.</p>
+</li>
+<li>
+<p>Upload media for your event card and event details page. <a href="/help/app-store-connect/reference/in-app-events/in-app-event-media-and-audio-specifications">Learn about the In-App Event media specifications.</a></p>
+</li>
+<li>
+<p>Choose a badge that best fits the type of event you’re offering to display above the title on the event card and event details page.</p>
+</li>
+<li>
+<p>Add localizations for your event by choosing the primary language to display the language pop-up menu. <a href="/help/app-store-connect/manage-app-information/localize-app-information">Learn about localizing app information.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="select-country-or-region-availability">
+<h3>Select country or region availability</h3>
+<div>
+<p>The Country or Region Availability setting controls where your event appears on the App Store and Apple Games. By default, your event is set to appear on all storefronts. However, its visibility is determined by your app’s availability in those regions. You can select the date and time your event first becomes discoverable to users, as well as the date and time the event starts and ends.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the left sidebar, click In-App Events.</p>
+</li>
+<li>
+<p>Select your event from the list.</p>
+</li>
+<li>
+<p>Scroll down to the Country or Region Availability section.</p>
+</li>
+<li>
+<p>Select start and end dates and times. You can choose any date in the future for the start date. The end date can be a maximum of 31 days from the start date. Events must be at least 15 minutes long.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can have up to 10 events with overlapping start dates and times, either approved or in draft status, at the same time.</p>
+</div>
+</li>
+<li>
+<p>Select a publish start date and time. The publish date is when your event will become discoverable on the App Store and Apple Games and can be a maximum of 14 days in advance of the start date.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="customize-event-start-dates-and-times">
+<h3>Customize event start dates and times</h3>
+<div>
+<p>The Customize Dates and Times option allows you to select different start times in one or more countries or regions on the App Store and Apple Games. If you choose to start your event on different days in different locations, all of your event start dates must be within 48 hours of each other.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the left sidebar, click In-App Events.</p>
+</li>
+<li>
+<p>Select your event from the list.</p>
+</li>
+<li>
+<p>In the Country or Region Availability section, click Customize Dates and Times.</p>
+</li>
+<li>
+<p>Select the locations you want to edit, and click Next.</p>
+</li>
+<li>
+<p>Enter the start date and time. Use the Time Zone toggle on the top right to choose a timezone.</p>
+</li>
+<li>
+<p>Click Done.</p>
+</li>
+<li>
+<p>To customize more regions, click the add button (+) next to Customize Dates and Times.</p>
+</li>
+<li>
+<p>Select the locations you want to edit, and click Next.</p>
+</li>
+<li>
+<p>Enter the start date and time.</p>
+</li>
+<li>
+<p>Click Done.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-additional-information">
+<h3>Add additional information</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>Provide an event deep link. This link takes users who tap Open on the In-App Event card or details page to the event content within your app. This can be a universal link (recommended for security) or custom URL. Avoid using URL shorteners and other services that add unnecessary redirects. Test the deep link to make sure it directs to the proper destination within your app — for example, you can paste your URL into the Notes app and tap it. <a href="https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content">Learn about configuring universal links</a>.</p>
+</li>
+<li>
+<p>Select the general purpose of your event to help make sure your event reaches the most relevant users on the App Store and Apple Games.</p>
+</li>
+<li>
+<p>Select the priority for your event. Events appear chronologically on the product page based on start time, with the soonest start time displaying first. If you designate an event as High Priority, it will appear ahead of Normal Priority events.</p>
+</li>
+<li>
+<p>Indicate if an In-App Purchase is required to participate in the event, as this information is shown on your event details page. For subscription apps, you only need to indicate that an In-App Purchase is required when there’s an additional cost for the event specifically — for example, a pay-per-view event in a subscription app that requires an In-App Purchase in addition to the standard subscription.</p>
+</li>
+<li>
+<p>Choose your event’s primary language. This will be the default language that displays to users if your event isn’t localized for their device’s language.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/in-app-events/in-app-event-badges">In-App Event badges</a>
+<a href="/help/app-store-connect/reference/in-app-events/in-app-event-media-and-audio-specifications">In-App Event media and audio specifications</a>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-event">Submit an In-App Event</a>
+</div>
+</link></article> </div>

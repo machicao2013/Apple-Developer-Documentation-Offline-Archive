@@ -1,0 +1,100 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">View App Analytics</span>
+<article _v="6.0">
+<h1>Manage campaigns</h1>
+<p>App Analytics enables you to generate campaign links for use in your marketing materials. When a user clicks an ad with your campaign link, they’re redirected to your app's product page on the App Store. Generating a campaign link also provides you with a campaign token and a provider token, which can be used in future campaigns.</p>
+<p><b>Required role: </b>Account Holder, Admin, <span class="force-glossary">Finance</span>, or <span class="force-glossary">Sales</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-campaign-link">
+<h3>Create a campaign link</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In App Analytics, select the app you want to view app.</p>
+</li>
+<li>
+<p>In the menu bar, click Acquisition.</p>
+</li>
+<li>
+<p>Choose Campaigns.</p>
+</li>
+<li>
+<p>Click the add button (+) next to Campaigns.</p>
+</li>
+<li>
+<p>In the menu, under App, select your app from the list.</p>
+</li>
+<li>
+<p>In the Campaign field, enter a campaign name. Your campaign name is your campaign token. You can use up to 30 alphanumeric characters and spaces, and the following punctuation marks and characters:</p>
+<p> [ ] / \ - ~ + = &lt;&gt; : ; , . _ ‘ “ * &amp; $ % # @ ? ! | { } ( )</p>
+<p>A space can’t be used as the first or last character in the campaign token.</p>
+</li>
+<li>
+<p>Copy the campaign link to use in your marketing materials.</p>
+<p>Example: <code> https://apps.apple.com/app/apple-store/id123456789?<b>pt=123456&amp;ct=test1234</b>&amp;mt=8</code></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="use-your-campaign-and-provider-tokens">
+<h3>Use your campaign and provider tokens</h3>
+<div>
+<p>When you generate a campaign link, you also receive tokens that you can place in your other campaigns.</p>
+<ul>
+<li>
+<p>Media type token (identified by the mt= parameter)</p>
+</li>
+<li>
+<p>Campaign token (identified by the ct= parameter)</p>
+</li>
+<li>
+<p>Provider token (identified with the pt= parameter)</p>
+</li>
+</ul>
+<div class="Subhead">
+<h3 class="Name">StoreKit</h3>
+<p>To track advertising and campaigns in apps that use the <a href="https://developer.apple.com/documentation/storekit">StoreKit framework</a> to load your <a href="https://developer.apple.com/documentation/storekit/skstoreproductviewcontroller/1620632-loadproduct">product page</a>, add your campaign token and provider token using <a href="https://developer.apple.com/documentation/storekit/skstoreproductparametercampaigntoken">SKStoreProductParameterCampaignToken</a> and <a href="https://developer.apple.com/documentation/storekit/skstoreproductparameterprovidertoken">SKStoreProductParameterProviderToken</a>.</p>
+</div>
+<div class="Subhead no-margin-bottom">
+<h3 class="Name">App Store for iMessage</h3>
+<p>To direct users to your app's product page on the App Store for iMessage, add the <code>&amp;app=messages</code> parameter to your campaign link. iMessage and sticker pack extensions share their product page with the associated iOS app.</p>
+<p>Example: <code>https://apps.apple.com/us/app/apple-store/id439104108?pt=8668&amp;ct=test123&amp;mt=8<b>&amp;app=messages</b></code></p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="view-campaign-performance">
+<h3>View campaign performance</h3>
+<div>
+<p>In App Analytics, campaigns appear only after a minimum of 24 hours since their launch and after receiving at least five first-time downloads. Ensure your campaign includes both a provider token and a campaign token.</p>
+<p>When a user downloads your app for the first time within 24 hours of using your campaign link or campaign token, they’re counted as a First-Time Download. If a user clicks more than one campaign link within a given timeframe, only the most recent link receives credit for subsequent sales.</p>
+<ol class="compound-item-list">
+<li>
+<p>In App Analytics, select the app you want to view.</p>
+</li>
+<li>
+<p>Click Acquisition.</p>
+</li>
+<li>
+<p>In the menu, on the left, choose Campaigns.</p>
+</li>
+<li>
+<p>In the date picker, on the top-right, choose a date range. You can view a predefined period (for example, Last 7 Days) or enter a custom range. By default, the date picker will display the last 30 days.</p>
+</li>
+<li>
+<p>On the top right, choose an App Purchase Date.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To export the data in the list, click the download icon on the top right. Keep in mind that this list includes only a limited number of your top referrers. Data will be exported as a CSV file.</p>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-app-analytics/view-app-metrics">View app metrics</a>
+</div>
+</link></article> </div>

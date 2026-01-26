@@ -1,0 +1,234 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">View App Analytics</span>
+<article _v="6.0">
+<h1>View acquisition sources</h1>
+<p>App Analytics lets you view data based on where users discover your app or App Clip, so you can determine which sources are most successful at helping you acquire users.</p>
+<p>When a user taps a link from an app, website, or App Clip card that directs them to your App Store product page, the immediate product page view is attributed to the referring app, website, or App Clip. If the user subsequently downloads the app for the first time, the resulting First-Time Download is attributed to the original source.</p>
+<p>All sales and <span class="force-glossary">usage data</span>  for your app or App Clip are attributed to the initial download source recorded when a user first taps to download the app or launch the App Clip. This includes data from redownloads, downloads to multiple devices sharing the same Apple Account, subscription renewals, and Family Sharing downloads.</p>
+<p><b>Required role: </b>Account Holder, Admin, <span class="force-glossary">Finance</span>, or <span class="force-glossary">Sales</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-app-metrics-by-acquisition-source">
+<h3>View app metrics by acquisition source</h3>
+<div>
+<p>Viewing your app metrics by source can help you determine which source types are most successful at driving sales and usage.</p>
+<p>Source traffic for apps is divided into the following categories:</p>
+<div class="table-wrapper">
+<table aria-label="App source traffic" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Source</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Definition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>App Store Search</p>
+</td>
+<td colspan="8">
+<p>Users viewed your app or downloaded it from Search on the App Store. Includes views and downloads from ads that appear in App Store search results.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Store Browse</p>
+</td>
+<td colspan="8">
+<p>Users viewed your app or tapped to download it while browsing the App Store (for example, in the Today, Games, or Apps sections).</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Referrer</p>
+</td>
+<td colspan="8">
+<p>Users tapped a link in an app that brought them to your App Store product page. Includes apps using the StoreKit API to load your product page. Includes Apple apps, such as Messages, except Safari.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Web Referrer</p>
+</td>
+<td colspan="8">
+<p>Users tapped a link from a website that brought them to your App Store product page. If a chain of redirects in Safari leads to your App Store product page, the referring website will be the last URL in the chain.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>For iOS apps, taps from websites in non-Safari web browsers, such as Chrome, are attributed as that web browser app in App Referrers. For macOS apps, taps from non-Safari web browsers are attributed to Web Referrers.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Clip</p>
+</td>
+<td colspan="8">
+<p>Users tapped a link in your App Clip that brought them to your App Store product page. If the user then downloaded your app, the resulting Download is attributed to your App Clip as the source.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Institutional Purchases</p>
+</td>
+<td colspan="8">
+<p>Users downloaded your app from <a href="https://support.apple.com/guide/apple-business-manager/">Apple Business Manager</a> or <a href="https://support.apple.com/guide/apple-school-manager/">Apple School Manager</a>.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Unavailable</p>
+</td>
+<td colspan="8">
+<p>Sales and usage data display sources as Unavailable if users downloaded your app before App Analytics started tracking source attribution on April 15, 2017. As users download your app for the first time, more complete source data will display. If a user downloads your app using an App Store gift card, promotional code, or Mobile Device Management software, the source type will also show as Unavailable.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In App Analytics, select the app you want to view.</p>
+</li>
+<li>
+<p>Click Acquisition.</p>
+</li>
+<li>
+<p>The Sources page displays all source data for Product Page Views by default. Use the metric picker on the right side to select a metric and view data.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-app-clip-metrics-by-invocation-source">
+<h3>View App Clip metrics by invocation source</h3>
+<div>
+<p>Viewing your App Clip metrics by invocation source can help you determine which sources are most successful at driving app downloads and engaging users.</p>
+<p>Metrics for App Clips, such as App Clip Card Views, App Clip Installations, App Clip Sessions, and App Clip Crashes, are attributed to the initial source that presented the App Clip card to the user. These metrics are only available from users who have agreed to share their diagnostics and usage information with app developers.</p>
+<p>Default App Clip experience invocations include Messages and Web Referrer sources. <a href="https://developer.apple.com/documentation/app_clips/configuring_your_app_clip_s_launch_experience">Learn more.</a></p>
+<p>The following invocation sources are available in App Analytics:</p>
+<div class="table-wrapper">
+<table aria-label="Invocation sources" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Source</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Definition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Siri</p>
+</td>
+<td colspan="8">
+<p>Siri suggested your App Clip in response to a user, they tapped the suggestion, and your App Clip card was displayed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>NFC Tags</p>
+</td>
+<td colspan="8">
+<p>A user held their iPhone near an NFC tag that you placed at a specific location and your App Clip card was displayed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Maps</p>
+</td>
+<td colspan="8">
+<p>A user tapped on a place card in Apple Maps, followed the link to your App Clip, and your App Clip card was displayed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Messages</p>
+</td>
+<td colspan="8">
+<p>Your App Clip card was displayed after a user tapped a link they received through the Messages app.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>QR Code</p>
+</td>
+<td colspan="8">
+<p>A user scanned a QR code with their device and your App Clip card was displayed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Clip Code</p>
+</td>
+<td colspan="8">
+<p>A user scanned an App Clip Code with their device and your App Clip card was displayed.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Location Based</p>
+</td>
+<td colspan="8">
+<p>Your App Clip card was displayed due to the user’s location settings.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Referrer</p>
+</td>
+<td colspan="8">
+<p>Your App Clip card was displayed after a user tapped on a link in another app, such as the Notes app or Facebook. Safari, Maps, and Messages aren't included in app referrers.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Web Referrer</p>
+</td>
+<td colspan="8">
+<p>A user tapped on an invocation URL or Smart App Banner in Safari which invoked the App Clip Card. A detailed breakdown of web referrers is not available.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In App Analytics, select the app you want to view.</p>
+</li>
+<li>
+<p>In the menu bar, click Metrics. By default, the Metrics page displays Product Page Views when you open it.</p>
+</li>
+<li>
+<p>To change the metric displayed, click the metric selector on the top left and choose from the complete list of App Clip metrics. These will only display if your app has a corresponding App Clip.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>How are the metrics driven by Apple Ads (such as app downloads, product page views, and impressions) attributed in App Analytics?</h3>
+<p>When a user searches for your app using keywords in the Search tab of the App Store and your search results ad appears in the results, the metrics are included in Search totals. If a user doesn’t enter any keywords in Search, and your search results ad appears on the Search page by default, the metrics  are included in Browse totals.</p>
+<p>For a guided walkthrough of Apple Ads reporting, check out the “Maximize campaign results with insights” lesson in <a href="https://ads.apple.com/app-store/certification">Apple Ads Certification</a>.</p>
+<h3>Why is there a spike in downloads attributed to Institutional Purchases in my App Analytics data?</h3>
+<p>When your app is <a href="/help/app-store-connect/manage-your-apps-availability/set-distribution-methods">public</a>, it'll be publicly available on the App Store in the countries or regions you selected and available to anyone for volume purchase through Apple Business Manager or Apple School Manager. Volume purchases generally result in large spikes of downloads because content is purchased in bulk and directly assigned to devices or accounts within a business or educational institution.</p>
+<p>Review the <a href="/help/app-store-connect/reference/reporting/summary-sales-report">Promo Code field in the Sales and Trends Summary Sales Report</a> to confirm if a spike in downloads is due to a volume purchase for business transaction through Apple Business Manager or volume purchase for education transaction through Apple School Manager. Learn more about purchasing content in <a href="https://support.apple.com/guide/apple-business-manager/intro-to-buying-content-axme19b23f7f/1/web/1">Apple Business Manager</a> and <a href="https://support.apple.com/guide/apple-school-manager/intro-to-buying-content-axme19b23f7f/web">Apple School Manager</a>.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/videos/play/tech-talks/110365/">Watch “Measure and improve acquisition with App Analytics”</a>
+<a href="/help/app-store-connect/view-app-analytics/view-app-metrics">View app metrics</a>
+<a href="/help/app-store-connect/view-app-analytics/view-app-clip-metrics">View App Clip metrics</a>
+<a href="/help/app-store-connect/offer-app-clip-experiences/overview-of-app-clips">Overview of App Clips</a>
+</div>
+</link></article> </div>

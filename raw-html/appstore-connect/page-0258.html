@@ -1,0 +1,246 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage your team</span>
+<article _v="4.0">
+<h1>Manage webhooks</h1>
+<p>You can optionally configure webhooks in App Store Connect to receive automatic notifications to your web server when there are updates or changes to your apps, such as: </p>
+<ul class="compound-item-list">
+<li>
+<p>The <a href="/help/app-store-connect/reference/app-uploads/build-upload-statuses">status of a build upload</a> changes.</p>
+</li>
+<li>
+<p>The <a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">status of a beta build</a> changes.</p>
+</li>
+<li>
+<p>The <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses#app-statuses">status of an app version</a> changes.</p>
+</li>
+<li>
+<p>The <a href="/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-statuses">status of an Apple-hosted asset pack version</a> changes.</p>
+</li>
+<li>
+<p>New <a href="/help/app-store-connect/test-a-beta-version/view-tester-feedback">TestFlight feedback</a> is submitted by a tester.</p>
+</li>
+</ul>
+<p>If you’re the developer of an <a href="https://developer.apple.com/documentation/marketplacekit/creating-an-alternative-app-marketplace">alternative app marketplace</a>, you can also configure webhooks in App Store Connect to receive automatic notifications to your web server when there are updates or changes to the apps that your marketplace distributes. <a href="https://developer.apple.com/documentation/appstoreconnectapi/app-store-connect-api-4-2-release-notes">Learn about recent changes to alternative distribution notifications.</a></p>
+<p>To receive these notifications, implement an endpoint on your web server, or <i>webhook</i>.</p>
+<p>A webhook can only apply to one app, and you can create up to ten webhooks per app.</p>
+<p>Learn more about <a href="https://developer.apple.com/documentation/appstoreconnectapi/webhook-events">webhook event types</a> and <a href="https://developer.apple.com/documentation/appstoreconnectapi/configuring-webhook-notifications">how to manage webhooks using the App Store Connect API</a>.</p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-webhook">
+<h3>Create a webhook</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>Next to Webhooks, click the add button (+).</p>
+</li>
+<figure><img alt="Screenshot of the Users and Access section which displays a table with columns for Name, Payload URL, Event Types, and App. Two webhooks are listed: App Statuses linked to Exercise App and New Screenshot Feedback linked to Backyard Birds. A plus button is visible to add new webhooks." class="help-screens-retro" src="/help/app-store-connect/manage-your-team/manage-webhooks/images/add-webhook_2x.png"/></figure>
+<li>
+<p>Enter a Name for your webhook.</p>
+</li>
+<figure><img alt="Screenshot of a form that includes fields labeled Name, Payload URL, Secret, and App with dropdown menu. Includes event trigger options." class="help-screens-retro" src="/help/app-store-connect/manage-your-team/manage-webhooks/images/add-webhook-2_2x.png"/></figure>
+<li>
+<p>Enter the Payload URL. This is the URL where you want to receive notifications.</p>
+</li>
+<li>
+<p>Enter a Secret. The string of text you define here is used by your server to verify that a webhook delivery is from App Store Connect and authentic.</p>
+</li>
+<li>
+<p>Select the app you want to receive notifications for.</p>
+</li>
+<li>
+<p>Select at least one event trigger that you want to receive notifications for.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Alternative app marketplace event triggers are only visible if you select a marketplace app.</p>
+</div>
+</li>
+<li>
+<p>Click Add.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="test-webhook-delivery">
+<h3>Test webhook delivery</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to test.</p>
+</li>
+<li>
+<p>In the top right corner of the page, click Test.</p>
+</li>
+<p>A test webhook delivery will be sent to your server. It will appear under the Recent Deliveries table with the Ping event trigger.</p>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="manage-webhook-details">
+<h3>Manage webhook details</h3>
+<div class="Task">
+<p>You can edit the name, secret, payload URL, and event triggers associated with a webhook at any time. You can’t change the app associated with an existing webhook. Instead, you must create a new webhook for that app.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to modify.</p>
+</li>
+<li>
+<p>Make your desired changes, then click Save.</p>
+</li>
+<p>Changes will go into effect immediately.</p>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="turn-off-a-webhook">
+<h3>Turn off a webhook</h3>
+<div class="Task">
+<p>Turn off a webhook to temporarily stop notifications from being delivered. When you’re ready, follow the same steps to turn it on again.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to modify.</p>
+</li>
+<li>
+<p>Click Turn Off Webhook. If you're re-enabling a webhook, click Turn On Webhook.</p>
+</li>
+<li>
+<p>Click Confirm.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-webhook">
+<h3>Delete a webhook</h3>
+<div class="Task">
+<p>Delete a webhook to permanently remove it from App Store Connect. This action cannot be reversed.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to modify.</p>
+</li>
+<li>
+<p>Click Delete Webhook.</p>
+</li>
+<li>
+<p>Click Confirm.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-recent-webhook-deliveries">
+<h3>View recent webhook deliveries</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to view deliveries for.</p>
+</li>
+<li>
+<p>Below Recent Deliveries, observe the event ID, event type, created date, and status for up to 20 of the most recent deliveries over the last week.</p>
+</li>
+<p>You also have the option to refresh the list of recent deliveries using the refresh icon at the top right of the table.</p>
+<div class="Subhead no-margin-bottom">
+<p>The possible webhook delivery statuses are:</p>
+<div class="table-wrapper">
+<table aria-label="Possible webhook delivery statuses" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Success</p>
+</td>
+<td colspan="8">
+<p>The webhook was successfully delivered to your server.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Pending</p>
+</td>
+<td colspan="8">
+<p>The webhook is in the process of being delivered to your server.	</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Failed</p>
+</td>
+<td colspan="8">
+<p>The webhook failed to deliver to your server. You can resend the delivery to try again.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<li>
+<p>Click the event ID to view additional details, including the Event ID, Request Payload, and Response Payload (when available).</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="resend-a-webhook-delivery">
+<h3>Resend a webhook delivery</h3>
+<div class="Task">
+<p>You have the option to resend webhook deliveries with the Failed or Success status. Test deliveries can’t be resent.</p>
+<p>Resending a webhook delivery will create a new delivery record with the same event ID. After you’ve resent a delivery, you won’t be able to resend it again. However, you can resend the newly created delivery record.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click Webhooks.</p>
+</li>
+<li>
+<p>In the table on the right, click the webhook you want to resend a delivery for.</p>
+</li>
+<li>
+<p>Below Recent Deliveries, locate the delivery in the Failed status and click Resend.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

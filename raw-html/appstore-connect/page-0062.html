@@ -1,0 +1,172 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Create custom product pages</span>
+<article _v="10.0">
+<h1>Configure multiple product page versions</h1>
+<p>Create up to 70 custom product pages per app on the App Store to highlight features or specific content. Each custom product page can include different screenshots, previews, promotional text, and keywords, and is localizable and shareable through a unique URL.</p>
+<p>Custom product pages must be approved before they are visible to users. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-a-custom-product-page">Learn how to submit a custom product page.</a></p>
+<p>Custom product pages are available on the App Store on iOS 15 and iPadOS 15, or later. Custom product pages are only visible to people if they follow a custom product page link, or if you choose to make your custom product page visible in App Store search results by adding keywords. Otherwise, your app’s default product page displays to all customers on the App Store.</p>
+<p>In App Analytics, view App Store metrics such as impressions, downloads, and <span class="force-glossary">conversion rate</span> for each page. The metrics are available after a custom product page receives at least five first-time downloads. <a href="/help/app-store-connect/view-app-analytics/view-app-metrics">Learn more about data in App Analytics.</a></p>
+<p>You can optionally add an app deep link to your custom product page. When users running a minimum of iOS 18 or iPadOS 18 click Open on your custom product page, the app deep link directs them to specific content in your app.</p>
+<ul>
+<li>
+<p>An app deep link can be a universal link or custom URL. Use universal links for app deep links to provide users with a secure and integrated mobile experience. <a href="https://developer.apple.com/documentation/xcode/allowing-apps-and-websites-to-link-to-your-content">Learn about configuring universal links.</a></p>
+</li>
+<li>
+<p>Avoid using URL shorteners and other services that add unnecessary redirects.</p>
+</li>
+<li>
+<p>Test the deep link to ensure it directs to the proper destination within your app — for example, you can paste your URL into the Notes app and tap it.</p>
+</li>
+<li>
+<p>Your app deep link must be approved before it'll function for users. Submit your custom product page for review after you add a deep link in App Store Connect.</p>
+</li>
+</ul>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/custom_product_pages_and_localizations">Learn how to create and manage a custom product page using the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-custom-product-page">
+<h3>Create a custom product page</h3>
+<div>
+<p>You can create a custom product page if your app has the Ready for Distribution status in at least one country or region.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the left sidebar, click Custom Product Pages.</p>
+</li>
+<li>
+<p>Click Create Custom Product Page.</p>
+<p>If there’s an existing custom product page, click add button (+).</p>
+</li>
+<li>
+<p>Enter a reference name to help you identify the page in App Analytics.</p>
+</li>
+<li>
+<p>Choose whether to start with a blank page or make changes to an existing App Store product page. If you choose to start from an existing page, you can choose a version that’s in the Ready for Distribution state or the Prepare for Submission state and it’ll copy the product page for your primary localization.</p>
+</li>
+<li>
+<p>Click Create. Your custom product page’s unique URL is automatically generated and displays on this page.</p>
+</li>
+<li>
+<p>Modify or add additional screenshots, app previews, promotional text, or keywords.</p>
+<p>You can optionally add an app deep link to direct users running a minimum of iOS 18 or iPadOS 18 to specific content in your app.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="enable-keywords-for-a-custom-product-page">
+<h3>Enable keywords for a custom product page</h3>
+<div>
+<p>You can assign keywords from your latest approved app version to a custom product page. This directs customers to your custom product page when they search those keywords, rather than your default product page. You can assign keywords in App Store Connect at any time, but the custom product page is searchable only after it’s approved and set to visible.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the left sidebar, click Custom Product Pages.</p>
+</li>
+<li>
+<p>Click the custom product page you want to assign keywords to.</p>
+</li>
+<li>
+<p>In the Keywords section, select the keywords for this custom product page.</p>
+<p>Repeat this as necessary for each localization.</p>
+</li>
+<li>
+<p>Click Publish.</p>
+</li>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To ensure the most relevant custom product page appears, select a unique set of keywords for each page.</p>
+</div>
+<p>After assigning keywords to your custom product page, you can disable them individually.</p>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-a-custom-product-page">
+<h3>Edit a custom product page</h3>
+<div>
+<p>An approved custom product page can be edited and submitted for review without affecting its unique URL. Changes are published automatically upon approval by App Review.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the left sidebar, click Custom Product Pages.</p>
+</li>
+<li>
+<p>Click the page you want to edit.</p>
+</li>
+<li>
+<p>Click Edit.</p>
+</li>
+<li>
+<p>Review the prompt and click Edit again to proceed. This creates a new draft of your custom product page in the Ready to Submit state.</p>
+</li>
+<li>
+<p>Make your edits and click Add for Review.</p>
+<p>The submission confirmation screen displays the app version that’ll be associated with the custom product page, and the items that’ll be reviewed. You may choose to add other items to the submission.</p>
+</li>
+<li>
+<p>Click Submit to App Review.</p>
+<p>Once the edited page is approved, it will replace the current page on the App Store.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="disable-a-custom-product-page">
+<h3>Disable a custom product page</h3>
+<div>
+<p>You can disable a custom product page at any time. If someone selects a URL for a disabled custom product page, they’re automatically redirected to your default product page.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the left sidebar, click Custom Product Pages.</p>
+</li>
+<li>
+<p>Click the page you want to disable.</p>
+</li>
+<li>
+<p>Under the Product Page URL, click Disable Link.</p>
+<p>For a disabled link, Enable Link will display instead.</p>
+</li>
+<li>
+<p>Click Disable.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-custom-product-page">
+<h3>Delete a custom product page</h3>
+<div>
+<p>You can delete a custom product page at any time. If someone selects a URL for a deleted custom product page, they’re automatically redirected to your default product page. This action is permanent.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the left sidebar, click Custom Product Pages.</p>
+</li>
+<li>
+<p>Click the page you want to delete.</p>
+</li>
+<li>
+<p>Scroll to the bottom and click Delete This Product Page.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<div class="LinkUniversal"><b>Related</b>
+<a href="/app-store/custom-product-pages/">Custom product pages</a>
+<a href="https://ads.apple.com/app-store/help/ad-creative/0077-create-search-results-ad-variations">Create search results ad variations</a>
+<a href="/videos/play/tech-talks/10886/">Watch "Get started with custom product pages"</a>
+<a href="/videos/play/tech-talks/110361/">Watch "Make the most of custom product pages"</a>
+<a href="/videos/play/tech-talks/110358/?time=21">Watch "Get started with app discovery and marketing"</a>
+</div>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

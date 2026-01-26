@@ -1,0 +1,190 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">View Sales and Trends</span>
+<article _v="6.0">
+<h1>View subscription data</h1>
+<p>On the Subscription Summary, Retention, Event, and State pages, you can view sales and activity for your auto-renewable subscriptions.</p>
+<p><b>Time Zone:</b> Data is shown in Pacific Time (PT). A day includes transactions that happened from 12:00 a.m. to 11:59 p.m. PT.</p>
+<p><b>Required role: </b>Admin, <span class="force-glossary">Finance</span>, or <span class="force-glossary">Sales</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-subscription-data-for-a-selected-period">
+<h3>View subscription data for a selected period</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side, choose Subscriptions Summary.</p>
+</li>
+<li>
+<p>On the top right, choose a date.</p>
+<p>Data in the graphs will change based on the chosen end date. For example, if you select an end date of April 26, the number of Active Subscriptions on April 26 and a graph showing daily Active Subscriptions for the 30 days prior to April 26 will display.</p>
+</li>
+<li>
+<p>Click Add Filters, and then choose a dimension.</p>
+<p>You can filter by dimensions such as app, subscription, or territory.</p>
+</li>
+<li>
+<p>Navigate to the graph that you want to view.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-retention-and-conversion-rates">
+<h3>View retention and conversion rates</h3>
+<div>
+<p>You can view monthly retention and introductory price conversion rates for the twelve months preceding a selected end date. By default, the rate across all of your subscription offerings (for example, 1-month and 1-year subscriptions) will display, unless you filter by a particular subscription.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side, select Subscriptions Summary.</p>
+</li>
+<li>
+<p>Scroll down to Retention and Conversion Rates.</p>
+<figure><img "conversion="" "retention="" alt="Screenshot of the “Retention and Conversion Rates” section has three tabs: “Retention Rate," and="" by="" class="help-screens-retro" corresponding="" data."="" displaying="" introductory="" is="" offer".="" offer,"="" promotional="" rate="" rate"="" selected,="" src="/help/app-store-connect/view-sales-and-trends/view-subscription-data/images/ViewRetention-and-Conversion-Rates-4_2x.png" tab="" the=""/></figure>
+</li>
+</ol>
+<p>Selecting Retention Rate metric displays the ratio of subscriptions renewed during a specified period to those eligible for renewal during the same timeframe. Upgrades, downgrades, and crossgrades don’t count as a subscription renewal.</p>
+<p>Selecting Conversion Rate by Introductory Offer or Conversion Rate by Promotional Offer shows the percentage of subscriptions that converted to the standard price at the end of the introductory or promotional period.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="view-active-subscriptions-by-proceeds-rate">
+<h3>View active subscriptions by proceeds rate</h3>
+<div>
+<p>For paid subscriptions that have been active for less than one year, you receive 70% of the subscription price, minus applicable taxes, or the Rate Before One Year. After a subscriber accumulates one year of paid service, you receive 85% of the subscription price, minus applicable taxes, or the Rate After One Year.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side, choose Subscriptions Summary.</p>
+</li>
+<li>
+<p>Scroll down to Active Subscriptions by Proceeds Rate.</p>
+</li>
+<li>
+<p>Hold the pointer over the graph to view the data by month.</p>
+</li>
+</ol>
+<p>Only subscriptions active on the last day of each month are counted.</p>
+<figure><img alt="The “Active Subscriptions by Proceeds Rate” section has the corresponding data displayed." class="help-screens-retro" src="/help/app-store-connect/view-sales-and-trends/view-subscription-data/images/View-Active-Subscriptions-By-Proceeds_2x.png"/></figure>
+</div>
+</accordion-panel>
+<accordion-panel id="view-subscription-events">
+<h3>View subscription events</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side under Subscriptions, choose Events.</p>
+</li>
+<li>
+<p>On the right side, click the date picker to choose a date range. The graph will update to show data for the selected period.</p>
+</li>
+<li>
+<p>Click Add Filters, and choose a dimension.</p>
+</li>
+</ol>
+<p>Subscription events are grouped into the following event types:</p>
+<ul>
+<li>
+<p><b>Activations:</b> the number of times your customers started a subscription for the first time. Includes standard price subscriptions and introductory offers.</p>
+</li>
+<li>
+<p><b>Cancellations:</b> the number of canceled subscriptions. Cancellations can occur when a subscriber turns off auto-renew, or when the App Store is unable to successfully bill a customer in billing retry for a renewal. In the case of a subscriber turning off auto-renew, the event is counted when the subscription expires at the end of the period. In the case of subscriptions in billing retry, the event is counted at the last billing attempt.</p>
+</li>
+<li>
+<p><b>Conversions to Standard Price:</b> the number of introductory or subscription offers that have renewed to a standard price subscription.</p>
+</li>
+<li>
+<p><b>Reactivations:</b> the number of previously canceled subscriptions that have re-reactivated to a subscription in the same group, including upgrades, downgrades, and crossgrades.</p>
+</li>
+<li>
+<p><b>Refunds:</b> the number of subscriptions refunded to customers. Includes full and partial refunds.</p>
+</li>
+<li>
+<p><b>Renewals:</b> the number of subscriptions that have renewed. Includes upgrades, downgrades, and crossgrades, as well as introductory or subscription offer renewals.</p>
+</li>
+<li>
+<p><b>Renewals from Billing Retry:</b> the number of subscriptions that have successfully renewed out of the billing retry state. Doesn’t include subscriptions that renewed during a 6 or 16 day Billing Grace Period window.</p>
+</li>
+<li>
+<p><b>Enter Billing Retry:</b> the number of subscriptions that have have not renewed due to a billing issue. When a subscription expires due to a billing issue, Apple will attempt to renew the subscription and collect payment for up to 60 days. Includes subscriptions that previously entered a 6 or 16 day Billing Grace Period but did not renew.</p>
+</li>
+<li>
+<p><b>Enter Billing Grace Period:</b> the number of subscriptions that have not renewed due to a billing issue, and have entered a 6 or 16 day Billing Grace Period window.</p>
+</li>
+<li>
+<p><b>Renewals from Billing Grace Period:</b> the number of subscriptions that successfully renewed from a 6 or 16 day Billing Grace Period window.</p>
+</li>
+</ul>
+<p><a href="/help/app-store-connect/reference/reporting/subscription-events">View a complete list of subscription events by type.</a></p>
+</div>
+</accordion-panel>
+<accordion-panel id="view-active-subscription-data">
+<h3>View active subscription data</h3>
+<div>
+<p>Active paid subscriptions are the total number of auto-renewable subscriptions that are currently active, including paid subscriptions with introductory pricing, paid subscription offers, excluding free trials and marketing opt-ins. A subscription is active during the period for which the customer has paid.</p>
+<p>You can also view your daily subscription units, which are the total number of subscription purchases, renewals, and reactivations (minus refunds) and the associated sales from those transactions. Free trials aren't included.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side, under Subscriptions, choose Summary.</p>
+</li>
+<li>
+<p>Your active subscriptions data will display at the top of the page.</p>
+</li>
+</ol>
+<figure><img alt="The “Active Paid Subscriptions” section has the corresponding data displayed." class="help-screens-retro" src="/help/app-store-connect/view-sales-and-trends/view-subscription-data/images/View-acitve-subscriptions-data_2x.png"/></figure>
+</div>
+</accordion-panel>
+<accordion-panel id="compare-retention-by-start-month">
+<h3>Compare retention by start month</h3>
+<div>
+<p>Subscription Start Month lets you compare the retention of subscriptions started in specific months.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Consecutive renewals will reset when a customer upgrades, downgrades, or crossgrades their subscription.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left, under Subscriptions, click Retention.</p>
+</li>
+<li>
+<p>Scroll down to Retention Trends.</p>
+</li>
+<li>
+<p>On the right, click Subscription Start Month to choose a month. The graph will update to show retention rate over consecutive renewal periods. By default, all subscription durations are included.</p>
+</li>
+<li>
+<p>Click Add Filters, then choose a dimension.</p>
+<p>You can filter by dimensions, for example, duration.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>How can I determine which prices my subscribers are paying?</h3>
+<p>The <a href="/help/app-store-connect/reference/reporting/subscription-report">Subscription Report</a> includes the number of active subscriptions and corresponding customer prices.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/reporting/sales-and-trends-metrics-and-dimensions">Sales and Trends metrics and dimensions</a>
+</div>
+</link></article> </div>

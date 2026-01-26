@@ -1,0 +1,60 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app information</span>
+<article _v="5.0">
+<h1>Overview of export compliance</h1>
+<p>If your app uses, accesses, contains, implements, or incorporates encryption, and you intend to upload, test, and distribute it, you need to determine your export compliance requirements in App Store Connect.</p>
+<p>Examples of apps requiring an export compliance determination include, but aren’t limited to, apps that use:</p>
+<ul>
+<li>
+<p>Standard encryption algorithms.</p>
+</li>
+<li>
+<p>Crypto functionality within Apple’s operating system.</p>
+</li>
+<li>
+<p>Proprietary or non-standard encryption algorithms. The US Government defines "non-standard cryptography" as any implementation of “cryptography” involving the incorporation or use of proprietary or unpublished cryptographic functionality, including encryption algorithms or protocols that have not been adopted or approved by a duly recognized international standards body (e.g., IEEE, IETF, ISO, ITU, ETSI, 3GPP, TIA, and GSMA) and haven’t otherwise been published.</p>
+</li>
+</ul>
+<p>Please note that it’s your responsibility to review the <a href="https://bis.doc.gov/index.php/policy-guidance/encryption">Export Administration Regulation</a> to determine whether your app's use of encryption requires a formal classification (Commodity Classification Automated Tracking System or CCATS) from BIS. you're responsible for all liabilities associated with misinterpretation of export regulations or claiming exemption inaccurately. To learn about encryption export controls, search for "encryption policy" on the US Department of Commerce  <a href="https://www.bis.doc.gov/" target="_blank">Bureau of Industry and Security (BIS)</a> website. The import and export of encryption apps distributed in France are also controlled by the French Government. The main items of control for France are Secure Storage, Secure Communications, and Security Anti-Virus applications. Exemptions include Banking and Medical applications. For more information about these French controls, visit the <a href="https://www.ssi.gouv.fr/" target="_blank">Agence nationale de la sécurité des systèmes d’information (ANSSI)</a> website.</p>
+<p>When you submit a new version of your app, you’ll need to answer questions in App Store Connect about your app's use of encryption. Follow the steps below before submitting your app to App Review to ensure that you’re submitting the right documentation and to bypass these questions if your app doesn’t use encryption.</p>
+<div class="Task">
+<div class="Subhead no-margin-top">
+<h2>Determine your export compliance requirements</h2>
+<p>App Store Connect provides a simple way for you to <a href="/help/app-store-connect/manage-app-information/determine-and-upload-app-encryption-documentation">determine your export compliance requirements</a> by presenting you with a set of questions about your app and where you plan to make it available. Based on your answers, complete the following steps:</p>
+<table aria-label="Determine your export compliance requirements" class="table-2-col" data-type="Custom">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Scenario</p>
+</th>
+<th colspan="4" scope="col">
+<p class="TableHead">Next Steps</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>No export compliance <span class="nowrap">documentation required</span></p>
+</td>
+<td colspan="4">
+<p><a href="https://developer.apple.com/documentation/security/complying_with_encryption_export_regulations">Update your app’s information property list (Info.plist) file in Xcode</a> so that you don’t need to answer encryption questions with each app submission.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Export compliance <span class="nowrap">documentation required</span></p>
+</td>
+<td colspan="4">
+<ul>
+<li>Use App Store Connect to <a href="/help/app-store-connect/manage-app-information/determine-and-upload-app-encryption-documentation">submit your app encryption documentation</a>.</li>
+<li>Once the documentation is approved, attach it to your <a href="/help/app-store-connect/test-a-beta-version/provide-export-compliance-information-for-beta-builds">beta build</a> or <a href="/help/app-store-connect/manage-builds/choose-a-build-to-submit">app version build</a>.</li>
+<li><a href="https://developer.apple.com/documentation/security/complying_with_encryption_export_regulations">Update your app’s information property list (Info.plist) file in Xcode</a> so that you don’t need to answer encryption questions with each app submission.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article> </div>

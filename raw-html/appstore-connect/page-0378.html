@@ -1,0 +1,116 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="2.0">
+<h1>Auto-renewable subscription information</h1>
+<div class="table-wrapper">
+<table aria-label="Auto-renewable subscription information" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Subscription Group</p>
+</td>
+<td colspan="8">
+<p>A set of subscription products with varying levels and durations. Users can subscribe to one subscription product per group at a time.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Subscription Group Reference Name</p>
+</td>
+<td colspan="8">
+<p>An internal name you choose for a subscription group. This name will only appear on App Store Connect and in Sales and Trends reports, and won’t be visible to users.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Subscription Group Display Name</p>
+</td>
+<td colspan="8">
+<p>A user-facing name you choose for a subscription group. This is the name that appears on the App Store, and it can be localized. Subscription group display names must not contain control characters (for example, null, new lines, carriage returns, escape, and other invisible characters), or markup language (for example, HTML tags, or Unicode characters, such as emoticons, diacritics, or special characters).</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App Name Display Options</p>
+</td>
+<td colspan="8">
+<p>A set of options that let you choose between using your app’s name or providing a custom name to display above the Subscription Group Display Name on the Manage Subscriptions page on user devices.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Auto-Renewable Subscription</p>
+</td>
+<td colspan="8">
+<p>A product that allows users to purchase dynamic content for a set period. This type of subscription renews automatically unless cancelled by the user. Subscription duration and price is configured in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Auto-Renewable Subscription Levels</p>
+</td>
+<td colspan="8">
+<p>A ranking system of subscriptions within a subscription group that determines the upgrade, downgrade, and crossgrade path available to subscribers. Levels make it possible to offer varying access (basic, premium) of the same service. If you offer only one subscription product in your app, the subscription defaults to a single level within the subscription group.</p>
+<p>If you have multiple subscription products, arrange them in order from the one that offers the most (level 1) to the one that offers the least. You can stack subscriptions with equal content but different durations and other similar variables at the same level. Each level can have multiple subscription products, allowing for multiple durations and prices for people to choose from. This lets them upgrade, downgrade, and crossgrade within the subscription group without impacting their days of paid service.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Upgrade</p>
+</td>
+<td colspan="8">
+<p>When someone switches to a subscription that you’ve ranked at a higher level. The customer’s prorated payment from lower level subscription is refunded to the original payment method. They’re charged for the higher level subscription, which goes into effect immediately. The date of upgrade is the renewal date for the higher level subscription.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Downgrade</p>
+</td>
+<td colspan="8">
+<p>When someone switches to a subscription that you’ve ranked at a lower level. They’re charged for the lower level subscription on their next renewal date.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Crossgrade</p>
+</td>
+<td colspan="8">
+<p>When someone switches between subscriptions that you’ve ranked at the same level. If the subscriptions are different durations, the crossgrade goes into effect on the customer’s next renewal date. If the subscriptions are the same duration, the customer’s prorated payment from the previous subscription is refunded to the original payment method. Then they’re charged for the new subscription, which goes into effect immediately. The date of cross grade is the renewal date for the new subscription.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Auto-Renewable Subscription Duration</p>
+</td>
+<td colspan="8">
+<p>The length of time before the subscription renews and the subscriber is charged. Possible durations are 1 week, 1 month, 2 months, 3 months, 6 months, and 1 year. The duration can’t be changed after you submit for review.</p>
+<p>Auto-renewable subscriptions renew on the same day as the calendar date of the original purchase. If a one month free trial starts on January 7, the trial ends on February 7. If a one-month duration starts on a date that doesn’t occur in the next month, the trial ends on the last day of the next month, and reverts to the original date the next time that date occurs. For example, if someone subscribes on January 30, the next renewal date is February 28 (or February 29 in a leap year), and then March 30.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Auto-Renewable Subscription Display Name</p>
+</td>
+<td colspan="8">
+<p>A user-facing name you choose for a subscription. This is the name that appears on the App Store, and it can be localized. Subscription display names must not contain control characters (for example, null, new lines, carriage returns, escape, and other invisible characters), or markup language (for example, HTML tags, or Unicode characters, such as emoticons, diacritics, or special characters).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-types">In-App Purchase types</a>
+<a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information">In-App Purchase information</a>
+</div>
+</article> </div>

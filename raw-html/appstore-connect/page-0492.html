@@ -1,0 +1,91 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="7.0">
+<h1>Testing subscriptions and In-App Purchases in TestFlight</h1>
+<developer-accordion>
+<accordion-panel id="subscription-renewal-rate-in-testFlight">
+<h3>Subscription renewal rate in TestFlight</h3>
+<div>
+<p>When testing your app's subscriptions in TestFlight, the renewal rate is accelerated. Each subscription is renewed daily, up to 6 times within a 1-week period, regardless of the subscription's duration.</p>
+<p><a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">Learn more about testing In-App Purchases with sandbox.</a></p>
+<div class="callout callout-note">
+<p class="note"><b>Important: </b>To test different renewal rates in TestFlight, you can use your Sandbox Apple Account. <a href="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings">Learn more about managing Sandbox Apple Account settings.</a></p>
+</div>
+<p><b>Renewal for all durations</b></p>
+<div class="table-wrapper">
+<table aria-label="Renewal for all durations" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead"></p>
+</th>
+<th scope="col">
+<p class="TableHead">1 week</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 month</p>
+</th>
+<th scope="col">
+<p class="TableHead">2 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">3 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">6 months</p>
+</th>
+<th scope="col">
+<p class="TableHead">1 year</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Subscription renewal speed</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+<td>
+<p>1 Day</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Example scenario: </b>If you start a 1-month subscription on February 1st, it'll renew every 24 hours for a total of 6 renewals before being canceled. Since subscriptions renew at an accelerated rate in TestFlight, you'll see a new transaction for each renewal on February 2nd, 3rd, 4th, 5th, 6th, and 7th. The subscription's auto-renewal will then be disabled on February 8th.</p>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>To test subscriptions entering or exiting billing retry, you must test with a Sandbox Apple Account to subscribe and use the sandbox account settings to simulate this scenario. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox/testing_failing_subscription_renewals_and_in-app_purchases">Learn more about testing failing subscription renewals and In-App Purchases.</a></p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="test-in-app-purchase-scenarios-in-testflight-with-your-sandbox-apple-account">
+<h3>Test In-App Purchase scenarios in TestFlight with your Sandbox Apple Account</h3>
+<div>
+<p>Apps downloaded from TestFlight will automatically operate in a sandbox environment. However, to test different In-App Purchase scenarios in TestFlight, you can use your Sandbox Apple Account. First, sign out of your production Apple Account under Media &amp; Purchases. Then, go to Developer settings and sign in with your Sandbox Apple Account to access the sandbox controls for testing. For more details, please refer to the <a href="https://developer.apple.com/documentation/storekit/testing-in-app-purchases-with-sandbox"> Sign in to your Sandbox Apple Account for TestFlight</a> section.</p>
+<p>To learn more about the different In-App Purchase scenarios you can test with your Sandbox Apple Account, visit the <a href="/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings">Manage Sandbox Apple Account settings</a> page.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b> You can only use a Sandbox Apple Account to test apps within your own developer account.</p>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

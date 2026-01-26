@@ -1,0 +1,748 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="7.0">
+<h1>App preview specifications</h1>
+<p>You can provide app previews in H.264 and ProRes 422 (HQ only) formats, with the following specifications.</p>
+<div class="Subhead margin-top">
+<h2>App Preview Requirements</h2>
+<p>The following are required to create your app preview and upload it to App Store Connect.</p>
+<div class="table-wrapper">
+<table aria-label="App Preview requirements" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Context</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody class="no-alternating-colors">
+<tr>
+<td>
+<p>Maximum file size</p>
+</td>
+<td>
+<p>500MB</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Minimum length</p>
+</td>
+<td>
+<p>15 Seconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Maximum length</p>
+</td>
+<td>
+<p>30 Seconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Default poster frame setting</p>
+</td>
+<td>
+<p>5 Seconds (Visit <a href="/help/app-store-connect/manage-app-information/set-an-app-preview-poster-frame">Set an app preview poster frame</a>.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Orientation</p>
+</td>
+<td>
+<p>Portrait or Landscape (Note: macOS and tvOS app previews accepted in landscape only.)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>OS device capture and play</p>
+</td>
+<td>
+<p>iOS 8 or later</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upload and playback on App Store Connect</p>
+</td>
+<td>
+<p>Safari 8 and macOS 10.10 or later</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="Subhead">
+<h2>Video specifications</h2>
+<div class="table-wrapper">
+<table aria-label="App Preview video specifications" class="table-3-col no-tr-spacing column-border table-custom">
+<thead>
+<tr>
+<th scope="col"></th>
+<th scope="col">
+<p class="TableHead">H.264 format</p>
+</th>
+<th scope="col">
+<p class="TableHead">ProRes 422 (HQ only) format</p>
+</th>
+</tr>
+</thead>
+<tbody class="no-alternating-colors">
+<tr>
+<td>
+<p class="TableHead">Target bit rate</p>
+</td>
+<td>
+<p>10-12 Mbps</p>
+</td>
+<td>
+<p>VBR ~220 Mbps</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TableHead">Video characteristics</p>
+</td>
+<td>
+<p>Progressive, up to High Profile Level 4.0</p>
+</td>
+<td>
+<p>Progressive, no external references</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TableHead">Max frame rate</p>
+</td>
+<td>
+<p>30 frames per second</p>
+</td>
+<td>
+<p>30 frames per second</p>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TableHead">Audio</p>
+</td>
+<td>
+<ul class="no-bullet no-margin">
+<li>
+<p>Stereo</p>
+</li>
+<li>
+<p>Codec: 256kbps AAC</p>
+</li>
+<li>
+<p>Sample Rate: 44.1kHz or 48kHz</p>
+</li>
+<li>
+<p>All tracks should be enabled</p>
+</li>
+<li>
+<p>Stereo configuration:</p>
+<ul>
+<li>
+<p>1 track with 2-channel stereo (1st channel L and 2nd channel R)</p>
+</li>
+<li>
+<p>2 tracks with 1-channel stereo (1st track L and 2nd track R)</p>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+<td>
+<ul class="no-bullet no-margin">
+<li>
+<p>Stereo</p>
+</li>
+<li>
+<p>Codec: PCM or 256kbps AAC</p>
+</li>
+<li>
+<p>Bit Depth (for PCM): 16-, 24-, or 32-bit</p>
+</li>
+<li>
+<p>Sample Rate: 44.1 or 48kHz</p>
+</li>
+<li>
+<p>All tracks should be enabled</p>
+</li>
+<li>
+<p>Stereo configuration:</p>
+<ul>
+<li>
+<p>1 track with 2-channel stereo (1st channel L and 2nd channel R)</p>
+</li>
+<li>
+<p>2 tracks with 1-channel stereo (1st track L and 2nd track R)</p>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p class="TableHead">Supported extensions</p>
+</td>
+<td>
+<p>.mov, .m4v, .mp4</p>
+</td>
+<td>
+<p>.mov</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="Subhead margin-top">
+<h2>App Preview resolutions</h2>
+<p>You can deliver up to 3 app previews with the following resolutions.</p>
+<div class="margin-top">
+<developer-accordion>
+<accordion-panel id="iphone-spec">
+<h3>iPhone</h3>
+<div class="devices-container">
+<!-- 6.9" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-6-7-inch.svg"/>
+<div>
+<p class="device-title">6.9" Display</p>
+<p class="device-name">iPhone Air</p>
+<p class="device-name">iPhone 17 Pro Max</p>
+<p class="device-name">iPhone 16 Pro Max</p>
+<p class="device-name">iPhone 16 Plus</p>
+<p class="device-name">iPhone 15 Pro Max</p>
+<p class="device-name">iPhone 15 Plus</p>
+<p class="device-name">iPhone 14 Pro Max</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2736 x 1260 pixels</p>
+<p class="device-card-body">2796 x 1290 pixels</p>
+<p class="device-card-body">2868 x 1320 pixels</p>
+<p class="device-card-subbody">(19.5:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">886 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 886 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 6.5" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-6-5-inch.svg"/>
+<div>
+<p class="device-title">6.5" Display</p>
+<p class="device-name">iPhone 14 Plus</p>
+<p class="device-name">iPhone 13 Pro Max</p>
+<p class="device-name">iPhone 12 Pro Max</p>
+<p class="device-name">iPhone 11 Pro Max</p>
+<p class="device-name">iPhone 11</p>
+<p class="device-name">iPhone X<small>S</small> Max</p>
+<p class="device-name">iPhone XR</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2778 x 1284 pixels</p>
+<p class="device-card-body">2688 x 1242 pixels</p>
+<p class="device-card-subbody">(19.5:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">886 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 886 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 6.9" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 6.3" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-6-1-inch.svg"/>
+<div>
+<p class="device-title">6.3" Display</p>
+<p class="device-name">iPhone 17 Pro</p>
+<p class="device-name">iPhone 17</p>
+<p class="device-name">iPhone 16 Pro</p>
+<p class="device-name">iPhone 16</p>
+<p class="device-name">iPhone 15 Pro</p>
+<p class="device-name">iPhone 15</p>
+<p class="device-name">iPhone 14 Pro</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2556 x 1179 pixels</p>
+<p class="device-card-body">2622 x 1206 pixels</p>
+<p class="device-card-subbody">(19.5:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">886 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 886 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 6.5" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 6.1" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-5-8-inch.svg"/>
+<div>
+<p class="device-title">6.1" Display</p>
+<p class="device-name">iPhone 16e</p>
+<p class="device-name">iPhone 14</p>
+<p class="device-name">iPhone 13 Pro</p>
+<p class="device-name">iPhone 13</p>
+<p class="device-name">iPhone 13 mini</p>
+<p class="device-name">iPhone 12 Pro</p>
+<p class="device-name">iPhone 12</p>
+<p class="device-name">iPhone 12 mini</p>
+<p class="device-name">iPhone 11 Pro</p>
+<p class="device-name">iPhone X<small>S</small></p>
+<p class="device-name">iPhone X</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2532 x 1170 pixels</p>
+<p class="device-card-body">2436 x 1125 pixels</p>
+<p class="device-card-body">2340 x 1080 pixels</p>
+<p class="device-card-subbody">(19.5:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">886 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 886 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 6.5" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 5.5" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-5-5-inch.svg"/>
+<div>
+<p class="device-title">5.5" Display</p>
+<p class="device-name">iPhone 8 Plus</p>
+<p class="device-name">iPhone 7 Plus</p>
+<p class="device-name">iPhone 6<small>S</small> Plus</p>
+<p class="device-name">iPhone 6 Plus</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-subbody">(Rendered pixels)</p>
+<p class="device-card-body">2208 x 1242 pixels</p>
+<p class="device-card-subbody">(Physical pixels)</p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody device-small-space">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1080 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 6.1" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 4.7" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-4-7-inch.svg"/>
+<div>
+<p class="device-title">4.7" Display</p>
+<p class="device-name">iPhone SE (3rd generation, 2nd generation)</p>
+<p class="device-name">iPhone 8</p>
+<p class="device-name">iPhone 7</p>
+<p class="device-name">iPhone 6<small>S</small></p>
+<p class="device-name">iPhone 6</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">1334 x 750 pixels</p>
+<p class="device-card-subbody">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">750 x 1334 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1334 x 750 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 5.5" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 4" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-4-inch.svg"/>
+<div>
+<p class="device-title">4" Display</p>
+<p class="device-name">iPhone SE (1st generation)</p>
+<p class="device-name">iPhone 5<small>S</small></p>
+<p class="device-name">iPhone 5<small>C</small></p>
+<p class="device-name">iPhone 5</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">1136 x 640 pixels</p>
+<p class="device-card-subbody">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1080 x 1920 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 4.7" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 3.5" -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-3-5-inch.svg"/>
+<div>
+<p class="device-title">3.5" Display</p>
+<p class="device-name">App previews aren't supported</p>
+</div>
+</div>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="ipad-spec">
+<h3>iPad</h3>
+<div class="devices-container">
+<!-- 13" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-12-9-inch.svg"/>
+<div>
+<p class="device-title">13" Display</p>
+<p class="device-name">iPad Pro (M5)</p>
+<p class="device-name">iPad Pro (M4)</p>
+<p class="device-name">iPad Pro (6th generation, 5th generation, 4th generation, 3rd generation, 1st generation)</p>
+<p class="device-name">iPad Air (M3, M2)</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2752 x 2064 pixels</p>
+<p class="device-card-body">2732 x 2048 pixels</p>
+<p class="device-card-subbody">(4:3 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1200 x 1600 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1600 x 1200 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 12.9" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-12-9-inch-old.svg"/>
+<div>
+<p class="device-title">12.9" Display</p>
+<p class="device-name">iPad Pro (2nd generation)</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2732 x 2048 pixels</p>
+<p class="device-card-subbody">(4:3 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1200 x 1600 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1600 x 1200 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+<p class="device-card-body">900 x 1200 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1200 x 900 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 13" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 11" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon" src="/help/images/icons/devices-11-inch.svg"/>
+<div>
+<p class="device-title">11" Display</p>
+<p class="device-name">iPad Pro (M5)</p>
+<p class="device-name">iPad Pro (M4)</p>
+<p class="device-name">iPad Pro (4th generation, 3rd generation, 2nd generation, 1st generation)</p>
+<p class="device-name">iPad Air (M3, M2)</p>
+<p class="device-name">iPad Air (5th generation, 4th generation)</p>
+<p class="device-name">iPad (A16)</p>
+<p class="device-name">iPad (10th generation)</p>
+<p class="device-name">iPad mini (A17 Pro)</p>
+<p class="device-name">iPad mini (6th generation)</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2266 x 1488 pixels</p>
+<p class="device-card-body">2420 x 1668 pixels</p>
+<p class="device-card-body">2388 x 1668 pixels</p>
+<p class="device-card-body">2360 x 1640 pixels</p>
+<p class="device-card-subbody">(4.3:3 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1200 x 1600 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1600 x 1200 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 13" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 10.5" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-10-5-inch.svg"/>
+<div>
+<p class="device-title">10.5" Display</p>
+<p class="device-name">iPad Pro</p>
+<p class="device-name">iPad Air (3rd generation)</p>
+<p class="device-name">iPad <span class="nowrap">(9th generation,</span> <span class="nowrap">8th generation,</span> <span class="nowrap">7th generation)</span></p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2224 x 1668 pixels</p>
+<p class="device-card-subbody">(4:3 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1200 x 1600 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1600 x 1200 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 12.9" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- 9.7" Display -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-small" src="/help/images/icons/devices-9-7-inch.svg"/>
+<div>
+<p class="device-title">9.7" Display</p>
+<p class="device-name">iPad Pro</p>
+<p class="device-name">iPad Air</p>
+<p class="device-name">iPad Air 2</p>
+<p class="device-name">iPad</p>
+<p class="device-name">iPad 2</p>
+<p class="device-name">iPad (6th generation, 5th generation, 4th generation, 3rd generation)</p>
+<p class="device-name">iPad mini (5th generation)</p>
+<p class="device-name">iPad mini 4</p>
+<p class="device-name">iPad mini 3</p>
+<p class="device-name">iPad mini 2</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">2048 x 1536 pixels</p>
+<p class="device-card-body">1024 x 768 pixels</p>
+<p class="device-card-subbody">(4:3 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">900 x 1200 pixels</p>
+<p class="device-card-subbody">(portrait)</p>
+<p class="device-card-body">1200 x 900 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+<div class="device-card">
+<div class="device-grid-content no-padding-top-mobile">
+<p class="device-card-title"><b>Note</b></p>
+<p>If app previews with the accepted resolutions aren't provided, scaled app previews for 10.5" displays are used.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="mac-spec">
+<h3>Mac</h3>
+<div class="devices-container">
+<!-- Mac -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-smallest" src="/help/images/icons/devices-mac.svg"/>
+<div>
+<p class="device-title">Mac</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="apple-tv-spec">
+<h3>Apple TV</h3>
+<div class="devices-container">
+<!-- Apple TV -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-smaller" src="/help/images/icons/devices-tv.svg"/>
+<div>
+<p class="device-title">Apple TV</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">1920 x 1080 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="vision-spec">
+<h3>Apple Vision Pro</h3>
+<div class="devices-container">
+<!-- Apple Vision Pro -->
+<div class="device-section">
+<div class="device-info margin-bottom-small-view">
+<img class="device-icon device-icon-smallest" src="/help/images/icons/device-vision-pro.svg"/>
+<div>
+<p class="device-title">Apple Vision Pro</p>
+</div>
+</div>
+<div class="device-grid">
+<div class="device-card">
+<div class="device-grid-content">
+<p class="device-card-title"><b>Device resolutions</b></p>
+<p class="device-card-body">3840 x 2160 pixels</p>
+<p class="device-card-subbody">(16:9 aspect ratio)</p>
+<p class="device-card-title margin-top-small"><b>Accepted resolutions</b></p>
+<p class="device-card-body">3840 x 2160 pixels</p>
+<p class="device-card-subbody">(landscape)</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></div>
+</div>
+<div class="LinkUniversal no-border-top">
+<b>Related</b>
+<!-- <a  href="/help/app-store-connect/manage-app-information/app-store-icon-app-preview-and-screenshots-overview">app icon, app preview, and screenshots overview</a> -->
+<a href="/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots">Upload app previews and screenshots</a>
+</div>
+</article> </div>

@@ -1,0 +1,262 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="13.0">
+<h1>Invite external testers</h1>
+<p>External testers are people you invite to test your app who aren’t App Store Connect users. After uploading your build, you can invite up to 10,000 external testers per app. To make your build available for external testing, you need to create an external group, add builds, and invite testers using their email addresses or by sharing a <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#invite-testers-using-a-public-link">public invitation link.</a></p>
+<p>When inviting testers via a public link, you can set tester criteria, such as device and OS requirements, ensuring only qualified testers can accept the invitation. This facilitates the enrollment of relevant testers, who can then provide feedback for your beta app. <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#invite-testers-using-a-public-link">Learn how to set tester criteria when inviting testers using a public link</a>.</p>
+<p>Keep in mind that:</p>
+<ul class="compound-item-list">
+<li>
+<p>To create an external group for external testing, you must first create an internal group for internal testing.</p>
+</li>
+<li>
+<p>Builds uploaded as TestFlight Internal Only from Xcode or Xcode Cloud are marked as internal under the build number and can only be added to internal tester groups.</p>
+</li>
+<li>
+<p><a href="https://support.apple.com/HT210737">Managed Apple Accounts</a> created in reserved domains can’t be used to test builds. Learn more about reserved domains in <a href="https://support.apple.com/guide/apple-school-manager/add-and-verify-a-domain-axm48c3280c0/web">Apple School Manager</a>, <a href="https://support.apple.com/guide/apple-business-manager/add-and-verify-a-domain-axm48c3280c0/web">Apple Business Manager</a>, or <a href="https://support.apple.com/guide/apple-business-essentials/add-and-verify-a-domain-axm48c3280c0/web">Apple Business Essentials</a>.</p>
+</li>
+</ul>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/prerelease_versions_and_beta_testers/beta_tester_invitations">Learn how to manage tester invitations with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-group">
+<h3>Create a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, click the add button (+) next to External Testing to add a new group.</p>
+</li>
+<li>
+<p>In the dialog that appears, enter a group name, then click Create.</p>
+<p>Later, you can change the name of the group if needed.</p>
+<figure><img alt="Screenshot of the Create a New Group dialog pop-up window displaying a field to enter a new group name. The Cancel and Create buttons in the bottom right." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/invite-external-testers/images/tf_create_external_group_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-builds-to-a-group">
+<h3>Add builds to a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under External Testing, select the group to which you want to add builds.</p>
+</li>
+<li>
+<p>On the right, click Add Builds to choose which builds you want to add to this group.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If you plan to <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#invite-testers-using-a-public-link">invite testers using a public link</a> and set criteria, ensure that the builds you add to the group are compatible with the criteria you’ve set. You can review the insight cards at the top of the group's details page to check for any incompatible builds that have been added.</p>
+</div>
+<figure><img alt="Screenshot of the App Store Connect page open in the TestFlight tab. The group name dialog displays. Below the group name, are the buttons Add Builds and Invite Testers." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/invite-external-testers/images/tf_add_external_builds_2x.png"/></figure>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can add only one build at a time, but you can add more later. To add additional builds to a group, click the add button (+) next to Builds on the tester group page.</p>
+</div>
+</li>
+<li>
+<p>In the build dialog, select the platform and version from the pop-up menus.</p>
+</li>
+<li>
+<p>In the table, select a build, then click Add.</p>
+</li>
+<li>
+<p>In the What to Test dialog, enter what you want testers to focus on.</p>
+</li>
+<li>
+<p>Optionally, enter localized versions of testing information in the text fields under each language-specific section.</p>
+</li>
+<li>
+<p>Optionally, select "Automatically notify testers."</p>
+<p>If you leave this checkbox deselected, you must manually distribute the build to testers after it's approved by TestFlight App Review.</p>
+</li>
+<li>
+<p>Depending on the build's status, click either Submit Review or Start Testing.</p>
+<p>You can only have one build of each version in review at a time. Once that build is approved, you can submit additional builds.</p>
+<p>If your build uses Apple-hosted asset packs, make sure to <a href="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs#submit-asset-packs-for-external-testing">submit the latest versions of any asset packs needed for testing</a> after submitting the build.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can submit up to six builds for TestFlight App Review within a 24-hour period.</p>
+</div>
+</li>
+</ol>
+<p>After you submit your build to TestFlight App Review, Apple reviews the build and its accompanying <span class="force-glossary">metadata</span>. The first build you submit requires a full review, but later builds for the same version might not.</p>
+<p>If Apple approves your build for TestFlight beta testing, users on the App Store Connect account with the Admin role will receive an email notifying them of the approval.</p>
+<p>If Apple rejects your build or metadata, the status of the build will be Rejected. You can click App Review from the sidebar under General to view the rejection details for your beta build.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Enter test information, such as Feedback Email and Contact Information, if these details haven’t been provided in the Test information dialog.</p>
+</div>
+</div>
+</accordion-panel>
+<div class="Section-Task">
+<h2>Invite external testers using a public link or email</h2>
+<p>Once you have builds available to test, and you've added them to a group, you can invite testers. You can Invite testers using a public link, email, or both. When inviting testers using a public link, you can set tester criteria.</p>
+</div>
+<accordion-panel id="invite-testers-using-a-public-link">
+<h3>Invite testers using a public link</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under External Testing, select a group.</p>
+</li>
+<li>
+<p>Under the testers tab, click Create Public Link.</p>
+<figure><img alt="Screenshot of the App Store Connect page in the TestFlight tab. Public Link dialog displays above Create Public Link button." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/invite-external-testers/images/tf_create_public_link_2x.png"/></figure>
+</li>
+<li>
+<p>In the dialog that appears, select either Open to Anyone or Filter by Criteria.</p>
+<ul class="compound-item-list">
+<li>
+<p><b>Open to Anyone.</b> Anyone can join using the link.</p>
+</li>
+<li>
+<p><b>Filter by Criteria.</b> Filter who can join by device or platform.</p>
+</li>
+</ul>
+<p>Optionally, under Tester Limit, click Set Limit to limit the number of testers who can join this testing group using the public link. Enter a number between 1 and 10,000.</p>
+<figure><img alt="Screenshot of Public Link dialog that has two options: Open to Anyone (selected) and Filter by Criteria. Below is the Tester Limit dialog. It contains an optional checkbox Set Limit. To the right of this is a drop-down menu. The buttons Cancel and Confirm on the bottom right." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/invite-external-testers/images/tf_public_link_dialog_2x.png"/></figure>
+</li>
+<li>
+<p>If you select Open to Anyone, click Confirm, then copy the link and share it using social media, messages, email, or other channels.</p>
+<p>If you select Filter by Criteria, click Next, and then follow the steps below.</p>
+</li>
+<li>
+<p>In the dialog that appears, click Add Criteria. You need to add at least one criteria to invite testers.</p>
+</li>
+<li>
+<p>In the drop-down menu, select the device you want to add criteria for, then select the OS details. You can add multiple criteria as needed.</p>
+<ul class="compound-item-list">
+<li>
+<p><b>From.</b> Only allow testers using the OS version in the specified range to test your app.</p>
+</li>
+<li>
+<p><b>Newer than or equal to.</b>  Only allow testers using the specified OS version or newer to test your app.</p>
+</li>
+<li>
+<p><b>Older than or equal to.</b> Only allow testers using the specified OS version or older to test your app.</p>
+</li>
+<li>
+<p><b>All supported (for platform).</b> Allow testers with any OS version for the selected platform to test your app.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>After adding all your criteria, click Confirm. Then, copy the link and share it on social media, messaging apps, email, or any other channel.</p>
+</li>
+</ol>
+<p>Once you have created your public link, you can add or edit criteria, set or change a tester limit, make the link available to everyone, or disable it. Click Manage next to Public Link to open the dialog, make your changes, and then click Save.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="Tip icon" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>Check the insight cards at the top of the group details page to identify if there are no compatible builds, if the public link is full, or if a build is about to expire.</p>
+</div>
+<p>View <a href="/help/app-store-connect/test-a-beta-version/view-and-manage-tester-information#view-public-link-metrics">public link metrics</a> to evaluate its performance and review feedback testers may have provided.</p>
+<p>Keep in mind that anyone can share this link, so testers could potentially join your testing group even if you do not invite them directly.</p>
+<p>If a tester joins your group using a public link, their name and email won’t be displayed in the Testers section in App Store Connect—it will display as anonymous. However, their installation date, sessions, and crashes will be displayed. You can make the public link deactivate at any time.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="invite-testers-using-their-email-address">
+<h3>Invite testers using their email address</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under External Testing, select a group.</p>
+</li>
+<li>
+<p>Click the add button (+) next to Testers.</p>
+</li>
+<li>
+<p>In the pop-up menu that appears, choose an option. You can add new testers using their email address, existing testers you've previously added, or import testers from a CSV file.</p>
+<figure><img alt="Screenshot of Invite Testers dialog with three options listed vertically: Email (selected), Existing, and Import. In the bottom right there is a Cancel and Next button dialog." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/invite-external-testers/images/tf_Invite_testers_email_2x.png"/></figure>
+<p>When you invite testers, they will receive an invitation email to begin testing. If a tester accepts an email invitation, their name, email address, installation date, sessions, and crashes, will display in the Testers section in App Store Connect.</p>
+</li>
+</ol>
+<div class="callout callout-note">
+<p class="Tip"><img alt="Tip icon" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To add users with a specific device type to a group, click Add Filter and select devices to filter by. Select all testers using the checkbox at the top of the table or select testers individually, then click Add to Group. In the dialog that appears, select the eligible groups you want to add these testers to and click Add.</p>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="notify-external-testers-after-your-build-is-approved">
+<h3>Notify external testers after your build is approved</h3>
+<div>
+<p>If you didn’t select “Automatically notify testers” when you added your build to your group, you must manually notify testers once your build is approved.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Builds, click the platform for your app.</p>
+</li>
+<li>
+<p>Choose a version, then under Status, click Notify Testers for the build row.</p>
+</li>
+</ol>
+<p>The <a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">build status</a> changes to Testing. External testers will then receive a notification directing them to accept the invitation using the TestFlight app on their device.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-a-build-from-a-group">
+<h3>Remove a build from a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under External Testing, select a group.</p>
+</li>
+<li>
+<p>On the right, under Builds, hold the pointer over the build you want to remove.</p>
+</li>
+<li>
+<p>Click the delete button.</p>
+</li>
+<li>
+<p>In the dialog that appears, confirm you want to remove the build from the group and click Remove.</p>
+</li>
+</ol>
+<p>If you want to remove a build from testing for all your testers, go to <a href="/help/app-store-connect/test-a-beta-version/stop-testing-a-build"><i>Stop testing a build</i></a>.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>How do I appeal if my beta build was rejected?</h3>
+<p>To appeal your beta build being rejected, contact <a href="https://developer.apple.com/contact/#!/topic/SC1103/subtopic/30021/solution/select" target="_blank">TestFlight App Review</a>.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/test-a-beta-version/testflight-overview">TestFlight Overview</a>
+<a href="/help/app-store-connect/test-a-beta-version/add-internal-testers">Add internal testers</a>
+<a href="/help/app-store-connect/test-a-beta-version/view-tester-information">View and manage tester information</a>
+</div>
+</link></article> </div>

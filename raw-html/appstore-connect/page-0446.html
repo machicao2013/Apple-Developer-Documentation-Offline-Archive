@@ -1,0 +1,2265 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="5.0">
+<h1>Subscription events</h1>
+<developer-accordion>
+<accordion-panel id="activations">
+<h3>Activations</h3>
+<div class="table-wrapper">
+<table aria-label="Activations" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Start Introductory Offer</p>
+</td>
+<td>
+<p>Start of a temporary lower price for a new user.</p>
+</td>
+<td>
+<p>Activations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscribe</p>
+</td>
+<td>
+<p>Start of a subscription, without an introductory price or marketing opt-in bonus period.</p>
+</td>
+<td>
+<p>Activations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opt-In</p>
+</td>
+<td>
+<p>Start of a subscription with a marketing opt-in bonus period.</p>
+</td>
+<td>
+<p>Activations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Start Offer Code</p>
+</td>
+<td>
+<p>Start of a subscription with an offer code.</p>
+</td>
+<td>
+<p>Activations</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="cancellations">
+<h3>Cancellations</h3>
+<div class="table-wrapper">
+<table aria-label="Cancellations" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Cancel</p>
+</td>
+<td>
+<p>Subscriber opted not to renew your subscription from within their Apple Account settings. A subscription counts as canceled when the subscription period ends, as opposed to when the subscriber turned off auto-renew which could be in the middle of the period.</p>
+</td>
+<td>
+<p>Cancellations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Canceled from Billing Retry</p>
+</td>
+<td>
+<p>Subscriber canceled their subscription during the 60-day billing retry period.</p>
+</td>
+<td>
+<p>Cancellations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Canceled from Billing Grace Period</p>
+</td>
+<td>
+<p>Subscriber canceled their subscription during Billing Grace Period.</p>
+</td>
+<td>
+<p>Cancellations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Canceled After Renewal Extension</p>
+</td>
+<td>
+<p>Subscriber opted not to renew subscription after a renewal extension.</p>
+</td>
+<td>
+<p>Cancellations</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="coversion-to-standard-price">
+<h3>Conversion to standard price</h3>
+<div class="table-wrapper">
+<table aria-label="Conversion to Standard Price" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Paid Subscription from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a standard price subscription.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade From Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches between an introductory offer and a standard price subscription within the same level. If the In-App Purchases are of the same duration, the customer’s prorated amount from the introductory price is refunded to the original payment method. The new In-App Purchase is charged and goes into effect immediately at the full price, which changes the customer’s renewal date to the crossgrade date. If the In-App Purchases are of different durations, the crossgrade goes into effect on the customer’s next renewal date.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade From Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches from an introductory offer in a higher level to a standard price subscription in a lower level. A customer downgrade doesn't take effect immediately. If a customer is in a pay as you go introductory price, they are charged for the downgraded subscription at the next billing cycle in the introductory period. If a customer is in a pay up front introductory price, they are charged for the downgraded subscription after the entire introductory period ends.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade From Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches from an introductory offer subscription in a lower level to a standard price subscription in a higher level. The introductory price ends immediately and the customer’s prorated amount from the prior In-App Purchase is refunded to the original payment method. The new In-App Purchase is charged and goes into effect immediately at the full price, which changes the customer’s renewal date to the upgrade date.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription From Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a standard price subscription.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade From Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a standard price subscription within the same level in the same subscription group. The crossgrade goes into effect at the end of the opt-in bonus period.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade from Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a standard price subscription in a lower level in the same subscription group. The downgrade goes into effect at the end of the opt-in bonus period.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade from Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a standard price subscription in a higher level in the same subscription group. The upgrade goes into effect at the end of the opt-in bonus period.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a standard price subscription.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade from Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches between subscriptions within the same level. If the In-App Purchases are of the same duration, the customer’s prorated amount from the introductory offer is refunded to the original payment method. The new In-App Purchase is charged and goes into effect immediately at the full price, which changes the customer’s renewal date to the crossgrade date. If the In-App Purchases are of different durations, the crossgrade goes into effect on the customer’s next renewal date.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade from Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches from a subscription in a higher level to a subscription in a lower level. A customer downgrade doesn't take effect immediately. If a customer is in a pay as you go introductory price, they are charged for the downgraded subscription at the next billing cycle in the introductory period. If a customer is in a pay up front introductory price, they are charged for the downgraded subscription after the entire introductory period ends.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade from Introductory Offer</p>
+</td>
+<td>
+<p>When a customer switches from a subscription in a lower level to a subscription in a higher level. The introductory offer ends immediately and the customer’s prorated amount from the prior In-App Purchase is refunded to the original payment method. The new In-App Purchase is charged and goes into effect immediately at the full price, which changes the customer’s renewal date to the upgrade date.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber switched from a promotional offer to a standard price subscription.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Promotional Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a paid subscription in a higher level in the same subscription group. The upgrade goes into effect at the end of the opt-in bonus period.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Promotional Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription offer to a standard price subscription of a lower level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Offer Code</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a standard price subscription.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Offer Code with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a standard price subscription within the same level in the same subscription group.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Offer Code with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a standard price subscription of a lower level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Offer Code with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a standard price subscription of a higher level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Win-Back Offer</p>
+</td>
+<td>
+<p>Subscriber converted to standard price subscription from a win-back offer.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a win-back offer to a standard price subscription of a higher level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a win-back offer to a standard price subscription within the same level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a win-back offer to a standard price subscription of a lower level.</p>
+</td>
+<td>
+<p>Conversion to Standard Price</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="entered-billing-retry">
+<h3>Entered billing retry</h3>
+<div class="table-wrapper">
+<table aria-label="Entered Billing Retry" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Billing Retry from Introductory Price</p>
+</td>
+<td>
+<p>The App Store was unable to update a subscription from an introductory price to a standard subscription price due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Paid Subscription</p>
+</td>
+<td>
+<p>The App Store was unable to renew a subscription due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Opt-In</p>
+</td>
+<td>
+<p>The App Store was unable to renew a subscription in a marketing opt-in bonus period due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Grace Period</p>
+</td>
+<td>
+<p>The App Store was unable to complete renewal of a subscription in the billing grace period state due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Offer Code</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing a subscription with an offer code due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Offer Code with Crossgrade</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of switching a subscription with an offer code to a subscription within the same level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Offer Code with Downgrade</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of switching a subscription with an offer code to a subscription of a lower level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Offer Code with Upgrade</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of switching a subscription with an offer code to a subscription of a higher level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Win-Back Offer</p>
+</td>
+<td>
+<p>App Store was unable to complete the transaction of renewing a subscription on a win-back offer due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Win-Back with Upgrade</p>
+</td>
+<td>
+<p>App Store was unable to complete the transaction of switching a subscription on a win-back offer to a subscription of a higher level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>App Store was unable to complete the transaction of switching a subscription on a win-back offer to a subscription within the same level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Billing Retry from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>App Store was unable to complete the transaction of switching a subscription on a win-back offer to a subscription of a lower level due to a billing issue.</p>
+</td>
+<td>
+<p>Entered Billing Retry</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="reactivations">
+<h3>Reactivations</h3>
+<div class="table-wrapper">
+<table aria-label="Reactivations" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Reactivate to Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate</p>
+</td>
+<td>
+<p>Subscriber signed up for a standard price subscription after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a paid subscription of an equal level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a paid subscription of a lower level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a paid subscription of a higher level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Crossgrade to Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of an equal level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Downgrade to Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a lower level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivate with Upgrade to Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a higher level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription offer after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Promotional Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription offer of a higher level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Promotional Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription offer of a lower level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Promotional Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription offer of an equal level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Opt-In</p>
+</td>
+<td>
+<p>Subscriber signed up for a marketing opt-in from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Offer Code</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Offer Code with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code of an equal level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Offer Code with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code of a lower level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Offer Code with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code of a higher level from the same subscription group after previously canceling. The reactivation goes into effect immediately.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Win-Back Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer on a subscription of higher level after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer on a subscription of the same level after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reactivation to Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer on a subscription of lower level after previously canceling.</p>
+</td>
+<td>
+<p>Reactivations</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="refunds">
+<h3>Refunds</h3>
+<div class="table-wrapper">
+<table aria-label="Refunds" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Refund</p>
+</td>
+<td>
+<p>Subscriber received a refund of the subscription.</p>
+</td>
+<td>
+<p>Refunds</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Refund After Renewal Extension</p>
+</td>
+<td>
+<p>Subscriber received a refund of the subscription after a renewal extension.</p>
+</td>
+<td>
+<p>Refunds</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="renewals">
+<h3>Renewals</h3>
+<div class="table-wrapper">
+<table aria-label="Renewals" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Introductory Offer from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to an introductory offer of a different subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Opt-In</p>
+</td>
+<td>
+<p>Subscriber moved from a marketing opt-in bonus period to a subscription offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Opt-In with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription offer of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Opt-In with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription offer of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Opt-In with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription offer within the same level in the same subscription group. The crossgrade goes into effect at the end of the opt-in bonus period.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Paid Subscription</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription at the standard price to a subscription offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Paid Subscription with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription of a higher level from the same subscription group after redeeming a subscription offer. The Upgrade goes into effect immediately.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Paid Subscription with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription of a lower level from the same subscription group after redeeming a subscription offer. The Downgrade goes into effect immediately.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Paid Subscription with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription of the same level from the same subscription group after redeeming a subscription offer. The Crossgrade goes into effect immediately.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription offer after previously redeeming a promotional offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Introductory Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription offer of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Introductory Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription offer of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Introductory Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription offer of an equal level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to a subscription offer of a different subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Promotional Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a higher level after previously being subscribed to a subscription offer of a different subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Promotional Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a lower level after previously being subscribed to a subscription offer of a different subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Promotional Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of an equal level after previously being subscribed to a subscription offer of a different subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a standard price subscription in a lower level to a subscription in a higher level in the same subscription group. A Subscription counts as upgraded when it goes into effect immediately.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a standard price subscription in a higher level to a subscription in a lower level in the same subscription group. A subscription counts as downgraded when it goes into effect on the subscriber’s next renewal date, as opposed to when the subscriber switches their subscription, which could be in the middle of the period.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched between standard price subscriptions of the same level in the same subscription group. If the subscriptions are of the same duration, the crossgrade is counted when it goes into effect immediately. If the subscriptions are of different durations, the crossgrade is counted when it goes into effect on the subscriber’s next renewal date, as opposed to when the subscriber switches their subscription, which could be in the middle of the period.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opt-in from Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber moved to a marketing opt-in bonus period from a subscription offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Paid Subscription</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to an introductory offer of a subscription in a different group</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Paid Subscription with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to an introductory offer of a subscription in a different group of the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Paid Subscription with Downgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to an introductory offer of a subscription in a different group of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Paid Subscription with Upgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to an introductory offer of a subscription in a different group of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opt-in from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to marketing opt-in bonus period.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Opt-In</p>
+</td>
+<td>
+<p>Subscriber moved from a marketing opt-in bonus period to an introductory offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Crossgrade from Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to an introductory offer within the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Downgrade from Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to an introductory price offer of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Upgrade from Opt-In</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to an introductory offer of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Opt-In</p>
+</td>
+<td>
+<p>Subscriber moved from a marketing opt-in bonus period to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Opt-In with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription with an offer code within the same level in the same subscription group.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Opt-In with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription with an offer code of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Opt-In with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a marketing opt-in bonus period to a subscription with an offer code of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code after previously redeeming an introductory offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Introductory Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription with an offer code of an equal level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Introductory Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription with an offer code of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Introductory Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from an introductory offer to a subscription with an offer code of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Paid Subscription</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Paid Subscription with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to a subscription with an offer code of an equal level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Paid Subscription with Downgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to a subscription with an offer code of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Paid Subscription with Upgrade</p>
+</td>
+<td>
+<p>Subscriber moved from a paid subscription on a standard price to a subscription with an offer code of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Offer Code</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Offer Code with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of an equal level after previously being subscribed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Offer Code with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a lower level after previously being subscribed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Offer Code with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer of a higher level after previously being subscribed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opt-in from Offer Code</p>
+</td>
+<td>
+<p>Subscriber signed up for marketing opt-in bonus period offer after previously being subscribed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a subscription with an offer code after previously redeeming a promotional offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Offer Code</p>
+</td>
+<td>
+<p>Subscriber signed up for a promotional subscription offer after previously redeeming an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Promotional Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a promotional subscription offer to a subscription with an offer code of an equal level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Offer Code with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a promotional subscription offer of an equal level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Promotional Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a promotional subscription offer to a subscription with an offer code of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Offer Code with Downgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a promotional subscription offer of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Promotional Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a promotional subscription offer to a subscription with an offer code of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Offer Code with Upgrade</p>
+</td>
+<td>
+<p>Subscriber switched from a subscription with an offer code to a promotional subscription offer of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal Extension of Paid Subscription</p>
+</td>
+<td>
+<p>Subscriber received a renewal extension to a standard price subscription.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal Extension of Introductory Offer</p>
+</td>
+<td>
+<p>Subscriber received a renewal extension to an introductory offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal Extension of Promotional Offer</p>
+</td>
+<td>
+<p>Subscriber received a renewal extension to a promotional offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal Extension of Offer Code</p>
+</td>
+<td>
+<p>Subscriber received a renewal extension to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal Extension of Opt-in</p>
+</td>
+<td>
+<p>Subscriber received a renewal extension to a subscription with a marketing opt-in bonus period.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-back Offer Renewal</p>
+</td>
+<td>
+<p>Subscriber renewed on a pay as you go win-back offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer after previously being subscribed to a win-back offer on a subscription of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer after previously being subscribed to a win-back offer on a subscription of the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a win-back offer after previously being subscribed to a win-back offer on a subscription of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to a win-back offer on a different subscription of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to a win-back offer on a different subscription of the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an introductory offer after previously being subscribed to a win-back offer on a different subscription of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Win-Back Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for an offer code after previously being subscribed to a win-back offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an offer code after previously being subscribed to a win-back offer on a different subscription of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an offer code after previously being subscribed to a win-back offer on a different subscription of the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for an offer code after previously being subscribed to a win-back offer on a different subscription of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Win-Back Offer</p>
+</td>
+<td>
+<p>Subscriber signed up for a promotional offer after previously being subscribed to a win-back offer.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Win-Back Offer with Upgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a promotional offer after previously being subscribed to a win-back offer on a different subscription of a lower level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Win-Back Offer with Crossgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a promotional offer after previously being subscribed to a win-back offer on a different subscription of the same level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Win-Back Offer with Downgrade</p>
+</td>
+<td>
+<p>Subscriber signed up for a promotional offer after previously being subscribed to a win-back offer on a different subscription of a higher level.</p>
+</td>
+<td>
+<p>Renewals</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="renewal-from-billing-retry">
+<h3>Renewal from billing retry</h3>
+<div class="table-wrapper">
+<table aria-label="Renewal from Billing Retry" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Introductory Offer from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an introductory offer.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Upgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an introductory offer of a higher level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Crossgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an introductory offer of the same level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer Downgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an introductory offer of a lower level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an introductory price.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Opt-In from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed the subscription with a marketing opt-in bonus period.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed the subscription.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and switched between subscriptions within the same level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and switched from a subscription in a higher level to a subscription in a lower level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and switched from a subscription in a lower level to a subscription in a higher level.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with a subscription offer.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Billing Retry with Crossgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription offer of an equal price</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Billing Retry with Downgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription offer of a lower price.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Billing Retry with Upgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription offer of a higher price.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Billing Retry</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Billing Retry with Crossgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription of an equal level with an offer code.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Billing Retry with Downgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription of a lower level with an offer code.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Billing Retry with Upgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction and renewed to a subscription of a higher level with an offer code.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Billing Retry</p>
+</td>
+<td>
+<p>App Store successfully recovered a pay as you go win-back offer from a billing issue within the billing retry period.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Billing Retry with Upgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered a subscription with billing issue to another subscription of a higher level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Billing Retry with Crossgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered a subscription with billing issue to another subscription of the same level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Billing Retry with Downgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered a subscription with billing issue to another subscription of a lower level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="enter-grace-period">
+<h3>Enter billing grace period</h3>
+<div class="table-wrapper">
+<table aria-label="Renewal from Billing Retry" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Grace Period from Paid Subscription</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing a standard paid subscription due to a billing issue, and the subscription enters a 6 or 16 day Billing Grace Period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period from Introductory Offer</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing an introductory offer to a paid subscription due to a billing issue, and the subscription enters a 6 or 16 day Billing Grace Period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period from Promotional Offer</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing a subscription on a promotional offer to a paid subscription due to a billing issue, and the subscription enters a 6 or 16 day Billing Grace Period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period from Opt-In</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing a subscription with a marketing opt-in bonus period due to a billing issue and the subscription enters a 6 or 16 day Billing Grace Period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period from Offer Code</p>
+</td>
+<td>
+<p>The App Store was unable to complete the transaction of renewing a subscription with a offer code due to a billing issue, and the subscription enters a 6 or 16 day Billing Grace Period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Grace Period from Win-Back Offer</p>
+</td>
+<td>
+<p>App Store was unable to complete the transaction of renewing a subscription with a win-back offer due to a billing issue, and the subscription enters the billing grace period window.</p>
+</td>
+<td>
+<p>Enter Billing Grace Period</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+<accordion-panel id="renewals-from-grace-period">
+<h2>Renewals from billing grace period</h2>
+<div class="table-wrapper no-margin-bottom">
+<table aria-label="Renewals from Billing Grace Period" class="table-3-col table-3-col-wide-middle no-margin-top margin-bottom">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definitions</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event Type</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Promotional Offer from Grace Period with Crossgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of an equal level with a promotional offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Grace Period with Downgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of a lower level with a promotional offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer from Grace Period with Upgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of a higher level with a promotional offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Grace Period with Crossgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to an introductory offer of an equal level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Grace Period with Downgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to an introductory offer of a lower level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Introductory Offer from Grace Period with Upgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to an introductory offer of a higher level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Crossgrade from Grace Period</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and switched between subscriptions within the same level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Downgrade from Grace Period</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and switched from a subscription in a higher level to a subscription in a lower level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Upgrade from Grace Period</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and switched from a subscription in a lower level to a subscription in a higher level.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Grace Period with Downgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of a lower level with an offer code.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Grace Period with Crossgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of an equal level with an offer code.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Grace Period with Upgrade</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription of a higher level with an offer code.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Offer Code from Grace Period</p>
+</td>
+<td>
+<p>The App Store successfully completed the transaction within a 6 or 16 Billing Grace Period window, and renewed to a subscription with an offer code.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Grace Period with Upgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered the subscription with billing issue within the grace period window, and renewed to a subscription of a higher level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Grace Period with Crossgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered the subscription with billing issue within the grace period window, and renewed to a subscription of the same level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Win-Back Offer from Grace Period with Downgrade</p>
+</td>
+<td>
+<p>App Store successfully recovered the subscription with billing issue within the grace period window, and renewed to a subscription of a lower level with a win-back offer.</p>
+</td>
+<td>
+<p>Renewals from Billing Grace Period</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

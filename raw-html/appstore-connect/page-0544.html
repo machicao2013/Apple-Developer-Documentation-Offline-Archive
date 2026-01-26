@@ -1,0 +1,90 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">View Sales and Trends</span>
+<article _v="8.0">
+<h1>Download and view reports</h1>
+<p>You can download App Store Sales and Trends reports directly from App Store Connect.</p>
+<p>Learn about downloading reports using <a href="https://developer.apple.com/documentation/appstoreconnectapi/sales_and_finance_reports">App Store Connect API</a> or <a href="https://help.apple.com/itc/appsreporterguide/">Reporter</a>.</p>
+<p>The following reports are available for download in Sales and Trends:</p>
+<ul>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/summary-sales-report">Summary Sales Report.</a> Aggregated sales and download data for your apps and In-App Purchases.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/sales-events-report">Sales Events Report.</a> The dates of significant sales events for your apps and In-App Purchases across various countries or regions and devices.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/pre-order-report">Pre-Order Report.</a> Aggregated data for your apps you’ve made available for pre-order, including the number of units ordered and canceled by customers.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/subscription-report">Subscription Report.</a> Total number of Active Subscriptions, Subscriptions with Introductory Prices, and Marketing Opt-Ins for your auto-renewable subscriptions.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/subscription-event-report">Subscription Event Report.</a> Aggregated data about subscriber activity, including upgrades, renewals, and introductory price conversions.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/subscriber-report">Subscriber Report.</a> Transaction-level data about subscriber activity using randomly generated Subscriber IDs.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/subscription-offer-redemption-report">Subscription Offer Redemption Report.</a> Details on the total number of subscription offer code redemptions, including the dates redemptions occurred and from which country or region.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/reference/reporting/win-back-eligibility-report">Win-back Eligibility Report.</a> The total number of churned subscriptions aggregated by paid tenure, churned duration, and time since last win-back. It excludes subscriptions churned more than two years ago.</p>
+</li>
+</ul>
+<p><b>Time zone:</b> Reports are based on Pacific Time (PT). A day includes transactions that happened from 12:00 a.m. to 11:59 p.m. PT.</p>
+<developer-accordion>
+<accordion-panel id="download-and-view-reports">
+<h3>Download and view reports</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the App Store Connect <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Sales and Trends.</p>
+</li>
+<li>
+<p>On the left side, choose Sales and Trends Reports.</p>
+</li>
+<li>
+<p>Scroll to the Report that you want to download.</p>
+</li>
+<li>
+<p>Choose a vendor and date or report period.</p>
+</li>
+<li>
+<p>Click Download.</p>
+</li>
+<li>
+<p>Unzip the compressed GZIP (.gz) file by opening it or using a utility.</p>
+<p>On macOS, double-click on the compressed GZIP (.gz) file to unzip it.</p>
+</li>
+<li>
+<p>Open the extracted tab-delimited text (.txt) file in a spreadsheet application.</p>
+<p>On macOS, control-click the tab-delimited text (.txt) file to open a shortcut menu and select Open With. Or right-click to open a shortcut menu on Windows.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>Why don't my reports from Sales and Trends match up with reports from Payments and Financial Reports?</h3>
+<p>Sales and Trends provides next-day data so that you can view the performance of your app and In-App Purchases, while Payments and Financial Reports provide final proceeds. <a href="/help/app-store-connect/measure-app-performance/overview-of-reporting-tools">Learn about differences in reporting.</a></p>
+<h3>Why do some transactions show zero proceeds, even though my app isn't free?</h3>
+<p>Your reports include information about app updates. Updates are always free and are identified by Product Type Identifier 7. App sales will show Product Type Identifier 1 and can either be free or paid.</p>
+<h3>Why are there refunds for an amounts that are less than the customer price?</h3>
+<p>Customers who have paid for subscriptions may get prorated or partial refunds to factor in the content they’ve already received.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability">Sales and Trends reports availability</a>
+<a href="/help/app-store-connect/reference/reporting/report-file-names">Report file names</a>
+<a href="https://help.apple.com/itc/appsreporterguide/?lang=eng#/itcbe21ac7db" target="_blank">About Reporter</a>
+<a href="/help/app-store-connect/reference/app-information/app-information">App information</a>
+<a href="https://developer.apple.com/documentation/appstoreconnectapi" target="_blank">App Store Connect API</a>
+</div>
+</link></article> </div>

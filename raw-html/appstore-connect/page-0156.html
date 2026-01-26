@@ -1,0 +1,221 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage banking information</span>
+<article _v="9.0">
+<h1>Enter banking information</h1>
+<p>To receive payments from Apple, you need to submit electronic <a href="/help/app-store-connect/reference/reporting/banking-information">banking information</a>. Note that in order to add banking information, you’ll first need to <a href="/help/app-store-connect/manage-agreements/sign-and-update-agreements">sign a Paid Apps Agreement</a>.</p>
+<p>Provide information specific to your bank (not an intermediary or correspondent bank) and ensure the routing number is unique to your account.</p>
+<p>In certain regions, additional documentation may be required to receive payments. If an Apple banking partner needs more documentation than what you provided, they’ll reach out to you directly. To verify a request before responding, <a href="https://developer.apple.com/contact/finance/">contact us</a>. Apple may also request additional information.</p>
+<p>You must submit all required tax forms needed for your paid contract in order for us to process banking information.</p>
+<p><b>Required role: </b>Account Holder, Admin, or <span class="force-glossary">Finance</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="add-banking-information">
+<h3>Add banking information</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the <a href="https://appstoreconnect.apple.com" target="_blank">homepage</a>, click Business.</p>
+</li>
+<li>
+<p>On the Agreements tab, find the Bank Accounts section and click Add Bank Account. If you’ve already added another bank account and want to use new banking information, click the add button (+), then click Add New Account.</p>
+<p>You may be prompted to provide a two-factor authentication verification code in order to proceed. <a href="https://support.apple.com/HT204974">Learn how to get a verification code</a>.</p>
+</li>
+<li>
+<p>Select your bank country or region, then click Next.</p>
+</li>
+<li>
+<p>Complete the required fields, then click Next.</p>
+<ul>
+<li>
+<p>In the Bank Account Currency pop-up menu, choose the primary currency of the bank account to ensure successful payments.</p>
+</li>
+<li>
+<p>In the Account Type pop-up menu, select whether your bank account is Checking or Savings.</p>
+</li>
+<li>
+<p>In the Account Name field, optionally enter a personal name for your bank.</p>
+</li>
+<li>
+<p>Click “Don’t know your [local clearing code number]?” to search by your bank’s name, city, or postal code to find and select your bank. Not all branch locations are published in App Store Connect. Select a branch using the routing number for your bank account if your branch location isn’t listed.</p>
+</li>
+<li>
+<p>In the Account Number field, enter the bank account number of the legal entity or individual enrolled in the Apple Developer Program.</p>
+</li>
+<li>
+<p>In the IBAN field, enter your IBAN (International Bank Account Number) if applicable. An IBAN is used for payments to bank accounts in Europe and certain other regions.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Enter the details for the bank account holder, then click Next.</p>
+<p>Make sure to enter your information exactly as it appears on your bank account or your payment may be rejected.</p>
+</li>
+<li>
+<p>Select the checkbox next to “I have read and agree to the statement above,” then click Add.</p>
+</li>
+<p>If you hold the Admin or Finance role and are trying to add banking information, the Account Holder will need to approve the information in App Store Connect before it’s processed.</p>
+</ol>
+</div>
+<p>Once your banking information is complete, it appears in the Bank Accounts section. Depending on where your bank is located, there may be additional required fields.</p>
+</accordion-panel>
+<accordion-panel id="edit-existing-bank-information">
+<h3>Edit existing bank information</h3>
+<div>
+<p>You can update your banking information at any time. However, payment may not be sent to your new bank account until a future payment if changes are made after payment processing has begun for the fiscal month.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the homepage, click Business.</p>
+</li>
+<li>
+<p>To edit your primary bank account, click the name of the account on the Agreements tab under Bank Accounts</p>
+<p>If you’ve added more than one bank account and want to edit another account, click Manage on the Agreements tab next to Bank Accounts, then click the name of the account you want to edit.</p>
+<p>You may be prompted to provide a two-factor authentication verification code in order to proceed. <a href="https://support.apple.com/HT204974">Learn how to get a verification code</a>.</p>
+</li>
+<li>
+<p>Make your edits, then select the checkbox next to “I have read and agreed to the statement above.”</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-bank-information">
+<h3>Remove bank information</h3>
+<div>
+<p>You can remove a bank account if it has the Not In Use status. To remove the banking information associated with your primary bank account, you must first change your primary bank account to a new or other existing bank account.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Business.</p>
+</li>
+<li>
+<p>On the Agreements tab, under Bank Accounts, click Manage.</p>
+</li>
+<li>
+<p>Click Remove, then click Remove again to confirm.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="change-your-primary-bank-account">
+<h3>Change your primary bank account</h3>
+<div>
+<p>You can update your banking information at any time. However, changes made after payment processing has begun for the fiscal month will delay the switch to your new bank account until the next payment cycle.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the <a href="https://appstoreconnect.apple.com" target="_blank">homepage</a>, click Business.</p>
+</li>
+<li>
+<p>On the Agreements tab, click the add button (+) in the Bank Accounts section.</p>
+</li>
+<li>
+<p>In the pop-up menu, choose Add New Account or Add from Existing Accounts.</p>
+<p>If you'd like to change your primary bank account to a previously used account, choose Add from Existing Accounts and pick the desired bank from the list provided.</p>
+<p>If you'd like to change your primary bank account to a a new bank account, choose Add New Account and enter new banking information details as described in details in the Adding Banking Information section.</p>
+<ul>
+<li>
+<p>You may be prompted to provide a two-factor authentication verification code in order to proceed. <a href="https://support.apple.com/HT204974">Learn how to get a verification code.</a></p>
+</li>
+<li>
+<p>If you hold the Admin or Finance role and are choosing Add New Account, the Account Holder will need to approve the new banking information in App Store Connect before the change is processed.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="approve-a-pending-banking-change">
+<h3>Approve a pending banking change</h3>
+<div>
+<p>If you’re the Account Holder for a team with multiple App Store Connect users, you'll need to approve the following banking information changes before they’re processed:</p>
+<ul>
+<li>
+<p>Adding a new bank account</p>
+</li>
+<li>
+<p>Replacing a bank account</p>
+</li>
+<li>
+<p>Editing an IBAN</p>
+</li>
+</ul>
+<p>When an Admin or Finance user initiates a change, the Account Holder receives an email asking them to review the updated information in App Store Connect.</p>
+<ol class="compound-item-list">
+<li>
+<p>In the <a href="https://appstoreconnect.apple.com/" target="_blank">homepage</a>, click Business.</p>
+</li>
+<li>
+<p>In the Agreements tab, under Bank Accounts, click Review Changes for the row with a Pending status. You’ll be shown the proposed change.</p>
+</li>
+<li>
+<p>Click Approve to authorize the change or click Reject to deny the change.</p>
+</li>
+<li>
+<p>You'll be asked to confirm your decision. If you’re approving a change, click Approve again to confirm your selection.</p>
+</li>
+<p>After the Account Holder approves the change, it will be processed within 24 hours. If they reject the change or if it isn’t approved within 30 days, your bank account details will not be updated.</p>
+</ol>
+</div>
+</accordion-panel>
+<div class="table-wrapper Task no-margin-bottom no-padding-bottom no-margin-top">
+<table aria-label="Banking information dialog" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Property to edit</p>
+</th>
+<th scope="col">
+<p class="TableHead">How to update</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Account Holder Name</p>
+<p>Address</p>
+<p>Account Holder Type</p>
+<p>Bank Account Type</p>
+<p>Bank Account Currency</p>
+<p>IBAN<sup>1</sup> (if applicable), or other country- or region-specific information such as tax IDs or vendor contact information</p>
+</td>
+<td>
+<p>Follow the steps in "Edit existing bank information."</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Bank Territory</p>
+<p>Bank Code</p>
+<p>Bank Account Number</p>
+</td>
+<td>
+<p>Follow the steps in "Change your primary bank account."</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Select another bank account that's already set up</p>
+</td>
+<td>
+<p>Follow the steps in "Change your primary bank account."</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="spacing-top-paragraph margin-bottom-small"><sup>1</sup>If you hold the Admin or Finance role and are updating the IBAN, the Account Holder will need to approve the change in App Store Connect before it’s processed.</p>
+<accordion-panel id="faqs">
+<h3><sf-symbol aria-label="FAQs" loading="eager" mode="semibold" name="questionmark.circle" style="margin-right: 0; font-size: 19px;" weight="medium">
+</sf-symbol> FAQs</h3>
+<div>
+<h3>Can I receive payments to multiple banks?</h3>
+<p>No. You may only receive payments at one bank.</p>
+<h3>Why am I getting a “Please enter valid bank account number” error message?</h3>
+<p>If your bank account number has leading zeros, make sure you’ve included all leading zeros when entering your banking information. Your bank account number and your IBAN are two separate numbers. Make sure you haven’t entered your IBAN in the bank account number field.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

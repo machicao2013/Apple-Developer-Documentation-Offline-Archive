@@ -1,0 +1,119 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage subscriptions</span>
+<article _v="7.0">
+<h1>Set availability for an auto-renewable subscription</h1>
+<p>You have the option to make your auto-renewable subscription available in any of 175 countries or regions where the App Store is offered. A customer’s Apple Account country or region setting determines which storefront they can purchase auto-renewable subscriptions from. For example, an account set to Japan can only purchase content from the App Store in Japan.</p>
+<p>Keep in mind that even if you set availability for a subscription, it may not be available for purchase. Monitor the <a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-statuses">In-App Purchase statuses</a> to understand if action is needed from you, such as completing missing metadata, or if your In-App Purchase has been approved by App Review.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/auto-renewable_subscriptions/managing_auto-renewable_subscriptions">Learn how to set availability for auto-renewable subscriptions with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-availability-for-a-subscription">
+<h3>Set availability for a subscription</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view. </p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>On the subscriptions detail page, click the subscription group.</p>
+</li>
+<li>
+<p>Click the subscription you want to set up availability for.</p>
+</li>
+<li>
+<p>In the Availability section, click Set Up Availability.</p>
+</li>
+<li>
+<p>Select the countries or regions where you want to make your subscription available.</p>
+</li>
+<li>
+<p>Click Done.</p>
+</li>
+</ol>
+<p>Keep in mind that even if you set availability for an auto-renewable subscription, it may not be available for purchase. Monitor the <a href="/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-statuses">In-App Purchase statuses</a> to understand if action is needed from you, such as completing missing metadata, or if your In-App Purchase has been approved by App Review.</p>
+
+</div>
+</accordion-panel>
+<accordion-panel id="make-changes-to-your-auto-renewable-subscriptions-availability">
+<h3>Make changes to your auto-renewable subscription’s availability</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view. </p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>On the subscriptions detail page, click the subscription group.</p>
+</li>
+<li>
+<p>Click the subscription you want to edit availability for.</p>
+</li>
+<li>
+<p>Under Availability, click Edit.</p>
+</li>
+<li>
+<p>In the dialog that appears, change your subscription’s availability by selecting or deselecting your desired countries or regions. 
+						<div class="callout callout-note">
+<p class="note"><b>Note: </b>You must be the Account Holder in order to remove countries or regions, as this will impact existing subscribers.</p>
+</div>
+</p></li>
+<li>
+<p>Click Done.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+<p>If you want to discontinue an auto-renewable subscription, consider the impact on users and any communications you might need to provide. Also consider whether your app still functions without the subscription. If not, remove your app from the App Store.</p>
+<p>Keep in mind that you’re required by the Paid Apps Agreement to provide the full amount of content to eligible subscribers through the subscription duration.</p>
+<p>Taking the following steps before removing your auto-renewable subscription from sale can help ensure a smooth experience:</p>
+<ul>
+<li>
+<p>Before discontinuing an auto-renewable subscription, remove it from sale, within App Store Connect, to stop additional sign-ups and renewals. We recommend timing the removal of your subscription to be equivalent to its duration. A minimum of 31 days is required from the date subscription is removed from sale and service is stopped to allow monthly and shorter duration subscriptions to expire.</p>
+</li>
+<li>
+<p>For subscriptions longer than one month, if you're unable to provide the full amount of content to eligible subscribers through the subscription duration before removing the subscription, <a href="https://developer.apple.com/contact/app-store/remove/">contact us</a>.</p>
+</li>
+<li>
+<p>Provide subscribers with advanced notice of the discontinuation of your subscription service through channels such as email, website, and in-app messaging. We recommend notifying them at least 31 days before discontinuing the subscription service.</p>
+</li>
+<li>
+<p>End any promotions of the subscription to discourage purchases.</p>
+</li>
+</ul>
+<p>To remove your subscription from sale:</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view. </p>
+</li>
+<li>
+<p>In the sidebar, under Monetization, click Subscriptions.</p>
+</li>
+<li>
+<p>Click the subscription group, then the subscription.</p>
+</li>
+<li>
+<p>Under Availability, deselect Cleared for Sale to remove your subscription from sale. Click Removing from Sale in the dialog.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+<p>Apps in the Magazines and Newspapers category need at least one active auto-renewable subscription to be listed in that category. If you want to discontinue the only auto-renewable subscription in your app, you must switch to a different category and submit a new binary to App Store Connect. Then you'll be able to remove the subscription.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store">Manage availability for your app on the App Store</a>
+<a href="/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases">Set availability for In-App Purchases</a>
+</div>
+</link></article> </div>

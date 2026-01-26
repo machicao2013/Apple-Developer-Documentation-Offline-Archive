@@ -1,0 +1,635 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="5.0">
+<h1>Subscriber Report</h1>
+<p>The table shows columns for <b>Subscriber Report Version 1_3</b>.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/subscriber-report#sample-subscriber-report">sample report</a>.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Field Definitions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Event Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date the event occurred.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App <span class="no-glossary">Apple ID</span></p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Apple ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Group ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Your subscription’s Group ID (formerly Family ID).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standard Subscription Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the standard subscription: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Offer reference name that you set for your subscription offers in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer ID</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>An identifier that you set for your subscription offers in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>This isn't available for custom offer codes.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Type</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Subscription offer pricing: Pay Up Front, Pay As You Go, or Free Trial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the subscription offer. For example: 3 Days, 7 Days, 2 Weeks, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing Opt-In Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the marketing opt-in if applicable: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Price</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>The price of your auto-renewable subscription.</p>
+<p>Negative values indicate refunds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Customer Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Three-character ISO code indicating the customer’s currency. For more information, visit <a href="/help/app-store-connect/reference/reporting/currency-codes">Currency codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Developer Proceeds</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>The proceeds for each item delivered.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Currency</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>The currency in which your proceeds are earned. For more information, visit <a href="/help/app-store-connect/reference/reporting/currency-codes">Currency codes</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Preserved Pricing</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For renewals, if the price is preserved then this field equals “Yes”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Reason</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If a subscription has been active for more than a year then you receive 85% of the customer price, minus applicable taxes, and this field equals “Rate After One Year.” Otherwise, you receive 70% and the field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If the subscription was purchased from News then this field equals “News”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of device used for subscription purchase: iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region for the purchase. For more information, visit <a href="/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies">Financial report regions and currencies</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscriber ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>The randomly generated Subscriber ID that's unique to each customer and developer. This field will be null when a customer requests a refund after the 180-day countdown described in Subscriber ID Reset.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscriber ID Reset</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If a customer cancels all of their subscriptions with you and does not resubscribe within 180 days, the Subscriber ID will be deleted. If the same customer resubscribes after 180 days, then we create a new Subscriber ID and this field equals “Yes.” Otherwise, it is blank.Subscriber IDs are reset when an app is transferred to another developer account.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Refund</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For full or partial refunds, this field equals “Yes.” Otherwise, it's blank. Refunds with a positive customer price imply a refund reversal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Purchase Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>For refunds, the date of the original purchase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Units</p>
+</td>
+<td>
+<p>Decimal</p>
+</td>
+<td>
+<p>The aggregated number of units. A value of 0 may indicate a partial refund.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-subscriber-report">
+<h3>Sample Subscriber Report</h3>
+<div>
+<div class="Subhead">
+<h3>Purchases</h3>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Day 1 Purchase" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report on Renewal the Next Month</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Same Day Next Month" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The first time a customer purchases a subscription from you, a Subscriber ID is created. The same ID is reported for subsequent purchases from the same customer.</p>
+<p>For example, Report on Day 1 of Initial Purchase shows a purchase of a 1-month subscription from a customer that is given Subscriber ID 7890. The same customer renews the next month with the same Subscriber ID.</p>
+</div>
+<div class="Subhead">
+<h2>Subscriber ID Reset</h2>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Day 1 Purchase" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report 181 Days After End of Subscription</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Same Day Next Month" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID Reset</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>54321</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>21</p>
+</td>
+<td>
+<p>29.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>If a customer cancels all of their subscriptions with you and does not resubscribe within 180 days, the Subscriber ID will be deleted. If the same customer resubscribes after 180 days, then we create a new Subscriber ID.</p>
+<p>For example, Report on Day 1 of Initial Purchase shows a purchase of a 1-month subscription from a customer that is given Subscriber ID 7890. The same customer cancels after the first month and subscribes again 181 days later. The corresponding report shows a new Subscriber ID of 54321 along with an indication that the previous ID has been reset.</p>
+</div>
+<div class="Subhead">
+<h2>Subscriber Upgrade with Partial Credit</h2>
+<p>Report on Day 1 of Initial Purchase</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Day 1 Purchase" class="table-5-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>9.99</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Report on Day 25 of Upgrade</p>
+<div class="table-wrapper">
+<table aria-label="Subscriber Report Same Day Next Month" class="table-6-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Title</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscriber ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Units</p>
+</th>
+<th scope="col">
+<p class="TableHead">Developer Proceeds</p>
+</th>
+<th scope="col">
+<p class="TableHead">Customer Price</p>
+</th>
+<th scope="col">
+<p class="TableHead">Refund</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>21</p>
+</td>
+<td>
+<p>29.99</p>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>7890</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>1.17</p>
+</td>
+<td>
+<p>-1.67</p>
+</td>
+<td>
+<p>Yes</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>When a subscriber upgrades, the pro-rated credit is refunded and the new subscription is charged at full price, as long as the credit is not greater than the new price.</p>
+<p>For example, Report on Day 1 shows a sale of a 1-month subscription for 9.99. On Day 25, the subscriber upgrades to a subscription priced at 29.99. Note that the upgrade goes into effect immediately. The pro-rated credit of 1.67 (9.99/30 days x 5 days left) is refunded and the full price of 29.99 is charged.</p>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</link></article> </div>

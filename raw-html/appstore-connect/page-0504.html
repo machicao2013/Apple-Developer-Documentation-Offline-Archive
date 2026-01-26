@@ -1,0 +1,71 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test In-App Purchases</span>
+<article _v="5.0">
+<h1>Overview of testing in sandbox</h1>
+<p>Apple provides a sandbox environment that lets you test In-App Purchases and Apple Pay transactions using test accounts without incurring charges. This environment uses the infrastructure of the App Store and returns transactions as if payments were successfully processed instead of processing actual payments.</p>
+<p>You can test the following scenarios:</p>
+<div class="table-wrapper spacing-bottom">
+<table aria-label="scenario-and-description" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Scenario</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Testing App Store country or region</p>
+</td>
+<td>
+<p>Test on different storefronts using the same Sandbox account, without having to create new testers. Associate your sandbox testers with any of the 175 App Store storefronts.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Testing auto-renewable subscription events</p>
+</td>
+<td>
+<p>Test <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox/testing_an_auto-renewable_subscription">auto-renewable subscription events</a>, such as renewals, state changes, interrupted purchases, winback offers, and contingent pricing without having to wait the length of the subscription duration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Testing App Store Server Notifications</p>
+</td>
+<td>
+<p>Test that your server receives <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox/testing_app_store_server_notifications">App Store Server Notifications</a> and <a href="https://developer.apple.com/documentation/appstoreservernotifications">notifications for the sandbox environment</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Testing Family Sharing</p>
+</td>
+<td>
+<p>Create Sandbox Test Families to test <a href="/help/app-store-connect/configure-in-app-purchase-settings/turn-on-family-sharing-for-in-app-purchases">Family Sharing</a> in your app and share access to auto-renewable subscriptions and non-consumables with up to five test family members.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Testing Apple Pay transactions </p>
+</td>
+<td>
+<p>Test your app's implementation of Apple Pay with test credit and debit cards. <a href="/apple-pay/sandbox-testing/">Learn more.</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>To get started, <a href="/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account">Create Sandbox Apple Accounts</a> in App Store Connect and use them to sign in to devices that are running a development-signed version of your app. You’ll need to <a href="https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device">enable Developer Mode on each device</a> so you can use it to test your app.</p>
+<p>Alternatively, you can test In-App Purchases with <a href="https://developer.apple.com/documentation/xcode/setting-up-storekit-testing-in-xcode/">StoreKit Testing in Xcode</a>, a local test environment that doesn’t require a connection to App Store servers to test In-App Purchases. Use StoreKit Testing in Xcode to test In-App Purchases before you configure them in App Store Connect or to test your code when a network connection isn’t available. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_at_all_stages_of_development_with_xcode_and_the_sandbox">Learn how to test In-App Purchases with Xcode and sandbox.</a></p>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_at_all_stages_of_development_with_xcode_and_the_sandbox">Testing at all stages of development with Xcode and sandbox</a>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/testing_in-app_purchases_with_sandbox">Testing In-App Purchases with sandbox</a>
+<a href="https://developer.apple.com/videos/play/wwdc2023/10142/">Watch “Explore testing In-App Purchases”</a>
+</div>
+</article> </div>

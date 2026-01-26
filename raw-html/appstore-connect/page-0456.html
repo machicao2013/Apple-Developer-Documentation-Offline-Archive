@@ -1,0 +1,157 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="2.0">
+<h1>Win-back eligibility report</h1>
+<p>The Win-back eligibility report includes the total aggregated count of subscriptions in a churned state as of the reporting date. The data in the report can be used to estimate the number of users eligible for a win-back offer.</p>
+<div class="table-wrapper">
+<table aria-label="Win-back eligibility report field definitions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App <span class="no-glossary">Apple ID</span></p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Apple ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Group ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Your subscription’s Group ID (formerly Family ID).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standard Subscription Duration</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Duration of the standard subscription: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Subscription Tenure</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Number of months of paid service accumulated prior to cancelation, rounded down to the nearest month.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time Since Last Subscribed</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Number of months since the susbcription churned, rounded down to the nearest month.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Has Previously Redeemed Win-Back Offer</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Indicates if the user has perviously redeemed a win-back offer. Values in this field appear as Yes or &lt;blank&gt;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Time Since Last Win-Back Offer</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Number of months since the last win-back offer, rounded down to the nearest month.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Territory</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region for the purchase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Churned Subscription Count</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Number of subscriptions in the churned state. Individual rows will appear only if there are 5 or more churned subscriptions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article> </div>

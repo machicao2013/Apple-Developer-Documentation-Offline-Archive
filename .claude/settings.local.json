@@ -20,7 +20,11 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git show:*)",
-      "Bash(test:*)"
+      "Bash(test:*)",
+      "WebFetch(domain:pay.weixin.qq.com)",
+      "Bash(cat:*)",
+      "Bash(timeout 180 python:*)",
+      "Bash(tee:*)"
     ],
     "deny": [],
     "ask": []

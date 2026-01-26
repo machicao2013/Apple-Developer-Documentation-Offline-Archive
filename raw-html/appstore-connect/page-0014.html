@@ -1,0 +1,186 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="9.0">
+<h1>Manage leaderboard sets</h1>
+<p>Leaderboard sets organize several leaderboards into a single unit. For example, in a game that includes many levels, you could define a leaderboard set to organize the leaderboards for each level.</p>
+<p>The limit to how many leaderboards you can create per app differs based on whether it’s with or without leaderboard sets:</p>
+<p>Without Leaderboard sets:</p>
+<ul>
+<li>
+<p>Up to 100 leaderboards per app</p>
+</li>
+</ul>
+<p>With Leaderboard sets:</p>
+<ul>
+<li>
+<p>Up to 500 leaderboards total per app</p>
+<ul>
+<li>
+<p>Maximum 100 leaderboard sets per app</p>
+</li>
+<li>
+<p>Maximum 100 leaderboards per set</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>You must have at least one leaderboard for your app before you can create a leaderboard set. After you add leaderboard sets to your app, all future leaderboards that you configure for the app must be included in a leaderboard set.</p>
+<p>The process to start using leaderboard sets to organize your app’s leaderboards includes these steps:</p>
+<ul>
+<li>
+<p>Create the first leaderboard set.</p>
+</li>
+<li>
+<p>Create additional leaderboard sets.</p>
+</li>
+<li>
+<p>Add new leaderboards directly into leaderboard sets.</p>
+</li>
+</ul>
+<p>When you create the first leaderboard set, App Store Connect ensures that all existing leaderboards for the app are included in at least one leaderboard set.</p>
+<p>Leaderboard sets and their leaderboard must be approved before they are available to players. <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Learn how to submit Game Center components for review.</a></p>
+<p><a href="https://developer.apple.com/documentation/gamekit/encourage-progress-and-competition-with-leaderboards">Learn how to configure leaderboard sets with the Gamekit.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="merge-leaderboards-into-sets">
+<h3>Merge leaderboards into sets</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboards section, select Move Leaderboards Into Sets from the ellipsis menu (...).</p>
+</li>
+<li>
+<p>Enter the Leaderboard Set Reference Name and Leaderboard Set ID, then click Continue.</p>
+</li>
+<li>
+<p>Click Add to Leaderboard Set to select which leaderboards you'd like to include in the set.</p>
+</li>
+<li>
+<p>Enter the Display Name Localization, then click Save.</p>
+</li>
+<li>
+<p>Under Leaderboard Set Localization, add one or more languages, then click Save.</p>
+<p>If this is the first leaderboard set you’re adding to an app, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit it for review.</a></p>
+</li>
+</ol>
+<p>You can add new leaderboard sets to your app to further customize how your leaderboards are displayed. Each set provides you with the ability to specify how a leaderboard is displayed within the set. You can put the same leaderboard into more than one set and configure a different display name for the leaderboard within each set.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="add-a-new-leaderboard-set">
+<h3>Add a new leaderboard set</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboard Sets section, click the add button (+).</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If group leaderboards exist, click the ellipsis menu (...) in the Group Leaderboards section and select Move Leaderboards Into Sets. Click Next.</p>
+</div>
+</li>
+<li>
+<p>Enter the leaderboard set reference name and leaderboard set ID, then click Create.</p>
+<p>When you're ready, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit your leaderboard sets for review</a>.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-an-existing-leaderboard-to-a-set">
+<h3>Add an existing leaderboard to a set</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboard Sets section, select the leaderboard set you want to add your existing leaderboard to.</p>
+</li>
+<li>
+<p>In the Leaderboards in Set section, click Add Leaderboard then select Add Existing Leaderboard.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If leaderboards exist, click the add button(+) in the Leaderboards in Set, then select Add Existing Leaderboard.</p>
+</div>
+</li>
+<li>
+<p>Select the leaderboard you want to add.</p>
+</li>
+<li>
+<p>Click Save.</p>
+<p>If this is the first leaderboard or leaderboard set you’re adding to an app, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit it for review.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-a-new-leaderboard-to-a-set">
+<h3>Add a new leaderboard to a set</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboards in Set section, click Add Leaderboard then select Add New Leaderboard.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If leaderboards exist, click the add button(+) in the Leaderboards in Set, then select Add New Leaderboard.</p>
+</div>
+</li>
+<li>
+<p>Click the add button(+) in the Leaderboards in Set, then select Add New Leaderboard.</p>
+<p>If this is the first leaderboard or leaderboard set you’re adding to an app, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">submit it for review.</a></p>
+</li>
+<p><a href="/help/app-store-connect/configure-game-center/manage-leaderboards">Learn how to configure leaderboards in App Store Connect.</a></p>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-leaderboard-sets">
+<h3>Delete leaderboard sets</h3>
+<div>
+<p>Before deleting a leaderboard set, you must ensure that all leaderboards within the set have been added to another set. Only after the leaderboards have been added to a new set can you delete an existing set.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Leaderboard Sets section, hold the pointer over the leaderboard set you want to delete, then click the Delete button.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+<p>If your app contains 100 or fewer leaderboards, you can click the ellipsis menu (...) in the Leaderboard Sets section and click Remove All Leaderboards to remove all of your current leaderboards from their leaderboard sets and delete all of your current leaderboard sets.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If your app contains more than 100 leaderboards, remove any excess leaderboards before you can use the Remove All Leaderboards option.</p>
+</div>
+<p>Optionally, you can delete a leaderboard set by selecting one from the Leaderboard sets section and clicking Delete this Leaderboard Set on bottom left.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/game-center/leaderboards">Leaderboards</a>
+<a href="/help/app-store-connect/configure-game-center/manage-leaderboards">Manage leaderboards</a>
+<a href="/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components">Submit Game Center components</a>
+</div>
+</link></article> </div>

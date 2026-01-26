@@ -1,0 +1,139 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="5.0">
+<h1>Provide app motion information</h1>
+<p>App motion is a required app information property for all visionOS apps on the App Store. This information displays on your app’s product page on the App Store to inform users who may be sensitive to apps with high motion.</p>
+<p>There are two possible values for this property:</p>
+<div class="table-wrapper">
+<table aria-label="app-motion-information" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Value</p>
+</th>
+<th scope="col">
+<p class="TableHead">Definition</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Yes, this app contains high motion</p>
+</td>
+<td>
+<p>Has frequent fast or sudden camera movements, quick turns, or unusual orientations.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>No, this app doesn't contain high motion</p>
+</td>
+<td>
+<p>Doesn't have frequent fast or sudden camera movements, quick turns, or unusual orientations.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="Subhead">
+<h2>About app motion</h2>
+<p>On Apple Vision Pro, the user’s viewpoint acts as a virtual camera and moves with the motion of their head and body. In some experiences, the virtual camera moves without the user moving their head or body (either controlled by the user through hand gestures or input devices, or scripted by the app without user input).</p>
+</div>
+<div class="Subhead">
+<h4>When to choose “No, this app doesn’t contain high motion”</h4>
+<p>If the virtual camera in your app doesn’t move without the user moving their head or body, choose “No, this app doesn’t contain high motion.” You won't need to assess your app further.</p>
+</div>
+<div class="Subhead">
+<h4>When to assess your app for high motion</h4>
+<p>If the virtual camera in your app moves without the user moving their head or body, you might need to choose “Yes, this app contains high motion.” To find out, follow the guidance below to assess your app experience for:</p>
+<div>
+<ul>
+<li>
+<p>Fast forward or backward motion</p>
+</li>
+<li>
+<p>Unusual orientations</p>
+</li>
+<li>
+<p>Fast rotation speeds</p>
+</li>
+<li>
+<p>Unexpected motion</p>
+</li>
+</ul>
+<p>Keep the following in mind:</p>
+<ul>
+<li>
+<p>Assess only the motion of the user’s viewpoint as a virtual camera, not the motion of a user-controlled character or vehicle. This distinction is especially important when the motion of the virtual camera is different than the motion of a controlled character or vehicle.</p>
+</li>
+<li>
+<p>If your app has multiple configuration options that affect the motion experience, use the default configuration to assess the experience.</p>
+</li>
+<li>
+<p>Rate the average motion in your app. If there’s only a brief moment of high motion at a few points in your app and the rest contains no motion, you don’t need to indicate high motion in your app.</p>
+</li>
+<li>
+<p>If your app consists of several different first-party experiences that are intended by design to be part of the core app experience, consider the average motion across all of them and whether the average contains high motion.</p>
+</li>
+<li>
+<p>Apps that host a variety of third-party content (like user-uploaded videos or HTML5 games) shouldn’t have a high motion label, unless the app’s intent is to have lots of content with high motion (like user uploads of their first-person thrill-seeking experiences).</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="Subhead">
+<h4>Elements to assess</h4>
+<div>
+<h3>Fast forward or backward motion</h3>
+<div>
+<p>Combinations of forward or backward virtual camera motion can lead to very high pixel speeds.</p>
+<p class="lighter smaller">Example 1 demonstrates the pixel speed when the camera moves forward quickly, with objects close by, resulting in high motion. The red arrows indicate the objects’ pixel speed in the scene.</p>
+<p class="lighter smaller">Example 2 shows a much slower pixel speed that doesn’t fall under the category of high motion. This can be produced by moving objects farther away or with slower camera motion.</p>
+<p>Choose “Yes, this app contains high motion” if the combination of forward or backward virtual camera speed and object distance in your app produces a pixel speed similar to or higher than that shown in Example 1.</p>
+<p class="margin-top-small"><b>Example 1:</b> High pixel speed</p>
+<!-- /////////// -->
+<div class="book-video-player book-video-border-radius" tabindex="0">
+<div class="book-video-overlay">
+<img class="book-video-status-icon" src="/assets/elements/icons/symbols/play-circle.svg"/>
+</div>
+<video class="video" id="high-speed-video" loop="" muted="">
+<source src="/help/app-store-connect/reference/app-information/provide-app-motion-information/videos/high-pixel-speed.mp4" type="video/mp4"/>
+</video>
+</div>
+<!-- /////////// -->
+<!-- /////////// -->
+<p class="margin-top-small"><b>Example 2:</b> Low pixel speed</p>
+<div class="book-video-player book-video-border-radius" tabindex="0">
+<div class="book-video-overlay">
+<img class="book-video-status-icon" src="/assets/elements/icons/symbols/play-circle.svg"/>
+</div>
+<video class="video" id="low-speed-video" loop="" muted="">
+<source src="/help/app-store-connect/reference/app-information/provide-app-motion-information/videos/low-pixel-speed.mp4" type="video/mp4"/>
+</video>
+</div>
+<!-- /////////// -->
+</div>
+</div>
+<div class="Subhead">
+<h3>Unusual orientations</h3>
+<div>
+<p>When the horizon of the virtual world doesn't match the real world, users may experience discomfort. The virtual camera rolls left or right around its longitudinal axis or pitches up or down in situations like these.</p>
+<p>Choose “Yes, this app contains high motion” if the virtual camera rolls around its longitudinal axis or pitches up or down more than 10 degrees, with less than 5 minutes between each instance. This includes loops, steep banks or slopes, and upside-down motion.</p>
+</div>
+</div>
+<div class="Subhead">
+<h3>Fast rotation speeds</h3>
+<div>
+<p>Users can also experience discomfort when they experience fast camera rotation speeds around their vertical axis (yaw).</p>
+<p>Choose “Yes, this app contains high motion” if the virtual camera yaws left or right smoothly, while simultaneously moving forward or backward at speeds equal to or slower than running. This includes user-controlled and scripted smooth camera turns in first-person-view experiences.</p>
+</div>
+</div>
+<div class="Subhead">
+<h3>Unexpected motion</h3>
+<div>
+<p>Choose “Yes, this app contains high motion” if the virtual camera makes unexpected and/or unpredictable motions with less than 5 minutes between each instance. This includes falls, turns, spins, and other orientation changes.</p>
+</div>
+</div>
+</div>
+</article> </div>

@@ -1,0 +1,229 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="3.0">
+<h1>App bundle information</h1>
+<p><em>App bundle information</em> refers to the set of properties required to create an app bundle. Certain information pertains specifically to the app bundle, App Store Connect derives some from the first app you add to the bundle (the primary app), and other information comes from all the apps in the bundle.</p>
+<div class="Subhead margin-top">
+<h2>Bundle-specific information</h2>
+<p>This information is required for the primary language of the app bundle. Additional localizations are optional.</p>
+<div class="table-wrapper">
+<table aria-label="Bundle specific information" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>App bundle name</p>
+</td>
+<td colspan="8">
+<p>The name of the app bundle as it appears on the App Store.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App bundle description</p>
+</td>
+<td colspan="8">
+<p>The descriptions of the app bundle as it appears on the App Store.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Marketing URL</p>
+</td>
+<td colspan="8">
+<p>This is optional. This can be the same URL as you use for the individual apps or a different one.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Price</p>
+</td>
+<td colspan="8">
+<p>The level that determines both the customer price and your proceeds.</p>
+<p>The price tiers are broken down to Compatible Price Tiers and Incompatible Price Tiers. Compatible Price Tiers represent the price tiers that have met the minimum and maximum bundle pricing rules listed in App Bundle Availability and Price. Selecting one of these tiers can ensure that your app bundle can be made available on the App Store as long as all other requirements have been met.</p>
+<p>Keep in mind that future price changes and intervals that have been set for your app could affect the list of compatible price tiers.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>SKU</p>
+</td>
+<td colspan="8">
+<p>A unique ID for your bundle. The bundle SKU must be different from that of the SKU of the individual apps. You can use letters, numbers, hyphens, periods, and underscore. The SKU can't start with a hyphen, period, or underscore.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Cleared for Sale</p>
+</td>
+<td colspan="8">
+<p>Select Cleared for Sale to make your app bundle available on the App Store. There are no bundle-specific country or region settings. An app bundle will be live on the App Store only where all the member apps are available.</p>
+<p>For example, if some of the apps in the bundle are cleared for sale worldwide but some are live only in specific countries or regions, the bundle will be available only in those countries or regions. You won't be able to select the Cleared for Sale checkbox if you already have ten app bundles cleared for sale. If you wish to clear a new app bundle for sale, you must first remove the Cleared for Sale check box from a different live bundle.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="Subhead margin-top">
+<h2>Primary app information</h2>
+<p>This information comes from the first app you add to a bundle. You don’t need to provide this information separately for the app bundle.</p>
+<div class="table-wrapper">
+<table aria-label="Primary App information" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Category</p>
+</td>
+<td colspan="8">
+<p>The app bundle category will be derived from the primary app’s category.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Primary language</p>
+</td>
+<td colspan="8">
+<p>The primary localization is the primary language of the first app in the bundle.</p>
+<p>Upon the initial creation of your app bundle, the bundle’s primary language will default to that of the primary app in the bundle. If another app is rearranged into the first position in the list of apps, it'll become the primary app, but the primary language won’t change.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Privacy policy</p>
+</td>
+<td colspan="8">
+<p>The privacy policy of your primary app will be used for the app bundle’s privacy policy.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>License Agreement</p>
+</td>
+<td colspan="8">
+<p>If your primary app has a custom license agreement, it'll be used for the app bundle’s privacy policy.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Copyright</p>
+</td>
+<td colspan="8">
+<p>The app bundle copyright information will be derived from the primary app’s category.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Trade Representative Contact Information</p>
+</td>
+<td colspan="8">
+<p>If your primary app has a trade representative contact information, it'll be used for the app bundle’s privacy policy.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="Subhead margin-top">
+<h2>Bundle set information</h2>
+<p>This information comes from the first app you add to a bundle. You don’t need to provide this information separately for the app bundle.</p>
+<div class="table-wrapper">
+<table aria-label="Bundle Set Information" class="table-2-col">
+<thead>
+<tr>
+<th colspan="4" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="8" scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4">
+<p>Icon</p>
+</td>
+<td colspan="8">
+<p>The bundle icon consists of the icons for the first four apps in the bundle.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Screenshots</p>
+</td>
+<td colspan="8">
+<p>App bundles can display a maximum of ten screenshots, with an equal number of screenshots represented for each app. For example, if your app bundle contains five apps and each app has five screenshots, only two screenshots from each app will be displayed for your app bundle.</p>
+<p>The order of the screenshots is based on the order of the apps in the bundle. The screenshots can be rearranged only as the apps in the bundle are rearranged.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>App previews</p>
+</td>
+<td colspan="8">
+<p>Apps that have an app preview will always display it in place of the first screenshot.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Ratings</p>
+</td>
+<td colspan="8">
+<p>The rating is determined by the highest rating among the apps in the bundle. For example: if the bundle consists of an app with a 12+ rating and an app with a 9+ rating, the app bundle will have a rating of 12+.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Available localizations</p>
+</td>
+<td colspan="8">
+<p>Localizations will be derived from the common localizations across all of the apps.</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Keywords</p>
+</td>
+<td colspan="8">
+<p>Each key word associated with the individual apps in the app bundle will be associated with the bundle. This isn't displayed on the bundle page in App Store Connect</p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p>Made for Kids</p>
+</td>
+<td colspan="8">
+<p>In order for an app bundle to be listed in the Made for Kids section on the App Store, all the apps in the bundle need to have the same age band.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="LinkUniversal no-border-top">
+<b>Related</b>
+<a href="/help/app-store-connect/create-an-app-record/edit-app-bundle-information">Edit app bundle information</a>
+<a href="/help/app-store-connect/create-an-app-record/create-and-submit-app-bundles">Create and submit app bundles</a>
+<a href="/help/app-store-connect/reference/app-information/platform-version-information">Platform version information</a>
+</div>
+</article> </div>

@@ -1,0 +1,140 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="5.0">
+<h1>Test Apple-hosted asset packs</h1>
+<p>To test Apple-Hosted Background Assets in TestFlight, upload your asset packs separately from the build directly to App Store Connect. <a href="/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs">Learn more.</a></p>
+<p>TestFlight automatically uses the latest processed version of an asset pack for internal testing. For external testing, you can choose a version to submit to <span class="force-glossary NoBreak">TestFlight App Review</span>. Once approved, it’ll automatically be available to test with external testers. Only one version can be in external testing at a time.</p>
+<p>When your asset pack is ready for the App Store, <a href="/help/app-store-connect/manage-submissions-to-app-review/submit-apple-hosted-asset-packs">submit it to App Review</a>.</p>
+<developer-accordion>
+<accordion-panel id="view-asset-packs-in-testflight">
+<h3>View asset packs in TestFlight</h3>
+<div>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Developer</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Builds &amp; Assets, click Asset Packs.</p>
+<p>If you haven’t <a href="/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs">uploaded any asset packs</a> yet, the Asset Packs section won’t appear, and the Builds &amp; Assets section will display as Builds.</p>
+</li>
+<li>
+<p>On the right, view each asset pack ID and its latest versions. The asset pack status appears above the version number.</p>
+</li>
+<li>
+<p>Click the asset pack ID to view details about additional asset pack versions.</p>
+<figure><img alt="" class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs/images/view-asset-pack-tf_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="submit-asset-packs-for-external-testing">
+<h3>Submit asset packs for external testing</h3>
+<div>
+<p>You can only have one version of an asset pack in TestFlight App Review at a time. Once that version is approved, you can submit additional versions of that asset pack for external testing.</p>
+<p>If you don't have any builds available for external testing yet, make sure you <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#add-builds-to-a-group">submit a build</a> before you submit any associated asset packs needed for that build.</p>
+<p>Make sure to <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#add-builds-to-a-group">submit a build</a> before submitting the latest versions of any asset packs needed for testing.</p>
+<p>If Apple approves your asset pack version for TestFlight, users on the App Store Connect account with the Admin role will receive an email notifying them of the approval. TestFlight will automatically use the new version for external testing once you've invited testers and have a build available for testing. Any previous versions of the asset pack will be replaced with the new version.</p>
+<p>If Apple rejects your asset pack version, its status will be Rejected. You can click App Review from the sidebar under General on the Distribution tab to view the rejection details for your asset pack.</p>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Builds &amp; Assets, click Asset Packs.</p>
+<p>If you haven’t <a href="/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs">uploaded any asset packs</a> yet, the Asset Packs section won’t appear, and the Builds &amp; Assets section will display as Builds.</p>
+</li>
+<li>
+<p>On the right, find the asset pack ID with the version you want to submit.</p>
+</li>
+<li>
+<p>If this is the first version you're submitting for external testing, click Set Up External Testing. If you already have a version available for external testing, click Replace. </p>
+<figure><img alt="" class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs/images/submit-asset-pack-external_2x.png"/></figure>
+</li>
+<li>
+<p>Select the asset pack version you want to submit to TestFlight App Review, then click Submit for Review.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="archive-asset-packs">
+<h3>Archive asset packs</h3>
+<div>
+<p>If you want to remove an asset pack and its associated versions from App Store Connect, or are close to reaching <a href="/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-size-limits">asset pack size limits</a> and want to make additional space available, you can archive the asset pack.</p>
+<p>Archiving an asset pack removes all versions of that asset pack, including those being tested in TestFlight and live on the App Store. Archived asset packs can’t be restored, and the associated asset pack IDs can’t be reused.</p>
+<p>You can’t archive asset packs that have a version with any of the following <a href="/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-statuses">statuses</a>:</p>
+<div class="margin-bottom-small">
+<p><b>TestFlight statuses</b></p>
+<ul>
+<li>
+<p>Processing</p>
+</li>
+<li>
+<p>Waiting for Review</p>
+</li>
+<li>
+<p>In Review</p>
+</li>
+</ul>
+<p><b>App Store statuses</b></p>
+<ul>
+<li>
+<p>Ready for Review</p>
+</li>
+<li>
+<p>Waiting for Review</p>
+</li>
+<li>
+<p>In Review</p>
+</li>
+<li>
+<p>Accepted</p>
+</li>
+<li>
+<p>Rejected</p>
+</li>
+</ul>
+</div>
+<p>Asset packs can’t be archived when the app they are associated with is in the process of being transferred to another account.</p>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Builds &amp; Assets, click Asset Packs.</p>
+</li>
+<li>
+<p>On the right, click the asset pack ID you want to archive.</p>
+</li>
+<li>
+<p>On the top right corner, click Archive.</p>
+<figure><img alt="" class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs/images/archive-asset-pack_2x.png"/></figure>
+</li>
+<li>
+<p>Click Archive again to confirm.</p>
+</li>
+</ol>
+<p>If you have <a href="/help/app-store-connect/manage-your-team/view-and-edit-your-profile">app status report notifications enabled</a>, you’ll be notified by email when someone on your team archives an asset pack.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs">Upload Apple-hosted asset packs</a>
+<a href="https://developer.apple.com/documentation/backgroundassets/downloading-apple-hosted-asset-packs">Downloading asset packs hosted by Apple</a>
+</div>
+</link></article> </div>

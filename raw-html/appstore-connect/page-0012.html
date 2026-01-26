@@ -1,0 +1,175 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure Game Center</span>
+<article _v="4.0">
+<h1>Manage groups</h1>
+<p>A group must contain at least one app. Once you create a group from an app, you can add additional apps to it to share leaderboards, achievements, and challenges data. Learn how to <a href="https://developer.apple.com/documentation/gamekit/creating-activities-for-your-game">share activities’ data using App Store Connect API</a>.</p>
+<p>When you add an app with existing Game Center components to a group, you can choose which of those existing leaderboards, achievements, and challenges to add to the group. Once added, these components are defined in the group as they were in the app prior to being grouped. Combining these Game Center components will replace the version in the app with the one you choose from the group. App Store Connect simplifies this process by presenting only compatible components and available options at each step. The options that App Store Connect presents to you're dependent on your app and group data. Types of assets (for example, leaderboard sets) that the app doesn’t have won't display.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<ul>
+<li>Apps can only belong to one Game Center group. If you wish to add your app to a new group, it must be removed from any existing groups.</li>
+</ul>
+<ul>
+<li>If you add live leaderboards, achievements, and challenges to a group, they stay live without submitting an app version.</li>
+</ul>
+</div>
+<div class="Subhead">
+<h2>Guidelines for moving achievements</h2>
+<p>There are no restrictions for adding achievements to a group; however, the following remain true:</p>
+<ul>
+<li>
+<p>The maximum number of points for each achievement is 100.</p>
+</li>
+<li>
+<p>The total maximum number of points for a single app's achievements is 1000.</p>
+</li>
+<li>
+<p>There are no restrictions on the total points for all group achievements.</p>
+</li>
+</ul>
+</div>
+<div class="Subhead">
+<h2>Guidelines for moving challenges</h2>
+<p>Challenge can only be moved to a group with its associated leaderboard.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/gamekit/creating-activities-for-your-game">Learn how to move activities using App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-groups">
+<h3>Create groups</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app you want to view.</p>
+<p>To create a new Game Center group, select an app that isn’t already part of a group.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Groups section, select Move to Group.</p>
+</li>
+<li>
+<p>Select Move to a New Group.</p>
+</li>
+<li>
+<p>Under the Move to a New Group section, enter your group reference name.</p>
+<ul>
+<li>
+<p>If your app doesn’t have existing leaderboards, achievements, or challenges, this is the final step for creating your Game Center group. Click Add to Group.</p>
+</li>
+<li>
+<p>If your app has existing leaderboards, achievements, or challenges, click Next. You can enter a new group ID for each components to add it as a new component to the group in the Move Leaderboards, Move Achievements, or Move Challenges prompt. Their IDs are listed with a “grp.” prefix. You can keep the ID the same, or create a new ID in the New ID field.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Click Add to Group.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="add-an-app-to-an-existing-group">
+<h3>Add an app to an existing group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select your app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Game Center.</p>
+</li>
+<li>
+<p>In the Groups section, select Move to Group.</p>
+</li>
+<li>
+<p>Under the Move to an Existing Group, select the Game Center group that you’d like to add your app to.</p>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Review the group IDs, and modify as needed, for your leaderboards, achievements, and challenges that are being moved to the group.</p>
+<p class="Note"><b>Note: </b></p>
+<ul>
+<li>
+<p>Your existing Game Center components’ IDs are listed with a “grp.” prefix.</p>
+</li>
+<li>
+<p>Add an app’s leaderboard to the leaderboards already defined for the group. The leaderboard appears in the group just as it did for the app.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click Continue.</p>
+</li>
+<li>
+<p>Click Add to Group.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-an-app-from-a-group">
+<h3>Remove an app from a group</h3>
+<div>
+<p>An app can only be removed from a group when a previous version of the app hasn’t been published to the App Store with a group leaderboard or achievement attached.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, navigate to the ellipsis menu (...) at the top left of the page.</p>
+</li>
+<li>
+<p>Click Game Center Groups.</p>
+</li>
+<li>
+<p>Select the group you want to edit in the Manage Existing Groups section.</p>
+</li>
+<li>
+<p>In the Attached Apps section, find the app you want to convert from a group game to a single game.</p>
+<ul>
+<li>
+<p>If the app is the only one listed in the group and doesn’t contain live Game Center components, click Delete Group in the top left corner.</p>
+</li>
+<li>
+<p>If there are multiple apps, click the delete button next to the app name. Be sure to remove any multiplayer compatibility settings defined for the app version.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-groups">
+<h3>Edit groups</h3>
+<div>
+<p>After you create and add apps to a group, you can edit the group’s properties from the <a href="/help/app-store-connect/configure-game-center/overview-of-game-center-groups">Game Center groups</a> page. You follow the same steps to create and manage group leaderboards, leaderboard sets, achievements, and challenges as you'd for a non-grouped app.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, navigate to the ellipsis menu (...) at the top left of the page.</p>
+</li>
+<li>
+<p>Click Game Center Groups.</p>
+</li>
+<li>
+<p>Select the group you want to edit in the Manage Existing Groups section.</p>
+<p><a href="/help/app-store-connect/reference/game-center/group-properties">Learn about the group properties.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/game-center/group-properties">Group properties</a>
+<a href="/help/app-store-connect/configure-game-center/manage-leaderboards">Manage leaderboards</a>
+<a href="/help/app-store-connect/configure-game-center/manage-achievements">Manage achievements</a>
+<a href="/help/app-store-connect/configure-game-center/manage-leaderboard-sets">Manage leaderboard sets</a>
+</div>
+</link></article> </div>

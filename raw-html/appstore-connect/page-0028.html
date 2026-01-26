@@ -1,0 +1,103 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure In-App Purchase settings</span>
+<article _v="6.0">
+<h1>Enter server URLs for App Store Server Notifications</h1>
+<p>App Store Server Notifications provide information about key events related to your In-App Purchases, such as changes to a subscription's status or the refund of an In-App Purchase. In order to receive these notifications from the App Store, you must provide a URL in App Store Connect that links to your server. You can enter URLs for both production and sandbox endpoints.</p>
+<p>To receive App Store Server Notifications, configure your server and visit <a href="https://developer.apple.com/documentation/appstoreservernotifications/enabling-app-store-server-notifications">Enabling App Store Server Notifications</a>. For more details on notifications and their meanings, see the <a href="https://developer.apple.com/documentation/appstoreservernotifications">App Store Server Notifications</a>.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>It may take up to 1 hour for changes you make to product metadata to appear in the sandbox environment.</p>
+</div>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="enter-a-production-url-for-app-store-server-notifications">
+<h3>Enter a production URL for App Store Server Notifications</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under General, click App information.</p>
+</li>
+<li>
+<p>Scroll down to General Information, then go to App Store Server Notifications.</p>
+</li>
+<li>
+<p>Under Production Server URL, click Set Up URL.</p>
+<figure><img alt="Screenshot of the App Store Server Notifications section on the App Information page. An arrow points to the 'Set Up URL' link for Production Server URL." class="help-screens-retro-full" src="/help/app-store-connect/configure-in-app-purchase-settings/enter-server-urls-for-app-store-server-notifications/images/prod-server-notifications_2x.png"/></figure>
+</li>
+<li>
+<p>Enter the URL that you've determined for App Store Server Notifications.</p>
+</li>
+<li>
+<p>Choose either Version 1 (deprecated) or Version 2 notifications. <a href="https://developer.apple.com/documentation/appstoreservernotifications/app_store_server_notifications_changelog">Learn about versions of App Store Server Notifications</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="enter-a-url-for-testing-app-store-server-notifications-in-a-sandbox-environment">
+<h3>Enter a URL for testing App Store Server Notifications in a Sandbox environment</h3>
+<div>
+<p>If you do not provide a Sandbox URL in App Store Connect, please note that the App Store will automatically send notifications for both environments to the Production URL provided. If you only provide a Sandbox URL, no notifications will be sent in production.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under General, click App information.</p>
+</li>
+<li>
+<p>Scroll down to General Information, then go to App Store Server Notifications.</p>
+</li>
+<li>
+<p>Under Sandbox Server URL, click Set Up URL.</p>
+<figure><img alt="Screenshot of the App Store Server Notifications section on the App Information page. An arrow points to the 'Set Up URL' link for Sandbox Server URL." class="help-screens-retro-full" src="/help/app-store-connect/configure-in-app-purchase-settings/enter-server-urls-for-app-store-server-notifications/images/sandbox-server-notifications_2x.png"/></figure>
+</li>
+<li>
+<p>Enter the URL that you've determined for App Store Server Notifications.</p>
+</li>
+<li>
+<p>Choose either Version 1 (deprecated) or Version 2 notifications. <a href="https://developer.apple.com/documentation/appstoreservernotifications/app_store_server_notifications_changelog">Learn about versions of App Store Server Notifications</a>.</p>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-your-url-for-app-store-server-notifications">
+<h3>Edit your URL for App Store Server Notifications</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under General, click App information.</p>
+</li>
+<li>
+<p>Scroll down to General Information, then go to App Store Server Notifications.</p>
+</li>
+<li>
+<p>Next to the URL you want to edit, click Edit.</p>
+</li>
+<li>
+<p>Enter the desired URL and click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/appstoreservernotifications/">App Store Server Notifications</a>
+<a href="https://developer.apple.com/documentation/storekit/in-app_purchase/choosing_a_receipt_validation_technique#//apple_ref/doc/uid/TP40010573">Choosing a Receipt Validation Technique</a>
+<a href="/documentation/storekit/in-app_purchase">In-App Purchase</a>
+</div>
+</link></article> </div>

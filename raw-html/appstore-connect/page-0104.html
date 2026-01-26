@@ -1,0 +1,67 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="1.0">
+<h1>Dark Interface evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Users with light sensitivity can maintain a dark user interface for the common tasks of the app to reduce eye pain or discomfort.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. The goal of the Dark Interface capability is to support users with light sensitivity for whom large white or bright areas on the screen may cause discomfort or even physical pain. Keep this in mind, because the goal isn't only to make the interface dark, but to keep it that way. Even temporary flashes of bright content may cause discomfort or a difficult user experience.</p>
+<p>The following sections provide more detail about how to determine whether your app supports a Dark Interface well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Dark Interface</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>While you’re not required to use Apple frameworks to indicate support for Dark Interface, we recommend reviewing how Apple’s system apps respond to the systemwide setting to understand what a good experience is like for users. If you offer your own in-app setting, it should either support similar functionality to the systemwide setting, or offer more granular user interface customization.</p>
+<p>To ensure proficiency in testing with a dark interface, review the resources below to learn how to turn on Dark Mode for each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, visit <a href="https://support.apple.com/guide/iphone/iph60ba71065">Adjust the screen brightness and color on iPhone</a>.</p>
+</li>
+<li>
+<p>For iPad, visit <a href="https://support.apple.com/guide/ipad/ipad997d972d">Adjust the screen brightness and color on iPad</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/mchl52e1c2d2">Use a light or dark appearance on your Mac</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tan4fa040b9f">Change the appearance of text, app windows, and more on Apple Vision Pro</a>.</p>
+</li>
+</ul>
+<p>A common mistake is supporting sufficient contrast in your light mode interface, but forgetting to support sufficient contrast in a dark interface. Many developers use gray-on-black for dark mode reading, which can reduce eye strain for standard vision in low-light scenarios, but this reduced contrast variant may be more difficult to read for those with low vision or light sensitivity. Consider testing your app while combining the dark mode color scheme alongside the <i>Increase Contrast</i> accessibility setting.</p>
+</div>
+<h2>Indicating support for Dark Interface</h2>
+<div class="spacing-bottom">
+<p>You may indicate support if your app is dark by default for all common tasks, excluding any third-party or user-generated content. For example, most apps on tvOS and watchOS are dark by default.</p>
+<p>If your app isn’t dark by default for all common tasks, you may still indicate support if it allows the user to enable a mode or setting that keeps the interface dark. This can include supporting the systemwide <a href="https://developer.apple.com/design/human-interface-guidelines/dark-mode">Dark Mode</a> appearance or using a custom dark color scheme, or as a last resort, supporting the systemwide <i>Smart Invert</i> accessibility setting.</p>
+<ul>
+<li>
+<p>Be careful of unintended color changes that may cause user confusion. For example, if relying on the Smart Invert setting, a red “Delete” button may invert to green if you don’t account for the color inversion. Additionally, when Smart Invert is enabled, make sure the colors in the media don’t appear inverted.</p>
+</li>
+<li>
+<p>For translucent views, including Apple Vision Pro apps using passthrough, you may indicate support for Dark Interface if your app renders only dark UI. You’re not responsible for background light filtering through your app. However, consider whether your app should reduce the translucency if the system <i>Increase Contrast</i> or <i>Reduce Transparency</i> settings are enabled.</p>
+</li>
+<li>
+<p>If third-party or user-generated content is required in your common tasks, refer to the detailed guidance for third-party content on the <a href="/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels#tips">Overview of Accessibility Nutrition Labels</a>.</p>
+</li>
+</ul>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Dark Interface in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Dark Interface every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<p>Human Interface Guidelines &gt; <a href="https://developer.apple.com/design/human-interface-guidelines/dark-mode">Dark Mode</a></p>
+<a href="https://developer.apple.com/documentation/uikit/supporting-dark-mode-in-your-interface">Supporting Dark Mode in your Interface</a>
+<a href="https://developer.apple.com/videos/play/wwdc2020/10020/">Watch “Make your app visually accessible”</a>
+</div>
+</article> </div>

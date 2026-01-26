@@ -1,0 +1,142 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Test a beta version</span>
+<article _v="6.0">
+<h1>Add internal testers</h1>
+<p>Create a group and add up to 100 internal testers (<span class="no-glossary">App Store Connect</span> users with access to your content) to test your app using <span class="force-glossary">TestFlight</span>. You can choose to automatically distribute builds to internal groups or add them manually. Builds created by Xcode Cloud must be manually added to groups in App Store Connect. Builds uploaded as TestFlight Internal Only from Xcode or Xcode Cloud will be indicated as internal under the build number. You can only add builds with this indicator to internal tester groups—you can’t submit them for external testing or to customers.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b><a href="https://support.apple.com/HT210737">Managed Apple Accounts</a> created in reserved domains can’t be used to test builds. Learn more about reserved domains in <a href="https://support.apple.com/guide/apple-school-manager/add-and-verify-a-domain-axm48c3280c0/web">Apple School Manager</a>, <a href="https://support.apple.com/guide/apple-business-manager/add-and-verify-a-domain-axm48c3280c0/web">Apple Business Manager</a>, or <a href="https://support.apple.com/guide/apple-business-essentials/add-and-verify-a-domain-axm48c3280c0/web">Apple Business Essentials</a>.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/prerelease_versions_and_beta_testers/beta_testers">Learn how to manage testers with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, <span class="force-glossary">Developer</span>, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="create-a-group">
+<h3>Create a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, click the add button (+) next to Internal Testing.</p>
+</li>
+<li>
+<p>In the dialog that appears, enter the name for a new internal group, then click Create. You can change the name later, if needed.</p>
+<figure><img alt="Screenshot of the dialog titled Create New Internal Group. Input field for naming the new internal group. Checkbox labelled Enable automatic distribution is selected. Cancel and Create buttons are in the bottom right corner." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/add-internal-testers/images/tf_create_group_2x.png"/></figure>
+</li>
+</ol>
+<p>To enable Xcode to automatically deliver builds to all group members, select the “Enable automatic distribution” checkbox. If automatic distribution isn't enabled, you must manually add all builds to the group. You must always manually add builds created by Xcode Cloud to groups in App Store Connect.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="add-testers-to–an-internal-group">
+<h3>Add testers to an internal group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Internal Testing, click the group you want to add builds to.</p>
+</li>
+<li>
+<p>On the right, click Invite Testers to choose the testers you want to invite to this group.</p>
+<figure><img alt="Screenshot of the App Store Connect page open on the TestFlight tab displays. The dialog App Store Connect Users displays inside an Internal Group. Under this is the dialog buttons Add Builds and Invite Testers." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/add-internal-testers/images/tf_internal_invite_testers_2x.png" width="100px"/></figure>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can add additional testers to the group later. To do this, click the add button (+) next to Testers on the tester group page.</p>
+</div>
+<p>Eligible internal testers appear in a dialog. If a user you want to add isn't listed, <a href="/help/app-store-connect/manage-your-team/add-and-edit-users#change-user-role">change their user role</a>.</p>
+</li>
+<li>
+<p>Select the checkbox next to each user you want to invite, then click Add.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can also add internal testers to a group by selecting them from the Testers tab. Under All, choose the testers you want to add and click Add to Group. If you choose testers not part of your App Store Connect account, you won't be able to add them to an internal group.</p>
+</div>
+</li>
+</ol>
+<p>If you have builds available for testing, the users you choose will receive an email inviting them to test the app. They’ll be directed to accept the invitation using the TestFlight app on their device or via a redemption code on Apple TV. Internal testers can download and test all builds for 90 days.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="add-builds-to-a-group">
+<h3>Add builds to a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, click the group you want to add a build to.</p>
+</li>
+<li>
+<p>On the right, click Add Builds to choose which builds you want to add to this group.</p>
+<figure><img alt="Screenshot of the App Store Connect page is open on the TestFlight tab displays. The dialog App Store Connect Users displays inside an Internal Group. Under this is the dialog buttons Add Builds and Invite Testers." class="help-screens-retro" src="/help/app-store-connect/test-a-beta-version/add-internal-testers/images/tf_internal_invite_testers_2x.png"/></figure>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can add only one build at a time, but additional builds can be added later. To add additional builds to a group, click the add button (+) next to Builds on the tester group page.</p>
+</div>
+</li>
+<li>
+<p>Choose the build you want to add to the group, then click Next.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Builds marked as internal can only be added to internal tester groups.</p>
+</div>
+</li>
+<li>
+<p>Enter the What to Test information and optionally enter localized versions of test information in the fields under each language-specific section.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>This information will be available to testers in all groups that have access to the build.</p>
+</div>
+</li>
+<li>
+<p>Click Add.</p>
+</li>
+</ol>
+<p>If you have builds available for testing, the users you chose will receive an email inviting them to test the app. The users will be directed to accept the invitation using the TestFlight app on their device or with a redemption code. Internal testers can download and test all builds for 90 days.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-a-build-from-a-group">
+<h3>Remove a build from a group</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Internal Testing, select a group.</p>
+</li>
+<li>
+<p>Under Builds, hold the pointer over the build you want to remove.</p>
+</li>
+<li>
+<p>Click the Delete button.</p>
+</li>
+<li>
+<p>In the dialog that appears, click Remove.</p>
+</li>
+</ol>
+<p><a href="/help/app-store-connect/test-a-beta-version/stop-testing-a-build">Learn how to remove a build from testing for all of your testers.</a></p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If you remove a build from a group or from testing, testers currently using the build will continue to have access until they switch builds or choose to stop testing your app.</p>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/test-a-beta-version/testflight-overview">TestFlight overview</a>
+<a href="/help/app-store-connect/test-a-beta-version/invite-external-testers">Invite external testers</a>
+<a href="/help/app-store-connect/test-a-beta-version/view-tester-information">View and manage tester information</a>
+</div>
+</link></article> </div>

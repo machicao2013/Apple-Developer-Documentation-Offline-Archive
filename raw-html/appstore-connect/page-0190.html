@@ -1,0 +1,75 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage submissions to App Review</span>
+<article _v="5.0">
+<h1>Remove a submission from review</h1>
+<p>You can remove an app from the review and release process if the app is in one of the following states:</p>
+<ul class="no-bullet no-margin-left">
+<li>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Export Compliance</p>
+</li>
+<li>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</li>
+<li>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Review</p>
+</li>
+<li>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Developer Release</p>
+</li>
+<li>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Pending Apple Release</p>
+</li>
+</ul>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/review_submission_items">Learn how to remove a submission from review with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="remove-an-app-from-the-review-and-release-process">
+<h3>Remove an app from the review and release process</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click the app version that you want to remove a build for.</p>
+</li>
+<li>
+<p>In the message that appears at the top, click “remove this version from review.”</p>
+<figure><img alt='Screenshot of the app version detail page. On the top of the page, there is text stating, "You can only edit some information for this version. To edit all information or submit a new build, remove this version from review." The “remove this version from review” part is clickable.' class="help-screens-retro" src="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review/images/my-apps-remove-from-review2_2x.png"/></figure>
+</li>
+<li>
+<p>In the dialog that appears, click Remove.</p>
+</li>
+</ol>
+<p>The app, and any other items in the submission, are removed from the queue and the <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">app status</a> changes to Developer Rejected. If you resubmit the review process will start over.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="cancel-a-submission">
+<h3>Cancel a submission</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click App Review.</p>
+</li>
+<li>
+<p>Under Submissions, click the submission you want to remove.</p>
+</li>
+<li>
+<p>At the bottom of the page, click Cancel Submission.</p>
+<figure><img alt='Screenshot of the iOS Submission page. On the iOS Submission page, the submitted app version lists under "Items Submitted (1)." At the bottom left, there is a clickable link to cancel the submission.' class="help-screens-retro" src="/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review/images/AppReview-cancel-submission_2x.png"/></figure>
+</li>
+<li>
+<p>Click Confirm.</p>
+</li>
+</ol>
+<p>Your submission will be cancelled, and any items marked as Accepted must be resubmitted. If the submission includes an app version, its status will change to Developer Rejected. If you resubmit, the review process will start over.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

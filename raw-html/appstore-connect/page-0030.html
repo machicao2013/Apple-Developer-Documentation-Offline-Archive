@@ -1,0 +1,72 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Configure In-App Purchase settings</span>
+<article _v="4.0">
+<h1>Generate a shared secret to verify receipts</h1>
+<p>Include a shared secret in your request to verify App Store subscription or In-App Purchase receipts to increase security between your server and Apple's servers.</p>
+<p>A shared secret is a 32-character hexadecimal string generated in App Store Connect. You may generate a primary shared secret, which is a single code for all your apps, or an app-specific shared secret for individual apps. You may also use a primary shared secret for some of your apps, and an app-specific shared secret for others.</p>
+<p>For information about incorporating a shared secret into your app’s receipt handling, visit <a href="https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/validating_receipts_with_the_app_store">Validating Receipts with the App Store</a>.</p>
+<p><b>Required role: </b>Account Holder or Admin. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-or-generate-a-shared-secret-for-all-your-apps-primary-shared-secret">
+<h3>View or generate a shared secret for all your apps (primary shared secret)</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In the homepage, click Users and Access.</p>
+</li>
+<li>
+<p>Click the Integrations tab.</p>
+</li>
+<li>
+<p>In the sidebar, under Keys, click Shared Secret.</p>
+</li>
+<li>
+<p>Click Generate Primary Shared Secret.</p>
+</li>
+<li>
+<p>Copy the code and use it for your transactions receipt for all of your apps with auto-renewable subscriptions.</p>
+</li>
+</ol>
+<p>When you generate a new shared secret, all apps in your organization that use a shared secret should use the new value to verify auto-renewable subscriptions.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="view-or-generate-a-shared-secret-for-an-individual-app-app-specific-shared-secret">
+<h3>View or generate a shared secret for an individual app (app-specific shared secret)</h3>
+<div>
+<p>Access the app-specific shared secret in the Subscriptions page of your app. You may want to use an app-specific shared secret if you want to keep this code private for this app, or if you're planning to transfer this app to another developer account.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>App-specific shared secrets can’t be deleted, only regenerated.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, under General, click App Information.</p>
+</li>
+<li>
+<p>In the App-Specific Shared Secret section, click Manage.</p>
+<figure><img alt="In-App Purchase app-specific shared secret" class="help-screens-retro-full" src="/help/app-store-connect/configure-in-app-purchase-settings/generate-a-shared-secret-to-verify-receipts/images/In-App-Purchase-AppSpecificSharedSecret_2x.png"/></figure>
+</li>
+<li>
+<p>You can generate a shared secret for individual apps, or regenerate a shared secret.</p>
+<p class="note"><b>Note: </b>Clicking Regenerate will automatically generate a new shared secret, and any previously generated shared secret for this app will be invalidated.</p>
+</li>
+<li>
+<p>Then click Done.</p>
+</li>
+<li>
+<p>To generate a shared secret, click Generate or Regenerate in the dialog.</p>
+</li>
+<li>
+<p>Copy the code and use it for your transactions receipt for this app.</p>
+</li>
+</ol>
+<p>When you regenerate an app-specific shared secret, use the new value to verify your auto-renewable subscriptions for this app.</p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

@@ -1,0 +1,241 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="6.0">
+<h1>Platform version information</h1>
+<developer-accordion>
+<accordion-panel id="platform-version-information">
+<h3>Platform version information</h3>
+<div>
+<p><em>Platform version information</em> refers to the set of properties of an app version specific to each platform the app supports.</p>
+<p><a href="/app-store/product-page/">View product page marketing guidelines.</a></p>
+<div class="table-wrapper">
+<table aria-label="Platform version information" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Language</p>
+</td>
+<td>
+<p>The language you choose to localize your <span class="force-glossary">metadata</span>. This property is editable depending on the <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">app status</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Screenshots</p>
+</td>
+<td>
+<p>Screenshots that show what your app looks like on a device. <a href="/help/app-store-connect/reference/app-information/screenshot-specifications">Learn about the screenshot specifications.</a></p>
+<p>This property is required and can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Preview</p>
+</td>
+<td>
+<p>An <em>app preview</em> is an optional short video demonstrating your app. You may add up to three app previews for each localization, per device size. <a href="/help/app-store-connect/reference/app-information/app-preview-specifications">Learn about the app preview specifications.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Text</p>
+</td>
+<td>
+<p>Promotional text lets you inform your App Store visitors of any current app features without requiring an updated submission. This text will appear above your description on the App Store for customers with devices running iOS 11 or later. This property can’t be longer than 170 characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Description</p>
+</td>
+<td>
+<p>A description of the app, detailing the features and functionality. Limited to 4000 characters. The description should be in plain text, with line breaks as needed. HTML format isn't supported.</p>
+<p>This appears on your app’s product page, when users install your app, and will be used for web engine search results once you release your app.</p>
+<p>This property is required and can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Keywords</p>
+</td>
+<td>
+<p>One or more keywords (each greater than two characters) describing your app. You can provide up to 100 bytes of content. Your app is searchable by app name and company name, so you shouldn't duplicate these values in the keyword list. Names of other apps or companies aren't allowed.</p>
+<p>This property is required and can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Support URL</p>
+</td>
+<td>
+<p>The URL of the support website you plan to provide for users, which displays on the App Store for users who have downloaded your app. This URL must lead to actual contact information (legal address, email address, telephone number), as may be required by local law, so that users can reach you regarding app issues, general feedback, and feature enhancement requests. Specify the entire URL, including the protocol (for example, <code>http://support.example.com</code>).</p>
+<p>If you need to provide a <a href="https://ntia.gov/page/software-bill-materials">Software Bill of Materials (SBOM)</a>, you can include it on your support site.</p>
+<p>This property is required and can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing URL</p>
+</td>
+<td>
+<p>The website where users get more information about the app. Specify the entire URL, including the protocol.</p>
+<p>This property can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Version Number</p>
+</td>
+<td>
+<p>The version number that's provided for your app that appears on App Store product pages and is displayed when users install your app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Copyright</p>
+</td>
+<td>
+<p>The name of the person or entity that owns the exclusive rights to the app, preceded by the year the rights were obtained (for example, 2014 Example, Inc.). The copyright symbol is added automatically.</p>
+<p>This property is required.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Routing App Coverage File</p>
+</td>
+<td>
+<p>A routing app’s geographic coverage file (a file with a <code>.geojson</code> file extension) that specify the geographic regions supported by your app.</p>
+<p>The file can have only one MultiPolygon element. MultiPolygon elements consist of at least one Polygon. Polygons contain at least four coordinate points. The start and end coordinate points for a polygon must be the same. For file specifications, read “Specifying the Geographic Coverage File Contents” in <a href="https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/LocationAwarenessPG/ProvidingDirections/ProvidingDirections.html">Location and Maps Programming Guide</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Version Release Settings</p>
+</td>
+<td>
+<p>Determines how the app version will be released. The following settings are allowed:</p>
+<ul>
+<li>
+<p><b>Manual.</b> When the app status changes to Pending Developer Release after approval and you must <a href="/help/app-store-connect/manage-your-apps-availability/select-an-app-store-version-release-option">manually release the version</a>.</p>
+</li>
+<li>
+<p><b>Automatic.</b> The app goes live automatically after it is approved by App Review.</p>
+</li>
+<li>
+<p><b>Automatic, no earlier than.</b> If the date hasn't passed when the app is approved, the app status changes to Pending Developer Release, but is automatically released at the date specified.</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p>What’s New in this Version</p>
+</td>
+<td>
+<p>A description of the changes in this version of the app, such as new features, UI improvements, or bug fixes. Limited to 4000 characters.</p>
+<p>We recommend that you provide detailed information to let users know the specifics of the changes, improvements, or fixes in the version.</p>
+<p>This property isn't available for the first version of the app but required for all subsequent versions. This property can be localized.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Phased Release for Automatic Updates</p>
+</td>
+<td>
+<p>When you release a version update of your app, you can choose to release your iOS app in stages. If you choose this option, your version update will be released over a 7-day period to a percentage of your users on iOS with automatic updates turned on. <a href="/help/app-store-connect/update-your-app/release-a-version-update-in-phases">Learn how to release a version update in phases.</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Reset Overview Rating</p>
+</td>
+<td>
+<p>You can reset your app’s overview rating when you release a new version. <a href="/help/app-store-connect/monitor-ratings-and-reviews/reset-an-app-overview-rating">Learn how to reset overview rating.</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="app-review-information">
+<h3>App Review information</h3>
+<div>
+<p>You must provide the following information to App Review. It isn’t visible to customers and can be edited at any time.</p>
+<p>Submissions that include an app version will be reviewed together with the App Review information for that version.</p>
+<p>Submissions that don’t include an app version, or those that include items associated with multiple platforms, will be reviewed together with the App Review information for the latest approved version of the platform you specify during the submission process. To edit the App Review information on an approved app version, click Edit in the top right corner of the App Review Information section.</p>
+<div class="table-wrapper">
+<table aria-label="App Review information" class="table-3-col table-3-col-wide-middle">
+<thead>
+<tr>
+<th colspan="3" scope="col">
+<p class="TableHead">Property</p>
+</th>
+<th colspan="6" scope="col">
+<p class="TableHead">Description</p>
+</th>
+<th colspan="3" scope="col">
+<p class="TableHead">Required</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="3">
+<p>Contact:</p>
+<p>Name, email, phone number</p>
+</td>
+<td colspan="6">
+<p>Information for the contact person in your organization if the App Review team needs additional information.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Notes</p>
+</td>
+<td colspan="6">
+<p>Additional information about your app that can help during the review process. Include information that may be needed to test your app, such as app-specific settings and test registration or account details. If your app delivers streaming video over the cellular network, enter a test stream URL. The Notes field can contain up to 4000 bytes. You can write notes in any language.</p>
+</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Sign-in required:</p>
+<p>Username and password</p>
+</td>
+<td colspan="6">
+<p>Sign-in information for a demo account. If your app uses a single sign-on service, such as Facebook or Twitter, include the demo account login information for it. The demo account is used during the App Review process and must not expire. Details for additional accounts should be included in the Notes field.</p>
+</td>
+<td colspan="3">
+<figure alt="" class="icon icon-checkcircle"></figure>
+<p>If your app requires a login to use it.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/reference/app-information/app-information">App information</a>
+<a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">Required, localizable, and editable properties</a>
+</div>
+</link></article> </div>

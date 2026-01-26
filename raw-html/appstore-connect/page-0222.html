@@ -1,0 +1,369 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage subscriptions</span>
+<article _v="25P">
+<h1>Set up subscription offer codes</h1>
+<p>If you offer auto-renewable subscriptions on the App Store, you can set up offer codes to provide people with a free or discounted price for a specific duration and help you acquire, retain, and win back subscribers. You can create codes for a maximum of 1 million redemptions per app, per
+quarter.</p>
+<p>There are two types of offer codes:</p>
+<h3>One-time-use codes</h3>
+<ul>
+<li>
+<p> Unique, one-time-use codes that customers redeem through a redemption URL, by entering the code in the <a href="https://support.apple.com/en-us/118242">App Store code redemption flow</a>, or within your app.</p>
+</li>
+<li>
+<p>Customers are limited to redeeming one code per offer.</p>
+</li>
+<li>
+<p>Redeemable by customers within your app if they’re using a device running iOS 14, iPadOS 14, or macOS 15, or later and your app supports the appropriate StoreKit method. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/supporting_subscription_offer_codes_in_your_app">Learn more</a>.</p>
+</li>
+<li>
+<p>Useful for small-scale distribution or when code access needs to be restricted.</p>
+</li>
+<li>
+<p>Each app can have up to 1 million codes per quarter, shared across all subscriptions.</p>
+</li>
+<li>
+<p>Expire after a maximum of six months from the date they’re created.</p>
+</li>
+</ul>
+<h3>Custom codes</h3>
+<ul>
+<li>
+<p>Uniquely named custom codes — for example, SPRINGPROMO — that customers redeem through a redemption URL or within your app.</p>
+</li>
+<li>
+<p>Customers are limited to redeeming one code per offer.</p>
+</li>
+<li>
+<p>Redeemable by customers within your app if they’re using a device running iOS 14, iPadOS 14, or macOS 15, or later and your app supports the appropriate StoreKit method. <a href="https://developer.apple.com/documentation/storekit/in-app_purchase/supporting_subscription_offer_codes_in_your_app">Learn more</a>.</p>
+</li>
+<li>
+<p>Ideal for large campaigns that require mass distribution.</p>
+</li>
+<li>
+<p>An expiration date isn't required for custom codes. You can optionally set a maximum redemption limit and/or expiration date.</p>
+</li>
+<li>
+<p>Each app can have up to 1 million codes per quarter, shared across all subscriptions.</p>
+</li>
+</ul>
+<p>Customer eligibility is determined by you in App Store Connect and can include customers with new, active, and expired subscriptions. Consider your offer’s eligibility requirements before creating and distributing offer codes.</p>
+<p><a href="/app-store/subscriptions/#providing-subscription-offers">Learn about offer types and which one to choose.</a></p>
+<p><a href="/app-store/subscriptions/">Get business guidance for auto-renewable subscriptions.</a></p>
+<figure class="spacing-top spacing-bottom"><img alt="Configure offer codes" class="help-screens-retro-full" src="/help/app-store-connect/manage-subscriptions/set-up-subscription-offer-codes/images/InApp-Subs-offercode-config2_2x.png"/></figure>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/auto-renewable_subscriptions/subscription_offer_codes">Learn how to provide offer codes using the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-up-subscription-offer-codes">
+<h3>Set up subscription offer codes</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click Subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Select the subscription from the list.</p>
+</li>
+<li>
+<p>In the Subscription Prices section, click the add button (+).</p>
+</li>
+<li>
+<p>From the menu, click Create Offer Codes.</p>
+</li>
+<li>
+<p>Enter a reference name for the offer. You’ll use this reference name to manage the offer in App Store Connect and to identify sales associated with offers in Sales and Trends reports and <a href="/documentation/storekit/in-app_purchase">StoreKit transactions</a>.</p>
+</li>
+<li>
+<p>Choose whether you'd like the subscription to automatically renew to the standard price upon conclusion of the offer period. (Checking the box will prevent auto-renewal, ensuring customers receive a commitment-free trial subscription. If you choose this option, you’ll only be able to choose Free offers).</p>
+</li>
+<li>
+<p>Select the customer eligibility for your offer. You can select one or more of the following:</p>
+<ul>
+<li>
+<p><b>New subscribers:</b> Customers who have never subscribed to any subscription product within the group.</p>
+</li>
+<li>
+<p><b>Existing subscribers:</b> Customers who are currently subscribed to a product within the group.</p>
+</li>
+<li>
+<p><b>Expired subscribers:</b> Customers who were previously subscribed to a product within the group, but whose subscription has expired.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>If your subscription has an introductory offer, determine whether people redeeming your codes should be eligible to redeem both a code and the introductory offer by choosing from the following options:</p>
+<ul>
+<li>
+<p><b>Yes.</b> Eligible customers will redeem your app’s introductory offer first, then automatically renew to the offer they redeemed with the code. (If you've disabled auto-renewal, you won’t be able to choose this option).</p>
+</li>
+<li>
+<p><b>No.</b> Eligible customers will redeem the offer code first, then automatically renew to the standard subscription price without using the introductory offer. If they cancel and resubscribe at any point, they’re still eligible to redeem an introductory offer.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click Next.</p>
+</li>
+<li>
+<p>Select the countries or regions where you want to make your offer available, then click Next.</p>
+</li>
+<li>
+<p>Choose <a href="/help/app-store-connect/reference/pricing-and-availability/in-app-purchase-and-subscriptions-pricing-and-availability">Pay as you go, Pay up front, or Free</a>. (If you've opted to disable auto-renewal, you'll only have the option to make your offer free.)</p>
+</li>
+<li>
+<p>Choose the appropriate duration, and if applicable, the discounted price for a base country or region, then click Next. To search from a larger list of price points,click See Additional Prices.</p>
+<p>App Store Connect provides comparable prices for all 175 App Store countries and regions, taking into account taxes and foreign exchange rates. If you want to set different prices for specific storefronts, make the changes and click Next.</p>
+</li>
+<li>
+<p>Make sure the details of your offer are correct and click Confirm.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once you create an offer, you won’t be able to edit it. If changes to customer eligibility are needed, create a new offer.</p>
+</div>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-sandbox-codes">
+<h3>Create sandbox codes</h3>
+<div>
+<p>Sandbox codes are one-time use codes for testing purposes. You can test offer redemptions through your Sandbox Account settings on iOS 16.3, macOS 15.0, and visionOS 1.0 or later, and if your app supports the required StoreKit APIs. <a href="https://developer.apple.com/documentation/storekit/supporting-subscription-offer-codes-in-your-app">Learn more.</a></p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Select the subscription from the list.</p>
+</li>
+<li>
+<p>Scroll down to the Offers section and locate your offer in the list. </p>
+</li>
+<li>
+<p>Click the reference name. </p>
+</li>
+<li>
+<p>In the Sandbox Codes section, click the Create Sandbox Codes button.</p>
+</li>
+<li>
+<p>In the pop-up window, choose the number of codes you want to create. You must select a minimum of 10 and a maximum of 10,000 codes. </p>
+</li>
+<li>
+<p>Choose an expiration date to determine how long the codes are valid. Sandbox codes can be valid for a maximum of six months. Codes expire at 12:00 a.m PT on the expiration date. </p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-one-time-use-codes">
+<h3>Create one-time use codes</h3>
+<div>
+<p>In order for customers to redeem codes, your app must be in the Ready for Sale state.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click the subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>In the menu bar, click Offer Codes.</p>
+</li>
+<li>
+<p>Select your offer from the list.</p>
+</li>
+<li>
+<p>Click the “Create One-Time Use Codes” button.</p>
+</li>
+<li>
+<p>In the pop-up window, select the number of codes you want to create.</p>
+<p>You must select a minimum of 500 and a maximum of 25,000. If you need more than 25,000 codes, you can create multiple batches of codes for the same offer.</p>
+</li>
+<li>
+<p>Choose an expiration date to determine how long the codes are valid. One-time use codes can be valid for a maximum of six months. Codes expire at 12:00 a.m. PT on the expiration date.</p>
+</li>
+<li>
+<p>Click Create. It may take up to an hour before codes are redeemable by customers.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="download-one-time-use-codes">
+<h3>Download one-time use codes</h3>
+<div>
+<p>Once your one-time use codes are created, you’ll need to download them from App Store Connect so you can share them.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click the subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>In the menu bar, click Offer Codes.</p>
+</li>
+<li>
+<p>Locate your offer in the list and click the reference name.</p>
+</li>
+<li>
+<p>Locate the codes you want to download and click Download.</p>
+</li>
+<li>
+<p>Open the extracted text (<code>.csv</code>) file in a spreadsheet application.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="create-custom-codes">
+<h3>Create custom codes</h3>
+<div>
+<p>Once you’ve created custom codes, you won’t be able to edit them. Custom codes can’t be used for other offer campaigns or subscriptions for the app. To create a custom code that's already being used by a different offer for the same app, you must first deactivate the code.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click the subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>In the menu bar, click Offer Codes.</p>
+</li>
+<li>
+<p>Select the offer from the list.</p>
+</li>
+<li>
+<p>Click the “Create Custom Codes” button.</p>
+</li>
+<li>
+<p>Enter a custom code up to 64 characters and without any special characters.</p>
+</li>
+<li>
+<p>Choose a redemption limit. This is the total number of people who can redeem this custom code. You can choose a limit of up to 25,000 at a time. If you need more, use the same custom code multiple times for the same offer.</p>
+</li>
+<li>
+<p>Choose an expiration date to determine how long the codes will be valid (with a maximum of 6 months for codes with an expiration date). Codes expire at 12:00 a.m. PT on the expiration date.</p>
+<p>To create codes with no expiration date, choose No End Date from the date picker. Expiration dates can't be edited.</p>
+</li>
+<li>
+<p>Click Create. It may take up to an hour before codes are redeemable by customers.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="distribute-offer-codes">
+<h3>Distribute offer codes</h3>
+<div>
+<p>You're responsible for distributing offer codes to your customers. You can utilize your own channels, such as email or offline marketing campaigns.</p>
+<ul>
+<li>
+<p><b>Give codes to customers directly:</b> Codes can be shared through online or offline channels. For example, you might print the codes on cards that you give out at an event. People can redeem one-time use codes by entering them in the “Redeem Gift Card or Code” page in their App Store account settings, or redeem custom codes within your app if you’ve implemented the appropriate StoreKit method. <a href="/app-store/subscriptions/#offer-codes">Learn more</a>.</p>
+</li>
+<li>
+<p><b>Create a unique redemption URL:</b> Codes can be used to create redemption URLs that you can share directly. When someone visits the URL, they'll land on a page where they can redeem your code. People who haven't installed your app will first be prompted to download the app before redeeming the code.</p>
+<p>To create these URLs for one-time use codes, copy the example link from your offer details page, then add each code to the end of the URL. One-time use code URLs are also included in the downloadable text file.</p>
+</li>
+</ul>
+<figure><img alt="Distribute offer code" class="help-screens-retro" src="/help/app-store-connect/manage-subscriptions/set-up-subscription-offer-codes/images/InApp-Subs-offercode-dist2_2x.png"/></figure>
+</div>
+</accordion-panel>
+<accordion-panel id="deactivate-offer-codes">
+<h3>Deactivate offer codes</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click a subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>In the menu bar, click Offer Codes.</p>
+</li>
+<li>
+<p>Click the reference name of the offer.</p>
+</li>
+<li>
+<p>Locate the codes you want to deactivate and click Deactivate.</p>
+</li>
+<li>
+<p>Click Deactivate again to proceed</p>
+<p>The codes will expire immediately. Subscribers who have already redeemed the codes won’t be affected. Unredeemed codes will also expire and will not be reapplied to the 1,000,000 quarterly limit.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="deactivate-offers">
+<h3>Deactivate offers</h3>
+<div>
+<p>You can have up to 10 active offers per subscription SKU at a time in App Store Connect. If you wish to deactivate an offer, please note that the offer can't be reactivated later. All codes associated with the offer will be invalidated. Subscribers who have already redeemed codes for the offer won't be affected.</p>
+<ol class="compound-item-list">
+<li>
+<p>From Apps, select your app.</p>
+</li>
+<li>
+<p>In the sidebar, click subscriptions.</p>
+</li>
+<li>
+<p>Choose the subscription group containing your subscription.</p>
+</li>
+<li>
+<p>Click a subscription, then go to the Subscription Prices section and click View all Subscription Pricing.</p>
+</li>
+<li>
+<p>In the menu bar, click Offer Codes.</p>
+</li>
+<li>
+<p>Click the reference name of the offer.</p>
+</li>
+<li>
+<p>In the upper corner, click Deactivate.</p>
+<p>You can view your deactivated offers anytime, as well as download expired codes associated with deactivated offers.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/app-store/subscriptions/#offer-codes">Offer codes</a>
+<a href="https://developer.apple.com/documentation/storekit/original_api_for_in-app_purchase/subscriptions_and_offers/implementing_offer_codes_in_your_app">Implementing offer codes in your app</a>
+<a href="https://developer.apple.com/documentation/storekit/appstore/supporting_subscription_offer_codes_in_your_app">Supporting subscription offer codes in your app</a>
+<a href="https://developer.apple.com/videos/play/tech-talks/10868/">Watch "Subscription offer codes"</a>
+</div>
+</link></article> </div>

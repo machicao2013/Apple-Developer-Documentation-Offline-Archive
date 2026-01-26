@@ -1,0 +1,226 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage your app's availability</span>
+<article _v="7.0">
+<h1>Publish for pre-order</h1>
+<p>Before releasing your app on the App Store in a new country or region, you can choose to make it available for pre-order. This allows customers to view your product page and order the app before it's released for download.</p>
+<h3>Eligibility</h3>
+<p>You can offer your app for pre-order in any country or region on the App Store where the app hasn't yet been released. Both free and paid apps across all Apple platforms are eligible for pre-orders. In-App Purchases aren’t eligible for pre-order, but you can <a href="/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases">set up your In-App Purchases</a>, including promotional metadata, in App Store Connect before and during the pre-order period so that everything is ready once your app is released for download. <a href="/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases">Promoted In-App Purchases</a> don’t display on your App Store product page until your app is released for download.</p>
+<p>App bundles aren’t eligible for pre-order. An app offered for pre-order must have at least one country or region where it’s already Ready for Sale to be included in a new app bundle.</p>
+<h3>Customer experience</h3>
+<p>Customers can start pre-orders on devices running iOS 11.2, iPadOS 13, macOS 10.13.2, tvOS 11.2, and watchOS 6, or later. Users with earlier operating systems can access product pages through direct links but will find the Buy button disabled, prompting them to update their OS to proceed with pre-orders.</p>
+<p>Customers can cancel their pre-orders in their App Store settings on iOS and macOS, and on a Windows PC. <a href="https://support.apple.com/HT202723">Learn more.</a>
+<p>If your pre-order’s release date is less than 180 days from the current date, the full release date appears on your app’s product page (for example, “Expected Jan 1, 2024”). For release dates more than 180 days away, only the month and year are displayed (for example, “Expected Jan 2024”).</p>
+<p>Customers who pre-order a paid app won't be charged until the app's official download release date. You may adjust the app's price during the pre-order phase; however, any price changes will result in customers being charged the lower amount—either the pre-order price they accepted or the price on the release date. Adjustments are subject to the original accepted terms.</p>
+<p>Once your app is released, customers receive a notification, and the app automatically downloads to the device used for pre-ordering. It’ll also download on their eligible devices if they <a href="https://support.apple.com/HT202180">turn on automatic downloads</a>.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/app_pre-orders">Learn how to manage pre-orders using the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="publish-your-app-for-the-first-time-as-a-pre-order">
+<h3>Publish your app for the first time as a pre-order</h3>
+<div>
+<p>If this is your first time publishing an app in any country or region on the App Store, follow these steps to make your app available for pre-order. </p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once your app is released for download or purchase on the App Store in a country or region, it can no longer be made available for pre-order in that same location.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability, then scroll to the App Availability section and click Set Up Availability.</p>
+<figure><img alt="Screenshot of the Pricing and Availability page, where the App Availability section has the Set Up Availability button." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/publish-preorder-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>Select Publish as Pre-Order, then click Next.</p>
+</li>
+<li>
+<p>Choose a date to release your app for download, then click Next.</p>
+<p>Set your app's release date to fall between two and 180 days in the future. You may <a href="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/#edit-pre-order-release-date-for-your-app">update the pre-order release date</a> any time before the app is released on the App Store in your selected countries or regions.</p>
+<p>The date and time when your app is released on the App Store varies by country or region. <a href="/help/app-store-connect/reference/pricing-and-availability/app-store-pricing-and-availability-start-times-by-country-or-region">Learn more about App Store pricing and availability start times by country or region.</a></p>
+</li>
+<li>
+<p>Select the countries or regions where you want to make your pre-order available, then click Next.</p>
+</li>
+<li>
+<p>Click Confirm. Your new pre-order will appear under the Pre-Orders section on the App Availability page. It won't appear on the App Store until you manually release an app version.</p>
+<figure><img alt="Screenshot of the App Availability page, under the Pre-Orders section, where the United States is listed with the app’s scheduled release date. Under the Availability (1 Country or Region) section, the United States is listed with the status Pre-Order Pending Developer Release next to it." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/publish-preorder-step-5_2x.png"/></figure>
+</li>
+<li>
+<p>Click Pricing and Availability to return to the Pricing and Availability overview page, then click the platform version you want to submit for review.</p>
+</li>
+<li>
+<p><a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">Submit the app for review.</a></p>
+</li>
+<li>
+<p>Once your app is approved and you're ready to make it available for pre-order, return to the platform version you want to release, then click Release This Version on the top right.</p>
+</li>
+<li>
+<p>In the dialog that appears, click Confirm.</p>
+<p>Your pre-order publishes on the App Store immediately, but it may take up to 24 hours to appear to all users.</p>
+<p>If new countries or regions are added to the App Store in the future, your app will automatically be available for download or purchase there. You can manage this selection by <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store#edit-your-apps-availability">editing your app's availability.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="publish-your-app-for-pre-order-in-a-new-country-or-region">
+<h3>Publish your app for pre-order in a new country or region</h3>
+<div>
+<p>If you’ve already published your app to the App Store in a country or region, follow these steps to make your app available for pre-order in additional countries or regions.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Once your app is released for download or purchase on the App Store in a country or region, it can no longer be made available for pre-order in that same location.</p>
+</div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability, then scroll to the App Availability section.</p>
+</li>
+<li>
+<p>Under the App Availability section, click Manage.</p>
+</li>
+<li>
+<p>Click Set Up Pre-Order. Or, if you already have an active pre-order for another country or region, click the add button (+) next to Pre-Orders.</p>
+<figure><img alt="Screenshot of the App Availability page, where the Pre-Orders section has the Set Up Pre-Orders button." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/publish-pre-order-new-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>Choose a date to release your app for download, then click Next.</p>
+<p>Set your app's release date to fall between two and 180 days in the future. You may <a href="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/#edit-pre-order-release-date-for-your-app">update the pre-order release date</a> any time before the app is released on the App Store in your selected countries or regions.</p>
+<p>The date and time when your app is released on the App Store varies by country or region. <a href="/help/app-store-connect/reference/pricing-and-availability/app-store-pricing-and-availability-start-times-by-country-or-region">Learn more about App Store pricing and availability start times by country or region.</a></p>
+</li>
+<li>
+<p>Select the countries or regions where you want to make your pre-order available, then click Next.</p>
+</li>
+<li>
+<p>Click Confirm. Your new pre-order will appear under the Pre-Orders section on the Manage Availability page in App Store Connect.</p>
+<p>Pre-orders for your app will be published immediately on the App Store in the selected countries or regions. However, it may take up to 24 hours for the pre-order to appear for all users. The pre-order will be published using the version of the app that’s currently Ready for Distribution or Pre-Order Ready for Distribution.</p>
+<p>If new countries or regions are added to the App Store, your app will be made available for download or purchase there. You can manage this selection by <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store#edit-your-apps-availability">editing your app's availability.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="version-updates-during-pre-order">
+<h3>Version updates during pre-order</h3>
+<div>
+<p>You can update your app while it's available for pre-order by <a href="/help/app-store-connect/update-your-app/create-a-new-version">creating</a> and <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submitting a new version</a> in App Store Connect. Customers receive the latest app version that you've released for distribution. After submitting, you have the option to manually release the app version, set it for automatic release upon approval, or schedule it for release after a specific date. <a href="/help/app-store-connect/manage-your-apps-availability/select-an-app-store-version-release-option">Learn more about an App Store version release options.</a></p>
+<p>If this is your first time releasing the app on the App Store or if you’ve chosen a manual release, you must follow these steps in App Store Connect once App Review approves the version:</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, select the app version that has the status of Pending Developer Release.</p>
+</li>
+<li>
+<p>On the top right, click Release This Version.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>When you click Release This Version, the new app version will be released for download or purchase immediately in any country or region where the App Store status is Available or Available on App Release. If your app is available for pre-order, the new version will be published for pre-order in the specified countries or regions, but it won't go live until your pre-order release date.</p>
+</div>
+</li>
+<li>
+<p>In the dialog that appears, click Confirm.</p>
+<p>Your new version will be published on the App Store for pre-order immediately, but it may take up to 24 hours to appear to all users.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-pre-order-release-date-for-your-app">
+<h3>Edit pre-order release date for your app</h3>
+<div>
+<p>During the pre-order period, you can update the release date of your app. For first-time releases, the new publish date must be within 180 days of the pre-order's initial publication on the App Store in that specific country or region. If your app is already available for purchase or download in at least one country or region, the new pre-order release date must be within 365 days of the pre-order's first publication in that area.</p>
+<p>The release date and time of your app on the App Store may vary by region. Once the pre-order release date has passed in a particular country or region where your pre-order is published, you can’t alter the pre-order release date. <a href="/help/app-store-connect/reference/pricing-and-availability/app-store-pricing-and-availability-start-times-by-country-or-region">Learn more about App Store pricing and availability start times by country or region.</a> </p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability, then click Manage under the App Availability section.</p>
+</li>
+<li>
+<p>Under the Countries or Regions column, click Edit next to the pre-order you want to edit.</p>
+<figure><img alt="Screenshot of the App Availability page, where Canada is listed under the Pre-Orders section, with a clickable Edit link next to it" class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/preorder-edit-date-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>When editing a pre-order for multiple countries or regions, you can choose which countries or regions will have their release date modified. If you wish to update the release date in all the countries or regions where your pre-order is set up, ensure all are selected.</p>
+</li>
+<li>
+<p>Click Next, select “Edit your app’s release date,” then click Next again.</p>
+<figure><img alt="Screenshot of the Edit Pre-Order in Canada dialog, where there are three options: &quot;Edit your app's release date&quot;, &quot;Release your app to customers immediately&quot;, and &quot;Remove your pre-order from the App Store&quot;. The &quot;Edit your app's release date&quot; option is selected. At the bottom, Cancel and Next buttons are on the right." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/preorder-edit-date-step-2_2x.png"/></figure>
+</li>
+<li>
+<p>Select a new release date for your pre-order, then click Confirm.</p>
+<p>The updated release date will appear on the App Store within 24 hours.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="release-your-app-to-customers-immediately">
+<h3>Release your app to customers immediately</h3>
+<div>
+<p>During the pre-order period, you’re able to release your app to customers immediately, rather than waiting for the scheduled release date.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability, then under the App Availability section, click Manage.</p>
+</li>
+<li>
+<p>Under the Countries or Regions column, click Edit next to the pre-order you want to edit.</p>
+<figure><img alt="Screenshot of the App Availability page, Canada are listed under the Pre-Orders section, with a clickable Edit link next to it." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/release-app-now-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>When editing a pre-order for multiple countries or regions, you can choose which specific countries or regions you want the app to be released in immediately. To release the app in all countries or regions where you initially set up the pre-order, simply leave all checkboxes for countries or regions selected.</p>
+</li>
+<li>
+<p>Click Next, select “Release your app to customers immediately," then click Next again.</p>
+<figure><img alt="Screenshot of the Edit Pre-Order in Canada dialog, where there are three options: &quot;Edit your app's release date&quot;, &quot;Release your app to customers immediately&quot;, and &quot;Remove your pre-order from the App Store&quot;. The &quot;Release your app to customers immediately&quot; option is selected. At the bottom, Cancel and Next buttons are on the right." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/release-app-now-step-2_2x.png"/></figure>
+</li>
+<li>
+<p>Click Confirm.</p>
+<p>Your app will be released to the App Store immediately in the selected countries or regions but may take up to 24 hours to appear to all users. Customers who pre-ordered your app will be notified and your app will automatically download to their device. For paid apps, customers will be charged.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="remove-your-pre-order-offer-from-the-app-store">
+<h3>Remove your pre-order offer from the App Store</h3>
+<div>
+<p>Removing your pre-order offer from the App Store will result in customers not receiving the app, and they won’t be charged unless the app is made available for pre-order again before the release date. Furthermore, after the release date has passed, republishing your app as a pre-order won’t be possible.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>In the sidebar, click Pricing and Availability, then click Manage under the App Availability section.</p>
+</li>
+<li>
+<p>Click Edit next to the pre-order you want to edit under the Countries or Regions column.</p>
+<figure><img alt="Screenshot of the App Availability page, where Canada is listed under the Pre-Orders section, with a clickable Edit link next to it" class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/remove-preorder-step-1_2x.png"/></figure>
+</li>
+<li>
+<p>When editing a pre-order for multiple countries or regions, you can choose which specific countries or regions you want the app to be released in immediately. To release the app in all countries or regions where you initially set up the pre-order, simply leave all checkboxes for countries or regions selected.</p>
+</li>
+<li>
+<p>Click Next, select “Remove your pre-order from the App Store," then click Next again.</p>
+<figure><img alt="Screenshot of the Edit Pre-Order in Canada dialog, where there are three options: &quot;Edit your app's release date&quot;, &quot;Release your app to customers immediately&quot;, and &quot;Remove your pre-order from the App Store&quot;. The &quot;Remove your pre-order from the App Store&quot; option is selected. At the bottom, Cancel and Next buttons are on the right." class="help-screens-retro" src="/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order/images/remove-preorder-step-2_2x.png"/></figure>
+</li>
+<li>
+<p>Click Confirm.</p>
+<p>Your app will be removed from the App Store within 24 hours. Customers who pre-ordered your app won’t receive it, and paid customers won’t be charged unless you make your app available for pre-order again before the release date.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/videos/play/wwdc2023/10015/">Watch "What's new in App Store pre-orders"</a>
+<a href="/app-store/pre-orders/">Offering your apps for pre-order</a>
+<a href="/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders/">View units, proceeds, sales, and pre-orders</a>
+<a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">App and submission statuses</a>
+</div>
+</link></p></article> </div>

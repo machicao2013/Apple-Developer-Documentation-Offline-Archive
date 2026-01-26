@@ -1,0 +1,83 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="2.0">
+<h1>Captions evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Captions are usually time-synchronized text alternatives for dialogue and relevant sounds in videos or some forms of audio-only content. Captions are an accommodation for the Deaf and hard of hearing communities, but captions are also used widely by those without hearing loss.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. The goal of the Captions feature is to support users whose system settings express a need or desire to have audible dialogue and other sounds visibly rendered on screen, or to an alternate output device like a tactile braille display. Captions are a critical accommodation for the Deaf, DeafBlind, and hard of hearing communities, but captions are also used widely by those without hearing loss.</p>
+<figure><img alt="Screen shot of Apple TV app for Mac, displaying a scene with four characters sitting in a small room with red and blue lights, discussing intensely. Subtitles read: Cobel’s gone. Milchick’s in charge." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria/images/captions_2x.png" style="display:block; max-width:100%; height:auto;"/></figure>
+<p>The following sections provide more detail about how to determine whether your app supports Captions well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Captions</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>While you’re not required to use Apple frameworks to indicate support for Captions, your app should still enable captions by default when detecting the systemwide captions setting. If you offer your own in-app setting, it should either support similar functionality to the systemwide setting, or offer more granular user interface customization.</p>
+<p>Review the resources below to learn how to turn on systemwide captions for each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, visit <a href="https://support.apple.com/guide/iphone/iph3e2e23d1">Display subtitles and captions on iPhone</a>.</p>
+</li>
+<li>
+<p>For iPad, visit <a href="https://support.apple.com/guide/ipad/ipad9a246b38">Display subtitles and captions on iPad</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/mchlc1cb8d54">Use subtitles and closed captions on Mac</a>.</p>
+</li>
+<li>
+<p>For Apple TV, visit <a href="https://support.apple.com/guide/tv/atvb1d61ca06">Turn on closed captions and SDH</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tan0201bdfb1">Display subtitles and captions on Apple Vision Pro</a>.</p>
+</li>
+</ul>
+</div>
+<h2>Indicating support for Captions</h2>
+<div class="spacing-bottom">
+<p>You may say that your app supports Captions if it provides captions for video played through your app, including game interstitials and audible dialogue. You may also indicate support for Captions if your app provides text transcripts of audio-only content, such as music lyrics or spoken dialogue in podcasts.</p>
+<ul>
+<li>
+<p>For video content, you may indicate support for Captions if your app has dialogue-only subtitles for primary and alternate languages, but consider improving your pipeline to offer closed captions or SDH, which also includes relevant non-verbal audio such as “[doorbell rings]” or “[dog barks].”</p>
+</li>
+<li>
+<p>Even if your app doesn’t include movies or TV shows with typical subtitles or closed captions, there may be other areas where your app presents spoken dialogue or other relevant sounds. Game interstitials, for example, often include dialogue that should be captioned, even though it’s not delivered with standard captions in a standard video player.</p>
+</li>
+<li>
+<p>If your app provides verbal audio content, such as music with lyrics or spoken podcasts, consider providing a text copy of that content as a transcript. Text transcripts don’t need to be time-synchronized, and you may indicate support for Captions based on the inclusion of high quality transcripts. For example, even though watchOS apps don’t support video playback, a watchOS app could include music lyrics or a transcript for spoken audio.</p>
+</li>
+</ul>
+<p><b>Captions in third-party content</b></p>
+<p>If your app presents third-party video content, such as video posts in a social media app, videos added by the user in a presentation app, or TV or movie streaming in an entertainment app, users should have the ability to include caption data for your app to present. To indicate support for Captions, you’re <b><i>not</i></b> responsible for ensuring every piece of third-party media has captions. However, you should ensure the following:</p>
+<ul>
+<li>
+<p>Users should be able to determine which pieces of media content are captioned. For example, most video streaming service apps will present a “CC” or “SDH” icon on videos that include captions, along with other details about available subtitle languages.</p>
+</li>
+<li>
+<p>If your app includes the functionality to display captions, but very little or no captioned content is available on your app, don’t indicate support for Captions.</p>
+</li>
+<li>
+<p>Consider evangelizing captions to your content providers so more video content has captions.</p>
+</li>
+</ul>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Captions in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Captions every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, and <a href="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria">Audio Descriptions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/avfoundation/selecting-subtitles-and-alternative-audio-tracks">Selecting Subtitles and Alternative Audio Tracks</a>
+<a href="https://developer.apple.com/documentation/avfoundation/media_assets_and_metadata/caption_authoring/">Caption Authoring</a>
+<a href="https://developer.apple.com/documentation/visionOS/improving-accessibility-support-in-your-app#Include-captions-for-audio-content">Improving accessibility support in your visionOS app: Include captions for audio content </a>
+<a href="https://developer.apple.com/documentation/mediaaccessibility/">Media Accessibility</a>
+</div>
+</article> </div>

@@ -1,0 +1,88 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app accessibility</span>
+<article _v="3.0">
+<h1>Audio Descriptions evaluation criteria</h1>
+<div class="platforms">
+<span class="platforms-badge">iOS</span>
+<span class="platforms-badge">macOS</span>
+<span class="platforms-badge">tvOS</span>
+<span class="platforms-badge">visionOS</span>
+<span class="platforms-badge">watchOS</span>
+</div>
+<h3>Description</h3>
+<div class="spacing-bottom">
+<p>Audio descriptions are additional dialogue, interspersed between natural pauses in the main audio of a program or interstitial content, that describe to viewers who are blind or low vision what’s happening on-screen during time-based visual content.</p>
+</div>
+<h3>Goals</h3>
+<div class="spacing-bottom">
+<p>Everyone should be able to use your app, regardless of whether they have a disability. The goal of the Audio Descriptions feature is to support users who are blind or have low vision. Predominantly used in movies and TV shows, audio descriptions (AD) combine the main audio track with additional narration describing inaudible on-screen events. For example, “Mark stares at Gemma through the window. His expression displays inner conflict, as he wonders what to do next.”</p>
+<figure><img alt="Screen shot of Apple TV app for Mac, displaying a scene from Severance with two characters running down a hallway. The audio track selection menu is open, with “Original: English AD” selected." class="help-screens-retro" src="/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria/images/audio-descriptions_2x.png" style="display:block; max-width:100%; height:auto;"/></figure>
+<p>When an AD audio track is selected, narration describes for the scene above from Severance as: “In slow motion, Mark and Helly run together down a long white hallway flashing with red light.”</p>
+<p>The following sections provide more detail about how to determine whether your app supports Audio Descriptions well. The goal is to help ensure users with disabilities can leverage all common tasks of the app, therefore performing this evaluation will help you determine whether to indicate your app <b>Supports Audio Descriptions</b> on the App Store.</p>
+</div>
+<h3>Getting started with testing</h3>
+<div class="spacing-bottom">
+<p>While you’re not required to use Apple frameworks to indicate support for Audio Descriptions, your app should still enable audio descriptions by default when detecting the systemwide audio descriptions setting. If you offer your own in-app setting, it should either support similar functionality to the systemwide setting, or offer more granular user interface customization.</p>
+<p>Review the resources below to learn how to enable audio descriptions for each device your app supports.</p>
+<ul>
+<li>
+<p>For iPhone, visit <a href="https://support.apple.com/guide/iphone/iph4768b3f5c">Hear audio descriptions for video content on iPhone</a>.</p>
+</li>
+<li>
+<p>For iPad, visit <a href="https://support.apple.com/guide/ipad/ipadb6108e6b">Hear audio descriptions for video content on iPad</a>.</p>
+</li>
+<li>
+<p>For Mac, visit <a href="https://support.apple.com/guide/mac-help/mchl2a14f1c5">Change Audio Descriptions settings for accessibility on Mac</a>.</p>
+</li>
+<li>
+<p>For Apple TV, visit <a href="https://support.apple.com/guide/tv/atvb372a82a4">Use audio descriptions on Apple TV</a>.</p>
+</li>
+<li>
+<p>For Apple Vision Pro, visit <a href="https://support.apple.com/guide/apple-vision-pro/tan7daefbf61">Hear audio descriptions for video content on Apple Vision Pro</a>.</p>
+</li>
+</ul>
+</div>
+<h2>Indicating support for Audio Descriptions</h2>
+<div class="spacing-bottom">
+<p>You may say that your app supports Audio Descriptions if it provides narrated descriptions of relevant on-screen content for video played in your app, including game interstitials and audible dialogue. </p>
+<ul>
+<li>
+<p>Even if your app doesn’t include movies or TV shows, there may be other areas where your app presents on-screen time-based content that may not be available through another form of sensory perception. For example, opening sequences, game interstitials, and cut scenes should be described, even if they’re not delivered in a standard video player. You should also describe tips and hints that are otherwise only available through visual clues.</p>
+</li>
+<li>
+<p>As one uncommon but creative example, a video streaming service might choose to provide an audio-only watchOS app, and automatically select the audio description track.</p>
+</li>
+</ul>
+<p><b>Audio Descriptions in third-party content</b></p>
+<p>If your app presents third-party content, such as video posts in a social media app, videos added by the user in a presentation app, or TV or movie streaming in an entertainment app, users should have the ability to include an audio description track for your app to present. To indicate support for Audio Descriptions, you’re <b><i>not</i></b> responsible for ensuring every piece of third-party media has audio descriptions. However, you should ensure the following:</p>
+<ul>
+<li>
+<p>Users should be able to determine which pieces of media content are audio described. For example, most video streaming service apps will present an “AD” icon on videos that include audio descriptions. </p>
+</li>
+<li>
+<p>If your app includes the functionality to select audio descriptions, but very little or no described content is available on your app, don’t indicate support for Audio Descriptions.</p>
+</li>
+<li>
+<p>Consider evangelizing audio descriptions to your content providers so more video content has audio descriptions.</p>
+</li>
+</ul>
+<h2>Additional suggestions</h2>
+<ul>
+<li>
+<p>Creating great audio description content is a creative process that many movie and TV production teams have started to author and record in-house. Others contract this work to external service firms that specialize in audio description, captioning, and other types of accessible media.</p>
+</li>
+<li>
+<p>If you or your content partners will be developing the audio descriptions yourself, try watching one of your favorite movies or shows with audio descriptions enabled. Pay attention to the details, like the tone of voice, and terseness that is necessary in some scenes. Pay attention to the detail provided in scenarios like end credits. Apple TV+ provides audio description content in multiple languages, and most other major streaming services provide audio description content as well.</p>
+</li>
+</ul>
+</div>
+<div class="Task">
+<p>Even after you’re able to indicate support for Audio Descriptions in the common tasks of your app, there are likely further improvements you’ll be able to make to the accessibility of your app. Re-evaluate your app’s support for Audio Descriptions every time you update your app. Set a goal to make your app more accessible to more people in every release.</p>
+<p>Learn more about the evaluation criteria for <a href="/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria">VoiceOver</a>, <a href="/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria">Voice Control</a>, <a href="/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria">Larger Text</a>, <a href="/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria">Dark Interface</a>, <a href="/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria">Differentiate Without Color Alone</a>, <a href="/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria">Sufficient Contrast</a>, <a href="/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria">Reduced Motion</a>, and <a href="/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria">Captions</a>.</p>
+</div>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="https://developer.apple.com/documentation/avfoundation/selecting-subtitles-and-alternative-audio-tracks">Selecting Subtitles and Alternative Audio Tracks</a>
+<a href="https://developer.apple.com/documentation/mediaaccessibility/">Media Accessibility</a>
+</div>
+</article> </div>

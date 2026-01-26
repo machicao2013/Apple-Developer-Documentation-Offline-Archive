@@ -1,0 +1,1382 @@
+{
+  "root_url": "https://developer.apple.com/help/app-store-connect/",
+  "discovered_at": "2026-01-21T20:10:26.722500",
+  "total_pages": 275,
+  "pages": [
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/",
+      "title": "App Store Connect - Help - Apple Developer",
+      "h1": "App Store Connect Help"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/add-multiplayer-compatibility",
+      "title": "Add multiplayer compatibility - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Add multiplayer compatibility"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-achievements",
+      "title": "Manage achievements - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage achievements"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-activities",
+      "title": "Manage activities - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage activities"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-an-app-version-for-game-center",
+      "title": "Manage an app version for Game Center - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage an app version for Game Center"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-challenges",
+      "title": "Manage challenges - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage challenges"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-groups",
+      "title": "Manage groups - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage groups"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-leaderboard-sets",
+      "title": "Manage leaderboard sets - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage leaderboard sets"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-leaderboards",
+      "title": "Manage leaderboards - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage leaderboards"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/manage-scores-and-players",
+      "title": "Manage scores and players - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Manage scores and players"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center",
+      "title": "Overview of Game Center - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of Game Center"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-game-center-groups",
+      "title": "Overview of Game Center groups - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of Game Center groups"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/overview-of-testing-game-center",
+      "title": "Overview of testing Game Center - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of testing Game Center"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-game-center/remove-leaderboard-test-data",
+      "title": "Remove leaderboard test data - Configure Game Center - App Store Connect - Help - Apple Developer",
+      "h1": "Remove leaderboard test data"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/enter-server-urls-for-app-store-server-notifications",
+      "title": "Enter server URLs for App Store Server Notifications - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Enter server URLs for App Store Server Notifications"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/generate-a-shared-secret-to-verify-receipts",
+      "title": "Generate a shared secret to verify receipts - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Generate a shared secret to verify receipts"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/generate-keys-for-in-app-purchases",
+      "title": "Generate keys for In-App Purchases - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Generate keys for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/overview-for-configuring-in-app-purchases",
+      "title": "Overview for configuring In-App Purchases - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Overview for configuring In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/promote-in-app-purchases",
+      "title": "Promote In-App Purchases - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Promote In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/set-a-tax-category-for-in-app-purchases",
+      "title": "Set a tax category for In-App Purchases - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Set a tax category for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/configure-in-app-purchase-settings/turn-on-family-sharing-for-in-app-purchases",
+      "title": "Turn on Family Sharing for In-App Purchases - Configure In-App Purchase settings - App Store Connect - Help - Apple Developer",
+      "h1": "Turn on Family Sharing for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app",
+      "title": "Add a new app - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Add a new app"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/add-imessage-app-information",
+      "title": "Add iMessage app information - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Add iMessage app information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/add-platforms",
+      "title": "Add platforms - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Add platforms"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/add-watchos-app-information",
+      "title": "Add watchOS app information - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Add watchOS app information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/create-and-submit-app-bundles",
+      "title": "Create and submit app bundles - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Create and submit app bundles"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/edit-access-to-an-app",
+      "title": "Edit access to an app - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Edit access to an app"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/edit-app-bundle-information",
+      "title": "Edit app bundle information - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Edit app bundle information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/remove-an-app",
+      "title": "Remove an app - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Remove an app"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/set-your-developer-name",
+      "title": "Set your developer name - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "Set your developer name"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-an-app-record/view-and-edit-app-information",
+      "title": "View and edit app information - Create an app record - App Store Connect - Help - Apple Developer",
+      "h1": "View and edit app information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-custom-product-pages/configure-multiple-product-page-versions",
+      "title": "Configure multiple product page versions - Create custom product pages - App Store Connect - Help - Apple Developer",
+      "h1": "Configure multiple product page versions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-product-page-optimization-tests/apply-a-test-treatment-to-your-product-page",
+      "title": "Apply A Test Treatment To Your Product Page - Create product page optimization tests - App Store Connect - Help - Apple Developer",
+      "h1": "Apply a test treatment to your product page"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-product-page-optimization-tests/configure-test-treatments",
+      "title": "Configure test treatments - Create product page optimization tests - App Store Connect - Help - Apple Developer",
+      "h1": "Configure test treatments"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-product-page-optimization-tests/create-a-test",
+      "title": "Create a test - Create product page optimization tests - App Store Connect - Help - Apple Developer",
+      "h1": "Create a test"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-product-page-optimization-tests/overview-of-product-page-optimization",
+      "title": "Overview of product page optimization - Create product page optimization tests - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of product page optimization"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/create-product-page-optimization-tests/run-a-test",
+      "title": "Run a test - Create product page optimization tests - App Store Connect - Help - Apple Developer",
+      "h1": "Run a test"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/get-started/app-store-connect-for-iphone-and-ipad",
+      "title": "App Store Connect for iPhone and iPad - Get started - App Store Connect - Help - Apple Developer",
+      "h1": "App Store Connect for iPhone and iPad"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/get-started/app-store-connect-homepage",
+      "title": "App Store Connect homepage - Get started - App Store Connect - Help - Apple Developer",
+      "h1": "App Store Connect homepage"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/get-started/app-store-connect-workflow",
+      "title": "App Store Connect workflow - Get started - App Store Connect - Help - Apple Developer",
+      "h1": "App Store Connect workflow"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports",
+      "title": "Download financial reports - Getting paid - App Store Connect - Help - Apple Developer",
+      "h1": "Download financial reports"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/getting-paid/overview-of-receiving-payments",
+      "title": "Overview of receiving payments - Getting paid - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of receiving payments"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/getting-paid/view-payments-and-proceeds",
+      "title": "View payments and proceeds - Getting paid - App Store Connect - Help - Apple Developer",
+      "h1": "View payments and proceeds"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/making-payments-to-apple/invoice-fields",
+      "title": "Core Technology Fee invoice fields - Overview of making payments to Apple - App Store Connect - Help - Apple Developer",
+      "h1": "Invoice fields"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/making-payments-to-apple/overview-of-making-payments-to-apple",
+      "title": "Overview of making payments to Apple - Overview of making payments to Apple - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of making payments to Apple"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/making-payments-to-apple/reporting-tokens-and-transactions",
+      "title": "Reporting tokens and transactions to Apple - Overview of making payments to Apple - App Store Connect - Help - Apple Developer",
+      "h1": "Reporting tokens and transactions to Apple"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/making-payments-to-apple/understanding-taxes",
+      "title": "Commissions, fees, and taxes - Overview of making payments to Apple - App Store Connect - Help - Apple Developer",
+      "h1": "Understanding taxes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/making-payments-to-apple/update-your-account-for-invoicing-requirements",
+      "title": "Update your account for invoicing requirements - Overview of making payments to Apple - App Store Connect - Help - Apple Developer",
+      "h1": "Update your account for invoicing requirements"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements",
+      "title": "Sign and update agreements - Manage agreements - App Store Connect - Help - Apple Developer",
+      "h1": "Sign and update agreements"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-agreements/view-agreements-status",
+      "title": "View agreements status - Manage agreements - App Store Connect - Help - Apple Developer",
+      "h1": "View agreements status"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/audio-descriptions-evaluation-criteria",
+      "title": "Audio Descriptions evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Audio Descriptions evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/captions-evaluation-criteria",
+      "title": "Captions evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Captions evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/dark-interface-evaluation-criteria",
+      "title": "Dark Interface evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Dark Interface evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/differentiate-without-color-alone-evaluation-criteria",
+      "title": "Differentiate Without Color Alone evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Differentiate Without Color Alone evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/larger-text-evaluation-criteria",
+      "title": "Larger Text evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Larger Text evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/manage-accessibility-nutrition-labels",
+      "title": "Manage Accessibility Nutrition Labels - App Store Connect - Help - Apple Developer",
+      "h1": "Manage Accessibility Nutrition Labels"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/overview-of-accessibility-nutrition-labels",
+      "title": "Overview of Accessibility Nutrition Labels - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of Accessibility Nutrition Labels"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/reduced-motion-evaluation-criteria",
+      "title": "Reduced Motion evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Reduced Motion evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/sufficient-contrast-evaluation-criteria",
+      "title": "Sufficient Contrast evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Sufficient Contrast evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/voice-control-evaluation-criteria",
+      "title": "Voice Control evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "Voice Control evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-accessibility/voiceover-evaluation-criteria",
+      "title": "VoiceOver evaluation criteria - App Store Connect - Help - Apple Developer",
+      "h1": "VoiceOver evaluation criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/add-an-app-icon",
+      "title": "Add an app icon - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Add an app icon"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/determine-and-upload-app-encryption-documentation",
+      "title": "Determine and upload app encryption documentation - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Determine and upload app encryption documentation"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/localize-app-information",
+      "title": "Localize app information - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Localize app information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-privacy",
+      "title": "Manage app privacy - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Manage app privacy"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-tags",
+      "title": "Manage app tags - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Manage app tags"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/overview-of-export-compliance",
+      "title": "Overview of export compliance - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of export compliance"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement",
+      "title": "Provide a custom license agreement - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Provide a custom license agreement"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/remove-app-previews-or-screenshots",
+      "title": "Remove app previews or screenshots - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Remove app previews or screenshots"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-a-tax-category",
+      "title": "Set a tax category - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Set a tax category"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-age-rating",
+      "title": "Set an app age rating - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Set an app age rating"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-an-app-preview-poster-frame",
+      "title": "Set an app preview poster frame - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Set an app preview poster frame"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/set-the-app-motion-information-for-apple-vision-pro",
+      "title": "Set the app motion information for Apple Vision Pro - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Set the app motion information for Apple Vision Pro"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots",
+      "title": "Upload app previews and screenshots - Manage app information - App Store Connect - Help - Apple Developer",
+      "h1": "Upload app previews and screenshots"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-pricing/schedule-price-changes-for-apps",
+      "title": "Schedule price changes for apps - Manage app pricing - App Store Connect - Help - Apple Developer",
+      "h1": "Schedule price changes for apps"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-app-pricing/set-a-price",
+      "title": "Set a price - Manage app pricing - App Store Connect - Help - Apple Developer",
+      "h1": "Set a price"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs",
+      "title": "Overview of Apple-hosted asset packs - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of Apple-hosted asset packs"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-asset-packs/upload-apple-hosted-asset-packs",
+      "title": "Upload Apple-hosted asset packs - App Store Connect - Help - Apple Developer",
+      "h1": "Upload Apple-hosted asset packs"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-banking-information/enter-banking-information",
+      "title": "Enter banking information - Manage banking information - App Store Connect - Help - Apple Developer",
+      "h1": "Enter banking information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-builds/choose-a-build-to-submit",
+      "title": "Choose a build to submit - Manage builds - App Store Connect - Help - Apple Developer",
+      "h1": "Choose a build to submit"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-builds/upload-builds",
+      "title": "Upload builds - Manage builds - App Store Connect - Help - Apple Developer",
+      "h1": "Upload builds"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-builds/view-builds-and-metadata",
+      "title": "View builds and metadata - Manage builds - App Store Connect - Help - Apple Developer",
+      "h1": "View builds and metadata"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements",
+      "title": "Manage European Union Digital Services Act trader requirements - App Store Connect - Help - Apple Developer",
+      "h1": "Manage European Union Digital Services Act trader requirements"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-korea-compliance-information",
+      "title": "Manage Korea compliance information - App Store Connect - Help - Apple Developer",
+      "h1": "Manage Korea compliance information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-compliance-information/view-mainland-china-compliance-information",
+      "title": "View Mainland China compliance information - App Store Connect - Help - Apple Developer",
+      "h1": "View Mainland China compliance information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring",
+      "title": "Nominate your app for featuring - App Store Connect - Help - Apple Developer",
+      "h1": "Nominate your app for featuring"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-consumable-or-non-consumable-in-app-purchases",
+      "title": "Create consumable or non-consumable In-App Purchases - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Create consumable or non-consumable In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-non-renewing-subscriptions",
+      "title": "Create non-renewing subscriptions - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Create non-renewing subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/create-offer-codes-for-in-app-purchases",
+      "title": "Create offer codes for In-App Purchases - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Create offer codes for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/schedule-price-changes-for-in-app-purchases",
+      "title": "Schedule price changes for In-App Purchases - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Schedule price changes for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-a-price-for-an-in-app-purchase",
+      "title": "Set a price for an In-App Purchase - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Set a price for an In-App Purchase"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/set-availability-for-in-app-purchases",
+      "title": "Set availability for In-App Purchases - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Set availability for In-App Purchases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information",
+      "title": "View and edit In-App Purchase information - Manage In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "View and edit In-App Purchase information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/manage-a-submission-with-unresolved-issues",
+      "title": "Manage a submission with unresolved issues - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Manage a submission with unresolved issues"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review",
+      "title": "Overview of submitting for review - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of submitting for review"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/remove-a-submission-from-review",
+      "title": "Remove a submission from review - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Remove a submission from review"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/reply-to-app-review-messages",
+      "title": "Reply to App Review messages - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Reply to App Review messages"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-a-custom-product-page",
+      "title": "Submit a custom product page - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit a custom product page"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-app",
+      "title": "Submit an app - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit an app"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-event",
+      "title": "Submit an In-App Event - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit an In-App Event"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-an-in-app-purchase",
+      "title": "Submit an In-App Purchase - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit an In-App Purchase"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-apple-hosted-asset-packs",
+      "title": "Submit Apple-hosted asset packs - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit Apple-hosted asset packs"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-game-center-components",
+      "title": "Submit Game Center components - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Submit Game Center components"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/upload-a-geographic-coverage-file",
+      "title": "Upload a geographic coverage file - Manage submissions to App Review - App Store Connect - Help - Apple Developer",
+      "h1": "Upload a geographic coverage file"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/enable-billing-grace-period-for-auto-renewable-subscriptions",
+      "title": "Enable billing grace period for auto-renewable subscriptions - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Enable Billing Grace Period for auto-renewable subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-pricing-for-auto-renewable-subscriptions",
+      "title": "Manage pricing for auto-renewable subscriptions - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Manage pricing for auto-renewable subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/manage-streamlined-purchasing",
+      "title": "Manage Streamlined Purchasing - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Manage Streamlined Purchasing"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/offer-auto-renewable-subscriptions",
+      "title": "Offer auto-renewable subscriptions - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Offer auto-renewable subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-availability-for-an-auto-renewable-subscription",
+      "title": "Set availability for an auto-renewable subscription - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Set availability for an auto-renewable subscription"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-introductory-offers-for-auto-renewable-subscriptions",
+      "title": "Set up introductory offers for auto-renewable subscriptions - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Set up introductory offers for auto-renewable subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-promotional-offers-for-auto-renewable-subscriptions",
+      "title": "Set up promotional offers for auto-renewable subscriptions - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Set up promotional offers for auto-renewable subscriptions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-subscription-offer-codes",
+      "title": "Set up offer codes - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Set up subscription offer codes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-subscriptions/set-up-win-back-offers",
+      "title": "Set up win-back offers - Manage subscriptions - App Store Connect - Help - Apple Developer",
+      "h1": "Set up win-back offers"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-tax-information/manage-invoices-and-other-tax-documents",
+      "title": "Manage invoices and other tax documents - App Store Connect - Help - Apple Developer",
+      "h1": "Manage invoices and other tax documents"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-tax-information/provide-tax-information",
+      "title": "Provide tax information - App Store Connect - Help - Apple Developer",
+      "h1": "Provide tax information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-tax-information/provide-tax-information-for-alternative-payment-options",
+      "title": "Provide tax information for alternative payment options - App Store Connect - Help - Apple Developer",
+      "h1": "Provide tax information for alternative payment options"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-tax-information/provide-tax-information-for-business-to-business-status",
+      "title": "Provide tax information for business-to-business status - App Store Connect - Help - Apple Developer",
+      "h1": "Provide tax information for business-to-business status"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-tax-information/provide-tax-information-for-core-technology-fee",
+      "title": "Provide tax information for Core Technology Fee - App Store Connect - Help - Apple Developer",
+      "h1": "Provide tax information for Core Technology Fee"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/make-a-version-unavailable-for-download",
+      "title": "Make a version unavailable for download - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Make a version unavailable for download"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/manage-availability-for-your-app-on-the-app-store",
+      "title": "Manage availability for your app on the App Store - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Manage availability for your app on the App Store"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/manage-availability-of-iphone-and-ipad-apps-on-apple-vision-pro",
+      "title": "Manage availability of iPhone and iPad apps on Apple Vision Pro - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Manage availability of iPhone and iPad apps on Apple Vision Pro"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/manage-availability-of-iphone-and-ipad-apps-on-macs-with-apple-silicon",
+      "title": "Manage availability of iPhone and iPad apps on Macs with Apple silicon - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Manage availability of iPhone and iPad apps on Macs with Apple silicon"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/overview-of-publishing-your-app-on-the-app-store",
+      "title": "Overview of publishing your app on the App Store - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of publishing your app on the App Store"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/publish-for-pre-order",
+      "title": "Publish for pre-order - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Publish for pre-order"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/select-an-app-store-version-release-option",
+      "title": "Select an App Store version release option - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Select an App Store version release option"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/set-distribution-methods",
+      "title": "Set distribution methods - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "Set distribution methods"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/view-app-status-history",
+      "title": "View app status history - Manage your app's availability - App Store Connect - Help - Apple Developer",
+      "h1": "View app status history"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/add-and-edit-users",
+      "title": "Add and edit users - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "Add and edit users"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/edit-access-to-apps",
+      "title": "Edit access to apps - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "Edit access to apps"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/manage-webhooks",
+      "title": "Manage webhooks - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "Manage webhooks"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/overview-of-accounts-and-roles",
+      "title": "Overview of accounts and roles - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of accounts and roles"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/set-up-os-data-transfer",
+      "title": "Set up OS data transfer - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "Set up OS data transfer"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/manage-your-team/view-and-edit-your-profile",
+      "title": "View and edit your profile - Manage your team - App Store Connect - Help - Apple Developer",
+      "h1": "View and edit your profile"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/managing-alternative-distribution/create-a-marketplace-app",
+      "title": "Create a marketplace app - App Store Connect - Help - Apple Developer",
+      "h1": "Create a marketplace app"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/managing-alternative-distribution/get-an-alternative-distribution-package-id",
+      "title": "Get an alternative distribution package ID - App Store Connect - Help - Apple Developer",
+      "h1": "Get an alternative distribution package ID"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/managing-alternative-distribution/manage-distribution-on-an-alternative-app-marketplace",
+      "title": "Manage distribution on an alternative app marketplace - App Store Connect - Help - Apple Developer",
+      "h1": "Manage distribution on an alternative app marketplace"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/managing-alternative-distribution/submit-for-notarization",
+      "title": "Submit for Notarization - App Store Connect - Help - Apple Developer",
+      "h1": "Submit for Notarization"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/measure-app-performance/differences-in-reporting-tools",
+      "title": "Differences in reporting tools - Measure app performance - App Store Connect - Help - Apple Developer",
+      "h1": "Differences in reporting tools"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/measure-app-performance/overview-of-reporting-tools",
+      "title": "Overview of reporting tools - Measure app performance - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of reporting tools"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/ratings-and-reviews-overview",
+      "title": "Ratings and reviews overview - Monitor ratings and reviews - App Store Connect - Help - Apple Developer",
+      "h1": "Ratings and reviews overview"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/reset-an-app-overview-rating",
+      "title": "Reset an app overview rating - Monitor ratings and reviews - App Store Connect - Help - Apple Developer",
+      "h1": "Reset an app overview rating"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/respond-to-reviews",
+      "title": "Respond to reviews - Monitor ratings and reviews - App Store Connect - Help - Apple Developer",
+      "h1": "Respond to reviews"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/monitor-ratings-and-reviews/view-ratings-and-reviews",
+      "title": "View ratings and reviews - Monitor ratings and reviews - App Store Connect - Help - Apple Developer",
+      "h1": "View ratings and reviews"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/generate-app-clip-codes",
+      "title": "Generate App Clip codes - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "Generate App Clip codes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/manage-an-app-clip-experience",
+      "title": "Manage an App Clip experience - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "Manage an App Clip experience"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-a-default-app-clip-experience",
+      "title": "Offer a default App Clip experience - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "Offer a default App Clip experience"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/offer-an-advanced-app-clip-experience",
+      "title": "Offer an advanced App Clip experience - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "Offer an advanced App Clip experience"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/overview-of-app-clips",
+      "title": "Overview of App Clips - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of App Clips"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-app-clip-experiences/view-domain-url-status",
+      "title": "View domain URL status - Offer App Clip experiences - App Store Connect - Help - Apple Developer",
+      "h1": "View domain URL status"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-in-app-events/manage-events",
+      "title": "Manage events - Offer In-App Events - App Store Connect - Help - Apple Developer",
+      "h1": "Manage events"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-in-app-events/offer-in-app-events",
+      "title": "Offer In-App Events - Offer In-App Events - App Store Connect - Help - Apple Developer",
+      "h1": "Offer In-App Events"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-in-app-events/overview-of-in-app-events",
+      "title": "Overview of In-App Events - Offer In-App Events - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of In-App Events"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/offer-promo-codes/request-and-manage-promo-codes",
+      "title": "Request and manage promo codes - Offer promo codes - App Store Connect - Help - Apple Developer",
+      "h1": "Request and manage promo codes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/account-management/compliance-review",
+      "title": "Compliance review - Account management - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Compliance review"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/account-management/role-permissions",
+      "title": "Role permissions - Account management - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Role permissions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/account-management/user-notifications",
+      "title": "User notifications - Account management - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "User notifications"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/age-ratings-values-and-definitions",
+      "title": "Age ratings - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Age ratings values and definitions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-and-submission-statuses",
+      "title": "App and submission statuses - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App and submission statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-bundle-information",
+      "title": "App bundle information - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App bundle information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-information",
+      "title": "App information - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-preview-specifications",
+      "title": "App preview specifications - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App preview specifications"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-privacy",
+      "title": "App privacy - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App privacy"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/app-store-localizations",
+      "title": "App Store localizations - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App Store localizations"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/export-compliance-documentation-for-encryption",
+      "title": "Export compliance documentation for encryption - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Export compliance documentation for encryption"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/platform-version-information",
+      "title": "Platform version information - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Platform version information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/provide-app-motion-information",
+      "title": "Provide app motion information - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Provide app motion information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties",
+      "title": "Required, localizable, and editable properties - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Required, localizable, and editable properties"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications",
+      "title": "Screenshot specifications - App information - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Screenshot specifications"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/app-build-statuses",
+      "title": "App build statuses - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App build statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/app-sandbox-information",
+      "title": "App Sandbox information  - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App Sandbox information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-size-limits",
+      "title": "Apple-hosted asset pack size limits - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Apple-hosted asset pack size limits"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-statuses",
+      "title": "Apple-hosted asset pack statuses - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Apple-hosted asset pack statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/build-upload-statuses",
+      "title": "Build upload statuses - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Build upload statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/maximum-build-file-sizes",
+      "title": "Maximum build file sizes - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Maximum build file sizes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/app-uploads/on-demand-resources-size-limits",
+      "title": "On-demand resources size limit - App uploads - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "On-demand resources size limits"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/catalog-reports/app-catalog-report",
+      "title": "App catalog report - Catalog reports - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App catalog report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/catalog-reports/game-center-achievement-catalog-report",
+      "title": "Game Center achievement catalog report - Catalog reports - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Game Center achievement catalog report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/catalog-reports/game-center-leaderboard-catalog-report",
+      "title": "Game Center leaderboard catalog report - Catalog reports - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Game Center leaderboard catalog report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/catalog-reports/generate-catalog-reports",
+      "title": "Generate catalog reports - Catalog reports - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Generate catalog reports"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/catalog-reports/in-app-purchases-catalog-report",
+      "title": "In-App Purchases Catalog Report - Catalog reports - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchases catalog report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/achievements",
+      "title": "Achievements - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Achievements"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/challenges",
+      "title": "Challenges - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Challenges"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/game-activities",
+      "title": "Game activities - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Game activities"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/game-center-properties",
+      "title": "Game Center properties - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Game Center properties"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/group-properties",
+      "title": "Group properties - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Group properties"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/game-center/leaderboards",
+      "title": "Leaderboards - Game Center - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Leaderboards"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-events/in-app-event-badges",
+      "title": "In-App Event badges - In-App Events - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Event badges"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-events/in-app-event-media-and-audio-specifications",
+      "title": "In-App Event media and audio specifications - In-App Events - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Event media and audio specifications"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-events/in-app-event-statuses",
+      "title": "In-App Event statuses - In-App Events - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Event statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/auto-renewable-subscription-information",
+      "title": "Auto-renewable subscription information - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Auto-renewable subscription information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/auto-renewable-subscription-price-increase-thresholds",
+      "title": "Auto-renewable subscription price increase thresholds - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Auto-renewable subscription price increase thresholds"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/consent-for-subscription-offer-conversions",
+      "title": "Consent for subscription offer conversions - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Consent for subscription offer conversions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-information",
+      "title": "In-App Purchase information - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchase information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-localization-statuses",
+      "title": "In-App Purchase localization statuses - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchase localization statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-statuses",
+      "title": "In-App Purchase statuses - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchase statuses"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/in-app-purchases-and-subscriptions/in-app-purchase-types",
+      "title": "In-App Purchase types - In-App Purchases and subscriptions - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchase types"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/nominations/nominations-template",
+      "title": "Nominations template - Nominations - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Nominations template"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/pricing-and-availability/app-pricing-and-availability",
+      "title": "App pricing and availability - Pricing and availability - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App pricing and availability"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/pricing-and-availability/app-store-pricing-and-availability-start-times-by-country-or-region",
+      "title": "App Store pricing and availability start times by country or region  - Pricing and availability - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App Store pricing and availability start times by country or region"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/pricing-and-availability/in-app-purchase-and-subscriptions-pricing-and-availability",
+      "title": "In-App Purchase and subscriptions pricing and availability - Pricing and availability - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Purchase and subscriptions pricing and availability"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/app-analytics-filters-and-dimensions",
+      "title": "App analytics filters and dimensions - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App Analytics filters and dimensions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/app-clip-metrics",
+      "title": "App Clip metrics - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App Clip metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/app-metrics",
+      "title": "App metrics - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "App metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/apple-legal-entities",
+      "title": "Apple legal entities - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Apple legal entities"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/banking-information",
+      "title": "Banking information - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Banking information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/cancellation-reasons",
+      "title": "Cancellation reasons - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Cancellation reasons"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/currency-codes",
+      "title": "Currency codes - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Currency codes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/financial-report-fields",
+      "title": "Financial report fields - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Financial report fields"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies",
+      "title": "Financial Report regions and currencies - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Financial report regions and currencies"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/in-app-event-metrics",
+      "title": "In-App Event metrics - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "In-App Event metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/minimum-payment-threshold",
+      "title": "Minimum payment threshold - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Minimum payment threshold"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/payment-information",
+      "title": "Payment information - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Payment information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/performance-metrics",
+      "title": "Performance metrics - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Performance metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/pre-order-report",
+      "title": "Pre-Order Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Pre-Order Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/product-page-optimization-metrics",
+      "title": "Product page optimization metrics - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Product page optimization metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/product-type-identifiers",
+      "title": "Product type identifiers - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Product type identifiers"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/promotional-codes",
+      "title": "Promotional codes - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Promotional codes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/report-file-names",
+      "title": "Report file names - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Report file names"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-metrics-and-dimensions",
+      "title": "Sales and Trends metrics and dimensions - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Sales and Trends metrics and dimensions"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/sales-and-trends-reports-availability",
+      "title": "Sales and Trends reports availability - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Sales and Trends reports availability"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/sales-events-report",
+      "title": "Sales Events Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Sales Events Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/subscriber-report",
+      "title": "Subscriber Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Subscriber Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/subscription-event-report",
+      "title": "Subscription Event Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Subscription Event Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/subscription-events",
+      "title": "Subscription events - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Subscription events"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/subscription-offer-redemption-report",
+      "title": "Subscription Offer Redemption Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Subscription Offer Redemption Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/subscription-report",
+      "title": "Subscription Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Subscription Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/summary-sales-report",
+      "title": "Summary Sales Report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Summary Sales Report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/transaction-tax-report-fields",
+      "title": "Transaction tax report fields - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Transaction tax report fields"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/reporting/win-back-eligibility-report",
+      "title": "Win-back eligibility report - Reporting - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Win-back eligibility report"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/store-services-tiers",
+      "title": "Store Services tiers in the EU - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Store Services tiers in the EU"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/testflight/beta-tester-feedback",
+      "title": "Beta tester feedback - Testflight - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "Beta tester feedback"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/reference/testflight/testflight-tester-information",
+      "title": "TestFlight tester information - Testflight - Reference - App Store Connect - Help - Apple Developer",
+      "h1": "TestFlight tester information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/release-notes",
+      "title": "App Store Connect - Help - Apple Developer",
+      "h1": "Release Notes"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/add-internal-testers",
+      "title": "Add internal testers - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Add internal testers"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/add-testers-to-builds",
+      "title": "Add testers to builds - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Add testers to builds"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/delete-testers-from-testflight",
+      "title": "Delete testers from TestFlight - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Delete testers from TestFlight"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/invite-external-testers",
+      "title": "Invite external testers - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Invite external testers"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/provide-export-compliance-information-for-beta-builds",
+      "title": "Provide export compliance information for beta builds - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Provide export compliance information for beta builds"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/provide-test-information",
+      "title": "Provide test information - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Provide test information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/remove-testers-from-a-group",
+      "title": "Remove testers from a group - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Remove testers from a group"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/stop-testing-a-build",
+      "title": "Stop testing a build - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Stop testing a build"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/test-an-app-clip-experience",
+      "title": "Test an App Clip experience - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Test an App Clip experience"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/test-apple-hosted-asset-packs",
+      "title": "Test Apple-hosted asset packs - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Test Apple-hosted asset packs"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/test-iphone-and-ipad-apps-on-apple-vision-pro",
+      "title": "Test iPhone and iPad apps on Apple Vision Pro - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Test iPhone and iPad apps on Apple Vision Pro"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/test-iphone-and-ipad-apps-on-macs-with-apple-silicon",
+      "title": "Test iPhone and iPad apps on Macs with Apple silicon - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Test iPhone and iPad apps on Macs with Apple silicon"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/testflight-overview",
+      "title": "TestFlight overview - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "TestFlight Overview"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/testing-subscriptions-and-in-app-purchases-in-testflight",
+      "title": "Testing subscriptions and In-App Purchases in TestFlight - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "Testing subscriptions and In-App Purchases in TestFlight"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/view-and-manage-tester-information",
+      "title": "View and manage tester information - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "View and manage tester information"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/view-build-status-and-metrics",
+      "title": "View build status and metrics - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "View build status and metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-a-beta-version/view-tester-feedback",
+      "title": "View tester feedback - Test a beta version - App Store Connect - Help - Apple Developer",
+      "h1": "View tester feedback"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-a-sandbox-apple-account",
+      "title": "Create a Sandbox Apple Account - Test In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Create a Sandbox Apple Account"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-in-app-purchases/manage-sandbox-apple-account-settings",
+      "title": "Manage Sandbox Apple Account settings - Test In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Manage Sandbox Apple Account settings"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/test-in-app-purchases/overview-of-testing-in-sandbox",
+      "title": "Overview of testing in sandbox - Test In-App Purchases - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of testing in sandbox"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/transfer-an-app/accept-an-app-transfer",
+      "title": "Accept an app transfer - Transfer an app - App Store Connect - Help - Apple Developer",
+      "h1": "Accept an app transfer"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/transfer-an-app/app-transfer-criteria",
+      "title": "App transfer criteria - Transfer an app - App Store Connect - Help - Apple Developer",
+      "h1": "App transfer criteria"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/transfer-an-app/initiate-an-app-transfer",
+      "title": "Initiate an app transfer - Transfer an app - App Store Connect - Help - Apple Developer",
+      "h1": "Initiate an app transfer"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/transfer-an-app/overview-of-app-transfer",
+      "title": "Overview of app transfer - Transfer an app - App Store Connect - Help - Apple Developer",
+      "h1": "Overview of app transfer"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/understanding-the-core-technology-fee/core-technology-fee-overview",
+      "title": "Core Technology Fee overview - App Store Connect - Help - Apple Developer",
+      "h1": "Core Technology Fee overview"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/understanding-the-core-technology-fee/core-technology-fee-report-fields",
+      "title": "First annual install types - App Store Connect - Help - Apple Developer",
+      "h1": "Core Technology Fee report fields"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/understanding-the-core-technology-fee/estimate-fees-for-alternative-business-terms",
+      "title": "Estimate fees for alternative business terms - App Store Connect - Help - Apple Developer",
+      "h1": "Estimate fees for alternative business terms"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/understanding-the-core-technology-fee/measure-your-first-annual-installs",
+      "title": "Measure your first annual installs - App Store Connect - Help - Apple Developer",
+      "h1": "Measure your first annual installs"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/update-your-app/create-a-new-version",
+      "title": "Create a new version - Update your app - App Store Connect - Help - Apple Developer",
+      "h1": "Create a new version"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/update-your-app/release-a-version-update-in-phases",
+      "title": "Release a version update in phases - Update your app - App Store Connect - Help - Apple Developer",
+      "h1": "Release a version update in phases"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/download-app-analytics-reports",
+      "title": "Download App Analytics Reports - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "Download App Analytics Reports"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/manage-campaigns",
+      "title": "Manage campaigns - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "Manage campaigns"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/measure-app-retention",
+      "title": "Measure app retention - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "Measure app retention"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-acquisition-sources",
+      "title": "View acquisition sources - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View acquisition sources"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-app-clip-metrics",
+      "title": "View App Clip metrics - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View App Clip metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-app-metrics",
+      "title": "View app metrics - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View app metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-in-app-event-metrics",
+      "title": "View In-App Event metrics - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View In-App Event metrics"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-peer-group-benchmarks",
+      "title": "View peer group benchmarks - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View peer group benchmarks"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-app-analytics/view-product-page-optimization-results",
+      "title": "View product page optimization results - View App Analytics - App Store Connect - Help - Apple Developer",
+      "h1": "View product page optimization results"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-sales-and-trends/download-and-view-reports",
+      "title": "Download and view reports - View Sales and Trends - App Store Connect - Help - Apple Developer",
+      "h1": "Download and view reports"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-subscription-data",
+      "title": "View subscription data - View Sales and Trends - App Store Connect - Help - Apple Developer",
+      "h1": "View subscription data"
+    },
+    {
+      "url": "https://developer.apple.com/help/app-store-connect/view-sales-and-trends/view-units-proceeds-sales-and-pre-orders",
+      "title": "View units, proceeds, sales, and pre-orders - View Sales and Trends - App Store Connect - Help - Apple Developer",
+      "h1": "View units, proceeds, sales, and pre-orders"
+    }
+  ]
+}

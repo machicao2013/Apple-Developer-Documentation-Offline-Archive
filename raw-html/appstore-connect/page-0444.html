@@ -1,0 +1,1143 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="4.0">
+<h1>Subscription Event Report</h1>
+<p>The below table shows columns for <b>Subscription Event Report Version 1_3</b>.</p>
+<div class="callout callout-note">
+<p class="Tip"><img alt="" class="help-tips" src="/help/images/icons/tips_2x.png"/><b class="tip">Tip: </b>To better understand the values below, view a <a href="/help/app-store-connect/reference/reporting/subscription-event-report#sample-subscription-event-report">sample report</a>.</p>
+</div>
+<div class="table-wrapper">
+<table aria-label="Subscription Event Report Field Definitions" class="table-3-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Report Field</p>
+</th>
+<th scope="col">
+<p class="TableHead">Data Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Notes</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Event Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date the event occurred.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Event</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of event that occurred. For more information, visit <a href="/help/app-store-connect/reference/reporting/subscription-events">Subscription events</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>App <span class="no-glossary">Apple ID</span></p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription’s parent app.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Title of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Apple ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Apple ID of your subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Group ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>Your subscription’s Group ID (formerly Family ID).</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Standard Subscription Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the standard subscription: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Type</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Subscription offer pricing: Pay Up Front, Pay As You Go, or Free Trial</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the subscription offer. For example: 3 Days, 7 Days, 2 Weeks, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing Opt-In</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If the subscription included a marketing opt-in then this field equals “Yes”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Marketing Opt-In Duration</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Duration of the opt-in if applicable: 7 Days, 1 Month, 2 Months, 3 Months, 6 Months, or 1 Year.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Preserved Pricing</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For Renew events, if the price is preserved then this field equals “Yes”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Proceeds Reason</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For Renew events, if the subscription has been active for more than a year then you receive 85% of the customer price, minus applicable taxes, and this field equals “Rate After One Year”. Otherwise, you receive 70% and the field is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Subscription Offer Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Offer reference name that you set for your subscription offers in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Promotional Offer ID</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>An identifier that you set for your subscription offers in App Store Connect.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Consecutive Paid Periods</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>The total number of paid periods that the subscription has been active without cancellation. This does not include free trials, marketing opt-in bonus periods, or grace periods.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Original Start Date</p>
+</td>
+<td>
+<p>Date</p>
+</td>
+<td>
+<p>Date of the initial subscription purchase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Device</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Type of device used for initial subscription purchase: iPhone, iPad, iPod touch, Desktop, Apple TV, or Apple Vision.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Client</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>If the subscription was purchased from News then this field equals “News”. Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>State</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>State field in the address submitted by the customer when signing up for their Apple Account. This field is not validated and may be blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Country</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Two-character ISO country code indicating the App Store country or region for the purchase. For more information, visit <a href="/help/app-store-connect/reference/reporting/financial-report-regions-and-currencies">Financial report regions and currencies</a></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Previous Subscription Name</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>For upgrade, downgrade, and crossgrade events, the title of the previous subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Previous Subscription Apple ID</p>
+</td>
+<td>
+<p>BigInt</p>
+</td>
+<td>
+<p>For upgrade, downgrade, and crossgrade events, the Apple ID of the previous subscription.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Days Before Canceling</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>For cancel events, the number of days from the start date to when a subscriber canceled, which could be in the middle of the period. This only applies to cancel events where cancellation reason equals ‘canceled.' Otherwise, it is blank.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Cancellation Reason</p>
+</td>
+<td>
+<p>String</p>
+</td>
+<td>
+<p>Reason for a cancellation: Billing issue, Price increase, Canceled, Removed from Sale, or Other. For more information, visit <a href="/help/app-store-connect/reference/reporting/cancellation-reasons">Cancellation reasons</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Days Canceled</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>For reactivate events, the number of days ago that the subscriber canceled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Quantity</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>Number of events with the same values for the other fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Paid Service Days Recovered</p>
+</td>
+<td>
+<p>Int</p>
+</td>
+<td>
+<p>The estimated number of paid service days recovered due to Billing Grace Period.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<developer-accordion>
+<accordion-panel class="accordion-border-bottom" id="sample-subscription-event-report">
+<h3>Sample Subscription Event Report</h3>
+<div>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-8-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cancellation Reason</p>
+</th>
+<th scope="col">
+<p class="TableHead">Introductory Price Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Start Introductory Price</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>2016-09-01</p>
+</td>
+<td></td>
+<td>
+<p>Free Trial</p>
+</td>
+<td>
+<p>10</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Paid Subscription from Introductory Price</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-08-25</p>
+</td>
+<td></td>
+<td>
+<p>Free Trial</p>
+</td>
+<td>
+<p>8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Renew</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td></td>
+<td></td>
+<td>
+<p>14</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Renew</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>2016-07-01</p>
+</td>
+<td></td>
+<td></td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Cancel</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td>
+<p>Billing Issue</p>
+</td>
+<td></td>
+<td>
+<p>3</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>8 subscriptions converted from a free trial to a paid subscription on 2016-09-01. These subscriptions started their free trial on 2016-08-25.</p>
+</li>
+<li>
+<p>14 subscriptions then renewed and are moved into their second billing cycle.</p>
+</li>
+<li>
+<p>In the next row, 12 subscriptions renewed and moved into their third billing cycle.</p>
+</li>
+<li>
+<p>3 subscriptions ended after one billing cycle because a billing issue was encountered when trying to renew.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Days Canceled</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Refund</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-08-15</p>
+</td>
+<td></td>
+<td>
+<p>1</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Reactivate</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>7</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>1 subscription started on 2016-08-15 but ended on 2016-09-01 with a refund for the rest of the billing cycle.</p>
+</li>
+<li>
+<p>2 subscriptions reactivated on 2016-09-01, after being canceled for 7 days.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Previous Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Upgrade</p>
+</td>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2016-08-20</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Downgrade</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>1</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>2 subscriptions upgraded on 2016-09-01.</p>
+</li>
+<li>
+<p>1 subscription downgraded on 2016-09-01.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-8-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Days Before Canceling</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cancellation Reason</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Cancel</p>
+</td>
+<td>
+<p>1 Month Premium</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td>
+<p>15</p>
+</td>
+<td>
+<p>Canceled</p>
+</td>
+<td>
+<p>2</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>2 subscriptions canceled after one billing cycle. While the billing cycle ended on 2016-09-01, the subscribers tapped the cancel button 15 days after starting on 2016-08-01, as indicated by the column “Days Before Canceling.”</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cancellation Reason</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2017-10-01</p>
+</td>
+<td>
+<p>Billing Retry from Paid Subscription</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2017-09-01</p>
+</td>
+<td></td>
+<td>
+<p>11</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>On 2017-10-01 11 subscriptions were unable to renew due to a billing issue and entered into a Billing Retry status.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-7-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Cancellation Reason</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2017-11-01</p>
+</td>
+<td>
+<p>Renewal from Billing Retry</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>2017-08-01</p>
+</td>
+<td></td>
+<td>
+<p>7</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2017-11-01</p>
+</td>
+<td>
+<p>Canceled from Billing Retry</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>2</p>
+</td>
+<td>
+<p>2017-07-01</p>
+</td>
+<td>
+<p>Billing Issue</p>
+</td>
+<td>
+<p>4</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>On 2017-11-01, 7 subscriptions were able to successfully renew and are no longer in a Billing Retry status.</p>
+</li>
+<li>
+<p>4 subscriptions were canceled as they were unable to renew while in the Billing Retry status.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-8-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Consecutive Paid Periods</p>
+</th>
+<th scope="col">
+<p class="TableHead">Original Start Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Introductory Price Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Introductory Price Duration</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Start Introductory Price</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>0</p>
+</td>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Pay up front</p>
+</td>
+<td>
+<p>3 Months</p>
+</td>
+<td>
+<p>13</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Paid Subscription from Introductory Price</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>4</p>
+</td>
+<td>
+<p>2016-08-25</p>
+</td>
+<td></td>
+<td></td>
+<td>
+<p>8</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Renew</p>
+</td>
+<td>
+<p>3 Month Basic</p>
+</td>
+<td>
+<p>1</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td>
+<p>Pay as you go</p>
+</td>
+<td>
+<p>6 Months</p>
+</td>
+<td>
+<p>14</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Paid Subscription from Introductory Price</p>
+</td>
+<td>
+<p>3 Month Basic</p>
+</td>
+<td>
+<p>3</p>
+</td>
+<td>
+<p>2016-08-01</p>
+</td>
+<td></td>
+<td></td>
+<td>
+<p>17</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>13 subscriptions started a Pay up front Introductory Price on 2016 - 09 - 01. These subscriptions have a total Pay up front duration of 3 months.</p>
+</li>
+<li>
+<p>8 subscriptions converted from a 3 Month Pay up front Introductory Price to a Paid Subscription.</p>
+</li>
+<li>
+<p>14 subscriptions renewed into their Pay as you go Introductory Price with a total duration of 6 month.</p>
+</li>
+<li>
+<p>17 subscriptions also converted from a Introductory price to a Paid Subscription.</p>
+</li>
+</ul>
+<div class="table-wrapper">
+<table aria-label="Sample Subscription Event Report" class="table-9-col" data-type="Multicolumn">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Event Date</p>
+</th>
+<th scope="col">
+<p class="TableHead">Event</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promotional Offer Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Promotional Offer ID</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Offer Type</p>
+</th>
+<th scope="col">
+<p class="TableHead">Subscription Offer Duration</p>
+</th>
+<th scope="col">
+<p class="TableHead">Previous Subscription Name</p>
+</th>
+<th scope="col">
+<p class="TableHead">Quantity</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Start Promotional Offer</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1 Month Basic Offer A</p>
+</td>
+<td>
+<p>ExampleOfferIDa</p>
+</td>
+<td>
+<p>Pay As You Go</p>
+</td>
+<td>
+<p>1 Month</p>
+</td>
+<td></td>
+<td>
+<p>12</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>2016-09-01</p>
+</td>
+<td>
+<p>Reactivation to Promotional Offer</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>1 Month Basic Offer B</p>
+</td>
+<td>
+<p>ExampleOfferIDb</p>
+</td>
+<td>
+<p>Pay As You Go</p>
+</td>
+<td>
+<p>1 Month</p>
+</td>
+<td>
+<p>1 Month Basic</p>
+</td>
+<td>
+<p>67</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul>
+<li>
+<p>12 Promotional Offers started on 2016-09-01</p>
+</li>
+<li>
+<p>On 2016-09-01, 67 Subscriptions reactivated to a Promotional Offer after previously canceling.</p>
+</li>
+</ul>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/view-sales-and-trends/download-and-view-reports">Download and view reports</a>
+</div>
+</link></article> </div>

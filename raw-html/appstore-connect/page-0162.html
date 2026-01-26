@@ -1,0 +1,243 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage builds</span>
+<article _v="25P">
+<h1>View builds and metadata</h1>
+<p>You can view all the builds you've uploaded for your app, including the metadata for each of these builds. This information covers the size of variants created by Apple and the progress of build delivery.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Some builds may no longer appear after the app is released.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/builds">Learn how to get build information with the App Store Connect API.</a></p>
+<p><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Developer</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="view-build-metadata">
+<h3>View build metadata</h3>
+<div>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab to view all builds.</p>
+</li>
+<li>
+<p>In the sidebar, select the platform you want to view build metadata for.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Builds are organized by version number. To view the builds you uploaded for each version, click the disclosure triangle next to the version number. To view build groups, click the build number.</p>
+</div>
+</li>
+<li>
+<p>To view a build's metadata, select the app icon or build string in the expanded table under the version number in the Build column.</p>
+<figure><img alt="Screenshot of the TestFlight tab. There’s a list of builds under Version 1.0. Each build has a clickable icon and build strings." class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/build-list-iOS_2x.png"/></figure>
+</li>
+<li>
+<p>In the build page, click the Build Metadata tab.</p>
+<p>The Build Metadata page displays <a href="/help/app-store-connect/manage-builds/view-builds-and-metadata#view-the-file-sizes-of-a-build">the file sizes of a build</a>, such as the compressed file size, essential content size, additional in-app content size, and other build-related information.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="view-the-file-sizes-of-a-build">
+<h3>View the file sizes of a build</h3>
+<div>
+<p>After you upload a build to App Store Connect, it goes through app thinning, a process that creates variants of your app for different devices and operating system versions. You can view the amount of space a variant occupies on the customer’s device directly in App Store Connect.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>When your app is approved for distribution, it’s encrypted with Digital Rights Management (DRM) and recompressed. The app file size for your binary may be larger than it’s for the binary you uploaded in App Store Connect. The exact final size for your app can't be determined in advance.</p>
+</div>
+<ol class="compound-item-list spacing-top-paragraph">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab to view all builds.</p>
+</li>
+<li>
+<p>In the sidebar, select the platform for which you want to view builds.</p>
+</li>
+<li>
+<p>To view a build’s file size, select the app icon or build string in the expanded table under the version number in the Build column.</p>
+</li>
+<li>
+<p>In the build page, click the Build Metadata tab.</p>
+</li>
+<li>
+<p>Under General Information, click App File Sizes.</p>
+<figure><img alt="Screenshot of a table displaying estimated app file sizes for various device types, including download and install sizes." class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/manage-builds-view-file-sizes_2x.png"/></figure>
+<p>A table appears displaying the different variant sizes.</p>
+<ul>
+<li>
+<p>The <em>device type</em> is the target device for the variant. <em>Universal</em> refers to the variant that runs on all supported operating systems and target devices that are delivered to customers running iOS 8 or earlier, apps purchased in volume through Apple School Manager and Apple Business Manager or through <a href="https://support.apple.com//guide/deployment/">Mobile Device Management (MDM)</a>, or apps <a href="https://support.apple.com//downloads/itunes">downloaded using iTunes 12.6</a> or earlier.</p>
+</li>
+<li>
+<p>The <em>install size</em> is the amount of disk space the app consumes on the customer’s device. The install size also appears on your app’s product page in the Information section.</p>
+</li>
+<li>
+<p>The <em>download size</em> is the compressed size of the app that’s downloaded over the air, using cellular bandwidth or Wi-Fi.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>If any of the device variant sizes exceed the 200 MB over-the-air download limit, a yellow warning icon appears next to the build string in the Builds table and next to the variant size in the App File Sizes table. Click the warning icon to read the full warning. Apple also sends you an email with this information.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="view-build-upload-status">
+<h3>View build upload status</h3>
+<div>
+<p>You can view a build’s version and build number, upload status, and creation date under the Build Uploads section in App Store Connect. The upload status provides detailed insights into delivery progress, including warnings, errors, and other information.</p>
+<p>If the upload status of a build is unclear, <a href="https://feedbackassistant.apple.com/">submit a Feedback Assistant</a> ticket (Developer Tools &amp; Resources &gt; TestFlight) or <a href="https://developer.apple.com/contact/topic/select">contact us</a>. Be sure to include details like version and build numbers, upload date and time, and relevant logs, in your issue report.</p>
+<ol class="compound-item-list spacing-top-paragraph">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab to view all builds.</p>
+</li>
+<li>
+<p>In the sidebar, select the platform for which you want to view builds.</p>
+</li>
+<li>
+<p>To view a build’s delivery progress, expand Build Uploads and refer to its status under the Status column.</p>
+<figure><img alt="" class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/view-build-upload-status_2x.png"/></figure>
+</li>
+<li>
+<p>Select the status to view details of any errors, warnings, or information. If your build shows a Failed status, resolve all issues before re-uploading.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b></p>
+<ul>
+<li>
+<p>For builds with a Complete status, you can access more details (including metadata) by selecting the build string in the Version &amp; Build column.</p>
+</li>
+<li>
+<p>Even if the status is Complete, there may still be warnings or other details you should review and address before your next upload.</p>
+</li>
+<li>
+<p>If you upload a build and it remains in the Processing state for more than 24 hours, there may be an issue. To resolve the issue, <a href="https://feedbackassistant.apple.com/">submit a Feedback Assistant</a> ticket or <a href="https://developer.apple.com/contact/topic/select">contact us</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+<div class="margin-top">
+<p>The table below provides detailed information about the various build upload statuses.</p>
+<div class="table-wrapper">
+<table aria-label="Build upload statuses" class="table-2-col">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p>Processing</p>
+</td>
+<td>
+<p>Your build upload is still being processed. You'll receive an email notification and the table under Build Uploads will display an updated status when your build has finished processing.</p>
+<p>If you upload a build and it remains in the Processing state for more than 24 hours, there may be an issue. To resolve the issue, <a href="https://feedbackassistant.apple.com/">submit a Feedback Assistant</a> ticket or <a href="https://developer.apple.com/contact/topic/select">contact us</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Failed</p>
+</td>
+<td>
+<p>Your build upload has finished processing, but encountered an issue. Select the build to view potential errors, warnings, and information associated with the failure. Ensure to resolve all errors prior to re-uploading your build. </p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If the build upload fails, you can reuse the same build number for your next upload.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<p>Complete </p>
+</td>
+<td>
+<p>Your build upload has processed successfully and is now ready for testing. </p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If there is a warning badge next to this status, review possible warnings or other information before your next upload.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>In addition to status updates in App Store Connect, you’ll also receive email notifications when your build is Processing, Failed, or Complete.</p>
+</div>
+</div>
+</div>
+</accordion-panel>
+<accordion-panel id="view-the-device-requirements-for-a-build">
+<h3>View the device requirements for a build</h3>
+<div>
+<p>Apple calculates the minimum operating system version required for your app to run based on your build settings. You can verify a build's device requirements on the Build Metadata page.</p>
+<figure><img alt="Screenshot of the Device Requirements section on the iOS Build page which includes minimum iOS, macOS, and visionOS versions, LS minimum system version, supported architectures, device protocols, device family, and required capabilities." class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/build-device-requirements_2x.png"/></figure>
+<ul>
+<li>
+<p>The <em>Minimum iOS version</em> is the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/minimumosversion">MinimumOSVersion</a> provided in your build.</p>
+</li>
+<li>
+<p>The <em>Minimum macOS version</em> is the minimum version of macOS required for your app to run, as determined by Apple.</p>
+<p>Apple automatically calculates the minimum macOS version using the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/lsminimumsystemversion">LSMinimumSystemVersion</a> provided in your build, if applicable, and the closest related macOS for the <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/minimumosversion">MinimumOSVersion</a> provided in your build. If you’ve selected a minimum macOS version in <a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-of-iphone-and-ipad-apps-on-macs-with-apple-silicon">Pricing and Availability</a> and the value is higher than the LSMinimumSystemVersion or the closest related macOS for the MinimumOSVersion, this version will be shown instead.</p>
+</li>
+<li>
+<p>The <em>LS Minimum System Version</em> is the optional <a href="https://developer.apple.com/documentation/bundleresources/information_property_list/lsminimumsystemversion">LSMinimumSystemVersion</a> provided in your build.</p>
+</li>
+</ul>
+</div>
+</accordion-panel>
+<accordion-panel id="download-dsym-files">
+<h3>Download dSYM files</h3>
+<div>
+<p>If you include <a href="https://help.apple.com/xcode/mac/11.0/index.html?localePath=en.lproj#/devde46df08a" target="_blank">bitcode</a> when you upload your app to App Store Connect, Apple generates debug symbol (dSYM) files, which you’ll need to download in <a href="https://developer.apple.com/documentation/xcode/building-your-app-to-include-debugging-information">Xcode</a> or App Store Connect before you can view logs in Xcode.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Starting with Xcode 14, bitcode is no longer required for tvOS or watchOS apps. Apple no longer accepts bitcode submissions from Xcode 14. dSYM files can only be downloaded for existing bitcode submissions and are no longer available for submissions from Xcode 14 or later.</p>
+</div>
+<p><a href="https://developer.apple.com/documentation/xcode/adding-identifiable-symbol-names-to-a-crash-report#Restore-Hidden-Symbols">Learn how to analyze crash reports using dSYM files.</a></p>
+<p>In App Store Connect, to download dSYM files for a build:</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>Click the TestFlight tab to view all builds.</p>
+</li>
+<li>
+<p>In the sidebar, select the platform for which you want to view build metadata.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Builds are organized by version number. To see builds you uploaded for each version, click the Versions tab, then expand the disclosure triangle next to the version number. To view build groups, click the Build Groups tab.</p>
+</div>
+</li>
+<li>
+<p>To view a build's dSYM files, select the app icon or build string in the expanded table under the version number in the Build column.</p>
+<figure><img alt='Screenshot of the TestFlight tab, where there’s a list of builds under  "Version 1.0".  Each build has a clickable icon and build strings.' class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/build-metadata-dSYM-2_2x.png"/></figure>
+</li>
+<li>
+<p>In the build page, click the Build Metadata tab.</p>
+</li>
+<li>
+<p>Under General Information, click Download dSYM.</p>
+<figure><img alt="Screenshot of General Information section on the iOS Build Metadata page which features a pointer image pointing the Download dSYM link under Includes Symbols." class="help-screens-retro" src="/help/app-store-connect/manage-builds/view-builds-and-metadata/images/build-metadata-dSYM_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-builds/upload-builds">Upload builds</a>
+<a href="/help/app-store-connect/manage-builds/choose-a-build-to-submit">Choose a build to submit</a>
+<a href="/help/app-store-connect/reference/app-uploads/maximum-build-file-sizes">Maximum build file sizes</a>
+<a href="https://developer.apple.com/documentation/xcode/reducing-your-app-s-size">Reducing your app’s size</a>
+<a href="/help/app-store-connect/reference/app-uploads/app-build-statuses">App build statuses</a>
+<a href="/help/app-store-connect/manage-your-apps-availability/manage-availability-of-iphone-and-ipad-apps-on-macs-with-apple-silicon">Manage availability of iPhone and iPad apps on Macs with Apple silicon</a>
+<a href="https://help.apple.com/xcode/mac/11.0/#/devef5928039" target="_blank">Download debug symbols</a>
+</div>
+</link></article> </div>

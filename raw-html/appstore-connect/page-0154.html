@@ -1,0 +1,50 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage asset packs</span>
+<article _v="5.0">
+<h1>Upload Apple-hosted asset packs</h1>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Developer</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<p>If you’re using Managed Background Assets and choose to have Apple host the assets on your behalf, you can use Transporter, the App Store Connect API, iTMSTransporter, or altool to upload asset packs to App Store Connect for testing in TestFlight and distribution on the App Store.</p>
+<p>After you upload an asset pack, it needs to be processed in Apple’s system before it appears in App Store Connect. You’ll receive an email when this process is complete.</p>
+<p>The Asset Pack ID you set in the manifest file, along with the app it belongs to, are used to uniquely identify the asset pack throughout the system. Its associated <span class="no-glossary">version number</span> will increment automatically with each new asset pack version you upload.</p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/managing-apple-hosted-background-assets">Learn how to upload asset packs using the App Store Connect API.</a></p>
+<developer-accordion>
+<accordion-panel id="upload-asset-packs-with-transporter">
+<h3>Upload asset packs with Transporter</h3>
+<div>
+<p>Transporter is a macOS app that provides a drag and drop way to upload content to App Store Connect for distribution. You can view delivery progress including warnings, errors, delivery logs, and a history of past deliveries.</p>
+<p>You can download the latest version of Transporter <a href="https://apps.apple.com/app/transporter/id1450874784?mt=12">on the Mac App Store</a>.</p>
+<p>Visit <a href="https://help.apple.com/itc/transporter/">Transporter Help</a> for more information.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="upload-asset-packs-with-itmstransporter">
+<h3>Upload asset packs with iTMSTransporter</h3>
+<div>
+<p>iTMSTransporter is a command-line interface that can be installed on macOS, Windows, and Linux.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Starting in 2026, you’ll be required to use the -assetFile command instead of the -f command with your .ipa or .pkg files. Additionally, to continue uploading apps using the Aspera and Signiant delivery methods, you’ll be required to use a version of Transporter that will be released later this year.</p>
+</div>
+<p>Visit the <a href="https://help.apple.com/itc/transporteruserguide/en.lproj/static.html">Transporter User Guide</a> to download iTMSTransporter and view more information.</p>
+</div>
+</accordion-panel>
+<accordion-panel id="upload-asset-packs-with-altool">
+<h3>Upload asset packs with altool</h3>
+<div>
+<p>You can use <code>xcrun</code> (included with Xcode) to invoke altool, a command-line tool that lets you validate and upload asset packs to App Store Connect. Specify the following in Terminal at the command-line:</p>
+<div>
+<code>$ xcrun altool --upload-asset-pack asset_pack --<span class="no-glossary">apple-id</span> <span class="no-glossary">apple-id</span> -u username [-p password] </code>
+</div>
+<p class="spacing-top-paragraph"> <a href="https://help.apple.com/asc/appsaltool/" target="_blank">Learn more.</a> </p>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/manage-asset-packs/overview-of-apple-hosted-asset-packs">Overview of Apple-hosted asset packs</a>
+<a href="/help/app-store-connect/reference/app-uploads/apple-hosted-asset-pack-size-limits">Apple-hosted asset pack size limits</a>
+<a href="https://developer.apple.com/documentation/backgroundassets/downloading-apple-hosted-asset-packs">Downloading asset packs hosted by Apple</a>
+<a href="/help/app-store-connect/manage-builds/upload-builds">Upload builds</a>
+</div>
+</link></article> </div>

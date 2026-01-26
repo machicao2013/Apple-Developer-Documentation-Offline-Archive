@@ -1,0 +1,134 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage app information</span>
+<article _v="5.0">
+<h1>Localize app information</h1>
+<p>After <a href="/help/app-store-connect/create-an-app-record/add-a-new-app">adding an app to your account</a>, you can add languages and localized metadata on the App Information page. Learn more about <a href="/help/app-store-connect/reference/app-information/app-store-localizations">supported languages</a> and <a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">localizable properties</a>.</p>
+<p>For example, if you select English as the primary language for your app in App Store Connect, and it’s the only language you provide, your app metadata will appear in English in all <a href="/help/app-store-connect/reference/app-information/app-store-localizations">App Store countries or regions</a>. If you localize your app metadata in French, the French localization displays to users whose language setting is in French. The French localization also displays to users in countries or regions where the App Store supports French but not English. Users can search for your app using localized keywords in all countries or regions where the App Store supports French. If no localization matches a user's language setting, the next most relevant localization is used. In other countries or regions, your metadata displays in the primary language (English in this example).</p>
+<p>Languages on the App Information page in App Store Connect are part of your app's metadata. This differs from adding languages to your app in Xcode when you localize your binary. <a href="https://developer.apple.com/documentation/xcode/localization">Learn about localizing your app binary.</a></p>
+<p><a href="https://developer.apple.com/documentation/appstoreconnectapi/app_store/app_metadata/app_info_localizations">Learn how to manage the localization with the App Store Connect API.</a></p>
+<div class="callout callout-note">
+<p class="note"><b>Important: </b>You can manage languages only when the <a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">app status is editable</a>.</p>
+</div>
+<p class="spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, App Manager, or <span class="force-glossary">Marketing</span>. <a href="/help/app-store-connect/reference/account-management/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="add-a-language">
+<h3>Add a language</h3>
+<div class="Task">
+<p>When you add a language to your app, screenshots and the properties for the new language default to those of the primary language, except for the description and keywords. When you add a localization from the <a href="/help/app-store-connect/create-an-app-record/add-platforms">platform version section</a>, it’s automatically added to the shared metadata under <a href="/help/app-store-connect/create-an-app-record/view-and-edit-app-information">App Information</a> and to other platforms.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>On the top right, click the primary language to display the language pop-up menu.</p>
+<figure><img alt="Screenshot of the iOS app version metadata page, with a pointer clicking a language listed in the top right opens the language menu." class="help-screens-retro" src="/help/app-store-connect/manage-app-information/localize-app-information/images/my-apps-add-language_2x.png"/></figure>
+</li>
+<li>
+<p>Scroll down the menu to Not Localized, hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears to the right of the language.</p>
+<figure><img alt="Screenshot of the language menu on the app platform detail page, which shows a highlighted language with a ‘+' button displays next to its name." class="help-screens-retro" src="/help/app-store-connect/manage-app-information/localize-app-information/images/my-apps-add-language-menu_2x.png"/></figure>
+</li>
+<li>
+<p>Enter localized metadata—such as descriptions and keywords—for the platform, then click Save.</p>
+<p><a href="/help/app-store-connect/reference/app-information/platform-version-information">View descriptions of these properties.</a></p>
+</li>
+<li>
+<p>To enter information that is shared across platforms, click App information.</p>
+</li>
+<li>
+<p>On the top right, click the primary language to display the language pop-up menu.</p>
+</li>
+<li>
+<p>Hold the pointer over the language (and locale) you want to add, then click the add button (+) that appears.</p>
+</li>
+<li>
+<p>Enter the app name and privacy policy URL for the language or locale, then on the top right, click Save.</p>
+<p><a href="/help/app-store-connect/reference/app-information/app-information">View descriptions of these properties.</a></p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-localizations">
+<h3>Edit localizations</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.</p>
+</li>
+<li>
+<p>On the top right, choose the language from the pop-up menu.</p>
+</li>
+<li>
+<p>Edit the localized information, then click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-a-language">
+<h3>Delete a language</h3>
+<div class="Task">
+<p>When you delete a language, countries or regions that display app information in that language revert to showing the information entered for the primary language.</p>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.
+						<p>
+</p></p></li>
+<li>
+<p>On the top right, click the primary language to display the language pop-up menu.</p>
+</li>
+<li>
+<p>In the Localized section, hold the pointer over the language you want to delete and click the delete button (–).</p>
+<figure><img alt="Screenshot of the language menu on the app platform detail page, which shows a highlighted language with a ‘-' button next to its name." class="help-screens-retro" src="/help/app-store-connect/manage-app-information/localize-app-information/images/my-apps-delete-language_2x.png"/></figure>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="change-the-primary-language">
+<h3>Change the primary language</h3>
+<div>
+<p>You can change the primary language for an app. For a language to be selectable as the primary language:</p>
+<ul>
+<li>
+<p>You must have already <a href="/help/app-store-connect/manage-app-information/localize-app-information#add-a-language">added the language</a> to a previous version.</p>
+</li>
+<li>
+<p>App Review must approve the new language. If the language hasn’t been approved, submit a version with this localized metadata for approval. Then, select it as your primary language in a subsequent update.</p>
+</li>
+<li>
+<p>You must have already uploaded and received App Review approval for screenshots in the language for all supported platforms. The screenshot sizes for this language must match those of your current primary language. If this localization's screenshots were previously derived from another localization, you must first manually upload new screenshots that match your current primary language's sizes and submit a version for approval. Then, change the primary language on a subsequent update. <a href="/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots">Learn more about adding screenshots and previews.</a></p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>If your app has a <a href="/help/app-store-connect/create-custom-product-pages/configure-multiple-product-page-versions">custom product page</a> configured, you must also have uploaded screenshots in the language for each custom product page.</p>
+</div>
+</li>
+</ul>
+<ol class="compound-item-list">
+<li>
+<p>In Apps, select the app you want to view.
+						<p>
+</p></p></li>
+<li>
+<p>In the sidebar, click App Information.</p>
+</li>
+<li>
+<p>In the Primary Language pop-up menu, choose the new primary language.</p>
+<figure><img alt="Screenshot of the App Information page, where the General Information section displays the current primary language and a pop-up menu to choose a new primary language." class="help-screens-retro" src="/help/app-store-connect/manage-app-information/localize-app-information/images/my-apps-change-primary-language_2x.png"/></figure>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+<div class="LinkUniversal">
+<b>Related</b>
+<a href="/help/app-store-connect/create-an-app-record/view-and-edit-app-information">View and edit app information</a>
+<a href="/help/app-store-connect/manage-app-information/provide-a-custom-license-agreement">Provide a custom license agreement</a>
+<a href="/help/app-store-connect/reference/app-information/required-localizable-and-editable-properties">Required, localizable, and editable properties</a>
+<a href="/help/app-store-connect/reference/app-information/app-information">App information</a>
+<a href="/localization/">Expanding your app to new markets</a>
+<a href="https://developer.apple.com/videos/play/tech-talks/110358/?time=21">Get started with app discovery and marketing</a>
+</div>
+</link></article> </div>

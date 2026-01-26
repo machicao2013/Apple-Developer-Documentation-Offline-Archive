@@ -1,0 +1,95 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Manage your team</span>
+<article _v="2.0">
+<h1>Set up OS data transfer</h1>
+<p>OS data transfer allows users to seamlessly transfer your app’s data across Android and iOS by adding app IDs from your Android app in App Store Connect. During a data transfer, the user’s Android device will provide iOS a list of installed app IDs, which will be matched against what you have provided. This helps ensure that apps in the mapping table you provide are migrated.</p>
+<p>In order to support this, you must provide your app information from Android so that we can correctly install your app. This includes your Android Package Name and the SHA-256 certificate fingerprint of your Signing Key Certificate.</p>
+<p>You can also enable data migration by implementing <a href="https://developer.apple.com/documentation/appmigrationkit">AppMigrationKit</a>.</p>
+<p>Each iOS app can only map to one Android app from Google Play; however, you can add up to 5 app ID mappings per app.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>Users can only use OS data transfer for your app if you set it up both in App Store Connect and with Google. Additionally, users must be running iOS 26.3 or later and a version of Android that also supports OS data transfer.</p>
+</div>
+<p class="spacing-bottom spacing-top-paragraph"><b>Required role: </b>Account Holder, Admin, or App Manager. <a href="/help/app-store-connect/reference/role-permissions">View role permissions.</a></p>
+<developer-accordion>
+<accordion-panel id="set-up-os-data-transfer">
+<h3>Set up OS data transfer</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click OS Data Transfer.</p>
+</li>
+<li>
+<p>Click Get Started.</p>
+<p>If you’ve already set up an OS data transfer you can click the (+) button.</p>
+</li>
+<li>
+<p>Select the app you wish to set up data transfer for.</p>
+</li>
+<li>
+<p>Click Add.</p>
+</li>
+<li>
+<p>Provide the Android App Package Name for the Android version of your app and the SHA-256 certificate fingerprint.</p>
+<div class="callout callout-note">
+<p class="note"><b>Note: </b>You can add up to 5 SHA-256 certificate fingerprints in the event that you change your key.</p>
+</div>
+</li>
+<li>
+<p>If you have multiple Android app IDs associated with the same iOS app you can add up to 4 additional app IDs by clicking Add Another Android App at the bottom of the page.</p>
+</li>
+<li>
+<p>On the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="edit-os-data-transfer-details">
+<h3>Edit OS data transfer details</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click OS Data Transfer.</p>
+</li>
+<li>
+<p>Click Edit next to the app you wish to edit.</p>
+</li>
+<li>
+<p>Make the necessary changes and then on the top right, click Save.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+<accordion-panel id="delete-os-data-transfer-app-ids">
+<h3>Delete OS data transfer App IDs</h3>
+<div class="Task">
+<ol class="compound-item-list">
+<li>
+<p>In Users and Access, click Integrations.</p>
+</li>
+<li>
+<p>Under Additional, click OS Data Transfer.</p>
+</li>
+<li>
+<p>Click Edit next to the app you wish to edit.</p>
+</li>
+<li>
+<p>Click Delete at the bottom of the page.</p>
+</li>
+<li>
+<p>In the dialog that appears, click Delete.</p>
+<p>You can also delete all of the Android app IDs you have added for the app by clicking Delete All at the bottom of the page.</p>
+</li>
+</ol>
+</div>
+</accordion-panel>
+</developer-accordion>
+<link href="/assets/styles/accordion.css?15232544097" rel="stylesheet" type="text/css">
+<script src="/assets/scripts/DeveloperAccordion.js?50212442191"></script>
+<script src="/assets/scripts/accordion.js?17182448067"></script>
+</link></article> </div>

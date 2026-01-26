@@ -1,0 +1,194 @@
+<div class="main-content">
+<span class="chapter-name typography-eyebrow-reduced lighter">Reference</span>
+<article _v="8.0">
+<h1>App build statuses</h1>
+<p>The <em>build status</em> tells you immediately whether your build needs attention. The status applies to the build only, not the entire app.</p>
+<ul>
+<li>
+<p>A red status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-red-icon_2x.png"/>) means that you need to perform some action or the build is expired.</p>
+</li>
+<li>
+<p>A yellow status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-yellow-icon_2x.png"/>) means that some process is ongoing, controlled either by you or by Apple.</p>
+</li>
+<li>
+<p>A green status indicator (<img alt="" class="help-app-status help-app-status-small no-margin-right" src="/help/images/icons/status-green-icon_2x.png"/>) means the build is being tested in TestFlight.</p>
+</li>
+</ul>
+<p>You can view the <a href="/help/app-store-connect/manage-builds/view-builds-and-metadata">builds you upload and their file sizes</a>, <a href="/help/app-store-connect/test-a-beta-version/view-build-status-and-metrics">beta build status, and metrics</a> under the TestFlight tab in App Store Connect.</p>
+<div class="table-wrapper">
+<table aria-label="App build statuses" class="table-4-col table-4-col-middle-wide table-no-center-align">
+<thead>
+<tr>
+<th scope="col">
+<p class="TableHead">Status</p>
+</th>
+<th scope="col">
+<p class="TableHead">Description</p>
+</th>
+<th scope="col">
+<p class="TableHead">Internal testing</p>
+</th>
+<th scope="col">
+<p class="TableHead">External testing</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Invalid Binary</p>
+</td>
+<td>
+<p>Apple received your build, but it didn’t meet all the upload requirements. Resolve any issues in the build, and redeliver. Visit <a href="/help/app-store-connect/manage-builds/upload-builds">Upload builds</a>.</p>
+</td>
+<td class="center-table-col">
+<p>Not visible in TestFlight</p>
+</td>
+<td class="center-table-col">
+<p>Not visible in TestFlight</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Missing Compliance</p>
+</td>
+<td>
+<p>Your build is missing <a href="/help/app-store-connect/manage-app-information/overview-of-export-compliance">export compliance</a> documentation. Action is needed. <a href="/help/app-store-connect/test-a-beta-version/provide-export-compliance-information-for-beta-builds">Learn how to provide export compliance for beta builds.</a></p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Export</p>
+<p>Compliance Review</p>
+</td>
+<td>
+<p>Documentation for <a href="/help/app-store-connect/manage-app-information/overview-of-export-compliance">export compliance</a> has been submitted and is in review. No action is needed on your end.</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Compliance Review</p>
+</td>
+<td>
+<p>Documentation for export compliance is in review. No action is needed on your end.</p>
+</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Ready to Submit</p>
+</td>
+<td>
+<p>Your build can be distributed to internal testers, or can be submitted to <span class="no-glossary">TestFlight App Review</span> for external testing or to App Review for distribution to customers.</p>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> Waiting for Review</p>
+</td>
+<td>
+<p>Your build has been submitted to TestFlight App Review. It will need to be approved before you can begin external testing.</p>
+</td>
+<td></td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-yellow-icon_2x.png"/> In Beta Review</p>
+</td>
+<td>
+<p>Your build is currently being reviewed by TestFlight App Review. It'll need to be approved before you can begin external testing.</p>
+</td>
+<td></td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Not Available for Testing</p>
+</td>
+<td>
+<p>Your build can't be used with TestFlight because the provisioning profile is missing an application identifier. To begin testing, upload a new build that includes the application identifier.</p>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Expired</p>
+</td>
+<td>
+<p>Your build can't be used for testing with TestFlight because it has passed its 90-day availability window.</p>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-red-icon_2x.png"/> Rejected</p>
+</td>
+<td>
+<p>Your build was rejected by TestFlight App Review and can no longer be used in TestFlight. To begin testing, upload a new build.</p>
+</td>
+<td class="center-table-col">
+<p>Not visible in TestFlight</p>
+</td>
+<td class="center-table-col">
+<p>Not visible in TestFlight</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Ready to Test</p>
+</td>
+<td>
+<p>Your build can be tested by external and internal testers, but you haven’t added any testers yet. You may have opted to manually <a href="/help/app-store-connect/test-a-beta-version/invite-external-testers#notify-external-testers-after-your-build-is-approved">notify testers after your build is approved</a>. You can also <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submit your app to App Review</a> for distribution to customers.</p>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+<tr>
+<td>
+<p><img alt="" class="help-app-status" src="/help/images/icons/status-green-icon_2x.png"/> Testing</p>
+</td>
+<td>
+<p>Your build is being tested by at least one group or tester. Click on the build to view more details about who is testing your build. You can continue testing or <a href="/help/app-store-connect/manage-submissions-to-app-review/overview-of-submitting-for-review">submit your app to App Review</a> for distribution to customers. Testers that have received an invite to test will still be able to test your build even after it's available for customers.</p>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+<td class="center-table-col">
+<figure alt="" class="icon icon-checkcircle"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LinkUniversal">
+<b>Related</b><a href="/help/app-store-connect/reference/app-information/app-and-submission-statuses">App and submission statuses</a>
+</div>
+</article> </div>
